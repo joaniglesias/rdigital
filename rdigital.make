@@ -6,6 +6,9 @@ api = 2
 projects[admin_menu][subdir] = "contrib"
 projects[admin_menu][version] = "3.0-rc4"
 
+projects[module_filter][subdir] = "contrib"
+projects[module_filter][version] = "2.0-alpha2"
+
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.3"
 projects[panels][patch][1828684] = "http://drupal.org/files/1828684-layout-fix-6.patch"

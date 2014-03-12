@@ -18,6 +18,7 @@ dependencies[] = field_ui
 dependencies[] = file
 
 dependencies[] = admin_menu
+dependencies[] = module_filter
 dependencies[] = panels
 dependencies[] = panels_everywhere
 dependencies[] = ctools
