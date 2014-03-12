@@ -1,0 +1,68 @@
+<?php
+
+function rdigital_install() {
+
+  // Only administrators can create accounts
+  variable_set('user_register', USER_REGISTER_ADMINISTRATORS_ONLY);
+
+  // Enable default permissions for system roles.
+  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content'));
+  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content'));
+
+  // set cron to run every 1 hour
+  variable_set('cron_safe_threshold', 3600);
+
+
+  $default_theme = 'bartik';
+  //$admin_theme = 'sky_bartik';
+  // // Enable themes
+  // $enable = array(
+  //   'theme_default' => $default_theme,
+  //   'admin_theme' => $admin_theme,
+  // );
+  // theme_enable($enable);
+
+  // foreach ($enable as $var => $theme) {
+  //   if (!is_numeric($var)) {
+  //     variable_set($var, $theme);
+  //   }
+  // }
+
+  // Enable the rest of custom VIMN modules
+  // module_enable(array(
+  //   'vimn_sky',
+  // ));
+
+  // Enable blocks
+  // $block = array(
+  //   'module' => 'menu',
+  //   'delta' => 'devel',
+  //   'theme' => $default_theme,
+  //   'status' => 1,
+  //   'weight' => -9,
+  //   'region' => 'footer',
+  //   'pages' => '',
+  //   'cache' => -1,
+  // );
+  // $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
+  // $query->values($block);
+  // $query->execute();
+
+  $block = array(
+    'module' => 'user',
+    'delta' => 'login',
+    'theme' => $default_theme,
+    'status' => 1,
+    'weight' => 0,
+    'region' => 'sidebar_first',
+    'pages' => '',
+    'cache' => -1,
+  );
+  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
+  $query->values($block);
+  $query->execute();
+}
+
+
+
+

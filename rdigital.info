@@ -1,0 +1,44 @@
+name = R Digital
+description = R Digital website
+core = 7.x
+
+dependencies[] = block
+dependencies[] = contextual
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = dblog
+dependencies[] = search
+dependencies[] = field_ui
+dependencies[] = file
+
+dependencies[] = admin_menu
+dependencies[] = panels
+dependencies[] = panels_everywhere
+dependencies[] = ctools
+dependencies[] = entity
+dependencies[] = services
+dependencies[] = views
+dependencies[] = libraries
+
+dependencies[] = page_manager
+dependencies[] = views_content
+dependencies[] = views_ui
+dependencies[] = rest_server
+;dependencies[] = content_access
+;dependencies[] = acl
+;dependencies[] = scheduler
+dependencies[] = views_php
+dependencies[] = date
+
+dependencies[] = devel
+dependencies[] = features
+;dependencies[] = features_extra
+
+
+files[] = rdigital.profile

@@ -1,0 +1,22 @@
+# exclude files added by Drush make
+
+modules/contrib/*
+modules/vimn*
+themes/contrib/*
+themes/vimn/*
+libraries/*
+themes/vimn/*/.sass-cache/*
+themes/custom/*/.sass-cache/*
+rdigital-web/*
+typescript
+
+# exclude OS generated files
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
