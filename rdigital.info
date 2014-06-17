@@ -36,7 +36,7 @@ dependencies[] = rest_server
 ;dependencies[] = scheduler
 dependencies[] = views_php
 dependencies[] = date
-dependencies[] = group
+dependencies[] = abt
 
 dependencies[] = devel
 dependencies[] = features

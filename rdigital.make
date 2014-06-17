@@ -59,8 +59,8 @@ projects[views_php][version] = "1.x-dev"
 projects[date][subdir] = "contrib"
 projects[date][version] = "2.6"
 
-projects[group][subdir] = "contrib"
-projects[group][version] = "1.x-dev"
+projects[abt][subdir] = "contrib"
+projects[abt][version] = "1.5"
 
 ;Modules for development
 
