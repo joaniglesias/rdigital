@@ -4,6 +4,6 @@ core = 7.x
 
 package = Recat Digital
 
-dependencies[] = entityreference
+dependencies[] = references
 dependencies[] = date
 dependencies[] = rd_patient

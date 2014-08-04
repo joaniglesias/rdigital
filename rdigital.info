@@ -41,6 +41,7 @@ dependencies[] = abt
 dependencies[] = rules
 dependencies[] = rules_admin
 dependencies[] = references
+dependencies[] = node_reference
 
 dependencies[] = devel
 dependencies[] = features
