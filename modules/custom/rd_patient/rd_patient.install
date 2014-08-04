@@ -1,0 +1,386 @@
+<?php
+
+function rd_patient_install() {
+  //create vocabularies
+  foreach(_get_vocabularies() as $vocab) {
+    _create_vocabulary($vocab);
+   }
+
+  // create new fields and content types
+  _create_content_type_patient();
+}
+
+
+// *******************************************************************************************
+//     VOCABULARIES
+// *******************************************************************************************
+
+/**
+ * Create and optionally populate a vocabulary
+ * @param  [array] $vocabulary fields: name, machine_name, module and terms (array)
+ */
+function _create_vocabulary($vocabulary) {
+  // Skip if vocabulary already exists
+  if (taxonomy_vocabulary_machine_name_load($vocabulary['machine_name'])) {
+    return true;
+  }
+  taxonomy_vocabulary_save((object) array(
+    'name'          => $vocabulary['name'],
+    'machine_name'  => $vocabulary['machine_name'],
+    'module'        => $vocabulary['module'],
+  ));
+
+  $new_vocabulary = taxonomy_vocabulary_machine_name_load($vocabulary['machine_name']);
+  return _populate_vocabulary($vocabulary['terms'], $new_vocabulary);
+}
+
+
+/**
+ * Populate a vocabulary
+ * @param  [array] $terms: an associative array with all terms with multiple hierarchy
+ * @param  [object] $vocabulary: The vocabulary object with all of its metadata
+ * @param  [int] $parent_term_id - OPTIONAL : Term ID of the parent term. Default value = 0
+ */
+function _populate_vocabulary($terms, $vocabulary, $parent_term_id = 0) {
+  if (isset($vocabulary->vid)){
+    $position_term = 0;
+    foreach ($terms as $key => $term) {
+      if (is_array($term)){
+        $new_term = new stdClass();
+        $new_term->name = $key;
+        $new_term->vid = $vocabulary->vid;
+        $new_term->weight = $position_term;
+        $new_term->parent = $parent_term_id;
+        taxonomy_term_save($new_term);
+        _populate_vocabulary($term, $vocabulary, $new_term->tid);
+      }
+      else {
+        $new_term = new stdClass();
+        $new_term->name = $term;
+        $new_term->vid = $vocabulary->vid;
+        $new_term->weight = $key;
+        $new_term->parent = $parent_term_id;
+        taxonomy_term_save($new_term);
+      }
+      $position_term++;
+    }
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+function _get_vocabularies() {
+  $t = get_t();
+  $vocabularies['rd_voc_group'] = array(
+    'name' => $t('Group'),
+    'machine_name' => 'rd_voc_group',
+    'module' => 'rd_patient',
+    'terms' => array(
+      'Germany',
+      'France',
+      'Spain' => array(
+        'Barcelona',
+        'Badalona' => array(
+          'Centro Carme',
+          ),
+        ),
+      ),
+    );
+
+  return $vocabularies;
+}
+
+// *******************************************************************************************
+//     CONTENT TYPES, FIELDS AND INSTANCES
+// *******************************************************************************************
+
+/**
+ * Fields definition for Contet Type Patient
+ */
+function _get_fields_patient() {
+  $t = get_t();
+  $fields = array();
+  $fields['rd_f_patient_first_surname'] = array(
+    'field_name' => 'rd_f_patient_first_surname',
+    'type' => 'text',
+    'label' => $t('First Surename'),
+    'cardinality' => 1,
+    'settings' => array(
+      'max_length' => 255,
+    ),
+  );
+  $fields['rd_f_patient_second_surname'] = array(
+    'field_name' => 'rd_f_patient_second_surname',
+    'type' => 'text',
+    'label' => $t('Second Surename'),
+    'cardinality' => 1,
+    'settings' => array(
+      'max_length' => 255,
+    ),
+  );
+  $fields['rd_f_patient_group'] = array(
+    'field_name' => 'rd_f_patient_group',
+    'label' => $t('Patient Group'),
+    'cardinality' => 1,
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'rd_voc_group',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'type' => 'taxonomy_term_reference',
+  );
+  $fields['rd_f_patient_mobile'] = array(
+    'field_name' => 'rd_f_patient_mobile',
+    'type' => 'text',
+    'label' => $t('Mobile'),
+    'cardinality' => 1,
+    'settings' => array(
+      'max_length' => 255,
+    ),
+  );
+  $fields['rd_f_patient_home_telephone'] = array(
+    'field_name' => 'rd_f_patient_home_telephone',
+    'type' => 'text',
+    'label' => $t('Home Telephone'),
+    'cardinality' => 1,
+    'settings' => array(
+      'max_length' => 255,
+    ),
+  );
+  $fields['rd_f_patient_work_telephone'] = array(
+    'field_name' => 'rd_f_patient_work_telephone',
+    'type' => 'text',
+    'label' => $t('Work Telephone'),
+    'cardinality' => 1,
+    'settings' => array(
+      'max_length' => 255,
+    ),
+  );
+  $fields['rd_f_patient_address'] = array(
+    'field_name' => 'rd_f_patient_address',
+    'type' => 'text_long',
+    'label' => $t('Address'),
+    'cardinality' => 1,
+    'settings' => array(),
+  );
+
+  return $fields;
+}
+
+/**
+ * Instances definition for Contet Type Patient
+ */
+function _get_instances_patient() {
+  $t = get_t();
+  $instances = array(
+    'rd_f_patient_first_surname' => array(
+      'field_name' => 'rd_f_patient_first_surname',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('First Surename'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+      ),
+    ),
+    'rd_f_patient_second_surname' => array(
+      'field_name' => 'rd_f_patient_second_surname',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Second Surename'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+      ),
+    ),
+    'rd_f_patient_group' => array(
+      'field_name' => 'rd_f_patient_group',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Patient Group'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+      ),
+    ),
+    'rd_f_patient_mobile' => array(
+      'field_name' => 'rd_f_patient_mobile',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Mobile'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+      ),
+    ),
+    'rd_f_patient_home_telephone' => array(
+      'field_name' => 'rd_f_patient_home_telephone',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Home Telephone'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+      ),
+    ),
+    'rd_f_patient_work_telephone' => array(
+      'field_name' => 'rd_f_patient_work_telephone',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Work Telephone'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+      ),
+    ),
+    'rd_f_patient_address' => array(
+      'field_name' => 'rd_f_patient_address',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Address'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'rows' => 3,
+        ),
+        'type' => 'text_textarea',
+      ),
+    ),
+  );
+
+  // Create widget weight
+  $ins_weight = 0;
+  foreach ($instances as $instance => $data) {
+    $instances[$instance]['widget']['weight'] = $ins_weight * 5;
+    $ins_weight++;
+  }
+
+  return $instances;
+
+}
+
+/**
+ * Create content type Patient
+ */
+function _create_content_type_patient() {
+  $t = get_t();
+
+  //check if content type already exists
+  if (!node_type_load('rd_ct_patient')) {
+
+    // Create fields
+    foreach (_get_fields_patient() as $field_event) {
+      field_create_field($field_event);
+    }
+
+    //Create content type
+    $node = array(
+      'type' => 'rd_ct_patient',
+      'name' => $t('Patient'),
+      'base' => 'node_content',
+      'description' => $t('Create a new Patient'),
+      'title_label' => $t('Full Name'),
+      'custom' => TRUE,
+      'promote' => 0,
+    );
+    $content_type = node_type_set_defaults($node);
+    node_type_save($content_type);
+
+    // Create instances for this content type
+    foreach (_get_instances_patient() as $instance) {
+      field_create_instance($instance);
+    }
+  }
+  menu_rebuild();
+}
+
+// *******************************************************************************************
+//     UPDATE FUNCTIONS
+// *******************************************************************************************
+
+// function rd_patient_update_7000() {
+
+// }

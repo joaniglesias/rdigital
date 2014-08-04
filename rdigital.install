@@ -28,10 +28,11 @@ function rdigital_install() {
   //   }
   // }
 
-  // Enable the rest of custom VIMN modules
-  // module_enable(array(
-  //   'vimn_sky',
-  // ));
+  // Enable the custom modules
+  module_enable(array(
+    'rd_patient',
+    'rd_appointment',
+  ));
 
   // Enable blocks
   // $block = array(

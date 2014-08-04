@@ -1,0 +1,277 @@
+<?php
+
+function rd_appointment_install() {
+
+  // create new fields and content types
+  _create_content_type_appointment();
+}
+
+
+// *******************************************************************************************
+//     CONTENT TYPES, FIELDS AND INSTANCES
+// *******************************************************************************************
+
+/**
+ * Fields definition for Contet Type appointment
+ */
+function _get_fields_appointment() {
+  $t = get_t();
+  $fields = array();
+  $fields['rd_f_appo_telephone'] = array(
+    'field_name' => 'rd_f_appointment_telephone',
+    'type' => 'text',
+    'label' => $t('Patient Telephone'),
+    'cardinality' => 1,
+    'settings' => array(
+      'max_length' => 255,
+    ),
+  );
+  $fields['rd_f_appo_related_patient'] = array(
+    'field_name' => 'rd_f_appo_related_patient',
+    'type' => 'node_reference',
+    'label' => $t('Related Patient'),
+    'cardinality' => 1,
+    'settings' => array(
+      'referenceable_types' => array(
+        'rd_ct_patient',
+      ),
+      'view' => array(
+        'args' => array(),
+        'display_name' => '',
+        'view_name' => '',
+      ),
+    ),
+  );
+  $fields['rd_f_appo_date_time'] = array(
+    'field_name' => 'rd_f_appo_date_time',
+    'type' => 'datetime',
+    'label' => $t('Appointment Date and time'),
+    'cardinality' => 1,
+    'module' => 'date',
+    'settings' => array(
+      'cache_count' => 4,
+      'cache_enabled' => 0,
+      'granularity' => array(
+        'day' => 'day',
+        'hour' => 'hour',
+        'minute' => 'minute',
+        'month' => 'month',
+        'second' => 'second',
+        'year' => 'year',
+      ),
+      'timezone_db' => 'UTC',
+      'todate' => '',
+      'tz_handling' => 'site',
+    ),
+  );
+  $fields['rd_f_appo_temp_keyb_measures'] = array(
+    'field_name' => 'rd_f_appo_temp_keyb_measures',
+    'type' => 'text_long',
+    'label' => $t('Temporary Keyboard Measures'),
+    'cardinality' => 1,
+    'settings' => array(),
+  );
+  $fields['rd_f_appo_treatment_measures'] = array(
+    'field_name' => 'rd_f_appo_treatment_measures',
+    'type' => 'text_long',
+    'label' => $t('Treatment Measures'),
+    'cardinality' => 1,
+    'settings' => array(),
+  );
+  $fields['rd_f_appo_treatment_comments'] = array(
+    'field_name' => 'rd_f_appo_treatment_comments',
+    'type' => 'text_long',
+    'label' => $t('Treatment Comments'),
+    'cardinality' => 1,
+    'settings' => array(),
+  );
+
+  return $fields;
+}
+
+/**
+ * Instances definition for Contet Type appointment
+ */
+function _get_instances_appointment() {
+  $t = get_t();
+  $instances = array(
+    'rd_f_appo_telephone' => array(
+      'field_name' => 'rd_f_appo_telephone',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_appointment',
+      'label' => $t('Patient Telephone'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+      ),
+    ),
+    'rd_f_appo_related_patient' => array(
+      'field_name' => 'rd_f_appo_related_patient',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_appointment',
+      'label' => $t('Related Patient'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+      ),
+    ),
+    'rd_f_appo_date_time' => array(
+      'field_name' => 'rd_f_appo_date_time',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_appointment',
+      'label' => $t('Appointment Date and Time'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'default_value' => 'blank',
+        'default_value2' => 'same',
+        'default_value_code' => '',
+        'default_value_code2' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'date',
+        'settings' => array(
+          'increment' => 1,
+          'input_format' => 'd-m-Y H:i',
+          'input_format_custom' => '',
+          'label_position' => 'above',
+          'text_parts' => array(),
+          'year_range' => '-3:+3',
+        ),
+        'type' => 'date_text',
+      ),
+    ),
+    'rd_f_appo_temp_keyb_measures' => array(
+      'field_name' => 'rd_f_appo_temp_keyb_measures',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_appointment',
+      'label' => $t('Temporary Keyboard Measures'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'rows' => 3,
+        ),
+        'type' => 'text_textarea',
+      ),
+    ),
+    'rd_f_appo_treatment_measures' => array(
+      'field_name' => 'rd_f_appo_treatment_measures',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_appointment',
+      'label' => $t('Treatment Measures'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'rows' => 3,
+        ),
+        'type' => 'text_textarea',
+      ),
+    ),
+    'rd_f_appo_treatment_comments' => array(
+      'field_name' => 'rd_f_appo_treatment_comments',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_appointment',
+      'label' => $t('Treatment Comments'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'rows' => 3,
+        ),
+        'type' => 'text_textarea',
+      ),
+    ),
+  );
+
+  // Create widget weight
+  $ins_weight = 0;
+  foreach ($instances as $instance => $data) {
+    $instances[$instance]['widget']['weight'] = $ins_weight * 5;
+    $ins_weight++;
+  }
+
+  return $instances;
+
+}
+
+/**
+ * Create content type appointment
+ */
+function _create_content_type_appointment() {
+  $t = get_t();
+
+  //check if content type already exists
+  if (!node_type_load('rd_ct_appointment')) {
+
+    // Create fields
+    foreach (_get_fields_appointment() as $field_event) {
+      field_create_field($field_event);
+    }
+
+    //Create content type
+    $node = array(
+      'type' => 'rd_ct_appointment',
+      'name' => $t('appointment'),
+      'base' => 'node_content',
+      'description' => $t('Create a new Appointment'),
+      'title_label' => $t('Patient Full Name'),
+      'custom' => TRUE,
+      'promote' => 0,
+    );
+    $content_type = node_type_set_defaults($node);
+    node_type_save($content_type);
+
+    // Create instances for this content type
+    foreach (_get_instances_appointment() as $instance) {
+      field_create_instance($instance);
+    }
+  }
+  menu_rebuild();
+}
+
+// *******************************************************************************************
+//     UPDATE FUNCTIONS
+// *******************************************************************************************
+
+// function rd_appointment_update_7000() {
+
+// }

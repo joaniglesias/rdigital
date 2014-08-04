@@ -1,0 +1,8 @@
+name = Rd Patient
+description = Create Patient Content Type and related entities and functionalities
+core = 7.x
+
+package = Recat Digital
+
+dependencies[] = references
+dependencies[] = abt
