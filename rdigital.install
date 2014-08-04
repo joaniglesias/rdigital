@@ -31,7 +31,7 @@ function rdigital_install() {
   // Enable the custom modules
   module_enable(array(
     'rd_patient',
-    'rd_appointment',
+    //'rd_appointment',
   ));
 
   // Enable blocks
