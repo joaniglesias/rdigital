@@ -18,7 +18,7 @@ function _get_fields_appointment() {
   $t = get_t();
   $fields = array();
   $fields['rd_f_appo_telephone'] = array(
-    'field_name' => 'rd_f_appointment_telephone',
+    'field_name' => 'rd_f_appo_telephone',
     'type' => 'text',
     'label' => $t('Patient Telephone'),
     'cardinality' => 1,
@@ -28,18 +28,25 @@ function _get_fields_appointment() {
   );
   $fields['rd_f_appo_related_patient'] = array(
     'field_name' => 'rd_f_appo_related_patient',
-    'type' => 'node_reference',
+    'type' => 'entityreference',
     'label' => $t('Related Patient'),
     'cardinality' => 1,
     'settings' => array(
-      'referenceable_types' => array(
-        'rd_ct_patient',
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'rd_ct_patient' => 'rd_ct_patient',
+        ),
       ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
+      'target_type' => 'node',
     ),
   );
   $fields['rd_f_appo_date_time'] = array(
@@ -127,9 +134,14 @@ function _get_instances_appointment() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete_tags',
+        'weight' => 26,
       ),
     ),
     'rd_f_appo_date_time' => array(
@@ -250,7 +262,7 @@ function _create_content_type_appointment() {
     //Create content type
     $node = array(
       'type' => 'rd_ct_appointment',
-      'name' => $t('appointment'),
+      'name' => $t('Appointment'),
       'base' => 'node_content',
       'description' => $t('Create a new Appointment'),
       'title_label' => $t('Patient Full Name'),
