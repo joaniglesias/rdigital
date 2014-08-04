@@ -40,7 +40,7 @@ dependencies[] = date_views
 dependencies[] = abt
 dependencies[] = rules
 dependencies[] = rules_admin
-dependencies[] = entityreference
+dependencies[] = references
 
 dependencies[] = devel
 dependencies[] = features

@@ -65,8 +65,8 @@ projects[abt][version] = "1.5"
 projects[rules][subdir] = "contrib"
 projects[rules][version] = "2.7"
 
-projects[entityreference][subdir] = "contrib"
-projects[entityreference][version] = "1.1"
+projects[references][subdir] = "contrib"
+projects[references][version] = "2.1"
 
 ;Modules for development
 
