@@ -68,7 +68,11 @@ projects[rules][version] = "2.7"
 projects[entityreference][subdir] = "contrib"
 projects[entityreference][version] = "1.1"
 
-;Modules for development
+projects[ckeditor][subdir] = "contrib"
+projects[ckeditor][version] = "1.15"
+
+
+; Modules for development
 
 projects[devel][subdir] = "develop"
 projects[devel][version] = "1.3"
@@ -78,3 +82,10 @@ projects[features][version] = "2.0-rc1"
 
 ;projects[features_extra][subdir] = "develop"
 ;projects[features_extra][version] = "1.0-beta1"
+
+
+; Libraries
+
+libraries[ckeditor][download][type] = "get"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor%20for%20Drupal/CKEditor%204.4.3%20for%20Drupal/ckeditor_4.4.3_for_drupal_6.zip"
+libraries[ckeditor][directory_name] = "ckeditor"

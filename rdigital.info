@@ -41,6 +41,7 @@ dependencies[] = abt
 dependencies[] = rules
 dependencies[] = rules_admin
 dependencies[] = entityreference
+dependencies[] = ckeditor
 
 dependencies[] = devel
 dependencies[] = features
