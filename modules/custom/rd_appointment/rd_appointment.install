@@ -3,8 +3,8 @@
 function rd_appointment_install() {
 
   // create text formats and ckedit profiles
-  _create_text_formats_appointment()
-  _create_ckeditor_profiles_appointment()
+  _create_text_formats_appointment();
+  _create_ckeditor_profiles_appointment();
   // create new fields and content types
   _create_content_type_appointment();
 
