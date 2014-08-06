@@ -69,7 +69,7 @@ projects[entityreference][subdir] = "contrib"
 projects[entityreference][version] = "1.1"
 
 projects[ckeditor][subdir] = "contrib"
-projects[ckeditor][version] = "1.15"
+projects[ckeditor][version] = "1.13"
 
 
 ; Modules for development
