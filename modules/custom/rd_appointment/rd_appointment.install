@@ -2,9 +2,183 @@
 
 function rd_appointment_install() {
 
+  // create text formats and ckedit profiles
+  _create_text_formats_appointment()
+  _create_ckeditor_profiles_appointment()
   // create new fields and content types
   _create_content_type_appointment();
+
 }
+
+
+
+
+// *******************************************************************************************
+//     TEXT FORMATS AND CKEDITOR PROFILES
+// *******************************************************************************************
+
+/**
+ * Create Text Formats for Contet Type appointment
+ */
+function _create_text_formats_appointment() {
+
+  $text_format = array();
+  $text_formats['digital_keyboard'] = array(
+    'format' => 'digital_keyboard',
+    'name' => 'Digital Keyboard',
+    'weight' => 1,
+    'filters' => array(
+      // Convert line breaks into HTML
+      'filter_autop' => array(
+        'weight' => 0,
+        'status' => 1,
+      ),
+      // Display any HTML as plain text
+      'filter_html_escape' => array(
+        'weight' => 1,
+        'status' => 1,
+      ),
+    ),
+  );
+  $text_formats['treatment'] = array(
+    'format' => 'treatment',
+    'name' => 'Treatment',
+    'weight' => 0,
+    'filters' => array(
+      // Display any HTML as plain text
+      'filter_html_escape' => array(
+        'weight' => -10,
+        'status' => 1,
+      ),
+      // Convert line breaks into HTML
+      'filter_autop' => array(
+        'weight' => 0,
+        'status' => 1,
+      ),
+      // Convert URLs into links
+      'filter_url' => array(
+        'weight' => 1,
+        'status' => 1,
+        'settings' => array(
+          'filter_url_length' => 100,
+        ),
+      ),
+    ),
+  );
+
+  foreach ($text_formats as $text_format) {
+    filter_format_save((object) $text_format);
+  }
+
+};
+
+/**
+ * Create CKEditor Profiles for Contet Type appointment
+ *
+ * NOTE: to get the profile settings use ckeditor_profile_load() to load all ckeditor profiles
+ *       and var_export($my_array) to convert $my_array into php code
+ */
+function _create_ckeditor_profiles_appointment() {
+
+  $profiles = array();
+
+  $profiles['treatment'] = array(
+      'name' => 'Treatment',
+      'format' => array(
+        'treatment',
+        ),
+      'settings' => array(
+    'ss' => '2',
+    'default' => 't',
+    'show_toggle' => 'f',
+    'uicolor' => 'default',
+    'uicolor_user' => 'default',
+    'toolbar' => '[
+      [\'Bold\',\'TextColor\',\'BGColor\']
+  ]',
+    'expand' => 'f',
+    'width' => '100%',
+    'lang' => 'en',
+    'auto_lang' => 't',
+    'language_direction' => 'default',
+    'enter_mode' => 'p',
+    'shift_enter_mode' => 'br',
+    'font_format' => 'p;div;pre;address;h1;h2;h3;h4;h5;h6',
+    'custom_formatting' => 'f',
+    'formatting' =>
+    array (
+      'custom_formatting_options' =>
+      array (
+        'indent' => 'indent',
+        'breakBeforeOpen' => 'breakBeforeOpen',
+        'breakAfterOpen' => 'breakAfterOpen',
+        'breakAfterClose' => 'breakAfterClose',
+        'breakBeforeClose' => 0,
+        'pre_indent' => 0,
+      ),
+    ),
+    'css_mode' => 'theme',
+    'css_path' => '',
+    'css_style' => 'theme',
+    'styles_path' => '',
+    'filebrowser' => 'none',
+    'filebrowser_image' => '',
+    'filebrowser_flash' => '',
+    'UserFilesPath' => '%b%f/',
+    'UserFilesAbsolutePath' => '%d%b%f/',
+    'ckeditor_load_method' => 'ckeditor.js',
+    'ckeditor_load_time_out' => '0',
+    'forcePasteAsPlainText' => 'f',
+    'html_entities' => 'f',
+    'scayt_autoStartup' => 'f',
+    'theme_config_js' => 'f',
+    'js_conf' => '',
+    'loadPlugins' =>
+    array (
+      'drupalbreaks' =>
+      array (
+        'name' => 'drupalbreaks',
+        'desc' => 'Plugin for inserting Drupal teaser and page breaks.',
+        'path' => '%plugin_dir%drupalbreaks/',
+        'buttons' =>
+        array (
+          'DrupalBreak' =>
+          array (
+            'label' => 'DrupalBreak',
+            'icon' => 'images/drupalbreak.png',
+          ),
+        ),
+        'default' => 't',
+      ),
+      'tableresize' =>
+      array (
+        'name' => 'tableresize',
+        'desc' => 'Table Resize plugin',
+        'path' => '%editor_path%plugins/tableresize/',
+        'buttons' => false,
+        'default' => 't',
+      ),
+    ),
+  )
+  );
+
+  // insert ckeditor profiles to the db
+  foreach ($profiles as $profile => $profile_config) {
+    foreach ($profile_config['format'] as $text_format) {
+      db_insert('ckeditor_input_format')->fields(array(
+        'name' => $profile_config['name'],
+        'format' => $text_format,
+      ))->execute();
+    }
+    db_insert('ckeditor_settings')->fields(array(
+      'name' => $profile_config['name'],
+      'settings' => serialize($profile_config['settings']),
+    ))->execute();
+  }
+
+}
+
+
 
 
 // *******************************************************************************************
