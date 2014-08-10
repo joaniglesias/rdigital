@@ -1,0 +1,375 @@
+<?php
+
+function rd_digital_keyboard_install() {
+
+  $ct_name = 'keyboard_button';
+
+  // create text formats and ckedit profiles
+  _create_text_formats($ct_name);
+  _create_ckeditor_profiles($ct_name);
+
+  //create vocabularies
+  _create_vocabularies($ct_name);
+
+  // create new fields and content types
+  _create_content_type($ct_name);
+
+}
+
+
+// *******************************************************************************************
+//     TEXT FORMATS AND CKEDITOR PROFILES
+// *******************************************************************************************
+
+/**
+ * Text Formats definition for Contet Type Appointment
+ */
+function _get_text_formats_keyboard_button() {
+
+  $text_formats = array();
+  $text_formats['digital_keyboard_button_text'] = array(
+    'format' => 'digital_keyboard_button_text',
+    'name' => 'Digital Keyboard Button Text',
+    'weight' => 1,
+    'filters' => array(
+      // Convert line breaks into HTML
+      'filter_autop' => array(
+        'weight' => 0,
+        'status' => 1,
+      ),
+      // Display any HTML as plain text
+      'filter_html_escape' => array(
+        'weight' => 1,
+        'status' => 1,
+      ),
+    ),
+  );
+
+  return $text_formats;
+
+};
+
+/**
+ * Get CKEditor Profile definitions for Contet Type Appointment
+ *
+ * NOTE: to get the profile settings use ckeditor_profile_load() to load all ckeditor profiles
+ *       and var_export($my_array) to convert $my_array into php code
+ */
+function _get_ckeditor_profiles_keyboard_button() {
+
+  $profiles = array();
+
+  $profiles['digital_keyboard_button_text'] = array(
+   'name' => 'Digital Keyboard Button Text',
+   'settings' =>
+  array (
+    'ss' => '2',
+    'default' => 't',
+    'show_toggle' => 't',
+    'uicolor' => 'default',
+    'uicolor_user' => 'default',
+    'toolbar' => '[
+    [\'TextColor\',\'BGColor\'],
+    [\'Bold\',\'Italic\'],
+    [\'Font\'],
+    [\'Undo\',\'Redo\']
+]',
+    'expand' => 't',
+    'width' => '100%',
+    'lang' => 'en',
+    'auto_lang' => 't',
+    'language_direction' => 'default',
+    'enter_mode' => 'p',
+    'shift_enter_mode' => 'br',
+    'font_format' => 'p;div;pre;address;h1;h2;h3;h4;h5;h6',
+    'custom_formatting' => 'f',
+    'formatting' =>
+    array (
+      'custom_formatting_options' =>
+      array (
+        'indent' => 'indent',
+        'breakBeforeOpen' => 'breakBeforeOpen',
+        'breakAfterOpen' => 'breakAfterOpen',
+        'breakAfterClose' => 'breakAfterClose',
+        'breakBeforeClose' => 0,
+        'pre_indent' => 0,
+      ),
+    ),
+    'css_mode' => 'theme',
+    'css_path' => '',
+    'css_style' => 'theme',
+    'styles_path' => '',
+    'filebrowser' => 'none',
+    'filebrowser_image' => '',
+    'filebrowser_flash' => '',
+    'UserFilesPath' => '%b%f/',
+    'UserFilesAbsolutePath' => '%d%b%f/',
+    'ckeditor_load_method' => 'ckeditor.js',
+    'ckeditor_load_time_out' => '0',
+    'forcePasteAsPlainText' => 'f',
+    'html_entities' => 'f',
+    'scayt_autoStartup' => 'f',
+    'theme_config_js' => 'f',
+    'js_conf' => '',
+    'loadPlugins' =>
+    array (
+      'drupalbreaks' =>
+      array (
+        'name' => 'drupalbreaks',
+        'desc' => 'Plugin for inserting Drupal teaser and page breaks.',
+        'path' => '%plugin_dir%drupalbreaks/',
+        'buttons' =>
+        array (
+          'DrupalBreak' =>
+          array (
+            'label' => 'DrupalBreak',
+            'icon' => 'images/drupalbreak.png',
+          ),
+        ),
+        'default' => 't',
+      ),
+      'tableresize' =>
+      array (
+        'name' => 'tableresize',
+        'desc' => 'Table Resize plugin',
+        'path' => '%editor_path%plugins/tableresize/',
+        'buttons' => false,
+        'default' => 't',
+      ),
+    ),
+  ),
+   'input_formats' =>
+  array (
+    'digital_keyboard_button_text' => 'Digital Keyboard Button Text',
+  ),
+);
+
+  return $profiles;
+
+}
+
+
+// *******************************************************************************************
+//     VOCABULARIES
+// *******************************************************************************************
+
+function _get_vocabularies_keyboard_button() {
+  $t = get_t();
+  $vocabularies['rd_voc_keyb_button_type'] = array(
+    'name' => $t('Digital Keyboard Button Type'),
+    'machine_name' => 'rd_voc_keyb_button_type',
+    'module' => 'rd_digital_keyboard',
+    'terms' => array(
+      'Text',
+      'List',
+      'Core Button',
+      ),
+    );
+
+  return $vocabularies;
+}
+
+
+
+
+// *******************************************************************************************
+//     CONTENT TYPES, FIELDS AND INSTANCES
+// *******************************************************************************************
+
+/**
+ * Fields definition for Contet Type Keyboard Buttons
+ */
+function _get_fields_keyboard_button() {
+  $t = get_t();
+  $fields = array();
+
+  $fields['rd_f_keyb_button_type'] = array(
+    'field_name' => 'rd_f_keyb_button_type',
+    'label' => $t('Button Type'),
+    'cardinality' => 1,
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'rd_voc_keyb_button_type',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'type' => 'taxonomy_term_reference',
+  );
+  $fields['rd_f_keyb_button_cover_name'] = array(
+    'field_name' => 'rd_f_keyb_button_cover_name',
+    'type' => 'text',
+    'label' => $t("Button Cover's Name"),
+    'cardinality' => 1,
+    'settings' => array(
+      'max_length' => 255,
+    ),
+  );
+  $fields['rd_f_keyb_button_text'] = array(
+    'field_name' => 'rd_f_keyb_button_text',
+    'type' => 'text_long',
+    'label' => $t('Button Text'),
+    'cardinality' => 1,
+    'settings' => array(),
+  );
+  $fields['rd_f_keyb_button_vocabulary'] = array(
+    'field_name' => 'rd_f_keyb_button_vocabulary',
+    'type' => 'entityreference',
+    'label' => $t('Button Related Vocabulary'),
+    'cardinality' => 1,
+    'settings' => array(
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(),
+      ),
+      'target_type' => 'taxonomy_vocabulary',
+    ),
+  );
+
+  return $fields;
+}
+
+/**
+ * Instances definition for Contet Type Keyboard Buttons
+ */
+function _get_instances_keyboard_button() {
+  $t = get_t();
+  $instances = array(
+    'rd_f_keyb_button_type' => array(
+      'field_name' => 'rd_f_keyb_button_type',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_keyboard_button',
+      'label' => $t('Button Type'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+      ),
+    ),
+    'rd_f_keyb_button_cover_name' => array(
+      'field_name' => 'rd_f_keyb_button_cover_name',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_keyboard_button',
+      'label' => $t("Button Cover's Name"),
+      'description' => $t("Name that will appear on the button's cover"),
+      'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+      ),
+    ),
+    'rd_f_keyb_button_text' => array(
+      'field_name' => 'rd_f_keyb_button_text',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_keyboard_button',
+      'label' => $t('Button Text'),
+      'description' => $t('Text that will be written after clicking on the button'),
+      'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 1,
+        'user_register_form' => FALSE,
+        'better_formats' => array(
+          'allowed_formats_toggle' => 1,
+          'allowed_formats' => array(
+            'digital_keyboard_button_text' => 'digital_keyboard_button_text',
+          ),
+          'default_order_toggle' => 0,
+        ),
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'rows' => 3,
+        ),
+        'type' => 'text_textarea',
+      ),
+    ),
+    'rd_f_keyb_button_vocabulary' => array(
+      'field_name' => 'rd_f_keyb_button_vocabulary',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_keyboard_button',
+      'label' => $t('Button Related Vocabulary'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => 26,
+      ),
+    ),
+  );
+
+  return $instances;
+
+}
+
+/**
+ * Content type Keyboard Buttons definition
+ */
+function _get_content_type_keyboard_button() {
+  $t = get_t();
+
+  $node = array(
+    'type' => 'rd_ct_keyboard_button',
+    'name' => $t('Keyboard Button'),
+    'base' => 'node_content',
+    'description' => $t('Create a new Keyboard Button'),
+    'title_label' => $t('Name'),
+    'custom' => TRUE,
+    'promote' => 0,
+  );
+
+  return $node;
+
+}
+
+// *******************************************************************************************
+//     UPDATE FUNCTIONS
+// *******************************************************************************************
+
+// function rd_appointment_update_7000() {
+
+// }

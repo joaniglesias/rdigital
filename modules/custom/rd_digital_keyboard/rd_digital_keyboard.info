@@ -1,0 +1,8 @@
+name = Rd Digital Keyboard
+description = Create a Digital Keyboard to insert Measures within Treatments
+core = 7.x
+
+package = Recat Digital
+
+dependencies[] = entityreference
+dependencies[] = better_formats
