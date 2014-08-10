@@ -3,6 +3,7 @@
 function rd_appointment_install() {
 
   // better_formats module config
+  // IMP: ONLY is necessary set this variable once!!
   variable_set('better_formats_per_field_core', 0);
 
   // create text formats and ckedit profiles
@@ -363,8 +364,8 @@ function _get_instances_appointment() {
           'allowed_formats_toggle' => 1,
           'allowed_formats' => array(
             'digital_keyboard' => 'digital_keyboard',
-            'default_order_toggle' => 0,
           ),
+          'default_order_toggle' => 0,
         ),
       ),
       'widget' => array(
@@ -384,8 +385,15 @@ function _get_instances_appointment() {
       'description' => '',
       'required' => FALSE,
       'settings' => array(
-        'text_processing' => 0,
+        'text_processing' => 1,
         'user_register_form' => FALSE,
+        'better_formats' => array(
+          'allowed_formats_toggle' => 1,
+          'allowed_formats' => array(
+            'treatment' => 'treatment',
+          ),
+          'default_order_toggle' => 0,
+        ),
       ),
       'widget' => array(
         'active' => 1,
@@ -404,8 +412,15 @@ function _get_instances_appointment() {
       'description' => '',
       'required' => FALSE,
       'settings' => array(
-        'text_processing' => 0,
+        'text_processing' => 1,
         'user_register_form' => FALSE,
+        'better_formats' => array(
+          'allowed_formats_toggle' => 1,
+          'allowed_formats' => array(
+            'treatment' => 'treatment',
+          ),
+          'default_order_toggle' => 0,
+        ),
       ),
       'widget' => array(
         'active' => 1,
