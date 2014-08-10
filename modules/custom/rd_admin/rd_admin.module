@@ -162,8 +162,10 @@ function _create_content_type($ct_name) {
   if (!node_type_load($node['type'])) {
 
     // Create fields
-    foreach (_get_fields_appointment() as $field_event) {
-      field_create_field($field_event);
+    $function_name = '_get_fields_' . $ct_name;
+    $fields = $function_name();
+    foreach ($fields as $field) {
+      field_create_field($field);
     }
 
     //Create content type

@@ -7,7 +7,7 @@ function rd_patient_install() {
   //create vocabularies
   _create_vocabularies($ct_name);
 
-  // create new fields and content types
+  // create new fields and content type
   _create_content_type($ct_name);
 }
 

@@ -33,6 +33,7 @@ function rdigital_install() {
     'rd_admin',
     'rd_patient',
     'rd_appointment',
+    'rd_digital_keyboard',
   ));
 
   // Enable blocks
