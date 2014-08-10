@@ -1,0 +1,5 @@
+name = Rd Admin
+description = Common functionalities for all Recat Digital custom modules ( PHP functions, API's, set contrib modules config, common text formats, etc)
+core = 7.x
+
+package = Recat Digital

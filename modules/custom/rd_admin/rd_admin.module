@@ -1,0 +1,62 @@
+<?php
+
+// *******************************************************************************************
+//     VOCABULARIES
+// *******************************************************************************************
+
+/**
+ * Create and optionally populate a vocabulary
+ * @param  [array] $vocabulary fields: name, machine_name, module and terms (array)
+ */
+function _create_vocabulary($vocabulary) {
+  // Skip if vocabulary already exists
+  if (taxonomy_vocabulary_machine_name_load($vocabulary['machine_name'])) {
+    return true;
+  }
+  taxonomy_vocabulary_save((object) array(
+    'name'          => $vocabulary['name'],
+    'machine_name'  => $vocabulary['machine_name'],
+    'module'        => $vocabulary['module'],
+  ));
+
+  $new_vocabulary = taxonomy_vocabulary_machine_name_load($vocabulary['machine_name']);
+  return _populate_vocabulary($vocabulary['terms'], $new_vocabulary);
+}
+
+
+/**
+ * Populate a vocabulary
+ * @param  [array] $terms: an associative array with all terms with multiple hierarchy
+ * @param  [object] $vocabulary: The vocabulary object with all of its metadata
+ * @param  [int] $parent_term_id - OPTIONAL : Term ID of the parent term. Default value = 0
+ */
+function _populate_vocabulary($terms, $vocabulary, $parent_term_id = 0) {
+  if (isset($vocabulary->vid)){
+    $position_term = 0;
+    foreach ($terms as $key => $term) {
+      if (is_array($term)){
+        $new_term = new stdClass();
+        $new_term->name = $key;
+        $new_term->vid = $vocabulary->vid;
+        $new_term->weight = $position_term;
+        $new_term->parent = $parent_term_id;
+        taxonomy_term_save($new_term);
+        _populate_vocabulary($term, $vocabulary, $new_term->tid);
+      }
+      else {
+        $new_term = new stdClass();
+        $new_term->name = $term;
+        $new_term->vid = $vocabulary->vid;
+        $new_term->weight = $key;
+        $new_term->parent = $parent_term_id;
+        taxonomy_term_save($new_term);
+      }
+      $position_term++;
+    }
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
