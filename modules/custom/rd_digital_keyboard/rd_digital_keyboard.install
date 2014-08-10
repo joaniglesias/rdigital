@@ -61,6 +61,9 @@ function _get_ckeditor_profiles_keyboard_button() {
 
   $profiles['digital_keyboard_button_text'] = array(
    'name' => 'Digital Keyboard Button Text',
+   'format' => array(
+     'digital_keyboard_button_text',
+     ),
    'settings' =>
   array (
     'ss' => '2',
