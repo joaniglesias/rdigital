@@ -2,10 +2,6 @@
 
 function rd_appointment_install() {
 
-  // better_formats module config
-  // IMP: ONLY is necessary set this variable once!!
-  variable_set('better_formats_per_field_core', 0);
-
   // create text formats and ckedit profiles
   _create_text_formats_appointment();
   _create_ckeditor_profiles_appointment();
