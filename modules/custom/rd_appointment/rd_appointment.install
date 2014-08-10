@@ -2,11 +2,12 @@
 
 function rd_appointment_install() {
 
+  $ct_name = 'appointment';
   // create text formats and ckedit profiles
-  _create_text_formats_appointment();
-  _create_ckeditor_profiles_appointment();
+  _create_text_formats($ct_name);
+  _create_ckeditor_profiles($ct_name);
   // create new fields and content types
-  _create_content_type_appointment();
+  _create_content_type($ct_name);
 
 }
 
@@ -18,9 +19,9 @@ function rd_appointment_install() {
 // *******************************************************************************************
 
 /**
- * Create Text Formats for Contet Type appointment
+ * Text Formats definition for Contet Type Appointment
  */
-function _create_text_formats_appointment() {
+function _get_text_formats_appointment() {
 
   $text_format = array();
   $text_formats['digital_keyboard'] = array(
@@ -66,19 +67,17 @@ function _create_text_formats_appointment() {
     ),
   );
 
-  foreach ($text_formats as $text_format) {
-    filter_format_save((object) $text_format);
-  }
+  return $text_formats;
 
 };
 
 /**
- * Create CKEditor Profiles for Contet Type appointment
+ * Get CKEditor Profile definitions for Contet Type Appointment
  *
  * NOTE: to get the profile settings use ckeditor_profile_load() to load all ckeditor profiles
  *       and var_export($my_array) to convert $my_array into php code
  */
-function _create_ckeditor_profiles_appointment() {
+function _get_ckeditor_profiles_appointment() {
 
   $profiles = array();
 
@@ -162,19 +161,7 @@ function _create_ckeditor_profiles_appointment() {
   )
   );
 
-  // insert ckeditor profiles to the db
-  foreach ($profiles as $profile => $profile_config) {
-    foreach ($profile_config['format'] as $text_format) {
-      db_insert('ckeditor_input_format')->fields(array(
-        'name' => $profile_config['name'],
-        'format' => $text_format,
-      ))->execute();
-    }
-    db_insert('ckeditor_settings')->fields(array(
-      'name' => $profile_config['name'],
-      'settings' => serialize($profile_config['settings']),
-    ))->execute();
-  }
+  return $profiles;
 
 }
 
@@ -186,7 +173,7 @@ function _create_ckeditor_profiles_appointment() {
 // *******************************************************************************************
 
 /**
- * Fields definition for Contet Type appointment
+ * Fields definition for Contet Type Appointment
  */
 function _get_fields_appointment() {
   $t = get_t();
@@ -271,7 +258,7 @@ function _get_fields_appointment() {
 }
 
 /**
- * Instances definition for Contet Type appointment
+ * Instances definition for Contet Type Appointment
  */
 function _get_instances_appointment() {
   $t = get_t();
@@ -429,50 +416,28 @@ function _get_instances_appointment() {
     ),
   );
 
-  // Create widget weight
-  $ins_weight = 0;
-  foreach ($instances as $instance => $data) {
-    $instances[$instance]['widget']['weight'] = $ins_weight * 5;
-    $ins_weight++;
-  }
-
   return $instances;
 
 }
 
 /**
- * Create content type appointment
+ * Content type Appointment definition
  */
-function _create_content_type_appointment() {
+function _get_content_type_appointment() {
   $t = get_t();
 
-  //check if content type already exists
-  if (!node_type_load('rd_ct_appointment')) {
+  $node = array(
+    'type' => 'rd_ct_appointment',
+    'name' => $t('Appointment'),
+    'base' => 'node_content',
+    'description' => $t('Create a new Appointment'),
+    'title_label' => $t('Patient Full Name'),
+    'custom' => TRUE,
+    'promote' => 0,
+  );
 
-    // Create fields
-    foreach (_get_fields_appointment() as $field_event) {
-      field_create_field($field_event);
-    }
+  return $node;
 
-    //Create content type
-    $node = array(
-      'type' => 'rd_ct_appointment',
-      'name' => $t('Appointment'),
-      'base' => 'node_content',
-      'description' => $t('Create a new Appointment'),
-      'title_label' => $t('Patient Full Name'),
-      'custom' => TRUE,
-      'promote' => 0,
-    );
-    $content_type = node_type_set_defaults($node);
-    node_type_save($content_type);
-
-    // Create instances for this content type
-    foreach (_get_instances_appointment() as $instance) {
-      field_create_instance($instance);
-    }
-  }
-  menu_rebuild();
 }
 
 // *******************************************************************************************
