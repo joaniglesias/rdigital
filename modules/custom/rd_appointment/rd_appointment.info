@@ -7,3 +7,4 @@ package = Recat Digital
 dependencies[] = entityreference
 dependencies[] = date
 dependencies[] = rd_patient
+dependencies[] = better_formats

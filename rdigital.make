@@ -71,6 +71,9 @@ projects[entityreference][version] = "1.1"
 projects[ckeditor][subdir] = "contrib"
 projects[ckeditor][version] = "1.13"
 
+projects[better_formats][subdir] = "contrib"
+projects[better_formats][version] = "1.0-beta1"
+
 
 ; Modules for development
 

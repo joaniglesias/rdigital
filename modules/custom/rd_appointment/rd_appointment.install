@@ -2,6 +2,9 @@
 
 function rd_appointment_install() {
 
+  // better_formats module config
+  variable_set('better_formats_per_field_core', 0);
+
   // create text formats and ckedit profiles
   _create_text_formats_appointment();
   _create_ckeditor_profiles_appointment();
@@ -354,8 +357,15 @@ function _get_instances_appointment() {
       'description' => '',
       'required' => FALSE,
       'settings' => array(
-        'text_processing' => 0,
+        'text_processing' => 1,
         'user_register_form' => FALSE,
+        'better_formats' => array(
+          'allowed_formats_toggle' => 1,
+          'allowed_formats' => array(
+            'digital_keyboard' => 'digital_keyboard',
+            'default_order_toggle' => 0,
+          ),
+        ),
       ),
       'widget' => array(
         'active' => 1,
