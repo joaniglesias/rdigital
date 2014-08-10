@@ -1,13 +1,14 @@
 <?php
 
 function rd_patient_install() {
+
+  $ct_name = 'patient';
+
   //create vocabularies
-  foreach(_get_vocabularies_patient() as $vocab) {
-    _create_vocabulary($vocab);
-   }
+  _create_vocabularies($ct_name);
 
   // create new fields and content types
-  _create_content_type_patient();
+  _create_content_type($ct_name);
 }
 
 
@@ -275,50 +276,28 @@ function _get_instances_patient() {
     ),
   );
 
-  // Create widget weight
-  $ins_weight = 0;
-  foreach ($instances as $instance => $data) {
-    $instances[$instance]['widget']['weight'] = $ins_weight * 5;
-    $ins_weight++;
-  }
-
   return $instances;
 
 }
 
 /**
- * Create content type Patient
+ * Content type Patient definition
  */
-function _create_content_type_patient() {
+function _get_content_type_appointment() {
   $t = get_t();
 
-  //check if content type already exists
-  if (!node_type_load('rd_ct_patient')) {
+  $node = array(
+    'type' => 'rd_ct_patient',
+    'name' => $t('Patient'),
+    'base' => 'node_content',
+    'description' => $t('Create a new Patient'),
+    'title_label' => $t('Full Name'),
+    'custom' => TRUE,
+    'promote' => 0,
+  );
 
-    // Create fields
-    foreach (_get_fields_patient() as $field_event) {
-      field_create_field($field_event);
-    }
+  return $node;
 
-    //Create content type
-    $node = array(
-      'type' => 'rd_ct_patient',
-      'name' => $t('Patient'),
-      'base' => 'node_content',
-      'description' => $t('Create a new Patient'),
-      'title_label' => $t('Full Name'),
-      'custom' => TRUE,
-      'promote' => 0,
-    );
-    $content_type = node_type_set_defaults($node);
-    node_type_save($content_type);
-
-    // Create instances for this content type
-    foreach (_get_instances_patient() as $instance) {
-      field_create_instance($instance);
-    }
-  }
-  menu_rebuild();
 }
 
 // *******************************************************************************************

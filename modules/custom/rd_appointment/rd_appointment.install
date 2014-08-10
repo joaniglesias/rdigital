@@ -23,7 +23,7 @@ function rd_appointment_install() {
  */
 function _get_text_formats_appointment() {
 
-  $text_format = array();
+  $text_formats = array();
   $text_formats['digital_keyboard'] = array(
     'format' => 'digital_keyboard',
     'name' => 'Digital Keyboard',

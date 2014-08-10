@@ -53,6 +53,21 @@ function _create_ckeditor_profiles($ct_name) {
 // *******************************************************************************************
 
 /**
+ * Create Text Formats
+ * @param  [string] $ct_name
+ */
+function _create_vocabularies($ct_name) {
+
+  $function_name = '_get_vocabularies_' . $ct_name;
+  $vocabularies = $function_name();
+
+  foreach($vocabularies as $vocab) {
+    _create_vocabulary($vocab);
+   }
+
+};
+
+/**
  * Create and optionally populate a vocabulary
  * @param  [array] $vocabulary fields: name, machine_name, module and terms (array)
  */
