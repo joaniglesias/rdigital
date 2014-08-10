@@ -283,7 +283,7 @@ function _get_instances_patient() {
 /**
  * Content type Patient definition
  */
-function _get_content_type_appointment() {
+function _get_content_type_patient() {
   $t = get_t();
 
   $node = array(
