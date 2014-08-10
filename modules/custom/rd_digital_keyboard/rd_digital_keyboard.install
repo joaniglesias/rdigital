@@ -30,7 +30,7 @@ function _get_text_formats_keyboard_button() {
   $text_formats['digital_keyboard_button_text'] = array(
     'format' => 'digital_keyboard_button_text',
     'name' => 'Digital Keyboard Button Text',
-    'weight' => 1,
+    'weight' => 2,
     'filters' => array(
       // Convert line breaks into HTML
       'filter_autop' => array(
