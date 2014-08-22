@@ -45,6 +45,10 @@ dependencies[] = ckeditor
 dependencies[] = better_formats
 dependencies[] = button_field
 dependencies[] = editablefields
+dependencies[] = i18n
+dependencies[] = i18nviews
+dependencies[] = i10n_update
+
 
 dependencies[] = devel
 dependencies[] = features

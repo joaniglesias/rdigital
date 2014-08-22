@@ -80,6 +80,15 @@ projects[editablefields][version] = "1.x-dev"
 projects[button_field][subdir] = "contrib"
 projects[button_field][version] = "1.0-beta1"
 
+projects[i18n][subdir] = "contrib"
+projects[i18n][version] = "1.11"
+
+projects[i18nviews][subdir] = "contrib"
+projects[i18nviews][version] = "3.x-dev"
+
+projects[i10n_update][subdir] = "contrib"
+projects[i10n_update][version] = "1.0"
+
 
 ; Modules for development
 
