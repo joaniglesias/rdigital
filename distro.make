@@ -7,5 +7,5 @@ projects[drupal][version] = 7.30
 projects[rdigital][type] = "profile"
 projects[rdigital][download][type] = "git"
 projects[rdigital][download][url] = "git@github.com:joaniglesias/rdigital.git"
-projects[rdigital][download][branch] = "master"
+projects[rdigital][download][branch] = "multilingual"
 
