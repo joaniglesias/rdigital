@@ -2,6 +2,8 @@ name = R Digital
 description = R Digital website
 core = 7.x
 
+; -- CORE --
+
 dependencies[] = block
 dependencies[] = contextual
 dependencies[] = help
@@ -17,38 +19,60 @@ dependencies[] = search
 dependencies[] = field_ui
 dependencies[] = file
 
+; -- GENERIC CONTRIB MODULES --
+
 dependencies[] = admin_menu
 dependencies[] = module_filter
 dependencies[] = panels
 dependencies[] = panels_everywhere
 dependencies[] = ctools
+dependencies[] = page_manager
 dependencies[] = entity
 dependencies[] = services
+dependencies[] = rest_server
 dependencies[] = views
-dependencies[] = libraries
-
-dependencies[] = page_manager
 dependencies[] = views_content
 dependencies[] = views_ui
-dependencies[] = rest_server
+dependencies[] = views_php
+dependencies[] = libraries
+
+
 ;dependencies[] = content_access
 ;dependencies[] = acl
 ;dependencies[] = scheduler
-dependencies[] = views_php
+
+; -- SPECIFIC FUNCTIONALITIES --
+
+;Fields - Date
 dependencies[] = date
 dependencies[] = date_views
-dependencies[] = abt
-dependencies[] = rules
-dependencies[] = rules_admin
+
+;Fields
 dependencies[] = entityreference
-dependencies[] = ckeditor
-dependencies[] = better_formats
+
+;Fields - Button + editable Fields
 dependencies[] = button_field
 dependencies[] = editablefields
-dependencies[] = i18n
-dependencies[] = i18nviews
-dependencies[] = i10n_update
 
+;Permissions - Content Access
+dependencies[] = abt
+
+:Rules
+dependencies[] = rules
+dependencies[] = rules_admin
+
+;Text Editor & formats selection
+dependencies[] = ckeditor
+dependencies[] = better_formats
+
+;Multilingual
+dependencies[] = variable
+dependencies[] = i18n
+dependencies[] = i10n_update
+dependencies[] = views_distinct
+
+
+; -- DEVELOPMENT --
 
 dependencies[] = devel
 dependencies[] = features
