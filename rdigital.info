@@ -68,7 +68,7 @@ dependencies[] = better_formats
 ;Multilingual
 dependencies[] = variable
 dependencies[] = i18n
-;dependencies[] = i10n_update
+dependencies[] = l10n_update
 dependencies[] = views_distinct
 
 
