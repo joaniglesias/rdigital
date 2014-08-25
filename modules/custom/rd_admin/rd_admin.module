@@ -179,3 +179,37 @@ function _create_content_type($ct_name) {
   }
   menu_rebuild();
 }
+
+
+// *******************************************************************************************
+//     MULTILANGUAGE
+// *******************************************************************************************
+
+
+/**
+ * Add the new languages and their translations
+ * @param  [array] $languages: an associative array with all language codes and if the language is the default one
+ */
+function _add_languages($languages) {
+
+  module_load_include('check.inc', 'l10n_update');
+
+  foreach ($languages as $lang_name => $lang_data) {
+    //add a new language
+    $options = array(
+      'name' => NULL,
+      'native' => NULL,
+      'direction' => LANGUAGE_LTR,
+      'domain' => '',
+      'prefix' => '',
+      'enabled' => TRUE,
+      'default' => $lang_data['default_language'],
+    );
+    $langcode = $lang_data['language_code'];
+    locale_add_language($langcode, $options['name'], $options['native'], $options['direction'],
+      $options['domain'], $options['prefix'], $options['enabled'], $options['default']);
+
+    //add translation automatically from a new language
+    l10n_update_language_refresh(array($langcode));
+  }
+}

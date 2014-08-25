@@ -1,29 +1,89 @@
 <?php
 
-// function rd_multilanguage_install() {
+function rd_multilanguage_install() {
+
+  // add languages and their translations
+  $languages = _get_languages();
+  _add_languages($languages);
 
 
-// }
+}
 
 // *******************************************************************************************
 //     LANGUAGES
 // *******************************************************************************************
 
 /**
- * List of all code languages in the site ( a part from Englih )
+ * List of all code languages in the site ( a part from English )
  */
-function _get_new_languages() {
+function _get_languages() {
   $languages = array(
     'spanish' => array(
       'language_code' => 'es',
-      'default_language' => 'false'
+      'default_language' => FALSE
       ),
     'french' => array(
       'language_code' => 'fr',
-      'default_language' => 'false'
+      'default_language' => FALSE
       ),
     );
   return $languages;
+}
+
+function _locale_module_configuration(){
+
+  // set configuration managed within this form: /admin/config/regional/language/configure
+  $lang_detection = array (
+    'locale-user' => '-10',
+    'locale-url' => '-9',
+    'locale-session' => '-8',
+    'locale-browser' => '-7',
+    'language-default' => '-6',
+  );
+  $lang_negotiation = array (
+    'locale-user' =>
+    array (
+      'callbacks' =>
+      array (
+        'language' => 'locale_language_from_user',
+      ),
+      'file' => 'includes/locale.inc',
+    ),
+    'locale-url' =>
+    array (
+      'callbacks' =>
+      array (
+        'language' => 'locale_language_from_url',
+        'switcher' => 'locale_language_switcher_url',
+        'url_rewrite' => 'locale_language_url_rewrite_url',
+      ),
+      'file' => 'includes/locale.inc',
+    ),
+    'language-default' =>
+    array (
+      'callbacks' =>
+      array (
+        'language' => 'language_from_default',
+      ),
+    ),
+  );
+  variable_set('locale_language_providers_weight_language', $lang_detection);
+  variable_set('language_negotiation_language', $lang_negotiation);
+
+  // enable language selector block in the header
+  $block = array(
+    'module' => 'user',
+    'delta' => 'language',
+    'theme' => $GLOBALS['theme'],
+    'status' => 1,
+    'weight' => 0,
+    'region' => 'header',
+    'pages' => '',
+    'cache' => -1,
+  );
+  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
+  $query->values($block);
+  $query->execute();
 
 }
 
