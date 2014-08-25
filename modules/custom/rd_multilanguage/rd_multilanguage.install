@@ -79,7 +79,7 @@ function _locale_module_configuration() {
 
   // enable language selector block in the header
   $block = array(
-    'module' => 'user',
+    'module' => 'locale',
     'delta' => 'language',
     'theme' => $GLOBALS['theme'],
     'status' => 1,
