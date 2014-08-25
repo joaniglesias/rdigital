@@ -6,6 +6,9 @@ function rd_multilanguage_install() {
   $languages = _get_languages();
   _add_languages($languages);
 
+  //locale module configuration
+  _locale_module_configuration();
+
 
 }
 
@@ -30,7 +33,11 @@ function _get_languages() {
   return $languages;
 }
 
-function _locale_module_configuration(){
+
+/**
+ * Set some Locale module configuration
+ */
+function _locale_module_configuration() {
 
   // set configuration managed within this form: /admin/config/regional/language/configure
   $lang_detection = array (
