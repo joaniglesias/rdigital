@@ -81,7 +81,7 @@ function _locale_module_configuration() {
   $block = array(
     'module' => 'locale',
     'delta' => 'language',
-    'theme' => $GLOBALS['theme'],
+    'theme' => 'seven',
     'status' => 1,
     'weight' => 0,
     'region' => 'header',
