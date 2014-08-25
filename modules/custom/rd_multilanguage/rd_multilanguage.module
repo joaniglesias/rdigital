@@ -1,0 +1,177 @@
+<?php
+
+// *******************************************************************************************
+//     TEXT FORMATS AND CKEDITOR PROFILES API
+// *******************************************************************************************
+
+// /**
+//  * Create Text Formats
+//  * @param  [string] $ct_name
+//  */
+// function _create_text_formats($ct_name) {
+
+//   $function_name = '_get_text_formats_' . $ct_name;
+//   $text_formats = $function_name();
+
+//   if (!empty($text_formats)){
+//     foreach ($text_formats as $text_format) {
+//       filter_format_save((object) $text_format);
+//     }
+//   }
+
+// };
+
+// *******************************************************************************************
+//     i18n
+// *******************************************************************************************
+
+
+
+// From https://fosswiki.liip.ch/display/DRUPAL/Script+creation+of+languages+and+import+po+files
+/**
+ * Add translations from a PO file.
+ * This will populate the locales_target table in the database
+ * with the strings from the PO file.
+ *
+ * @param $langcode string (e.g. fr, de, it)
+ * @param $poFile string full path to .po file
+ * @param $mode const LOCALE_IMPORT_OVERWRITE (overwrite existing translations) or LOCALE_IMPORT_KEEP (only import new strings)
+ * @param $group string Text group to import PO file into (eg. 'default' for interface translations)
+ * @param $add_language_options array optional parameters for locale_add_language (name, native, direction, domain, prefix, enabled, default)
+ * @return bool success
+ */
+function rd_admin_update_load_language($langcode, $poFile, $mode=LOCALE_IMPORT_OVERWRITE, $group='default', $add_language_options=array()) {
+  $add_language_defaults = array(
+    'name' => NULL,
+    'native' => NULL,
+    'direction' => LANGUAGE_LTR,
+    'domain' => '',
+    'prefix' => '',
+    'enabled' => TRUE,
+    'default' => FALSE,
+  );
+  $options = array_merge($add_language_defaults, $add_language_options);
+  locale_add_language($langcode, $options['name'], $options['native'], $options['direction'],
+    $options['domain'], $options['prefix'], $options['enabled'], $options['default']);
+  // mimic a drupal uploaded file object, with the necessary info needed by _locale_import_po
+  $file = new stdClass;
+  $file->filepath = $poFile;
+  $file->filename = basename($poFile);
+  return _locale_import_po($file, $langcode, $mode, $group);
+}
+
+/**
+ * Find all po files under a given path
+ *
+ * @param $path string
+ * @param $recurse boolean
+ * @return array of string paths to po files
+ */
+function rd_admin_find_po_files($path, $recurse=TRUE) {
+  $path = rtrim($path, '/') . '/*';
+  $pattern = '/\.po$/';
+  $files = array();
+  foreach (glob ($path) as $fullname) {
+    if ($recurse && is_dir($fullname)) {
+      $files = array_merge($files, project_find_po_files($fullname, $recurse));
+    } else if (preg_match($pattern, $fullname)) {
+      $files[] = $fullname;
+    }
+  }
+  return $files;
+}
+/**
+ * Reloads translation file for a given module.
+ *
+ * @param mixed $module
+ *   Module(s) name(s). An array of strings or a string.
+ * @param mixed $languages
+ * @return array
+ *   An array with a "success" key which is a boolean and a "query" key which
+ *   describes the SQL query executed. If additional sql parameters where
+ *   given, a string "WITH PARAMETERS (param1, param2, ...)" is appended to
+ *   the sql. It is compatible with hook_update and hook_install return values.
+ *
+ */
+function _update_locale_import_module_po($modules=array(), $languages=array(), $mode=LOCALE_IMPORT_OVERWRITE) {
+  $ret = array();
+  if (!is_array($modules)) {
+    $modules = array($modules);
+  }
+  if (!is_array($languages)) {
+    $languages = array($languages);
+  }
+  foreach ($modules as $module) {
+    foreach ($languages as $language) {
+      $file = new stdClass();
+      $file->filename = $language . '.po';
+      $file->uri = drupal_get_path('module', $module) . '/translations/' . $file->filename;
+      $file->filemime = 'application/octet-stream';
+      $success = _locale_import_po($file, $language, $mode, 'taxonomy');
+      $ret[] = array('success' => $success, 'query' => 'Reload ' . $module . ' translation file');
+    }
+  }
+  return $ret;
+}
+
+// KO
+function update_string_translation() {
+$report = array(
+  'skips'=>0,
+  'updates'=>0,
+  'deletes'=>0,
+  'additions'=>0
+); // ??
+$source = "Spain";
+$translation = "EspaNa";
+$textgroup = 'taxonomy'; // field , node, default, menu ...
+$langcode = 'es'; // 'en', 'de'
+$mode = LOCALE_IMPORT_KEEP; // LOCALE_IMPORT_KEEP
+$location = 'taxonomy:term:3:name'; //  'menu:menu:management:title', '/node/3', ...
+$context = 'term:3:name';
+
+_locale_import_one_string_db($report, $langcode, $context, $source, $translation, $textgroup, $location, $mode);
+
+// Clear locale cache.
+cache_clear_all('locale:', 'cache', TRUE);
+
+
+}
+
+function _yourmodule_profile_create_term_translation() {
+  //http://blog.studio.gd/blog/id/17/drupal__how_to_create_and_translate_a_taxonomy_term_programmatically
+    $context = array(
+    'rd_f_appo_treatment_measures',
+    'rd_ct_appointment',
+    'label',
+  );
+  $textgroup = 'field';
+  i18n_string_textgroup($textgroup)->update_translation($context, 'es', 'MEDIDAS TRATAMIENTO');
+
+  //add a new language
+  $options = array(
+    'name' => NULL,
+    'native' => NULL,
+    'direction' => LANGUAGE_LTR,
+    'domain' => '',
+    'prefix' => '',
+    'enabled' => TRUE,
+    'default' => FALSE,
+  );
+  $langcode = 'es';
+  locale_add_language($langcode, $options['name'], $options['native'], $options['direction'],
+    $options['domain'], $options['prefix'], $options['enabled'], $options['default']);
+
+ //add translation automatically from a new language
+ module_load_include('check.inc', 'l10n_update');
+  $langcode = 'es';
+  l10n_update_language_refresh(array($langcode));
+
+  //others:
+  //variable_set('language_content_type_<bundle_name>',TRANSLATION_ENABLED);
+  //variable_del('language_content_type_<bundle_name>');
+  //locale_language_providers_weight_language
+  //language_negotiation_language
+}
+
+

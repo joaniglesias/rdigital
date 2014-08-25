@@ -1,0 +1,9 @@
+name = Rd Multilanguage
+description = This module manages all languages and translations used in the site
+core = 7.x
+
+package = Recat Digital
+
+dependencies[] = locale
+dependencies[] = i18n
+dependencies[] = l10n_update

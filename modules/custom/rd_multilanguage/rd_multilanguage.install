@@ -1,0 +1,36 @@
+<?php
+
+// function rd_multilanguage_install() {
+
+
+// }
+
+// *******************************************************************************************
+//     LANGUAGES
+// *******************************************************************************************
+
+/**
+ * List of all code languages in the site ( a part from Englih )
+ */
+function _get_new_languages() {
+  $languages = array(
+    'spanish' => array(
+      'language_code' => 'es',
+      'default_language' => 'false'
+      ),
+    'french' => array(
+      'language_code' => 'fr',
+      'default_language' => 'false'
+      ),
+    );
+  return $languages;
+
+}
+
+// *******************************************************************************************
+//     UPDATE FUNCTIONS
+// *******************************************************************************************
+
+// function rd_admin_update_7000() {
+
+// }
