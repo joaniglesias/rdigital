@@ -1,5 +1,18 @@
 <?php
 
+
+/**
+ * Implements hook_block_info_alter().
+ */
+function rd_multilanguage_block_info_alter(&$blocks, $theme, $code_blocks) {
+  // enable language selector block in the header
+  if (isset($blocks['locale']['language'])) {
+      $blocks['locale']['language']['status'] = 1;
+      $blocks['locale']['language']['region'] = 'header';
+  }
+}
+
+
 // *******************************************************************************************
 //     TEXT FORMATS AND CKEDITOR PROFILES API
 // *******************************************************************************************

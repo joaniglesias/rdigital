@@ -77,22 +77,22 @@ function _locale_module_configuration() {
   variable_set('locale_language_providers_weight_language', $lang_detection);
   variable_set('language_negotiation_language', $lang_negotiation);
 
-  // enable language selector block in the header
-  $block = array(
-    'module' => 'locale',
-    'delta' => 'language',
-    'status' => 1,
-    'region' => 'header',
-  );
+  // // enable language selector block in the header
+  // $block = array(
+  //   'module' => 'locale',
+  //   'delta' => 'language',
+  //   'status' => 1,
+  //   'region' => 'header',
+  // );
 
-  db_update('block')
-    ->fields(array(
-      'status' => $block['status'],
-      'region' => $block['region'],
-    ))
-    ->condition('module', $block['module'])
-    ->condition('delta', $block['delta'])
-    ->execute();
+  // db_update('block')
+  //   ->fields(array(
+  //     'status' => $block['status'],
+  //     'region' => $block['region'],
+  //   ))
+  //   ->condition('module', $block['module'])
+  //   ->condition('delta', $block['delta'])
+  //   ->execute();
 
 }
 
