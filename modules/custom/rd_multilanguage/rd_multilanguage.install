@@ -81,16 +81,18 @@ function _locale_module_configuration() {
   $block = array(
     'module' => 'locale',
     'delta' => 'language',
-    'theme' => 'seven',
     'status' => 1,
-    'weight' => 0,
     'region' => 'header',
-    'pages' => '',
-    'cache' => -1,
   );
-  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
-  $query->values($block);
-  $query->execute();
+
+  db_update('block')
+    ->fields(array(
+      'status' => $block['status'],
+      'region' => $block['region'],
+    ))
+    ->condition('module', $block['module'])
+    ->condition('delta', $block['delta'])
+    ->execute();
 
 }
 
