@@ -23,12 +23,12 @@ function _get_vocabularies_patient() {
     'machine_name' => 'rd_voc_group',
     'module' => 'rd_patient',
     'terms' => array(
-      'Germany',
-      'France',
-      'Spain' => array(
-        'Barcelona',
-        'Badalona' => array(
-          'Centro Carme',
+      $t('Germany'),
+      $t('France'),
+      $t('Spain') => array(
+        $t('Barcelona'),
+        $t('Badalona') => array(
+          $t('Centro Carme'),
           ),
         ),
       ),

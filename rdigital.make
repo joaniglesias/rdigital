@@ -89,6 +89,9 @@ projects[i18n][version] = "1.11"
 projects[l10n_update][subdir] = "contrib"
 projects[l10n_update][version] = "1.0"
 
+projects[potx][subdir] = "contrib"
+projects[potx][version] = "1.0"
+
 projects[views_distinct][subdir] = "contrib"
 projects[views_distinct][version] = "1.0-rc1"
 

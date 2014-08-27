@@ -69,6 +69,7 @@ dependencies[] = better_formats
 dependencies[] = variable
 dependencies[] = i18n
 dependencies[] = l10n_update
+dependencies[] = potx
 dependencies[] = views_distinct
 
 dependencies[] = i18n_string

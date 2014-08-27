@@ -163,9 +163,9 @@ function _get_vocabularies_keyboard_button() {
     'machine_name' => 'rd_voc_keyb_button_type',
     'module' => 'rd_digital_keyboard',
     'terms' => array(
-      'Text',
-      'List',
-      'Core Button',
+      $t('Text'),
+      $t('List'),
+      $t('Core Button'),
       ),
     );
 
