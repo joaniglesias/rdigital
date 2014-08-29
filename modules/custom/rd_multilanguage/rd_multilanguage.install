@@ -9,6 +9,9 @@ function rd_multilanguage_install() {
   //locale module configuration
   _locale_module_configuration();
 
+  //update all custom translations
+  rd_mulilanguage_update_all_custom_translations();
+
 
 }
 

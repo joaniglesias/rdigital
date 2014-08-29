@@ -28,7 +28,7 @@ function _get_vocabularies_patient() {
       $t('Spain') => array(
         $t('Barcelona'),
         $t('Badalona') => array(
-          $t('Centro Carme'),
+          $t('Carme Centre'),
           ),
         ),
       ),
