@@ -34,7 +34,11 @@ function rdigital_install() {
     'rd_patient',
     'rd_appointment',
     'rd_digital_keyboard',
-    'rd_multilanguage',//this has to be the last one for the translations
+  ));
+
+  //this has to be the last module enabled due to the translations
+  module_enable(array(
+    'rd_multilanguage',
   ));
 
   // Enable blocks
