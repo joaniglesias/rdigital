@@ -9,6 +9,11 @@ function rd_multilanguage_install() {
   //locale module configuration
   _locale_module_configuration();
 
+  //fix issue with taxonomy translations when installing the site
+  _set_localize_translation_all_vocabularies();
+  module_load_include('inc', 'i18n_string', 'i18n_string.admin');
+  i18n_string_refresh_group('taxonomy');
+
   //update all custom translations
   rd_mulilanguage_update_all_custom_translations();
 
