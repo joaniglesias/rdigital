@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2014-08-26 03:10+0100\n"
-"PO-Revision-Date: 2014-08-26 03:10+0100\n"
+"POT-Creation-Date: 2014-08-29 09:03+0100\n"
+"PO-Revision-Date: 2014-08-29 09:03+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -13,12 +13,183 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: field:rd_f_appo_telephone:rd_ct_appointment:label
-msgctxt "rd_f_appo_telephone:rd_ct_appointment:label"
-msgid "Patient Telephone"
-msgstr "TELEFONO DEL PACIENTE 2"
+#: field:rd_f_patient_first_surname:#field:label
+msgctxt "rd_f_patient_first_surname:#field:label"
+msgid "First Surename"
+msgstr "Primer Apellido"
+
+#: field:rd_f_patient_second_surname:#field:label
+msgctxt "rd_f_patient_second_surname:#field:label"
+msgid "Second Surename"
+msgstr "Segundo Apellido"
+
+#: field:rd_f_patient_group:#field:label
+msgctxt "rd_f_patient_group:#field:label"
+msgid "Patient Group"
+msgstr "Grupo del Paciente"
+
+#: field:rd_f_patient_mobile:#field:label
+msgctxt "rd_f_patient_mobile:#field:label"
+msgid "Mobile"
+msgstr "Telefono mobil"
+
+#: field:rd_f_patient_home_telephone:#field:label
+msgctxt "rd_f_patient_home_telephone:#field:label"
+msgid "Home Telephone"
+msgstr "Telefono de casa"
+
+#: field:rd_f_patient_work_telephone:#field:label
+msgctxt "rd_f_patient_work_telephone:#field:label"
+msgid "Work Telephone"
+msgstr "Telefono del trabajo"
+
+#: field:rd_f_patient_address:#field:label
+msgctxt "rd_f_patient_address:#field:label"
+msgid "Address"
+msgstr "Direccion"
+
+#: field:rd_f_patient_first_surname:rd_ct_patient:label
+msgctxt "rd_f_patient_first_surname:rd_ct_patient:label"
+msgid "First Surename"
+msgstr "Primer Apellido"
+
+#: field:rd_f_patient_second_surname:rd_ct_patient:label
+msgctxt "rd_f_patient_second_surname:rd_ct_patient:label"
+msgid "Second Surename"
+msgstr "Segundo Apellido"
+
+#: field:rd_f_patient_group:rd_ct_patient:label
+msgctxt "rd_f_patient_group:rd_ct_patient:label"
+msgid "Patient Group"
+msgstr "Grupo del Paciente"
+
+#: field:rd_f_patient_mobile:rd_ct_patient:label
+msgctxt "rd_f_patient_mobile:rd_ct_patient:label"
+msgid "Mobile"
+msgstr "Telefono mobil"
+
+#: field:rd_f_patient_home_telephone:rd_ct_patient:label
+msgctxt "rd_f_patient_home_telephone:rd_ct_patient:label"
+msgid "Home Telephone"
+msgstr "Telefono de casa"
+
+#: field:rd_f_patient_work_telephone:rd_ct_patient:label
+msgctxt "rd_f_patient_work_telephone:rd_ct_patient:label"
+msgid "Work Telephone"
+msgstr "Telefono del trabajo"
+
+#: field:rd_f_patient_address:rd_ct_patient:label
+msgctxt "rd_f_patient_address:rd_ct_patient:label"
+msgid "Address"
+msgstr "Direccion"
+
+#: field:rd_f_appo_related_patient:#field:label
+msgctxt "rd_f_appo_related_patient:#field:label"
+msgid "Related Patient"
+msgstr "Paciente relacionado"
+
+#: field:rd_f_appo_date_time:#field:label
+msgctxt "rd_f_appo_date_time:#field:label"
+msgid "Appointment Date and time"
+msgstr "Dia y hora de la visita"
+
+#: field:rd_f_appo_temp_keyb_measures:#field:label
+msgctxt "rd_f_appo_temp_keyb_measures:#field:label"
+msgid "Temporary Keyboard Measures"
+msgstr "Medidas temporales del Teclado"
+
+#: field:rd_f_appo_treatment_measures:#field:label
+msgctxt "rd_f_appo_treatment_measures:#field:label"
+msgid "Treatment Measures"
+msgstr "Medidas del Tratamiento"
+
+#: field:rd_f_appo_treatment_comments:#field:label
+msgctxt "rd_f_appo_treatment_comments:#field:label"
+msgid "Treatment Comments"
+msgstr "Comentarios del Tratamiento"
+
+#: field:rd_f_appo_related_patient:rd_ct_appointment:label
+msgctxt "rd_f_appo_related_patient:rd_ct_appointment:label"
+msgid "Related Patient"
+msgstr "Paciente relacionado"
+
+#: field:rd_f_appo_date_time:rd_ct_appointment:label
+msgctxt "rd_f_appo_date_time:rd_ct_appointment:label"
+msgid "Appointment Date and Time"
+msgstr "Dia y hora de la visita"
+
+#: field:rd_f_appo_temp_keyb_measures:rd_ct_appointment:label
+msgctxt "rd_f_appo_temp_keyb_measures:rd_ct_appointment:label"
+msgid "Temporary Keyboard Measures"
+msgstr "Medidas temporales del teclado"
+
+#: field:rd_f_appo_treatment_measures:rd_ct_appointment:label
+msgctxt "rd_f_appo_treatment_measures:rd_ct_appointment:label"
+msgid "Treatment Measures"
+msgstr "Medidas del Tratamiento"
+
+#: field:rd_f_appo_treatment_comments:rd_ct_appointment:label
+msgctxt "rd_f_appo_treatment_comments:rd_ct_appointment:label"
+msgid "Treatment Comments"
+msgstr "Comentarios del Tratamiento"
+
+#: field:rd_f_keyb_button_type:#field:label
+msgctxt "rd_f_keyb_button_type:#field:label"
+msgid "Button Type"
+msgstr "Tipo de Boton"
+
+#: field:rd_f_keyb_button_cover_name:#field:label
+msgctxt "rd_f_keyb_button_cover_name:#field:label"
+msgid "Button Cover's Name"
+msgstr "Nombre de la cubierta del boton"
+
+#: field:rd_f_keyb_button_text:#field:label
+msgctxt "rd_f_keyb_button_text:#field:label"
+msgid "Button Text"
+msgstr "Texto del boton"
+
+#: field:rd_f_keyb_button_vocabulary:#field:label
+msgctxt "rd_f_keyb_button_vocabulary:#field:label"
+msgid "Button Related Vocabulary"
+msgstr "Vocabulario relacionado con el boton"
+
+#: field:rd_f_keyb_button_type:rd_ct_keyboard_button:label
+msgctxt "rd_f_keyb_button_type:rd_ct_keyboard_button:label"
+msgid "Button Type"
+msgstr "Tipo de boton"
+
+#: field:rd_f_keyb_button_cover_name:rd_ct_keyboard_button:label
+msgctxt "rd_f_keyb_button_cover_name:rd_ct_keyboard_button:label"
+msgid "Button Cover's Name"
+msgstr "Nombre de la cubierta del boton"
+
+#: field:rd_f_keyb_button_cover_name:rd_ct_keyboard_button:description
+msgctxt "rd_f_keyb_button_cover_name:rd_ct_keyboard_button:description"
+msgid "Name that will appear on the button's cover"
+msgstr "Nombre que aparecera en la cubierta del boton"
+
+#: field:rd_f_keyb_button_text:rd_ct_keyboard_button:label
+msgctxt "rd_f_keyb_button_text:rd_ct_keyboard_button:label"
+msgid "Button Text"
+msgstr "Texto del Boton"
+
+#: field:rd_f_keyb_button_text:rd_ct_keyboard_button:description
+msgctxt "rd_f_keyb_button_text:rd_ct_keyboard_button:description"
+msgid "Text that will be written after clicking on the button"
+msgstr "Texto que sera escrito despues de hacer click sobre el boton"
+
+#: field:rd_f_keyb_button_vocabulary:rd_ct_keyboard_button:label
+msgctxt "rd_f_keyb_button_vocabulary:rd_ct_keyboard_button:label"
+msgid "Button Related Vocabulary"
+msgstr "Vocabulario relacionado con el botob"
 
 #: field:rd_f_appo_telephone:#field:label
 msgctxt "rd_f_appo_telephone:#field:label"
 msgid "Patient Telephone"
-msgstr "TELEFONO DEL PACIENTE 2"
+msgstr "Telefono del Paciente"
+
+#: field:rd_f_appo_telephone:rd_ct_appointment:label
+msgctxt "rd_f_appo_telephone:rd_ct_appointment:label"
+msgid "Patient Telephone"
+msgstr "Telefono del Paciente"
+

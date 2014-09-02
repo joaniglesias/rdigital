@@ -75,17 +75,6 @@ function _create_all_missing_strings() {
   }
 }
 
-/**
- * Set all vocabularies with the Translation mode option 'Localize'
- */
-function _set_localize_translation_all_vocabularies(){
-  foreach (taxonomy_get_vocabularies() as $vid => $data){
-    $voc = taxonomy_vocabulary_load($vid);
-    $voc->i18n_mode = 1;
-    taxonomy_vocabulary_save($voc);
-  }
-}
-
 function rd_mulilanguage_update_all_custom_translations(){
 
   //Set all vocabularies with the Translation mode option 'Localize'
@@ -113,9 +102,8 @@ function rd_mulilanguage_update_all_custom_translations(){
     }
   }
 
-  /*NOT USED ANYMORE
-  //update all taxonomy terms translations
-  rd_multilanguage_update_all_custom_taxonomy_term_translations();*/
+  //update all taxonomy translations
+  rd_multilanguage_update_all_custom_taxonomy_translations();
 }
 
 /**
@@ -156,9 +144,19 @@ function rd_multilanguage_update_translations_form_submit($form, &$form_state) {
 
 // *******************************************************************************************
 //     TAXONOMY TRANSLATIONS
-//     IMP: Code not used - more optimal code found it later
 // *******************************************************************************************
 
+
+/**
+ * Set all vocabularies with the Translation mode option 'Localize'
+ */
+function _set_localize_translation_all_vocabularies(){
+  foreach (taxonomy_get_vocabularies() as $vid => $data){
+    $voc = taxonomy_vocabulary_load($vid);
+    $voc->i18n_mode = 1;
+    taxonomy_vocabulary_save($voc);
+  }
+}
 
 /**
  * Get an array with all taxonomy terms id and name
@@ -186,21 +184,16 @@ function _get_all_taxonomy_terms_name(){
 }
 
 /**
- * Create or update the translations for every taxonomy term specified within the
- * taxonomy translation files
+ * Create or update the translations for every taxonomy term or vocabulary
+ * specified within the taxonomy translation files
  */
-function rd_multilanguage_update_all_custom_taxonomy_term_translations(){
-  $terms = _get_all_taxonomy_terms();
-  // create or update a locale and i18n string for all taxonomy terms whithin the site
-  foreach ($terms as $term_id => $name) {
-    _create_term_string($term_id, $name);
-  }
-  dpm($terms);
+function rd_multilanguage_update_all_custom_taxonomy_translations(){
 
+  $terms = _get_all_taxonomy_terms();
   $path = 'profiles/rdigital/modules/custom/rd_multilanguage/translations';
   $taxonomy_translation_files = rd_multilanguage_find_files($path, 'inc', TRUE);
 
-  // create translations for every taxonomy term
+  // create translations for every vocabulary and taxonomy term
   foreach ($taxonomy_translation_files as $fullname) {
     // Parse all translations from files
     // NOTE: expected file name lang_code.taxonomy.inc (i.e: es.taxonomy.inc)
@@ -211,30 +204,38 @@ function rd_multilanguage_update_all_custom_taxonomy_term_translations(){
     $function_name = $lang_code . '_get_taxonomy_translations';
     $translations = $function_name();
     // create translations
+    // vocabularies
+    foreach (taxonomy_get_vocabularies() as $vid => $voc_data){
+      if(isset($translations['vocabularies'][$voc_data->name]) and !empty($translations['vocabularies'][$voc_data->name])){
+        _create_taxonomy_translation($vid, $lang_code, 'vocabulary', $translations['vocabularies'][$voc_data->name]);
+      }
+    }
+    // terms
     foreach ($terms as $term_id => $name) {
-      if(isset($translations[$name]) and !empty($translations[$name])){
-        dpm($translations[$name]);
-        _create_term_translation($term_id, $lang_code, $translations[$name]);
+      if(isset($translations['terms'][$name]) and !empty($translations['terms'][$name])){
+        _create_taxonomy_translation($term_id, $lang_code, 'term', $translations['terms'][$name]);
       }
     }
   }
 }
 
 /**
- * Create or update a translation string for a taxonomy term.
+ * Create or update a translation string for a vocabulary or a taxonomy term.
  * http://blog.studio.gd/blog/id/17/drupal__how_to_create_and_translate_a_taxonomy_term_programmatically
  *
- * @param $term_id
- *   The term id of the taxonomy term.
+ * @param $taxonomy_id
+ *   The vocabulary id or term id of the taxonomy term.
  * @param $langcode
  *   The langcode for the translation.
+ * @param $context_type
+ *   'vocabulary' for vocabulary translation and 'term' for taxonomy term translation
  * @param $translation
  *   The translation string.
  */
-function _create_term_translation($term_id, $langcode, $translation) {
+function _create_taxonomy_translation($taxonomy_id, $langcode, $context_type, $translation) {
   $context = array(
-    'term',
-    $term_id,
+    $context_type,
+    $taxonomy_id,
     'name',
   );
   $textgroup = 'taxonomy';
@@ -243,20 +244,13 @@ function _create_term_translation($term_id, $langcode, $translation) {
 
 /**
  * Create or update a locale string and i18n context for the taxonomy term
+ * IMP: Code not used - more optimal code found it later
  * @param  [integer] $term_id     taxonomy term id
  * @param  [string] $string_text taxonomy name
  */
 function _create_term_string($term_id, $string_text){
   $name = "taxonomy:term:" . $term_id . ":name";
   i18n_string_update($name, $string_text);
-}
-
-/**
- * Set 'Localize translations' option for every vocabulary within the site
- */
-function _set_localize_translations_all_vocabularies(){
-
-
 }
 
 

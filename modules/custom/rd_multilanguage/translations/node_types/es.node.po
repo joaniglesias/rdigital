@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2014-08-26 06:14+0100\n"
-"PO-Revision-Date: 2014-08-26 06:14+0100\n"
+"POT-Creation-Date: 2014-08-29 09:03+0100\n"
+"PO-Revision-Date: 2014-08-29 09:03+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -13,18 +13,48 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
+#: node:type:rd_ct_patient:name
+msgctxt "type:rd_ct_patient:name"
+msgid "Patient"
+msgstr "Paciente"
+
+#: node:type:rd_ct_patient:title_label
+msgctxt "type:rd_ct_patient:title_label"
+msgid "Full Name"
+msgstr "Nombre Completo"
+
+#: node:type:rd_ct_patient:description
+msgctxt "type:rd_ct_patient:description"
+msgid "Create a new Patient"
+msgstr "Crear un nuevo Paciente"
+
+#: node:type:rd_ct_keyboard_button:name
+msgctxt "type:rd_ct_keyboard_button:name"
+msgid "Keyboard Button"
+msgstr "Boton de Teclado"
+
+#: node:type:rd_ct_keyboard_button:title_label
+msgctxt "type:rd_ct_keyboard_button:title_label"
+msgid "Name"
+msgstr "Nombre"
+
+#: node:type:rd_ct_keyboard_button:description
+msgctxt "type:rd_ct_keyboard_button:description"
+msgid "Create a new Keyboard Button"
+msgstr "Crear un nuevo boton de teclado"
+
 #: node:type:rd_ct_appointment:name
 msgctxt "type:rd_ct_appointment:name"
 msgid "Appointment"
-msgstr "VISITA 2"
+msgstr "Visita"
 
 #: node:type:rd_ct_appointment:title_label
 msgctxt "type:rd_ct_appointment:title_label"
 msgid "Patient Full Name"
-msgstr "NOMBRE COMPLETO EL PACIENTE"
+msgstr "Nombre completo del Paciente"
 
 #: node:type:rd_ct_appointment:description
 msgctxt "type:rd_ct_appointment:description"
 msgid "Create a new Appointment"
-msgstr "CREAR NUEVA VISITA"
+msgstr "Crear una nueva visita"
 
