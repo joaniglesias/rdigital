@@ -49,9 +49,9 @@ function _add_languages($languages) {
  */
 function rd_multilanguage_block_info_alter(&$blocks, $theme, $code_blocks) {
   // enable language selector block in the header
-  if (isset($blocks['locale']['language'])) {
-      $blocks['locale']['language']['status'] = 1;
-      $blocks['locale']['language']['region'] = 'header';
+  if (isset($blocks['lang_dropdown']['language'])) {
+      $blocks['lang_dropdown']['language']['status'] = 1;
+      $blocks['lang_dropdown']['language']['region'] = 'header';
   }
 }
 

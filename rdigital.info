@@ -71,6 +71,7 @@ dependencies[] = i18n
 dependencies[] = l10n_update
 dependencies[] = potx
 dependencies[] = views_distinct
+dependencies[] = lang_dropdown
 
 dependencies[] = i18n_string
 dependencies[] = i18n_translation

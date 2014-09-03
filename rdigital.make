@@ -95,6 +95,9 @@ projects[potx][version] = "1.0"
 projects[views_distinct][subdir] = "contrib"
 projects[views_distinct][version] = "1.0-rc1"
 
+projects[lang_dropdown][subdir] = "contrib"
+projects[lang_dropdown][version] = "2.5"
+
 
 ; Modules for development
 
