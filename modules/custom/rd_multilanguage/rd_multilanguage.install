@@ -32,11 +32,13 @@ function _get_languages() {
   $languages = array(
     'spanish' => array(
       'language_code' => 'es',
-      'default_language' => FALSE
+      'default_language' => FALSE,
+      'weight' => -2,
       ),
     'french' => array(
       'language_code' => 'fr',
-      'default_language' => FALSE
+      'default_language' => FALSE,
+      'weight' => -1,
       ),
     );
   return $languages;

@@ -28,6 +28,12 @@ function _add_languages($languages) {
     locale_add_language($langcode, $options['name'], $options['native'], $options['direction'],
       $options['domain'], $options['prefix'], $options['enabled'], $options['default']);
 
+    // set language weight
+    db_update('languages')
+    ->fields(array('weight' => $lang_data['weight'],))
+    ->condition('language', $langcode)
+    ->execute();
+
     //add translation automatically from a new language
     l10n_update_language_refresh(array($langcode));
   }
