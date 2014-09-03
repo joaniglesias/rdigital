@@ -42,19 +42,19 @@ function _get_languages() {
     'french' => array(
       'language_code' => 'fr',
       'default_language' => FALSE,
-      'enabled' => 'FALSE',
+      'enabled' => 0,
       'weight' => -3,
       ),
     'german' => array(
       'language_code' => 'de',
       'default_language' => FALSE,
-      'enabled' => 'FALSE',
+      'enabled' => 0,
       'weight' => -2,
       ),
     'catalan' => array(
       'language_code' => 'ca',
       'default_language' => FALSE,
-      'enabled' => 'FALSE',
+      'enabled' => 0,
       'weight' => -1,
       ),
     );
