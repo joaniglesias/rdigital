@@ -57,7 +57,7 @@ function rd_multilanguage_block_info_alter(&$blocks, $theme, $code_blocks) {
 
 function rd_multilanguage_lang_dropdown_block_configuration() {
   $block_config = variable_get('lang_dropdown_language');
-  $block_config['width'] = 100,
+  $block_config['width'] = 100;
   variable_set('lang_dropdown_language', $block_config);
 }
 
