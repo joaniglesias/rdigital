@@ -21,7 +21,7 @@ function _add_languages($languages) {
       'direction' => LANGUAGE_LTR,
       'domain' => '',
       'prefix' => '',
-      'enabled' => TRUE,
+      'enabled' => $lang_data['enabled'],
       'default' => $lang_data['default_language'],
     );
     $langcode = $lang_data['language_code'];
@@ -55,6 +55,11 @@ function rd_multilanguage_block_info_alter(&$blocks, $theme, $code_blocks) {
   }
 }
 
+function rd_multilanguage_lang_dropdown_block_configuration() {
+  $block_config = variable_get('lang_dropdown_language');
+  $block_config['width'] = 100,
+  variable_set('lang_dropdown_language', $block_config);
+}
 
 
 // *******************************************************************************************
@@ -167,7 +172,7 @@ function rd_multilanguage_menu() {
 function rd_multilanguage_update_translations_form($form, &$form_state) {
   $t = get_t();
   $form['form_title'] = array(
-    '#markup' => '<h1>' . $t('Update all Recat Digital translations') . '</h1>' . $t('NOTE: All languages and format texts will be translated') . '<p><p>',
+    '#markup' => '<h1>' . $t('Update all Recat Digital translations') . '</h1>' . $t('NOTE: All languages and text groups will be translated') . '<p><p>',
   );
   $form['submit_button'] = array(
     '#type' => 'submit',

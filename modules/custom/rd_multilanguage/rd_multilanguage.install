@@ -18,6 +18,9 @@ function rd_multilanguage_install() {
   //update all custom translations
   rd_mulilanguage_update_all_custom_translations();
 
+  //lang_dropdown block configuration
+  rd_multilanguage_lang_dropdown_block_configuration();
+
 
 }
 
@@ -32,12 +35,26 @@ function _get_languages() {
   $languages = array(
     'spanish' => array(
       'language_code' => 'es',
-      'default_language' => FALSE,
-      'weight' => -2,
+      'default_language' => TRUE,
+      'enabled' => TRUE,
+      'weight' => -4,
       ),
     'french' => array(
       'language_code' => 'fr',
       'default_language' => FALSE,
+      'enabled' => FALSE,
+      'weight' => -3,
+      ),
+    'german' => array(
+      'language_code' => 'de',
+      'default_language' => FALSE,
+      'enabled' => FALSE,
+      'weight' => -2,
+      ),
+    'catalan' => array(
+      'language_code' => 'ca',
+      'default_language' => FALSE,
+      'enabled' => FALSE,
       'weight' => -1,
       ),
     );

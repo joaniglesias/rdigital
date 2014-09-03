@@ -49,8 +49,8 @@ msgstr "Actualizar traducciones Recat Digital"
 msgid "Update all Recat Digital translations"
 msgstr "Actualizar todas las traducciones de Recat Digital"
 
-msgid "NOTE: All languages and format texts will be translated"
-msgstr "NOTA: Todos los lenguajes y formatos de texto seran traducidos"
+msgid "NOTE: All languages and text groups will be translated"
+msgstr "NOTA: Todos los lenguajes y grupos de texto seran traducidos"
 
 msgid "Update translations"
 msgstr "Actualizar traducciones"
