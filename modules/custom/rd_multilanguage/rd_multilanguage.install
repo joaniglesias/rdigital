@@ -35,7 +35,7 @@ function _get_languages() {
   $languages = array(
     'spanish' => array(
       'language_code' => 'es',
-      'default_language' => TRUE,
+      'default_language' => FALSE,
       'enabled' => TRUE,
       'weight' => -4,
       ),
