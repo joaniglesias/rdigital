@@ -179,3 +179,28 @@ function _create_content_type($ct_name) {
   }
   menu_rebuild();
 }
+
+// *******************************************************************************************
+//     ROLES AND PERMISSIONS
+// *******************************************************************************************
+
+/**
+ * Create Roles and their Permissions
+ * @param  [string] $ct_name
+ */
+function _create_update_roles_and_permissions($ct_name){
+
+  $function_name = '_get_roles_and_permissions_' . $ct_name;
+  $roles = $function_name();
+  foreach ($roles as $role_name => $permissions){
+    //create role if it doen't exist
+    if(!user_role_load_by_name($role_name)){
+      $role = new stdClass();
+      $role->name = $role_name;
+      user_role_save($role);
+    }
+    // create or update permissions
+    $role = user_role_load_by_name($role_name);
+    user_role_grant_permissions($role->rid, $permissions);
+  }
+}
