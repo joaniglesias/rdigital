@@ -1,7 +1,7 @@
 core = 7.x
 api = 2
 
-projects[drupal][version] = 7.30
+projects[drupal][version] = 7.32
 
 ; Install profile
 projects[rdigital][type] = "profile"
