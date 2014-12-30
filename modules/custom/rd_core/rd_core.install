@@ -26,6 +26,22 @@ function _get_vocabularies_core() {
       $t('RECAT Badalona'),
       ),
     );
+  // DISMISSED FOR NOW
+  // $vocabularies['rd_voc_group'] = array(
+  //   'name' => $t('Group'),
+  //   'machine_name' => 'rd_voc_group',
+  //   'module' => 'rd_patient',
+  //   'terms' => array(
+  //     $t('Germany'),
+  //     $t('France'),
+  //     $t('Spain') => array(
+  //       $t('Barcelona'),
+  //       $t('Badalona') => array(
+  //         $t('Carme Centre'),
+  //         ),
+  //       ),
+  //     ),
+  //   );
 
   return $vocabularies;
 }

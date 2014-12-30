@@ -13,31 +13,6 @@ function rd_patient_install() {
 
 
 // *******************************************************************************************
-//     VOCABULARIES
-// *******************************************************************************************
-
-function _get_vocabularies_patient() {
-  $t = get_t();
-  $vocabularies['rd_voc_group'] = array(
-    'name' => $t('Group'),
-    'machine_name' => 'rd_voc_group',
-    'module' => 'rd_patient',
-    'terms' => array(
-      $t('Germany'),
-      $t('France'),
-      $t('Spain') => array(
-        $t('Barcelona'),
-        $t('Badalona') => array(
-          $t('Carme Centre'),
-          ),
-        ),
-      ),
-    );
-
-  return $vocabularies;
-}
-
-// *******************************************************************************************
 //     CONTENT TYPES, FIELDS AND INSTANCES
 // *******************************************************************************************
 
@@ -47,6 +22,15 @@ function _get_vocabularies_patient() {
 function _get_fields_patient() {
   $t = get_t();
   $fields = array();
+  $fields['rd_f_patient_name'] = array(
+    'field_name' => 'rd_f_patient_name',
+    'type' => 'text',
+    'label' => $t('Name'),
+    'cardinality' => 1,
+    'settings' => array(
+      'max_length' => 255,
+    ),
+  );
   $fields['rd_f_patient_first_surname'] = array(
     'field_name' => 'rd_f_patient_first_surname',
     'type' => 'text',
@@ -65,10 +49,167 @@ function _get_fields_patient() {
       'max_length' => 255,
     ),
   );
-  $fields['rd_f_patient_group'] = array(
-    'field_name' => 'rd_f_patient_group',
-    'label' => $t('Patient Group'),
+  $fields['rd_f_patient_excel_number'] = array(
+    'field_name' => 'rd_f_patient_excel_number',
+    'type' => 'number_integer',
+    'label' => $t('Patient Number (Excel)'),
     'cardinality' => 1,
+    'settings' => array(),
+  );
+  $fields['rd_f_patient_partner'] = array(
+    'field_name' => 'rd_f_patient_partner',
+    'type' => 'entityreference',
+    'label' => $t('Partner'),
+    'cardinality' => 1,
+    'settings' => array(
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'rd_ct_patient' => 'rd_ct_patient',
+        ),
+      ),
+      'target_type' => 'node',
+    ),
+  );
+  $fields['rd_f_patient_dob'] = array(
+    'field_name' => 'rd_f_patient_dob',
+    'type' => 'datetime',
+    'label' => $t('Date of Birth'),
+    'cardinality' => 1,
+    'module' => 'date',
+    'settings' => array(
+      'cache_count' => 4,
+      'cache_enabled' => 0,
+      'granularity' => array(
+        'day' => 'day',
+        'hour' => 0,
+        'minute' => 0,
+        'month' => 'month',
+        'second' => 0,
+        'year' => 'year',
+      ),
+      'timezone_db' => '',
+      'todate' => '',
+      'tz_handling' => 'none',
+    ),
+  );
+  $fields['rd_f_patient_city'] = array(
+    'field_name' => 'rd_f_patient_city',
+    'type' => 'text',
+    'label' => $t('City'),
+    'cardinality' => 1,
+    'settings' => array(
+      'max_length' => 255,
+    ),
+  );
+  $fields['rd_f_patient_state'] = array(
+    'field_name' => 'rd_f_patient_state',
+    'type' => 'text',
+    'label' => $t('State'),
+    'cardinality' => 1,
+    'settings' => array(
+      'max_length' => 255,
+    ),
+  );
+  $fields['rd_f_patient_occupation'] = array(
+    'field_name' => 'rd_f_patient_occupation',
+    'type' => 'text',
+    'label' => $t('Occupation'),
+    'cardinality' => 1,
+    'settings' => array(
+      'max_length' => 255,
+    ),
+  );
+  $fields['rd_f_patient_recommended'] = array(
+    'field_name' => 'rd_f_patient_recommended',
+    'type' => 'text',
+    'label' => $t('Recommended by'),
+    'cardinality' => 1,
+    'settings' => array(
+      'max_length' => 255,
+    ),
+  );
+  $fields['rd_f_patient_homeopathy'] = array(
+    'field_name' => 'rd_f_patient_homeopathy',
+    'type' => 'list_text',
+    'label' => $t('Homeopathy'),
+    'cardinality' => 1,
+    'settings' => array(
+      'allowed_values' => array(
+        'Y' => 'Yes',
+        'N' => 'No',
+      ),
+    ),
+  );
+  $fields['rd_f_patient_medicine'] = array(
+    'field_name' => 'rd_f_patient_medicine',
+    'type' => 'list_text',
+    'label' => $t('Classic Medicine'),
+    'cardinality' => 1,
+    'settings' => array(
+      'allowed_values' => array(
+        'Y' => 'Yes',
+        'N' => 'No',
+      ),
+    ),
+  );
+  $fields['rd_f_patient_a_therapies'] = array(
+    'field_name' => 'rd_f_patient_a_therapies',
+    'type' => 'list_text',
+    'label' => $t('Alternative Therapies'),
+    'cardinality' => 1,
+    'settings' => array(
+      'allowed_values' => array(
+        'Y' => 'Yes',
+        'N' => 'No',
+      ),
+    ),
+  );
+  $fields['rd_f_patient_appo_type'] = array(
+    'field_name' => 'rd_f_patient_appo_type',
+    'type' => 'list_text',
+    'label' => $t('Appointment Type'),
+    'cardinality' => 1,
+    'settings' => array(
+      'allowed_values' => array(
+        'T' => 'Tabac',
+        'G' => 'General',
+      ),
+    ),
+  );
+  $fields['rd_f_patient_tried_before'] = array(
+    'field_name' => 'rd_f_patient_tried_before',
+    'type' => 'list_text',
+    'label' => $t('Tried Before'),
+    'cardinality' => 1,
+    'settings' => array(
+      'allowed_values' => array(
+        'Y' => 'Yes',
+        'N' => 'No',
+      ),
+    ),
+  );
+  $fields['rd_f_patient_o_symptoms'] = array(
+    'field_name' => 'rd_f_patient_o_symptoms',
+    'type' => 'text',
+    'label' => $t('Other Symptoms'),
+    'cardinality' => 1,
+    'settings' => array(
+      'max_length' => 255,
+    ),
+  );
+  $fields['rd_f_patient_centre'] = array(
+    'field_name' => 'rd_f_patient_centre',
+    'label' => $t('Centre'),
+    'cardinality' => -1,
     'foreign keys' => array(
       'tid' => array(
         'columns' => array(
@@ -86,46 +227,12 @@ function _get_fields_patient() {
     'settings' => array(
       'allowed_values' => array(
         0 => array(
-          'vocabulary' => 'rd_voc_group',
+          'vocabulary' => 'rd_voc_centre',
           'parent' => 0,
         ),
       ),
     ),
     'type' => 'taxonomy_term_reference',
-  );
-  $fields['rd_f_patient_mobile'] = array(
-    'field_name' => 'rd_f_patient_mobile',
-    'type' => 'text',
-    'label' => $t('Mobile'),
-    'cardinality' => 1,
-    'settings' => array(
-      'max_length' => 255,
-    ),
-  );
-  $fields['rd_f_patient_home_telephone'] = array(
-    'field_name' => 'rd_f_patient_home_telephone',
-    'type' => 'text',
-    'label' => $t('Home Telephone'),
-    'cardinality' => 1,
-    'settings' => array(
-      'max_length' => 255,
-    ),
-  );
-  $fields['rd_f_patient_work_telephone'] = array(
-    'field_name' => 'rd_f_patient_work_telephone',
-    'type' => 'text',
-    'label' => $t('Work Telephone'),
-    'cardinality' => 1,
-    'settings' => array(
-      'max_length' => 255,
-    ),
-  );
-  $fields['rd_f_patient_address'] = array(
-    'field_name' => 'rd_f_patient_address',
-    'type' => 'text_long',
-    'label' => $t('Address'),
-    'cardinality' => 1,
-    'settings' => array(),
   );
 
   return $fields;
@@ -137,13 +244,33 @@ function _get_fields_patient() {
 function _get_instances_patient() {
   $t = get_t();
   $instances = array(
+    'rd_f_patient_name' => array(
+      'field_name' => 'rd_f_patient_name',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Name'),
+      'description' => '',
+      'required' => TRUE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+      ),
+    ),
     'rd_f_patient_first_surname' => array(
       'field_name' => 'rd_f_patient_first_surname',
       'entity_type' => 'node',
       'bundle' => 'rd_ct_patient',
       'label' => $t('First Surename'),
       'description' => '',
-      'required' => FALSE,
+      'required' => TRUE,
       'settings' => array(
         'text_processing' => 0,
         'user_register_form' => FALSE,
@@ -177,11 +304,163 @@ function _get_instances_patient() {
         'type' => 'text_textfield',
       ),
     ),
-    'rd_f_patient_group' => array(
-      'field_name' => 'rd_f_patient_group',
+    'rd_f_patient_excel_number' => array(
+      'field_name' => 'rd_f_patient_excel_number',
       'entity_type' => 'node',
       'bundle' => 'rd_ct_patient',
-      'label' => $t('Patient Group'),
+      'label' => $t('Patient Number (Excel)'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => 80,
+      ),
+    ),
+    'rd_f_patient_partner' => array(
+      'field_name' => 'rd_f_patient_partner',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Partner'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete_tags',
+        'weight' => 26,
+      ),
+    ),
+    'rd_f_patient_dob' => array(
+      'field_name' => 'rd_f_patient_dob',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Date of Birth'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'default_value' => 'blank',
+        'default_value2' => 'same',
+        'default_value_code' => '',
+        'default_value_code2' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'date',
+        'settings' => array(
+          'increment' => 1,
+          'input_format' => 'd/m/Y - H:i:s',
+          'input_format_custom' => '',
+          'label_position' => 'above',
+          'text_parts' => array(),
+          'year_range' => '1900:+0',
+        ),
+        'type' => 'date_select',
+      ),
+    ),
+    'rd_f_patient_city' => array(
+      'field_name' => 'rd_f_patient_city',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('City'),
+      'description' => '',
+      'required' => TRUE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+      ),
+    ),
+    'rd_f_patient_state' => array(
+      'field_name' => 'rd_f_patient_state',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('State'),
+      'description' => '',
+      'required' => TRUE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+      ),
+    ),
+    'rd_f_patient_occupation' => array(
+      'field_name' => 'rd_f_patient_occupation',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Occupation'),
+      'description' => '',
+      'required' => TRUE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+      ),
+    ),
+    'rd_f_patient_recommended' => array(
+      'field_name' => 'rd_f_patient_recommended',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Recommended by'),
+      'description' => '',
+      'required' => TRUE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+      ),
+    ),
+    'rd_f_patient_homeopathy' => array(
+      'field_name' => 'rd_f_patient_homeopathy',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Homeopathy'),
       'description' => '',
       'required' => FALSE,
       'settings' => array(
@@ -192,13 +471,86 @@ function _get_instances_patient() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
+        'weight' => 60,
       ),
     ),
-    'rd_f_patient_mobile' => array(
-      'field_name' => 'rd_f_patient_mobile',
+    'rd_f_patient_medicine' => array(
+      'field_name' => 'rd_f_patient_medicine',
       'entity_type' => 'node',
       'bundle' => 'rd_ct_patient',
-      'label' => $t('Mobile'),
+      'label' => $t('Classic Medicine'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => 60,
+      ),
+    ),
+    'rd_f_patient_a_therapies' => array(
+      'field_name' => 'rd_f_patient_a_therapies',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Alternative Therapies'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => 60,
+      ),
+    ),
+    'rd_f_patient_appo_type' => array(
+      'field_name' => 'rd_f_patient_appo_type',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Appointment Type'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => 60,
+      ),
+    ),
+    'rd_f_patient_tried_before' => array(
+      'field_name' => 'rd_f_patient_tried_before',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Tried Before'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => 60,
+      ),
+    ),
+    'rd_f_patient_o_symptoms' => array(
+      'field_name' => 'rd_f_patient_o_symptoms',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Other Symptoms'),
       'description' => '',
       'required' => FALSE,
       'settings' => array(
@@ -214,64 +566,21 @@ function _get_instances_patient() {
         'type' => 'text_textfield',
       ),
     ),
-    'rd_f_patient_home_telephone' => array(
-      'field_name' => 'rd_f_patient_home_telephone',
+    'rd_f_patient_centre' => array(
+      'field_name' => 'rd_f_patient_centre',
       'entity_type' => 'node',
       'bundle' => 'rd_ct_patient',
-      'label' => $t('Home Telephone'),
+      'label' => $t('Centre'),
       'description' => '',
       'required' => FALSE,
       'settings' => array(
-        'text_processing' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => 60,
-        ),
-        'type' => 'text_textfield',
-      ),
-    ),
-    'rd_f_patient_work_telephone' => array(
-      'field_name' => 'rd_f_patient_work_telephone',
-      'entity_type' => 'node',
-      'bundle' => 'rd_ct_patient',
-      'label' => $t('Work Telephone'),
-      'description' => '',
-      'required' => FALSE,
-      'settings' => array(
-        'text_processing' => 0,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => 60,
-        ),
-        'type' => 'text_textfield',
-      ),
-    ),
-    'rd_f_patient_address' => array(
-      'field_name' => 'rd_f_patient_address',
-      'entity_type' => 'node',
-      'bundle' => 'rd_ct_patient',
-      'label' => $t('Address'),
-      'description' => '',
-      'required' => FALSE,
-      'settings' => array(
-        'text_processing' => 0,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'rows' => 3,
-        ),
-        'type' => 'text_textarea',
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
       ),
     ),
   );
