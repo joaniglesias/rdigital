@@ -1,4 +1,4 @@
-R Digital testing
+R Digital
 =========
 
 R Digital Website.
