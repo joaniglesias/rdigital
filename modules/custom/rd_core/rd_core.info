@@ -1,0 +1,5 @@
+name = Rd Core
+description = Core functionalities for all Recat Digital custom modules ( Roles, Vocabularies, Permissions, etc)
+core = 7.x
+
+package = Recat Digital

@@ -1,0 +1,93 @@
+<?php
+
+function rd_core_install() {
+
+  $ct_name = 'core';
+
+  //create vocabularies
+  _create_vocabularies($ct_name);
+
+  // create new roles and permissions
+  _create_update_roles_and_permissions($ct_name)
+}
+
+
+// *******************************************************************************************
+//     VOCABULARIES
+// *******************************************************************************************
+
+function _get_vocabularies_core() {
+  $t = get_t();
+  $vocabularies['rd_voc_centre'] = array(
+    'name' => $t('Centre'),
+    'machine_name' => 'rd_voc_centre',
+    'module' => 'rd_core',
+    'terms' => array(
+      $t('RECAT Badalona'),
+      ),
+    );
+
+  return $vocabularies;
+}
+
+
+
+// *******************************************************************************************
+//     ROLES AND PERMISSIONS
+// *******************************************************************************************
+
+/**
+ * Create and optionally populate a vocabulary
+ * @param  [array] $vocabulary fields: name, machine_name, module and terms (array)
+ */
+
+function _get_roles_and_permissions_core() {
+  $roles = array(
+    'Practicing' => array(
+      // 'access administration menu',
+      // 'access administration pages',
+      // 'access content overview',
+      // 'access draggableviews',
+      // 'allow edit abt field content in node',
+      // 'allow view abt field content in node',
+      // 'allow view abt field content in profile',
+      // 'assign delete access control',
+      // 'assign update access control',
+      // 'assign view access control',
+      // 'administer nodes',
+      // 'bypass node access',
+      // 'moderate chat',
+      // 'view any vimn_ct_chat content',
+      // 'view own vimn_ct_chat content',
+      // 'view any vimn_ct_tweet content',
+      // 'view own vimn_ct_tweet content',
+      // 'view any vimn_ct_battle content',
+      // 'view own vimn_ct_battle content',
+      // 'view any vimn_ct_artist content',
+      // 'view own vimn_ct_artist content',
+      // 'view any vimn_ct_event content',
+      // 'view own vimn_ct_event content',
+      ),
+    'Secretary' => array(
+      ),
+    'Administrator' => array(
+      ),
+    );
+
+  return $roles;
+}
+
+function _create_update_roles_and_permissions(){
+  $roles = _get_roles_and_permissions();
+  foreach ($roles as $role_name => $permissions){
+    //create role if it doen't exist
+    if(!user_role_load_by_name($role_name)){
+      $role = new stdClass();
+      $role->name = $role_name;
+      user_role_save($role);
+    }
+    // create or update permissions
+    $role = user_role_load_by_name($role_name);
+    user_role_grant_permissions($role->rid, $permissions);
+  }
+}
