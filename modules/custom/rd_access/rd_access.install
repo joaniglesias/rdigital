@@ -161,7 +161,7 @@ function _get_instances_access() {
   $instances = array();
 
   //PATIENT
-  $instances['rd_f_patient_access_key'] => array(
+  $instances['rd_f_patient_access_key'] = array(
     'field_name' => 'rd_f_access_key',
     'entity_type' => 'node',
     'bundle' => 'rd_ct_patient',
@@ -181,7 +181,7 @@ function _get_instances_access() {
   );
 
   //USER
-  $instances['rd_f_user_access_key'] => array(
+  $instances['rd_f_user_access_key'] = array(
     'field_name' => 'rd_f_access_key',
     'entity_type' => 'user',
     'bundle' => 'user',
