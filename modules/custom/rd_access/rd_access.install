@@ -261,7 +261,7 @@ function _get_instances_access() {
     'bundle' => 'user',
     'label' => $t('Centre'),
     'description' => '',
-    'required' => FALSE,
+    'required' => TRUE,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
