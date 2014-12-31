@@ -38,9 +38,9 @@ function rdigital_install() {
   ));
 
   //this has to be the last module enabled due to the translations
-  module_enable(array(
-    'rd_multilanguage',
-  ));
+  // module_enable(array(
+  //   'rd_multilanguage',
+  // ));
 
   // Enable blocks
   // $block = array(
