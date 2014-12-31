@@ -1,5 +1,5 @@
 name = Rd Access
-description = Custom access functionalities for Recat Digital site ( Roles, Vocabularies, Permissions, etc)
+description = Custom access functionalities for Recat Digital site ( Roles, Permissions, Vocabularies, Fields, etc)
 core = 7.x
 
 package = Recat Digital

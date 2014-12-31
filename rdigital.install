@@ -31,10 +31,14 @@ function rdigital_install() {
   // Enable the custom modules
   module_enable(array(
     'rd_admin',
-    'rd_access',
     'rd_patient',
     'rd_appointment',
     'rd_digital_keyboard',
+  ));
+
+  //this module has to be enabled after all content types has been created
+  module_enable(array(
+    'rd_access',
   ));
 
   //this has to be the last module enabled due to the translations

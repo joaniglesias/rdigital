@@ -162,22 +162,38 @@ function _create_content_type($ct_name) {
   if (!node_type_load($node['type'])) {
 
     // Create fields
-    $function_name = '_get_fields_' . $ct_name;
-    $fields = $function_name();
-    foreach ($fields as $field) {
-      field_create_field($field);
-    }
+    _create_fields($ct_name)
 
     //Create content type
     $content_type = node_type_set_defaults($node);
     node_type_save($content_type);
 
     // Create instances for this content type
-    foreach (_get_instances($ct_name) as $instance) {
-      field_create_instance($instance);
-    }
+    _create_instances($ct_name)
   }
   menu_rebuild();
+}
+
+/**
+ * Create fields for this content type
+ * @param  [string] $ct_name
+ */
+function _create_fields($ct_name) {
+  $function_name = '_get_fields_' . $ct_name;
+  $fields = $function_name();
+  foreach ($fields as $field) {
+    field_create_field($field);
+  }
+}
+
+/**
+ * Create instances for this content type
+ * @param  [string] $ct_name
+ */
+function _create_instances($ct_name) {
+  foreach (_get_instances($ct_name) as $instance) {
+    field_create_instance($instance);
+  }
 }
 
 // *******************************************************************************************

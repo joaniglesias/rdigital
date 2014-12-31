@@ -8,7 +8,11 @@ function rd_access_install() {
   _create_vocabularies($ct_name);
 
   // create new roles and permissions
-  _create_update_roles_and_permissions($ct_name)
+  _create_update_roles_and_permissions($ct_name);
+
+  // create new fields and instances
+  _create_fields($ct_name);
+  _create_instances($ct_name);
 }
 
 
@@ -24,6 +28,14 @@ function _get_vocabularies_access() {
     'module' => 'rd_access',
     'terms' => array(
       $t('RECAT Badalona'),
+      ),
+    );
+  $vocabularies['rd_voc_access_key'] = array(
+    'name' => $t('Access Key'),
+    'machine_name' => 'rd_voc_access_key',
+    'module' => 'rd_access',
+    'terms' => array(
+      $t('None'),
       ),
     );
   // DISMISSED FOR NOW
@@ -106,4 +118,101 @@ function _create_update_roles_and_permissions(){
     $role = user_role_load_by_name($role_name);
     user_role_grant_permissions($role->rid, $permissions);
   }
+}
+
+
+// *******************************************************************************************
+//     FIELDS
+// *******************************************************************************************
+
+/**
+ * Access Fields definition for Contet Type Patient
+ */
+function _get_fields_access() {
+  $t = get_t();
+  $fields = array();
+  $fields['rd_f_access_key'] = array(
+    'field_name' => 'rd_f_access_key',
+    'label' => $t('Access Key'),
+    'cardinality' => -1,
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'rd_voc_access_key',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'type' => 'taxonomy_term_reference',
+  );
+
+  return $fields;
+}
+
+
+// *******************************************************************************************
+//     INSTANCES
+// *******************************************************************************************
+
+/**
+ * PATIENT
+ */
+function _get_instances_access() {
+  $t = get_t();
+  $instances = array();
+
+  //PATIENT
+  $instances['rd_f_patient_access_key'] => array(
+    'field_name' => 'rd_f_access_key',
+    'entity_type' => 'node',
+    'bundle' => 'rd_ct_patient',
+    'label' => $t('Access Key'),
+    'description' => '',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+    ),
+  );
+
+  //USER
+  $instances['rd_f_user_access_key'] => array(
+    'field_name' => 'rd_f_access_key',
+    'entity_type' => 'user',
+    'bundle' => 'user',
+    'label' => $t('Access Key'),
+    'description' => '',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+    ),
+  );
+
+  return $instances;
+
 }
