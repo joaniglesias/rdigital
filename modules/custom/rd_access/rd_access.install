@@ -1,8 +1,8 @@
 <?php
 
-function rd_core_install() {
+function rd_access_install() {
 
-  $ct_name = 'core';
+  $ct_name = 'access';
 
   //create vocabularies
   _create_vocabularies($ct_name);
@@ -16,12 +16,12 @@ function rd_core_install() {
 //     VOCABULARIES
 // *******************************************************************************************
 
-function _get_vocabularies_core() {
+function _get_vocabularies_access() {
   $t = get_t();
   $vocabularies['rd_voc_centre'] = array(
     'name' => $t('Centre'),
     'machine_name' => 'rd_voc_centre',
-    'module' => 'rd_core',
+    'module' => 'rd_access',
     'terms' => array(
       $t('RECAT Badalona'),
       ),
@@ -57,7 +57,7 @@ function _get_vocabularies_core() {
  * @param  [array] $vocabulary fields: name, machine_name, module and terms (array)
  */
 
-function _get_roles_and_permissions_core() {
+function _get_roles_and_permissions_access() {
   $roles = array(
     'Practicing' => array(
       // 'access administration menu',
