@@ -191,6 +191,7 @@ function _get_instances_access() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
+      'weight' => 400,
     ),
   );
 
@@ -210,6 +211,7 @@ function _get_instances_access() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
+      'weight' => 10,
     ),
   );
 

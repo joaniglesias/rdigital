@@ -141,8 +141,10 @@ function _get_instances($ct_name) {
   // Create widget weight
   $ins_weight = 0;
   foreach ($instances as $instance => $data) {
-    $instances[$instance]['widget']['weight'] = $ins_weight * 5;
-    $ins_weight++;
+    if (!isset($instances[$instance]['widget']['weight'])){
+      $instances[$instance]['widget']['weight'] = $ins_weight * 5;
+      $ins_weight++;
+    }
   }
 
   return $instances;
