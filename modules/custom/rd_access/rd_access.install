@@ -116,10 +116,38 @@ function _get_roles_and_permissions_access() {
 function _get_fields_access() {
   $t = get_t();
   $fields = array();
-  $fields['rd_f_access_centre'] = array(
+  $fields['rd_f_access_patient_centre'] = array(
     'field_name' => 'rd_f_access_centre',
     'label' => $t('Centre'),
     'cardinality' => -1,
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'rd_voc_centre',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'type' => 'taxonomy_term_reference',
+  );
+  $fields['rd_f_access_user_centre'] = array(
+    'field_name' => 'rd_f_access_user_centre',
+    'label' => $t('Centre'),
+    'cardinality' => 1,
     'foreign keys' => array(
       'tid' => array(
         'columns' => array(
@@ -190,7 +218,7 @@ function _get_instances_access() {
 
   //PATIENT
   $instances['rd_f_patient_centre'] = array(
-    'field_name' => 'rd_f_access_centre',
+    'field_name' => 'rd_f_access_patient_centre',
     'entity_type' => 'node',
     'bundle' => 'rd_ct_patient',
     'label' => $t('Centre'),
@@ -228,7 +256,7 @@ function _get_instances_access() {
 
   //USER
   $instances['rd_f_user_centre'] = array(
-    'field_name' => 'rd_f_access_centre',
+    'field_name' => 'rd_f_access_user_centre',
     'entity_type' => 'user',
     'bundle' => 'user',
     'label' => $t('Centre'),
@@ -241,7 +269,7 @@ function _get_instances_access() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(),
-      'type' => 'options_buttons',
+      'type' => 'options_select',
       'weight' => 12,
     ),
   );
