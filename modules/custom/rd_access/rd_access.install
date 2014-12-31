@@ -117,7 +117,7 @@ function _get_fields_access() {
   $t = get_t();
   $fields = array();
   $fields['rd_f_access_patient_centre'] = array(
-    'field_name' => 'rd_f_access_centre',
+    'field_name' => 'rd_f_access_patient_centre',
     'label' => $t('Centre'),
     'cardinality' => -1,
     'foreign keys' => array(
