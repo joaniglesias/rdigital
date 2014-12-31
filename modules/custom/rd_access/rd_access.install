@@ -13,6 +13,15 @@ function rd_access_install() {
   // create new fields and instances
   _create_fields($ct_name);
   _create_instances($ct_name);
+
+  //abt module configuration
+  $data = array(
+    'field_name' => 'rd_f_access_key',
+    'ctrl_view_access' => 2,
+    'ctrl_update_access' => 0,
+    'ctrl_delete_access' => 0,
+    );
+  drupal_write_record('abt_map', $data);
 }
 
 
