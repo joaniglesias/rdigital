@@ -142,7 +142,7 @@ function _get_instances($ct_name) {
   $ins_weight = 0;
   foreach ($instances as $instance => $data) {
     if (!isset($instances[$instance]['widget']['weight'])){
-      $instances[$instance]['widget']['weight'] = $ins_weight * 5;
+      $instances[$instance]['widget']['weight'] = $ins_weight * 2;
       $ins_weight++;
     }
   }

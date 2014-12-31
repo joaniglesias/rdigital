@@ -177,7 +177,7 @@ function _get_fields_patient() {
     'cardinality' => 1,
     'settings' => array(
       'allowed_values' => array(
-        'T' => 'Tabac',
+        'T' => 'Tobacco',
         'G' => 'General',
       ),
     ),
@@ -202,34 +202,6 @@ function _get_fields_patient() {
     'settings' => array(
       'max_length' => 255,
     ),
-  );
-  $fields['rd_f_patient_centre'] = array(
-    'field_name' => 'rd_f_patient_centre',
-    'label' => $t('Centre'),
-    'cardinality' => -1,
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'rd_voc_centre',
-          'parent' => 0,
-        ),
-      ),
-    ),
-    'type' => 'taxonomy_term_reference',
   );
 
   return $fields;
@@ -320,7 +292,6 @@ function _get_instances_patient() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => 80,
       ),
     ),
     'rd_f_patient_partner' => array(
@@ -342,7 +313,6 @@ function _get_instances_patient() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete_tags',
-        'weight' => 26,
       ),
     ),
     'rd_f_patient_dob' => array(
@@ -379,7 +349,7 @@ function _get_instances_patient() {
       'bundle' => 'rd_ct_patient',
       'label' => $t('City'),
       'description' => '',
-      'required' => TRUE,
+      'required' => FALSE,
       'settings' => array(
         'text_processing' => 0,
         'user_register_form' => FALSE,
@@ -399,7 +369,7 @@ function _get_instances_patient() {
       'bundle' => 'rd_ct_patient',
       'label' => $t('State'),
       'description' => '',
-      'required' => TRUE,
+      'required' => FALSE,
       'settings' => array(
         'text_processing' => 0,
         'user_register_form' => FALSE,
@@ -419,7 +389,7 @@ function _get_instances_patient() {
       'bundle' => 'rd_ct_patient',
       'label' => $t('Occupation'),
       'description' => '',
-      'required' => TRUE,
+      'required' => FALSE,
       'settings' => array(
         'text_processing' => 0,
         'user_register_form' => FALSE,
@@ -439,7 +409,7 @@ function _get_instances_patient() {
       'bundle' => 'rd_ct_patient',
       'label' => $t('Recommended by'),
       'description' => '',
-      'required' => TRUE,
+      'required' => FALSE,
       'settings' => array(
         'text_processing' => 0,
         'user_register_form' => FALSE,
@@ -468,7 +438,6 @@ function _get_instances_patient() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => 60,
       ),
     ),
     'rd_f_patient_medicine' => array(
@@ -486,7 +455,6 @@ function _get_instances_patient() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => 60,
       ),
     ),
     'rd_f_patient_a_therapies' => array(
@@ -504,7 +472,6 @@ function _get_instances_patient() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => 60,
       ),
     ),
     'rd_f_patient_appo_type' => array(
@@ -522,7 +489,6 @@ function _get_instances_patient() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => 60,
       ),
     ),
     'rd_f_patient_tried_before' => array(
@@ -540,7 +506,6 @@ function _get_instances_patient() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => 60,
       ),
     ),
     'rd_f_patient_o_symptoms' => array(
@@ -561,23 +526,6 @@ function _get_instances_patient() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-      ),
-    ),
-    'rd_f_patient_centre' => array(
-      'field_name' => 'rd_f_patient_centre',
-      'entity_type' => 'node',
-      'bundle' => 'rd_ct_patient',
-      'label' => $t('Centre'),
-      'description' => '',
-      'required' => FALSE,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_buttons',
       ),
     ),
   );

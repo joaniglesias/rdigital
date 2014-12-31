@@ -35,7 +35,7 @@ function _get_vocabularies_access() {
     'machine_name' => 'rd_voc_access_key',
     'module' => 'rd_access',
     'terms' => array(
-      $t('None'),
+      $t('0 - None'),
       ),
     );
   // DISMISSED FOR NOW
@@ -71,7 +71,7 @@ function _get_vocabularies_access() {
 
 function _get_roles_and_permissions_access() {
   $roles = array(
-    'Practicing' => array(
+    'Administrator' => array(
       // 'access administration menu',
       // 'access administration pages',
       // 'access content overview',
@@ -98,7 +98,7 @@ function _get_roles_and_permissions_access() {
       ),
     'Secretary' => array(
       ),
-    'Administrator' => array(
+    'Practicing' => array(
       ),
     );
 
@@ -116,6 +116,34 @@ function _get_roles_and_permissions_access() {
 function _get_fields_access() {
   $t = get_t();
   $fields = array();
+  $fields['rd_f_access_centre'] = array(
+    'field_name' => 'rd_f_access_centre',
+    'label' => $t('Centre'),
+    'cardinality' => -1,
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'rd_voc_centre',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'type' => 'taxonomy_term_reference',
+  );
   $fields['rd_f_access_key'] = array(
     'field_name' => 'rd_f_access_key',
     'label' => $t('Access Key'),
@@ -161,6 +189,24 @@ function _get_instances_access() {
   $instances = array();
 
   //PATIENT
+  $instances['rd_f_patient_centre'] = array(
+    'field_name' => 'rd_f_access_centre',
+    'entity_type' => 'node',
+    'bundle' => 'rd_ct_patient',
+    'label' => $t('Centre'),
+    'description' => '',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 90,
+    ),
+  );
   $instances['rd_f_patient_access_key'] = array(
     'field_name' => 'rd_f_access_key',
     'entity_type' => 'node',
@@ -176,11 +222,29 @@ function _get_instances_access() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 400,
+      'weight' => 92,
     ),
   );
 
   //USER
+  $instances['rd_f_user_centre'] = array(
+    'field_name' => 'rd_f_access_centre',
+    'entity_type' => 'user',
+    'bundle' => 'user',
+    'label' => $t('Centre'),
+    'description' => '',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 10,
+    ),
+  );
   $instances['rd_f_user_access_key'] = array(
     'field_name' => 'rd_f_access_key',
     'entity_type' => 'user',
@@ -196,7 +260,7 @@ function _get_instances_access() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 10,
+      'weight' => 12,
     ),
   );
 
