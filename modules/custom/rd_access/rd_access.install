@@ -242,7 +242,7 @@ function _get_instances_access() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 10,
+      'weight' => 12,
     ),
   );
   $instances['rd_f_user_access_key'] = array(
@@ -260,7 +260,7 @@ function _get_instances_access() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 12,
+      'weight' => 14,
     ),
   );
 
