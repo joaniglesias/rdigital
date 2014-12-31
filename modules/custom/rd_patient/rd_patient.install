@@ -4,9 +4,6 @@ function rd_patient_install() {
 
   $ct_name = 'patient';
 
-  //create vocabularies
-  _create_vocabularies($ct_name);
-
   // create new fields and content type
   _create_content_type($ct_name);
 }
