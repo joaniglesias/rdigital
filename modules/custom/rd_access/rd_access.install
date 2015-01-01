@@ -17,7 +17,7 @@ function rd_access_install() {
   //abt module configuration
   $data = array(
     'field_name' => 'rd_f_access_key',
-    'ctrl_view_access' => 2,
+    'ctrl_view_access' => 1,
     'ctrl_update_access' => 0,
     'ctrl_delete_access' => 0,
     );
