@@ -98,6 +98,12 @@ projects[views_distinct][version] = "1.0-rc1"
 projects[lang_dropdown][subdir] = "contrib"
 projects[lang_dropdown][version] = "2.5"
 
+projects[pathauto][subdir] = "contrib"
+projects[pathauto][version] = "1.2"
+
+projects[entityform][subdir] = "contrib"
+projects[entityform][version] = "2.0-rc1"
+
 
 ; Modules for development
 
