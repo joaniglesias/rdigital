@@ -39,6 +39,7 @@ function rdigital_install() {
   //this module has to be enabled after all content types has been created
   module_enable(array(
     'rd_access',
+    'rd_secretariat',
   ));
 
   //this has to be the last module enabled due to the translations
