@@ -35,6 +35,7 @@ dependencies[] = views_content
 dependencies[] = views_ui
 dependencies[] = views_php
 dependencies[] = libraries
+dependencies[] = pathauto
 
 
 ;dependencies[] = content_access
