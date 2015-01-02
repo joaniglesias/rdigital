@@ -101,6 +101,9 @@ projects[lang_dropdown][version] = "2.5"
 projects[pathauto][subdir] = "contrib"
 projects[pathauto][version] = "1.2"
 
+projects[token][subdir] = "contrib"
+projects[token][version] = "1.5"
+
 projects[entityform][subdir] = "contrib"
 projects[entityform][version] = "2.0-rc1"
 

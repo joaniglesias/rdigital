@@ -36,6 +36,7 @@ dependencies[] = views_ui
 dependencies[] = views_php
 dependencies[] = libraries
 dependencies[] = pathauto
+dependencies[] = token
 
 
 ;dependencies[] = content_access
