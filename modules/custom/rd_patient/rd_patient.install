@@ -46,35 +46,24 @@ function _get_fields_patient() {
       'max_length' => 255,
     ),
   );
+  $fields['rd_f_patient_genre'] = array(
+    'field_name' => 'rd_f_patient_genre',
+    'type' => 'list_text',
+    'label' => $t('Genre'),
+    'cardinality' => 1,
+    'settings' => array(
+      'allowed_values' => array(
+        'M' => 'Male',
+        'F' => 'Female',
+      ),
+    ),
+  );
   $fields['rd_f_patient_excel_number'] = array(
     'field_name' => 'rd_f_patient_excel_number',
     'type' => 'number_integer',
     'label' => $t('Patient Number (Excel)'),
     'cardinality' => 1,
     'settings' => array(),
-  );
-  $fields['rd_f_patient_partner'] = array(
-    'field_name' => 'rd_f_patient_partner',
-    'type' => 'entityreference',
-    'label' => $t('Partner'),
-    'cardinality' => 1,
-    'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'rd_ct_patient' => 'rd_ct_patient',
-        ),
-      ),
-      'target_type' => 'node',
-    ),
   );
   $fields['rd_f_patient_dob'] = array(
     'field_name' => 'rd_f_patient_dob',
@@ -129,6 +118,15 @@ function _get_fields_patient() {
     'field_name' => 'rd_f_patient_recommended',
     'type' => 'text',
     'label' => $t('Recommended by'),
+    'cardinality' => 1,
+    'settings' => array(
+      'max_length' => 255,
+    ),
+  );
+  $fields['rd_f_patient_notes'] = array(
+    'field_name' => 'rd_f_patient_notes',
+    'type' => 'text',
+    'label' => $t('Notes'),
     'cardinality' => 1,
     'settings' => array(
       'max_length' => 255,
@@ -273,6 +271,23 @@ function _get_instances_patient() {
         'type' => 'text_textfield',
       ),
     ),
+    'rd_f_patient_genre' => array(
+      'field_name' => 'rd_f_patient_genre',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Genre'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+      ),
+    ),
     'rd_f_patient_excel_number' => array(
       'field_name' => 'rd_f_patient_excel_number',
       'entity_type' => 'node',
@@ -292,27 +307,6 @@ function _get_instances_patient() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-      ),
-    ),
-    'rd_f_patient_partner' => array(
-      'field_name' => 'rd_f_patient_partner',
-      'entity_type' => 'node',
-      'bundle' => 'rd_ct_patient',
-      'label' => $t('Partner'),
-      'description' => '',
-      'required' => FALSE,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-        ),
-        'type' => 'entityreference_autocomplete_tags',
       ),
     ),
     'rd_f_patient_dob' => array(
@@ -410,6 +404,26 @@ function _get_instances_patient() {
       'label' => $t('Recommended by'),
       'description' => '',
       'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+      ),
+    ),
+    'rd_f_patient_notes' => array(
+      'field_name' => 'rd_f_patient_notes',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Notes'),
+      'description' => '',
+      'required' => TRUE,
       'settings' => array(
         'text_processing' => 0,
         'user_register_form' => FALSE,
