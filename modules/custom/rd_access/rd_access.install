@@ -44,7 +44,7 @@ function _get_vocabularies_access() {
     'machine_name' => 'rd_voc_access_key',
     'module' => 'rd_access',
     'terms' => array(
-      $t('0 - None'),
+      $t('0 - All'),
       ),
     );
   // DISMISSED FOR NOW
@@ -107,7 +107,7 @@ function _get_roles_and_permissions_access() {
       ),
     'Secretary' => array(
       ),
-    'Practicing' => array(
+    'Practicioner' => array(
       ),
     );
 

@@ -53,7 +53,7 @@ function _create_ckeditor_profiles($ct_name) {
 // *******************************************************************************************
 
 /**
- * Create Text Formats
+ * Create Vocabularies
  * @param  [string] $ct_name
  */
 function _create_vocabularies($ct_name) {
@@ -123,6 +123,35 @@ function _populate_vocabulary($terms, $vocabulary, $parent_term_id = 0) {
   }
 }
 
+/**
+ * Get Vocabulary terms
+ * @param  [string] $vocabulary_name [description]
+ * @return [array]  Array with this key/value tid => taxonomy_term_name
+ */
+function _get_vocabulary_terms($vocabulary_name){
+  $vocabulary = taxonomy_vocabulary_machine_name_load($vocabulary_name);
+  $terms = entity_load('taxonomy_term', FALSE, array('vid' => $vocabulary->vid));
+  foreach ($terms as $tid => $term) {
+    $terms_name[$tid] = $term->name;
+  }
+
+  return $terms_name;
+}
+
+/**
+ * Add a taxonomy terms into a vocabulary
+ * @param [string] $term             Name of the term
+ * @param [string] $vocabulary_name  Vocabulary's machine name
+ * @return [object]  New taxonomy term
+ */
+function _add_taxonomy_term($term, $vocabulary_name){
+  $vocabulary = taxonomy_vocabulary_machine_name_load($vocabulary_name);
+  $new_term = new stdClass();
+  $new_term->name = t($term);
+  $new_term->vid = $vocabulary->vid;
+  taxonomy_term_save($new_term);
+  return $new_term;
+}
 
 // *******************************************************************************************
 //     CONTENT TYPES, FIELDS AND INSTANCES API
@@ -221,4 +250,28 @@ function _create_update_roles_and_permissions($ct_name){
     $role = user_role_load_by_name($role_name);
     user_role_grant_permissions($role->rid, $permissions);
   }
+}
+
+/**
+ * Find user by role name
+ * @param  [string] $role_name [description]
+ * @return [array] Array with this key/value: user_id => user_name
+ */
+function _find_users_by_role($role_name){
+  $roles = user_roles();
+  $role_id = array_search($role_name, $roles);
+
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'user')
+    ->addTag('DANGEROUS_ACCESS_CHECK_OPT_OUT');
+  $result = $query->execute();
+  $users = array();
+  foreach($result['user'] as $one_user) {
+    $user_record = user_load( $one_user->uid );
+    if( !empty($user_record->roles[$role_id]) ) {
+      $users[$one_user->uid] = $user_record->name;
+    }
+  }
+
+  return $users;
 }

@@ -1,0 +1,109 @@
+<?php
+
+$view = new view();
+$view->name = 'practitioners';
+$view->description = '';
+$view->tag = 'default';
+$view->base_table = 'users';
+$view->human_name = 'Practitioners';
+$view->core = 7;
+$view->api_version = '3.0';
+$view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+/* Display: Master */
+$handler = $view->new_display('default', 'Master', 'default');
+$handler->display->display_options['title'] = 'Practitioners';
+$handler->display->display_options['use_more_always'] = FALSE;
+$handler->display->display_options['access']['type'] = 'perm';
+$handler->display->display_options['access']['perm'] = 'access user profiles';
+$handler->display->display_options['cache']['type'] = 'none';
+$handler->display->display_options['query']['type'] = 'views_query';
+$handler->display->display_options['exposed_form']['type'] = 'basic';
+$handler->display->display_options['pager']['type'] = 'full';
+$handler->display->display_options['pager']['options']['items_per_page'] = '10';
+$handler->display->display_options['style_plugin'] = 'table';
+$handler->display->display_options['style_options']['columns'] = array(
+  'name' => 'name',
+);
+$handler->display->display_options['style_options']['default'] = '-1';
+$handler->display->display_options['style_options']['info'] = array(
+  'name' => array(
+    'sortable' => 0,
+    'default_sort_order' => 'asc',
+    'align' => '',
+    'separator' => '',
+    'empty_column' => 0,
+  ),
+);
+/* Field: User: Name */
+$handler->display->display_options['fields']['name']['id'] = 'name';
+$handler->display->display_options['fields']['name']['table'] = 'users';
+$handler->display->display_options['fields']['name']['field'] = 'name';
+$handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+$handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+/* Field: User: Centre */
+$handler->display->display_options['fields']['rd_f_access_user_centre']['id'] = 'rd_f_access_user_centre';
+$handler->display->display_options['fields']['rd_f_access_user_centre']['table'] = 'field_data_rd_f_access_user_centre';
+$handler->display->display_options['fields']['rd_f_access_user_centre']['field'] = 'rd_f_access_user_centre';
+$handler->display->display_options['fields']['rd_f_access_user_centre']['type'] = 'editable';
+$handler->display->display_options['fields']['rd_f_access_user_centre']['settings'] = array(
+  'click_to_edit' => 0,
+  'click_to_edit_style' => 'button',
+  'empty_text' => '',
+  'fallback_format' => 'i18n_taxonomy_term_reference_link',
+);
+/* Field: Field: Access Key */
+$handler->display->display_options['fields']['rd_f_access_key']['id'] = 'rd_f_access_key';
+$handler->display->display_options['fields']['rd_f_access_key']['table'] = 'field_data_rd_f_access_key';
+$handler->display->display_options['fields']['rd_f_access_key']['field'] = 'rd_f_access_key';
+$handler->display->display_options['fields']['rd_f_access_key']['type'] = 'editable';
+$handler->display->display_options['fields']['rd_f_access_key']['settings'] = array(
+  'click_to_edit' => 0,
+  'click_to_edit_style' => 'button',
+  'empty_text' => '',
+  'fallback_format' => 'i18n_taxonomy_term_reference_link',
+);
+$handler->display->display_options['fields']['rd_f_access_key']['delta_offset'] = '0';
+/* Sort criterion: User: Name */
+$handler->display->display_options['sorts']['name']['id'] = 'name';
+$handler->display->display_options['sorts']['name']['table'] = 'users';
+$handler->display->display_options['sorts']['name']['field'] = 'name';
+/* Filter criterion: User: Roles */
+$handler->display->display_options['filters']['rid']['id'] = 'rid';
+$handler->display->display_options['filters']['rid']['table'] = 'users_roles';
+$handler->display->display_options['filters']['rid']['field'] = 'rid';
+$handler->display->display_options['filters']['rid']['value'] = array(
+  5 => '5',
+);
+
+/* Display: Page */
+$handler = $view->new_display('page', 'Page', 'page');
+$handler->display->display_options['path'] = 'admin/secretaria/practicantes';
+$handler->display->display_options['menu']['type'] = 'normal';
+$handler->display->display_options['menu']['title'] = 'Practitioners';
+$handler->display->display_options['menu']['description'] = 'Manage Centre and Access Key for Practitioners';
+$handler->display->display_options['menu']['weight'] = '0';
+$handler->display->display_options['menu']['name'] = 'management';
+$handler->display->display_options['menu']['context'] = 0;
+$handler->display->display_options['menu']['context_only_inline'] = 0;
+$translatables['practitioners'] = array(
+  t('Master'),
+  t('Practitioners'),
+  t('more'),
+  t('Apply'),
+  t('Reset'),
+  t('Sort by'),
+  t('Asc'),
+  t('Desc'),
+  t('Items per page'),
+  t('- All -'),
+  t('Offset'),
+  t('« first'),
+  t('‹ previous'),
+  t('next ›'),
+  t('last »'),
+  t('Name'),
+  t('Centre'),
+  t('Access Key'),
+  t('Page'),
+);
