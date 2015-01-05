@@ -423,7 +423,7 @@ function _get_instances_patient() {
       'bundle' => 'rd_ct_patient',
       'label' => $t('Notes'),
       'description' => '',
-      'required' => TRUE,
+      'required' => FALSE,
       'settings' => array(
         'text_processing' => 0,
         'user_register_form' => FALSE,
