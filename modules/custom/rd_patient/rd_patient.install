@@ -48,14 +48,11 @@ function _get_fields_patient() {
   );
   $fields['rd_f_patient_genre'] = array(
     'field_name' => 'rd_f_patient_genre',
-    'type' => 'list_text',
     'label' => $t('Genre'),
+    'type' => 'text',
     'cardinality' => 1,
     'settings' => array(
-      'allowed_values' => array(
-        'M' => 'Male',
-        'F' => 'Female',
-      ),
+      'max_length' => 255,
     ),
   );
   $fields['rd_f_patient_excel_number'] = array(
@@ -132,70 +129,70 @@ function _get_fields_patient() {
       'max_length' => 255,
     ),
   );
+  // $fields['rd_f_patient_homeopathy'] = array(
+  //   'field_name' => 'rd_f_patient_homeopathy',
+  //   'type' => 'list_text',
+  //   'label' => $t('Homeopathy'),
+  //   'cardinality' => 1,
+  //   'settings' => array(
+  //     'allowed_values' => array(
+  //       'S' => 'Yes',
+  //       'P' => 'Some',
+  //       'AL' => 'Little',
+  //       'AN' => 'Not Now',
+  //       'N' => 'No',
+  //     ),
+  //   ),
+  // );
   $fields['rd_f_patient_homeopathy'] = array(
     'field_name' => 'rd_f_patient_homeopathy',
-    'type' => 'list_text',
     'label' => $t('Homeopathy'),
+    'type' => 'text',
     'cardinality' => 1,
     'settings' => array(
-      'allowed_values' => array(
-        'Y' => 'Yes',
-        'N' => 'No',
-      ),
+      'max_length' => 255,
     ),
   );
-  $fields['rd_f_patient_medicine'] = array(
-    'field_name' => 'rd_f_patient_medicine',
-    'type' => 'list_text',
+  $fields['rd_f_patient_c_medicine'] = array(
+    'field_name' => 'rd_f_patient_c_medicine',
     'label' => $t('Classic Medicine'),
+    'type' => 'text',
     'cardinality' => 1,
     'settings' => array(
-      'allowed_values' => array(
-        'Y' => 'Yes',
-        'N' => 'No',
-      ),
+      'max_length' => 255,
     ),
   );
   $fields['rd_f_patient_a_therapies'] = array(
     'field_name' => 'rd_f_patient_a_therapies',
-    'type' => 'list_text',
     'label' => $t('Alternative Therapies'),
+    'type' => 'text',
     'cardinality' => 1,
     'settings' => array(
-      'allowed_values' => array(
-        'Y' => 'Yes',
-        'N' => 'No',
-      ),
+      'max_length' => 255,
     ),
   );
   $fields['rd_f_patient_appo_type'] = array(
     'field_name' => 'rd_f_patient_appo_type',
-    'type' => 'list_text',
     'label' => $t('Appointment Type'),
+    'type' => 'text',
     'cardinality' => 1,
     'settings' => array(
-      'allowed_values' => array(
-        'T' => 'Tobacco',
-        'G' => 'General',
-      ),
+      'max_length' => 255,
     ),
   );
   $fields['rd_f_patient_tried_before'] = array(
     'field_name' => 'rd_f_patient_tried_before',
-    'type' => 'list_text',
     'label' => $t('Tried Before'),
+    'type' => 'text',
     'cardinality' => 1,
     'settings' => array(
-      'allowed_values' => array(
-        'Y' => 'Yes',
-        'N' => 'No',
-      ),
+      'max_length' => 255,
     ),
   );
   $fields['rd_f_patient_o_symptoms'] = array(
     'field_name' => 'rd_f_patient_o_symptoms',
-    'type' => 'text',
     'label' => $t('Other Symptoms'),
+    'type' => 'text',
     'cardinality' => 1,
     'settings' => array(
       'max_length' => 255,
@@ -279,13 +276,16 @@ function _get_instances_patient() {
       'description' => '',
       'required' => FALSE,
       'settings' => array(
+        'text_processing' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
       ),
     ),
     'rd_f_patient_excel_number' => array(
@@ -437,6 +437,23 @@ function _get_instances_patient() {
         'type' => 'text_textfield',
       ),
     ),
+    // 'rd_f_patient_homeopathy' => array(
+    //   'field_name' => 'rd_f_patient_homeopathy',
+    //   'entity_type' => 'node',
+    //   'bundle' => 'rd_ct_patient',
+    //   'label' => $t('Homeopathy'),
+    //   'description' => '',
+    //   'required' => FALSE,
+    //   'settings' => array(
+    //     'user_register_form' => FALSE,
+    //   ),
+    //   'widget' => array(
+    //     'active' => 1,
+    //     'module' => 'options',
+    //     'settings' => array(),
+    //     'type' => 'options_select',
+    //   ),
+    // ),
     'rd_f_patient_homeopathy' => array(
       'field_name' => 'rd_f_patient_homeopathy',
       'entity_type' => 'node',
@@ -445,30 +462,36 @@ function _get_instances_patient() {
       'description' => '',
       'required' => FALSE,
       'settings' => array(
+        'text_processing' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
       ),
     ),
-    'rd_f_patient_medicine' => array(
-      'field_name' => 'rd_f_patient_medicine',
+    'rd_f_patient_c_medicine' => array(
+      'field_name' => 'rd_f_patient_c_medicine',
       'entity_type' => 'node',
       'bundle' => 'rd_ct_patient',
       'label' => $t('Classic Medicine'),
       'description' => '',
       'required' => FALSE,
       'settings' => array(
+        'text_processing' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
       ),
     ),
     'rd_f_patient_a_therapies' => array(
@@ -479,13 +502,16 @@ function _get_instances_patient() {
       'description' => '',
       'required' => FALSE,
       'settings' => array(
+        'text_processing' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
       ),
     ),
     'rd_f_patient_appo_type' => array(
@@ -496,13 +522,16 @@ function _get_instances_patient() {
       'description' => '',
       'required' => FALSE,
       'settings' => array(
+        'text_processing' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
       ),
     ),
     'rd_f_patient_tried_before' => array(
@@ -513,13 +542,16 @@ function _get_instances_patient() {
       'description' => '',
       'required' => FALSE,
       'settings' => array(
+        'text_processing' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
       ),
     ),
     'rd_f_patient_o_symptoms' => array(
