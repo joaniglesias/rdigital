@@ -333,7 +333,7 @@ function _get_instances_access() {
   $instances['rd_f_access_treat_centre'] = array(
     'field_name' => 'rd_f_access_treat_centre',
     'entity_type' => 'node',
-    'bundle' => 'rd_ct_patient',
+    'bundle' => 'rd_ct_treatment',
     'label' => $t('Centre'),
     'description' => '',
     'required' => FALSE,
