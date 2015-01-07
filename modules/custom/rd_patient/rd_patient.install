@@ -129,6 +129,24 @@ function _get_fields_patient() {
       'max_length' => 255,
     ),
   );
+  $fields['rd_f_patient_appo_type'] = array(
+    'field_name' => 'rd_f_patient_appo_type',
+    'label' => $t('Appointment Type'),
+    'type' => 'text',
+    'cardinality' => 1,
+    'settings' => array(
+      'max_length' => 255,
+    ),
+  );
+  $fields['rd_f_patient_tried_before'] = array(
+    'field_name' => 'rd_f_patient_tried_before',
+    'label' => $t('Tried Before'),
+    'type' => 'text',
+    'cardinality' => 1,
+    'settings' => array(
+      'max_length' => 255,
+    ),
+  );
   // $fields['rd_f_patient_homeopathy'] = array(
   //   'field_name' => 'rd_f_patient_homeopathy',
   //   'type' => 'list_text',
@@ -165,24 +183,6 @@ function _get_fields_patient() {
   $fields['rd_f_patient_a_therapies'] = array(
     'field_name' => 'rd_f_patient_a_therapies',
     'label' => $t('Alternative Therapies'),
-    'type' => 'text',
-    'cardinality' => 1,
-    'settings' => array(
-      'max_length' => 255,
-    ),
-  );
-  $fields['rd_f_patient_appo_type'] = array(
-    'field_name' => 'rd_f_patient_appo_type',
-    'label' => $t('Appointment Type'),
-    'type' => 'text',
-    'cardinality' => 1,
-    'settings' => array(
-      'max_length' => 255,
-    ),
-  );
-  $fields['rd_f_patient_tried_before'] = array(
-    'field_name' => 'rd_f_patient_tried_before',
-    'label' => $t('Tried Before'),
     'type' => 'text',
     'cardinality' => 1,
     'settings' => array(
@@ -437,6 +437,46 @@ function _get_instances_patient() {
         'type' => 'text_textfield',
       ),
     ),
+    'rd_f_patient_appo_type' => array(
+      'field_name' => 'rd_f_patient_appo_type',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Appointment Type'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+      ),
+    ),
+    'rd_f_patient_tried_before' => array(
+      'field_name' => 'rd_f_patient_tried_before',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Tried Before'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+      ),
+    ),
     // 'rd_f_patient_homeopathy' => array(
     //   'field_name' => 'rd_f_patient_homeopathy',
     //   'entity_type' => 'node',
@@ -499,46 +539,6 @@ function _get_instances_patient() {
       'entity_type' => 'node',
       'bundle' => 'rd_ct_patient',
       'label' => $t('Alternative Therapies'),
-      'description' => '',
-      'required' => FALSE,
-      'settings' => array(
-        'text_processing' => 0,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => 60,
-        ),
-        'type' => 'text_textfield',
-      ),
-    ),
-    'rd_f_patient_appo_type' => array(
-      'field_name' => 'rd_f_patient_appo_type',
-      'entity_type' => 'node',
-      'bundle' => 'rd_ct_patient',
-      'label' => $t('Appointment Type'),
-      'description' => '',
-      'required' => FALSE,
-      'settings' => array(
-        'text_processing' => 0,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => 60,
-        ),
-        'type' => 'text_textfield',
-      ),
-    ),
-    'rd_f_patient_tried_before' => array(
-      'field_name' => 'rd_f_patient_tried_before',
-      'entity_type' => 'node',
-      'bundle' => 'rd_ct_patient',
-      'label' => $t('Tried Before'),
       'description' => '',
       'required' => FALSE,
       'settings' => array(

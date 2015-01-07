@@ -64,6 +64,21 @@ $handler->display->display_options['fields']['rd_f_access_key']['settings'] = ar
   'fallback_format' => 'i18n_taxonomy_term_reference_link',
 );
 $handler->display->display_options['fields']['rd_f_access_key']['delta_offset'] = '0';
+/* Field: User: Uid */
+$handler->display->display_options['fields']['uid']['id'] = 'uid';
+$handler->display->display_options['fields']['uid']['table'] = 'users';
+$handler->display->display_options['fields']['uid']['field'] = 'uid';
+$handler->display->display_options['fields']['uid']['exclude'] = TRUE;
+$handler->display->display_options['fields']['uid']['link_to_user'] = FALSE;
+/* Field: Global: Custom text */
+$handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+$handler->display->display_options['fields']['nothing']['table'] = 'views';
+$handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+$handler->display->display_options['fields']['nothing']['label'] = 'Operations';
+$handler->display->display_options['fields']['nothing']['alter']['text'] = 'Edit User';
+$handler->display->display_options['fields']['nothing']['alter']['make_link'] = TRUE;
+$handler->display->display_options['fields']['nothing']['alter']['path'] = 'user/[uid]/edit';
+$handler->display->display_options['fields']['nothing']['alter']['alt'] = 'Edit User';
 /* Sort criterion: User: Name */
 $handler->display->display_options['sorts']['name']['id'] = 'name';
 $handler->display->display_options['sorts']['name']['table'] = 'users';
@@ -105,5 +120,8 @@ $translatables['practitioners'] = array(
   t('Name'),
   t('Centre'),
   t('Access Key'),
+  t('Uid'),
+  t('Operations'),
+  t('Edit User'),
   t('Page'),
 );
