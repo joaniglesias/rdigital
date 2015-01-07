@@ -35,9 +35,9 @@
 
 
 
-function rd_appointment_js_alter(&$javascript) {
+function rd_treatment_js_alter(&$javascript) {
   if (isset($javascript['misc/autocomplete.js'])){
-    $file = drupal_get_path('module', 'rd_appointment') . '/js/autocomplete.js';
+    $file = drupal_get_path('module', 'rd_treatment') . '/js/autocomplete.js';
     $javascript['misc/autocomplete.js']['data'] = $file;
   }
 }

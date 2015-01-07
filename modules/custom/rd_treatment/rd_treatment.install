@@ -1,8 +1,8 @@
 <?php
 
-function rd_appointment_install() {
+function rd_treatment_install() {
 
-  $ct_name = 'appointment';
+  $ct_name = 'reatment';
   // create text formats and ckedit profiles
   _create_text_formats($ct_name);
   _create_ckeditor_profiles($ct_name);
@@ -19,28 +19,11 @@ function rd_appointment_install() {
 // *******************************************************************************************
 
 /**
- * Text Formats definition for Contet Type Appointment
+ * Text Formats definition for Contet Type Treatment
  */
-function _get_text_formats_appointment() {
+function _get_text_formats_treatment() {
 
   $text_formats = array();
-  $text_formats['digital_keyboard'] = array(
-    'format' => 'digital_keyboard',
-    'name' => 'Digital Keyboard',
-    'weight' => 1,
-    'filters' => array(
-      // Convert line breaks into HTML
-      'filter_autop' => array(
-        'weight' => 0,
-        'status' => 1,
-      ),
-      // Display any HTML as plain text
-      'filter_html_escape' => array(
-        'weight' => 1,
-        'status' => 1,
-      ),
-    ),
-  );
   $text_formats['treatment'] = array(
     'format' => 'treatment',
     'name' => 'Treatment',
@@ -72,12 +55,12 @@ function _get_text_formats_appointment() {
 };
 
 /**
- * Get CKEditor Profile definitions for Contet Type Appointment
+ * Get CKEditor Profile definitions for Contet Type Treatment
  *
  * NOTE: to get the profile settings use ckeditor_profile_load() to load all ckeditor profiles
  *       and var_export($my_array) to convert $my_array into php code
  */
-function _get_ckeditor_profiles_appointment() {
+function _get_ckeditor_profiles_treatment() {
 
   $profiles = array();
 
@@ -173,22 +156,13 @@ function _get_ckeditor_profiles_appointment() {
 // *******************************************************************************************
 
 /**
- * Fields definition for Contet Type Appointment
+ * Fields definition for Contet Type Treatment
  */
-function _get_fields_appointment() {
+function _get_fields_treatment() {
   $t = get_t();
   $fields = array();
-  $fields['rd_f_appo_telephone'] = array(
-    'field_name' => 'rd_f_appo_telephone',
-    'type' => 'text',
-    'label' => $t('Patient Telephone'),
-    'cardinality' => 1,
-    'settings' => array(
-      'max_length' => 255,
-    ),
-  );
-  $fields['rd_f_appo_related_patient'] = array(
-    'field_name' => 'rd_f_appo_related_patient',
+  $fields['rd_f_treat_related_patient'] = array(
+    'field_name' => 'rd_f_treat_related_patient',
     'type' => 'entityreference',
     'label' => $t('Related Patient'),
     'cardinality' => 1,
@@ -210,10 +184,31 @@ function _get_fields_appointment() {
       'target_type' => 'node',
     ),
   );
-  $fields['rd_f_appo_date_time'] = array(
-    'field_name' => 'rd_f_appo_date_time',
+  $fields['rd_f_treat_related_pract'] = array(
+    'field_name' => 'rd_f_treat_related_pract',
+    'type' => 'entityreference',
+    'label' => $t('Related Practitioner'),
+    'cardinality' => 1,
+    'settings' => array(
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(),
+      ),
+      'target_type' => 'user',
+    ),
+  );
+  $fields['rd_f_treat_date_time'] = array(
+    'field_name' => 'rd_f_treat_date_time',
     'type' => 'datetime',
-    'label' => $t('Appointment Date and time'),
+    'label' => $t('Treatment Date and time'),
     'cardinality' => 1,
     'module' => 'date',
     'settings' => array(
@@ -224,7 +219,7 @@ function _get_fields_appointment() {
         'hour' => 'hour',
         'minute' => 'minute',
         'month' => 'month',
-        'second' => 'second',
+        'second' => 0,
         'year' => 'year',
       ),
       'timezone_db' => 'UTC',
@@ -232,24 +227,24 @@ function _get_fields_appointment() {
       'tz_handling' => 'site',
     ),
   );
-  $fields['rd_f_appo_temp_keyb_measures'] = array(
-    'field_name' => 'rd_f_appo_temp_keyb_measures',
+  $fields['rd_f_treat_ini_comments'] = array(
+    'field_name' => 'rd_f_treat_ini_comments',
     'type' => 'text_long',
-    'label' => $t('Temporary Keyboard Measures'),
+    'label' => $t('Initial Comments'),
     'cardinality' => 1,
     'settings' => array(),
   );
-  $fields['rd_f_appo_treatment_measures'] = array(
-    'field_name' => 'rd_f_appo_treatment_measures',
+  $fields['rd_f_treat_measures'] = array(
+    'field_name' => 'rd_f_treat_measures',
     'type' => 'text_long',
-    'label' => $t('Treatment Measures'),
+    'label' => $t('Measures'),
     'cardinality' => 1,
     'settings' => array(),
   );
-  $fields['rd_f_appo_treatment_comments'] = array(
-    'field_name' => 'rd_f_appo_treatment_comments',
+  $fields['rd_f_treat_fin_comments'] = array(
+    'field_name' => 'rd_f_treat_fin_comments',
     'type' => 'text_long',
-    'label' => $t('Treatment Comments'),
+    'label' => $t('Final Comments'),
     'cardinality' => 1,
     'settings' => array(),
   );
@@ -258,35 +253,15 @@ function _get_fields_appointment() {
 }
 
 /**
- * Instances definition for Contet Type Appointment
+ * Instances definition for Contet Type Treatment
  */
-function _get_instances_appointment() {
+function _get_instances_treatment() {
   $t = get_t();
   $instances = array(
-    'rd_f_appo_telephone' => array(
-      'field_name' => 'rd_f_appo_telephone',
+    'rd_f_treat_related_patient' => array(
+      'field_name' => 'rd_f_treat_related_patient',
       'entity_type' => 'node',
-      'bundle' => 'rd_ct_appointment',
-      'label' => $t('Patient Telephone'),
-      'description' => '',
-      'required' => FALSE,
-      'settings' => array(
-        'text_processing' => 0,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => 60,
-        ),
-        'type' => 'text_textfield',
-      ),
-    ),
-    'rd_f_appo_related_patient' => array(
-      'field_name' => 'rd_f_appo_related_patient',
-      'entity_type' => 'node',
-      'bundle' => 'rd_ct_appointment',
+      'bundle' => 'rd_ct_treatment',
       'label' => $t('Related Patient'),
       'description' => '',
       'required' => FALSE,
@@ -302,18 +277,38 @@ function _get_instances_appointment() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete_tags',
-        'weight' => 26,
       ),
     ),
-    'rd_f_appo_date_time' => array(
-      'field_name' => 'rd_f_appo_date_time',
+    'rd_f_treat_related_pract' => array(
+      'field_name' => 'rd_f_treat_related_pract',
       'entity_type' => 'node',
-      'bundle' => 'rd_ct_appointment',
-      'label' => $t('Appointment Date and Time'),
+      'bundle' => 'rd_ct_treatment',
+      'label' => $t('Related Practitioner'),
       'description' => '',
       'required' => FALSE,
       'settings' => array(
-        'default_value' => 'blank',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
+      ),
+    ),
+    'rd_f_treat_date_time' => array(
+      'field_name' => 'rd_f_treat_date_time',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_treatment',
+      'label' => $t('Treatment Date and Time'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'default_value' => 'now',
         'default_value2' => 'same',
         'default_value_code' => '',
         'default_value_code2' => '',
@@ -324,47 +319,20 @@ function _get_instances_appointment() {
         'module' => 'date',
         'settings' => array(
           'increment' => 1,
-          'input_format' => 'd-m-Y H:i',
+          'input_format' => 'd/m/Y - H:i:s',
           'input_format_custom' => '',
           'label_position' => 'above',
           'text_parts' => array(),
-          'year_range' => '-3:+3',
+          'year_range' => '-1:+1',
         ),
-        'type' => 'date_text',
+        'type' => 'date_select',
       ),
     ),
-    'rd_f_appo_temp_keyb_measures' => array(
-      'field_name' => 'rd_f_appo_temp_keyb_measures',
+    'rd_f_treat_ini_comments' => array(
+      'field_name' => 'rd_f_treat_ini_comments',
       'entity_type' => 'node',
-      'bundle' => 'rd_ct_appointment',
-      'label' => $t('Temporary Keyboard Measures'),
-      'description' => '',
-      'required' => FALSE,
-      'settings' => array(
-        'text_processing' => 1,
-        'user_register_form' => FALSE,
-        'better_formats' => array(
-          'allowed_formats_toggle' => 1,
-          'allowed_formats' => array(
-            'digital_keyboard' => 'digital_keyboard',
-          ),
-          'default_order_toggle' => 0,
-        ),
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'rows' => 3,
-        ),
-        'type' => 'text_textarea',
-      ),
-    ),
-    'rd_f_appo_treatment_measures' => array(
-      'field_name' => 'rd_f_appo_treatment_measures',
-      'entity_type' => 'node',
-      'bundle' => 'rd_ct_appointment',
-      'label' => $t('Treatment Measures'),
+      'bundle' => 'rd_ct_treatment',
+      'label' => $t('Initial Comments'),
       'description' => '',
       'required' => FALSE,
       'settings' => array(
@@ -387,11 +355,38 @@ function _get_instances_appointment() {
         'type' => 'text_textarea',
       ),
     ),
-    'rd_f_appo_treatment_comments' => array(
-      'field_name' => 'rd_f_appo_treatment_comments',
+    'rd_f_treat_measures' => array(
+      'field_name' => 'rd_f_treat_measures',
       'entity_type' => 'node',
-      'bundle' => 'rd_ct_appointment',
-      'label' => $t('Treatment Comments'),
+      'bundle' => 'rd_ct_treatment',
+      'label' => $t('Measures'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 1,
+        'user_register_form' => FALSE,
+        'better_formats' => array(
+          'allowed_formats_toggle' => 1,
+          'allowed_formats' => array(
+            'treatment' => 'treatment',
+          ),
+          'default_order_toggle' => 0,
+        ),
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'rows' => 3,
+        ),
+        'type' => 'text_textarea',
+      ),
+    ),
+    'rd_f_treat_fin_comments' => array(
+      'field_name' => 'rd_f_treat_fin_comments',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_treatment',
+      'label' => $t('Final Comments'),
       'description' => '',
       'required' => FALSE,
       'settings' => array(
@@ -421,16 +416,16 @@ function _get_instances_appointment() {
 }
 
 /**
- * Content type Appointment definition
+ * Content type Treatment definition
  */
-function _get_content_type_appointment() {
+function _get_content_type_treatment() {
   $t = get_t();
 
   $node = array(
-    'type' => 'rd_ct_appointment',
-    'name' => $t('Appointment'),
+    'type' => 'rd_ct_treatment',
+    'name' => $t('Treatment'),
     'base' => 'node_content',
-    'description' => $t('Create a new Appointment'),
+    'description' => $t('Create a new Treatment'),
     'title_label' => $t('Patient Full Name'),
     'custom' => TRUE,
     'promote' => 0,
@@ -444,6 +439,6 @@ function _get_content_type_appointment() {
 //     UPDATE FUNCTIONS
 // *******************************************************************************************
 
-// function rd_appointment_update_7000() {
+// function rd_treatment_update_7000() {
 
 // }
