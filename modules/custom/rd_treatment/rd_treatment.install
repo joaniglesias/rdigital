@@ -2,7 +2,7 @@
 
 function rd_treatment_install() {
 
-  $ct_name = 'reatment';
+  $ct_name = 'treatment';
   // create text formats and ckedit profiles
   _create_text_formats($ct_name);
   _create_ckeditor_profiles($ct_name);
