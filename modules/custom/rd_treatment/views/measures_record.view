@@ -1,0 +1,147 @@
+<?php
+
+$view = new view();
+$view->name = 'measures_record';
+$view->description = '';
+$view->tag = 'default';
+$view->base_table = 'node';
+$view->human_name = 'Measures\' record';
+$view->core = 7;
+$view->api_version = '3.0';
+$view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+/* Display: Master */
+$handler = $view->new_display('default', 'Master', 'default');
+$handler->display->display_options['title'] = 'Measures\' record';
+$handler->display->display_options['use_more_always'] = FALSE;
+$handler->display->display_options['access']['type'] = 'perm';
+$handler->display->display_options['cache']['type'] = 'none';
+$handler->display->display_options['query']['type'] = 'views_query';
+$handler->display->display_options['exposed_form']['type'] = 'basic';
+$handler->display->display_options['pager']['type'] = 'some';
+$handler->display->display_options['pager']['options']['items_per_page'] = '10';
+$handler->display->display_options['style_plugin'] = 'table';
+/* Field: Content: Treatment Date and Time */
+$handler->display->display_options['fields']['rd_f_treat_date_time']['id'] = 'rd_f_treat_date_time';
+$handler->display->display_options['fields']['rd_f_treat_date_time']['table'] = 'field_data_rd_f_treat_date_time';
+$handler->display->display_options['fields']['rd_f_treat_date_time']['field'] = 'rd_f_treat_date_time';
+$handler->display->display_options['fields']['rd_f_treat_date_time']['exclude'] = TRUE;
+$handler->display->display_options['fields']['rd_f_treat_date_time']['settings'] = array(
+  'format_type' => 'short',
+  'fromto' => 'both',
+  'multiple_number' => '',
+  'multiple_from' => '',
+  'multiple_to' => '',
+);
+/* Field: Content: Related Practitioner */
+$handler->display->display_options['fields']['rd_f_treat_related_pract']['id'] = 'rd_f_treat_related_pract';
+$handler->display->display_options['fields']['rd_f_treat_related_pract']['table'] = 'field_data_rd_f_treat_related_pract';
+$handler->display->display_options['fields']['rd_f_treat_related_pract']['field'] = 'rd_f_treat_related_pract';
+$handler->display->display_options['fields']['rd_f_treat_related_pract']['exclude'] = TRUE;
+$handler->display->display_options['fields']['rd_f_treat_related_pract']['settings'] = array(
+  'link' => 0,
+);
+/* Field: Content: Centre */
+$handler->display->display_options['fields']['rd_f_access_treat_centre']['id'] = 'rd_f_access_treat_centre';
+$handler->display->display_options['fields']['rd_f_access_treat_centre']['table'] = 'field_data_rd_f_access_treat_centre';
+$handler->display->display_options['fields']['rd_f_access_treat_centre']['field'] = 'rd_f_access_treat_centre';
+$handler->display->display_options['fields']['rd_f_access_treat_centre']['exclude'] = TRUE;
+$handler->display->display_options['fields']['rd_f_access_treat_centre']['type'] = 'taxonomy_term_reference_plain';
+/* Field: Global: Custom text */
+$handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+$handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+$handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+$handler->display->display_options['fields']['nothing_1']['label'] = 'Fecha / Practicante / Centro';
+$handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<b>[rd_f_treat_date_time]</b><br>
+[rd_f_treat_related_pract]<br>
+[rd_f_access_treat_centre]';
+/* Field: Content: Initial Comments */
+$handler->display->display_options['fields']['rd_f_treat_ini_comments']['id'] = 'rd_f_treat_ini_comments';
+$handler->display->display_options['fields']['rd_f_treat_ini_comments']['table'] = 'field_data_rd_f_treat_ini_comments';
+$handler->display->display_options['fields']['rd_f_treat_ini_comments']['field'] = 'rd_f_treat_ini_comments';
+$handler->display->display_options['fields']['rd_f_treat_ini_comments']['exclude'] = TRUE;
+/* Field: Content: Measures */
+$handler->display->display_options['fields']['rd_f_treat_measures']['id'] = 'rd_f_treat_measures';
+$handler->display->display_options['fields']['rd_f_treat_measures']['table'] = 'field_data_rd_f_treat_measures';
+$handler->display->display_options['fields']['rd_f_treat_measures']['field'] = 'rd_f_treat_measures';
+$handler->display->display_options['fields']['rd_f_treat_measures']['exclude'] = TRUE;
+$handler->display->display_options['fields']['rd_f_treat_measures']['settings'] = array(
+  'click_to_edit' => 0,
+  'click_to_edit_style' => 'button',
+  'empty_text' => '',
+  'fallback_format' => 'text_default',
+);
+/* Field: Content: Final Comments */
+$handler->display->display_options['fields']['rd_f_treat_fin_comments']['id'] = 'rd_f_treat_fin_comments';
+$handler->display->display_options['fields']['rd_f_treat_fin_comments']['table'] = 'field_data_rd_f_treat_fin_comments';
+$handler->display->display_options['fields']['rd_f_treat_fin_comments']['field'] = 'rd_f_treat_fin_comments';
+$handler->display->display_options['fields']['rd_f_treat_fin_comments']['exclude'] = TRUE;
+/* Field: Global: Custom text */
+$handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+$handler->display->display_options['fields']['nothing']['table'] = 'views';
+$handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+$handler->display->display_options['fields']['nothing']['label'] = 'Medidas y comentarios';
+$handler->display->display_options['fields']['nothing']['alter']['text'] = '[rd_f_treat_ini_comments]</p>
+[rd_f_treat_measures]</p>
+[rd_f_treat_fin_comments]';
+/* Sort criterion: Content: Post date */
+$handler->display->display_options['sorts']['created']['id'] = 'created';
+$handler->display->display_options['sorts']['created']['table'] = 'node';
+$handler->display->display_options['sorts']['created']['field'] = 'created';
+$handler->display->display_options['sorts']['created']['order'] = 'DESC';
+/* Sort criterion: Content: Treatment Date and Time (rd_f_treat_date_time) */
+$handler->display->display_options['sorts']['rd_f_treat_date_time_value']['id'] = 'rd_f_treat_date_time_value';
+$handler->display->display_options['sorts']['rd_f_treat_date_time_value']['table'] = 'field_data_rd_f_treat_date_time';
+$handler->display->display_options['sorts']['rd_f_treat_date_time_value']['field'] = 'rd_f_treat_date_time_value';
+$handler->display->display_options['sorts']['rd_f_treat_date_time_value']['order'] = 'DESC';
+/* Contextual filter: Content: Related Patient (rd_f_treat_related_patient) */
+$handler->display->display_options['arguments']['rd_f_treat_related_patient_target_id']['id'] = 'rd_f_treat_related_patient_target_id';
+$handler->display->display_options['arguments']['rd_f_treat_related_patient_target_id']['table'] = 'field_data_rd_f_treat_related_patient';
+$handler->display->display_options['arguments']['rd_f_treat_related_patient_target_id']['field'] = 'rd_f_treat_related_patient_target_id';
+$handler->display->display_options['arguments']['rd_f_treat_related_patient_target_id']['default_action'] = 'not found';
+$handler->display->display_options['arguments']['rd_f_treat_related_patient_target_id']['default_argument_type'] = 'fixed';
+$handler->display->display_options['arguments']['rd_f_treat_related_patient_target_id']['summary']['number_of_records'] = '0';
+$handler->display->display_options['arguments']['rd_f_treat_related_patient_target_id']['summary']['format'] = 'default_summary';
+$handler->display->display_options['arguments']['rd_f_treat_related_patient_target_id']['summary_options']['items_per_page'] = '25';
+$handler->display->display_options['arguments']['rd_f_treat_related_patient_target_id']['specify_validation'] = TRUE;
+$handler->display->display_options['arguments']['rd_f_treat_related_patient_target_id']['validate']['type'] = 'node';
+$handler->display->display_options['arguments']['rd_f_treat_related_patient_target_id']['validate_options']['types'] = array(
+  'rd_ct_patient' => 'rd_ct_patient',
+);
+/* Filter criterion: Content: Type */
+$handler->display->display_options['filters']['type']['id'] = 'type';
+$handler->display->display_options['filters']['type']['table'] = 'node';
+$handler->display->display_options['filters']['type']['field'] = 'type';
+$handler->display->display_options['filters']['type']['value'] = array(
+  'rd_ct_treatment' => 'rd_ct_treatment',
+);
+
+/* Display: Page */
+$handler = $view->new_display('page', 'Page', 'page');
+$handler->display->display_options['path'] = 'historial-medidas/%';
+$translatables['measures_record'] = array(
+  t('Master'),
+  t('Measures\' record'),
+  t('more'),
+  t('Apply'),
+  t('Reset'),
+  t('Sort by'),
+  t('Asc'),
+  t('Desc'),
+  t('Treatment Date and Time'),
+  t('Related Practitioner'),
+  t('Centre'),
+  t('Fecha / Practicante / Centro'),
+  t('<b>[rd_f_treat_date_time]</b><br>
+[rd_f_treat_related_pract]<br>
+[rd_f_access_treat_centre]'),
+  t('Initial Comments'),
+  t('Measures'),
+  t('Final Comments'),
+  t('Medidas y comentarios'),
+  t('[rd_f_treat_ini_comments]</p>
+[rd_f_treat_measures]</p>
+[rd_f_treat_fin_comments]'),
+  t('All'),
+  t('Page'),
+);

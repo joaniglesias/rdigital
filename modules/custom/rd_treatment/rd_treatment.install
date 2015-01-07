@@ -29,11 +29,6 @@ function _get_text_formats_treatment() {
     'name' => 'Treatment',
     'weight' => 0,
     'filters' => array(
-      // Display any HTML as plain text
-      'filter_html_escape' => array(
-        'weight' => -10,
-        'status' => 1,
-      ),
       // Convert line breaks into HTML
       'filter_autop' => array(
         'weight' => 0,

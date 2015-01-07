@@ -1,30 +1,33 @@
 <?php
 
-
-// *******************************************************************************************
-//     NODE ACTIONS
-// *******************************************************************************************
-
-// TO DO
-
-
-
 // *******************************************************************************************
 //     VIEWS
 // *******************************************************************************************
 
-
-
 /**
 * Implementation of hook_views_api().
 */
-// function rd_treatment_views_api() {
-//   return array(
-//     'api' => '3.0',
-//     'path' => drupal_get_path('module', 'rd_patient')
-//   );
-// }
+function rd_treatment_views_api() {
+  return array(
+    'api' => '3.0',
+    'path' => drupal_get_path('module', 'rd_treatment')
+  );
+}
 
+
+
+// *******************************************************************************************
+//     PANELS
+// *******************************************************************************************
+
+/**
+* Implementation of hook_ctools_plugin_api().
+*/
+function rd_treatment_ctools_plugin_api($module, $api) {
+  if ($module == 'page_manager' && $api == 'pages_default') {
+    return array('version' => 1);
+  }
+}
 
 
 
