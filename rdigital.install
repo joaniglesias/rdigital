@@ -32,7 +32,7 @@ function rdigital_install() {
   module_enable(array(
     'rd_admin',
     'rd_patient',
-    'rd_appointment',
+    'rd_treatment',
     'rd_digital_keyboard',
   ));
 

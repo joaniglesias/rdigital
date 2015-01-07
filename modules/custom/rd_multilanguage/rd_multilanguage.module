@@ -334,8 +334,8 @@ function _update_string_translation() {
 function _yourmodule_profile_create_term_translation() {
   //http://blog.studio.gd/blog/id/17/drupal__how_to_create_and_translate_a_taxonomy_term_programmatically
     $context = array(
-    'rd_f_appo_treatment_measures',
-    'rd_ct_appointment',
+    'rd_f_treat_measures',
+    'rd_ct_treatment',
     'label',
   );
   $textgroup = 'field';

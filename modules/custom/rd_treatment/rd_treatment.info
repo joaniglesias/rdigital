@@ -1,5 +1,5 @@
-name = Rd Appointment
-description = Create Appointment Content Type and related entities and functionalities
+name = Rd Treatment
+description = Create Treatment Content Type and related entities and functionalities
 core = 7.x
 
 package = Recat Digital

@@ -22,7 +22,7 @@ function rd_digital_keyboard_install() {
 // *******************************************************************************************
 
 /**
- * Text Formats definition for Contet Type Appointment
+ * Text Formats definition for Contet Type Keyboard Button
  */
 function _get_text_formats_keyboard_button() {
 
@@ -50,7 +50,7 @@ function _get_text_formats_keyboard_button() {
 };
 
 /**
- * Get CKEditor Profile definitions for Contet Type Appointment
+ * Get CKEditor Profile definitions for Contet Type Keyboard Button
  *
  * NOTE: to get the profile settings use ckeditor_profile_load() to load all ckeditor profiles
  *       and var_export($my_array) to convert $my_array into php code
@@ -373,6 +373,6 @@ function _get_content_type_keyboard_button() {
 //     UPDATE FUNCTIONS
 // *******************************************************************************************
 
-// function rd_appointment_update_7000() {
+// function rd_digital_keyboard_update_7000() {
 
 // }

@@ -83,56 +83,6 @@ msgctxt "rd_f_patient_address:rd_ct_patient:label"
 msgid "Address"
 msgstr "Direccion"
 
-#: field:rd_f_appo_related_patient:#field:label
-msgctxt "rd_f_appo_related_patient:#field:label"
-msgid "Related Patient"
-msgstr "Paciente relacionado"
-
-#: field:rd_f_appo_date_time:#field:label
-msgctxt "rd_f_appo_date_time:#field:label"
-msgid "Appointment Date and time"
-msgstr "Dia y hora de la visita"
-
-#: field:rd_f_appo_temp_keyb_measures:#field:label
-msgctxt "rd_f_appo_temp_keyb_measures:#field:label"
-msgid "Temporary Keyboard Measures"
-msgstr "Medidas temporales del Teclado"
-
-#: field:rd_f_appo_treatment_measures:#field:label
-msgctxt "rd_f_appo_treatment_measures:#field:label"
-msgid "Treatment Measures"
-msgstr "Medidas del Tratamiento"
-
-#: field:rd_f_appo_treatment_comments:#field:label
-msgctxt "rd_f_appo_treatment_comments:#field:label"
-msgid "Treatment Comments"
-msgstr "Comentarios del Tratamiento"
-
-#: field:rd_f_appo_related_patient:rd_ct_appointment:label
-msgctxt "rd_f_appo_related_patient:rd_ct_appointment:label"
-msgid "Related Patient"
-msgstr "Paciente relacionado"
-
-#: field:rd_f_appo_date_time:rd_ct_appointment:label
-msgctxt "rd_f_appo_date_time:rd_ct_appointment:label"
-msgid "Appointment Date and Time"
-msgstr "Dia y hora de la visita"
-
-#: field:rd_f_appo_temp_keyb_measures:rd_ct_appointment:label
-msgctxt "rd_f_appo_temp_keyb_measures:rd_ct_appointment:label"
-msgid "Temporary Keyboard Measures"
-msgstr "Medidas temporales del teclado"
-
-#: field:rd_f_appo_treatment_measures:rd_ct_appointment:label
-msgctxt "rd_f_appo_treatment_measures:rd_ct_appointment:label"
-msgid "Treatment Measures"
-msgstr "Medidas del Tratamiento"
-
-#: field:rd_f_appo_treatment_comments:rd_ct_appointment:label
-msgctxt "rd_f_appo_treatment_comments:rd_ct_appointment:label"
-msgid "Treatment Comments"
-msgstr "Comentarios del Tratamiento"
-
 #: field:rd_f_keyb_button_type:#field:label
 msgctxt "rd_f_keyb_button_type:#field:label"
 msgid "Button Type"
@@ -182,14 +132,3 @@ msgstr "Texto que sera escrito despues de hacer click sobre el boton"
 msgctxt "rd_f_keyb_button_vocabulary:rd_ct_keyboard_button:label"
 msgid "Button Related Vocabulary"
 msgstr "Vocabulario relacionado con el botob"
-
-#: field:rd_f_appo_telephone:#field:label
-msgctxt "rd_f_appo_telephone:#field:label"
-msgid "Patient Telephone"
-msgstr "Telefono del Paciente"
-
-#: field:rd_f_appo_telephone:rd_ct_appointment:label
-msgctxt "rd_f_appo_telephone:rd_ct_appointment:label"
-msgid "Patient Telephone"
-msgstr "Telefono del Paciente"
-

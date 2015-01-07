@@ -22,12 +22,6 @@ msgstr "Funcionalidades comunes para todos los modulos personales de Recat Digit
 msgid "Recat Digital"
 msgstr "Recat Digital"
 
-msgid "Rd Appointment"
-msgstr "Rd Visita"
-
-msgid "Create Appointment Content Type and related entities and functionalities"
-msgstr "Crear tipo de contenido Visita y sus entitdades y funcionalidades relacionadas"
-
 msgid "Autocomplete popup"
 msgstr "Popup de autocompletado"
 

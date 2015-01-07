@@ -42,19 +42,3 @@ msgstr "Nombre"
 msgctxt "type:rd_ct_keyboard_button:description"
 msgid "Create a new Keyboard Button"
 msgstr "Crear un nuevo boton de teclado"
-
-#: node:type:rd_ct_appointment:name
-msgctxt "type:rd_ct_appointment:name"
-msgid "Appointment"
-msgstr "Visita"
-
-#: node:type:rd_ct_appointment:title_label
-msgctxt "type:rd_ct_appointment:title_label"
-msgid "Patient Full Name"
-msgstr "Nombre completo del Paciente"
-
-#: node:type:rd_ct_appointment:description
-msgctxt "type:rd_ct_appointment:description"
-msgid "Create a new Appointment"
-msgstr "Crear una nueva visita"
-
