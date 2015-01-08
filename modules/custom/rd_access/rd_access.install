@@ -10,6 +10,9 @@ function rd_access_install() {
   // create new roles and permissions
   _create_update_roles_and_permissions($ct_name);
 
+  // revoke "View Published Content" permission to Anonymous User role
+  user_role_revoke_permissions(1,array('access content'));
+
   // create new fields and instances
   _create_fields($ct_name);
   _create_instances($ct_name);
