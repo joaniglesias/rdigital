@@ -107,6 +107,9 @@ projects[token][version] = "1.5"
 projects[entityform][subdir] = "contrib"
 projects[entityform][version] = "2.0-rc1"
 
+projects[prepopulate][subdir] = "contrib"
+projects[prepopulate][version] = "2.0"
+
 
 ; Modules for development
 

@@ -91,6 +91,7 @@ dependencies[] = i18n_variable
 
 ;Forms
 dependencies[] = entityform
+dependencies[] = prepopulate
 
 
 ; -- DEVELOPMENT --
