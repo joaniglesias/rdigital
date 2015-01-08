@@ -1,0 +1,20 @@
+<?php
+/**
+ * Implements hook_default_entityform_type().
+ */
+function rd_forms_default_entityform_type() {
+  $entityforms = array();
+
+  $files = file_scan_directory(drupal_get_path('module', 'rd_forms') .'/entityforms', '/\.inc/');
+  foreach ($files as $absolute => $file) {
+    require $absolute;
+    if (isset($entityform_code)) {
+      $entityforms[$file->name] = entity_import(
+        'entityform_type',
+        $entityform_code
+      );
+    }
+  }
+
+  return $entityforms;
+}

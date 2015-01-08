@@ -1,0 +1,123 @@
+<?php
+
+function rd_forms_install() {
+
+  $ct_name = 'rdforms';
+
+  // create new fields and instances
+  _create_fields($ct_name);
+  _create_instances($ct_name);
+}
+
+
+// *******************************************************************************************
+//     FIELDS AND INSTANCES
+// *******************************************************************************************
+
+/**
+ * Fields definition for Contet Type Patient
+ */
+function _get_fields_rdforms() {
+  $t = get_t();
+  $fields = array();
+  $fields['rd_f_forms_related_patient'] = array(
+    'field_name' => 'rd_f_forms_related_patient',
+    'type' => 'entityreference',
+    'label' => $t('Related Patient'),
+    'cardinality' => 1,
+    'settings' => array(
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'rd_ct_patient' => 'rd_ct_patient',
+        ),
+      ),
+      'target_type' => 'node',
+    ),
+  );
+
+  // formulario_tabaco_test
+  $fields['rd_f_forms_question_1'] = array(
+    'field_name' => 'rd_f_forms_question_1',
+    'type' => 'text',
+    'label' => $t('Question 1'),
+    'cardinality' => 1,
+    'settings' => array(
+      'max_length' => 255,
+    ),
+  );
+
+  return $fields;
+}
+
+/**
+ * Instances definition for Contet Type Patient
+ */
+function _get_instances_rdforms() {
+  $t = get_t();
+
+  // formulario_tabaco_test
+  $instances = array(
+    'rd_f_forms_related_patient' => array(
+      'field_name' => 'rd_f_forms_related_patient',
+      'entity_type' => 'entityform',
+      'bundle' => 'formulario_tabaco_test',
+      'label' => $t('Related Patient'),
+      'description' => '',
+      'required' => TRUE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete_tags',
+      ),
+    ),
+    'rd_f_forms_question_1' => array(
+      'field_name' => 'rd_f_forms_question_1',
+      'entity_type' => 'entityform',
+      'bundle' => 'formulario_tabaco_test',
+      'label' => $t('Question 1'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+      ),
+    ),
+  );
+
+  return $instances;
+
+}
+
+// *******************************************************************************************
+//     UPDATE FUNCTIONS
+// *******************************************************************************************
+
+// function rd_forms_update_7000() {
+
+// }
+

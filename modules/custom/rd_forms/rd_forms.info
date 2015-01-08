@@ -1,0 +1,8 @@
+name = Rd Forms
+description = This module creates custom forms to be used across the site (i.e: within treatments)
+core = 7.x
+
+package = Recat Digital
+
+dependencies[] = entityform
+
