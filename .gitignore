@@ -1,6 +1,7 @@
 # exclude files added by Drush make
 
 modules/contrib/*
+modules/develop/*
 modules/vimn*
 themes/contrib/*
 themes/vimn/*
