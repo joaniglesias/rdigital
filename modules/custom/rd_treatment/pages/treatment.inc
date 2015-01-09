@@ -505,7 +505,7 @@ $display->panels = array();
     'link_to_view' => 0,
     'args' => '',
     'url' => '',
-    'display' => 'default',
+    'display' => 'page',
     'context' => array(
       0 => 'argument_entity_id:node_1.nid',
     ),

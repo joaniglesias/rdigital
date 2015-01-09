@@ -38,6 +38,11 @@ $handler->display->display_options['fields']['link_entityform']['field'] = 'link
 $handler->display->display_options['fields']['label']['id'] = 'label';
 $handler->display->display_options['fields']['label']['table'] = 'entityform_type';
 $handler->display->display_options['fields']['label']['field'] = 'label';
+/* Sort criterion: Entityform Submission: Date submitted */
+$handler->display->display_options['sorts']['created']['id'] = 'created';
+$handler->display->display_options['sorts']['created']['table'] = 'entityform';
+$handler->display->display_options['sorts']['created']['field'] = 'created';
+$handler->display->display_options['sorts']['created']['order'] = 'DESC';
 /* Contextual filter: Entityform Submission: Related Patient (rd_f_forms_related_patient) */
 $handler->display->display_options['arguments']['rd_f_forms_related_patient_target_id']['id'] = 'rd_f_forms_related_patient_target_id';
 $handler->display->display_options['arguments']['rd_f_forms_related_patient_target_id']['table'] = 'field_data_rd_f_forms_related_patient';
