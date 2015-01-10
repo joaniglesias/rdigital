@@ -64,7 +64,7 @@ function _create_rd_form($form, &$form_state, $conf, $context) {
   $form['submit'] = array(
     '#type' => 'submit',
     '#value' => t('Create'),
-    '#prepoplulate_url' => $context->data->title . ' (' . $context->data->vid . ')',
+    '#prepoplulate_url' => '"' . $context->data->title . ' (' . $context->data->vid . ')"',
   );
 
   return $form;
