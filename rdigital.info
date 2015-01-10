@@ -93,6 +93,9 @@ dependencies[] = i18n_variable
 dependencies[] = entityform
 dependencies[] = prepopulate
 
+:Bootstrap
+dependencies[] = jquery_update
+
 
 ; -- DEVELOPMENT --
 

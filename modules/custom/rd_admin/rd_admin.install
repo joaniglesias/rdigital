@@ -5,6 +5,9 @@ function rd_admin_install() {
   // better_formats module config
   variable_set('better_formats_per_field_core', 0);
 
+  // jquery_update module configuration
+  variable_set('jquery_update_jquery_admin_version', 'default');
+
 }
 
 
