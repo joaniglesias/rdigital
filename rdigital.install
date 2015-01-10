@@ -13,20 +13,22 @@ function rdigital_install() {
   variable_set('cron_safe_threshold', 3600);
 
 
-  $default_theme = 'seven';
-  //$admin_theme = 'sky_bartik';
-  // // Enable themes
-  // $enable = array(
-  //   'theme_default' => $default_theme,
-  //   'admin_theme' => $admin_theme,
-  // );
-  // theme_enable($enable);
+  $default_theme = 'bootstrap';
+  $admin_theme = 'seven';
+  // Enable themes
+  $enable = array(
+    'theme_default' => $default_theme,
+    'admin_theme' => $admin_theme,
+    'bootstrap' => 'bootstrap',
+    //'vimn_bootstrap_subtheme' => 'vimn_bootstrap_subtheme',
+  );
+  theme_enable($enable);
 
-  // foreach ($enable as $var => $theme) {
-  //   if (!is_numeric($var)) {
-  //     variable_set($var, $theme);
-  //   }
-  // }
+  foreach ($enable as $var => $theme) {
+    if (!is_numeric($var)) {
+      variable_set($var, $theme);
+    }
+  }
 
   // Enable the custom modules
   module_enable(array(
