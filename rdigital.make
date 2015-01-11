@@ -134,4 +134,4 @@ libraries[ckeditor][directory_name] = "ckeditor"
 
 ; Themes
 
-projects[bootstrap][version] = "3.0"
+projects[bootstrap][version] = "3.x-dev"
