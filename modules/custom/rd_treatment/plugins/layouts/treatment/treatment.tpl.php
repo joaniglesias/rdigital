@@ -164,13 +164,7 @@
 </div>
 <?php //dpm(get_defined_vars()); ?>
 
-
-<!-- Button trigger modal -->
-<a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#CreateForm">
-  Launch demo modal
-</a>
-
-<!-- Modal -->
+<!-- Modal Create Form -->
 <div class="modal fade" id="CreateForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
