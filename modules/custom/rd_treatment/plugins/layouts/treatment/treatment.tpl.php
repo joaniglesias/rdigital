@@ -1,18 +1,29 @@
 <!-- Patient Region -->
-<div class="well">
-  <h4> <?php print $content['patient']; ?> </h4>
+<?php $reg_machine_name='patient'; ?>
+<div class="panel panel-primary">
+  <div class="panel-heading" >
+    <h5>
+      <?php print $layout['regions'][$reg_machine_name]; ?>
+    </h5>
+    <h3>
+      <?php print $content['patient']; ?>
+    </h3>
+  </div>
 </div>
 
 <div class="panel-group" role="tablist" aria-multiselectable="true">
 
   <!-- Patient Details Region -->
   <?php $reg_machine_name='patient-details'; ?>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="heading-<?php print $reg_machine_name; ?>">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="true" aria-controls="collapseOne">
-          <?php print t('Patient Details'); ?>
-        </a>
+  <div class="panel panel-info">
+
+    <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
+      <a class="btn btn-primary pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
+        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
+        </span>
+      </a>
+      <h4 class="panel-title" style="margin-top: 7.5px;">
+        <?php print t('Patient Details'); ?>
       </h4>
     </div>
     <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
@@ -29,12 +40,14 @@
 
   <!-- Form Region -->
   <?php $reg_machine_name='rdforms'; ?>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="heading-<?php print $reg_machine_name; ?>">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="true" aria-controls="collapseOne">
-          <?php print $layout['regions'][$reg_machine_name]; ?>
-        </a>
+  <div class="panel panel-info">
+    <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
+      <a class="btn btn-primary pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
+        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
+        </span>
+      </a>
+      <h4 class="panel-title" style="margin-top: 7.5px;">
+        <?php print $layout['regions'][$reg_machine_name]; ?>
       </h4>
     </div>
     <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
@@ -46,12 +59,14 @@
 
   <!-- Measures Record Region -->
   <?php $reg_machine_name='measures_record'; ?>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="heading-<?php print $reg_machine_name; ?>">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="true" aria-controls="collapseOne">
-          <?php print $layout['regions'][$reg_machine_name]; ?>
-        </a>
+  <div class="panel panel-success">
+    <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
+      <a class="btn btn-success pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
+        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
+        </span>
+      </a>
+      <h4 class="panel-title" style="margin-top: 7.5px;">
+        <?php print $layout['regions'][$reg_machine_name]; ?>
       </h4>
     </div>
     <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
@@ -63,12 +78,14 @@
 
   <!-- Treatment Details Region -->
   <?php $reg_machine_name='treatment-details'; ?>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="heading-<?php print $reg_machine_name; ?>">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="true" aria-controls="collapseOne">
-          <?php print t('Treatment Details'); ?>
-        </a>
+  <div class="panel panel-danger">
+    <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
+      <a class="btn btn-danger pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
+        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
+        </span>
+      </a>
+      <h4 class="panel-title" style="margin-top: 7.5px;">
+        <?php print t('Treatment Details'); ?>
       </h4>
     </div>
     <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
@@ -85,12 +102,14 @@
 
   <!-- Initial Comments Region -->
   <?php $reg_machine_name='initial_comments'; ?>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="heading-<?php print $reg_machine_name; ?>">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="true" aria-controls="collapseOne">
-          <?php print $layout['regions'][$reg_machine_name]; ?>
-        </a>
+  <div class="panel panel-danger">
+    <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
+      <a class="btn btn-danger pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
+        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
+        </span>
+      </a>
+      <h4 class="panel-title" style="margin-top: 7.5px;">
+        <?php print $layout['regions'][$reg_machine_name]; ?>
       </h4>
     </div>
     <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
@@ -102,12 +121,14 @@
 
   <!-- Measures Region -->
   <?php $reg_machine_name='measures'; ?>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="heading-<?php print $reg_machine_name; ?>">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="true" aria-controls="collapseOne">
-          <?php print $layout['regions'][$reg_machine_name]; ?>
-        </a>
+  <div class="panel panel-danger">
+    <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
+      <a class="btn btn-danger pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
+        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
+        </span>
+      </a>
+      <h4 class="panel-title" style="margin-top: 7.5px;">
+        <?php print $layout['regions'][$reg_machine_name]; ?>
       </h4>
     </div>
     <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
@@ -119,12 +140,14 @@
 
   <!-- Final Comments Region -->
   <?php $reg_machine_name='final_comments'; ?>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="heading-<?php print $reg_machine_name; ?>">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="true" aria-controls="collapseOne">
-          <?php print $layout['regions'][$reg_machine_name]; ?>
-        </a>
+  <div class="panel panel-danger">
+    <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
+      <a class="btn btn-danger pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
+        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
+        </span>
+      </a>
+      <h4 class="panel-title" style="margin-top: 7.5px;">
+        <?php print $layout['regions'][$reg_machine_name]; ?>
       </h4>
     </div>
     <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">

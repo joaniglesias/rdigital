@@ -121,7 +121,7 @@ $display->panels = array();
       'empty_text' => '',
     ),
     'context' => 'argument_entity_id:node_2',
-    'override_title' => 0,
+    'override_title' => 1,
     'override_title_text' => '',
   );
   $pane->cache = array();
@@ -154,7 +154,7 @@ $display->panels = array();
       'empty_text' => '',
     ),
     'context' => 'argument_entity_id:node_2',
-    'override_title' => 0,
+    'override_title' => 1,
     'override_title_text' => '',
   );
   $pane->cache = array();
@@ -187,7 +187,7 @@ $display->panels = array();
       'empty_text' => '',
     ),
     'context' => 'argument_entity_id:node_2',
-    'override_title' => 0,
+    'override_title' => 1,
     'override_title_text' => '',
   );
   $pane->cache = array();
@@ -224,7 +224,7 @@ $display->panels = array();
       0 => 'argument_entity_id:node_1.nid',
     ),
     'override_title' => 1,
-    'override_title_text' => 'Historial de Medidas',
+    'override_title_text' => '',
   );
   $pane->cache = array();
   $pane->style = array(
@@ -247,7 +247,7 @@ $display->panels = array();
     'link' => 0,
     'context' => 'argument_entity_id:node_1',
     'override_title' => 1,
-    'override_title_text' => 'Paciente',
+    'override_title_text' => '',
   );
   $pane->cache = array();
   $pane->style = array(
