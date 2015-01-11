@@ -74,7 +74,8 @@ function _create_rd_form_submit($form, &$form_state) {
   // prepopulate the url with the pacient id
   $url = 'eform/submit/' . $form_state['values']['rdform'];
   $params = array(
-    'edit[rd_f_forms_related_patient][und]' => $form_state['complete form']['submit']['#prepoplulate_url']
+    'edit[rd_f_forms_related_patient][und]' => $form_state['complete form']['submit']['#prepoplulate_url'],
+    'destination' => $_GET['q'],
     );
   drupal_goto($url, array('query' => $params));
 }
