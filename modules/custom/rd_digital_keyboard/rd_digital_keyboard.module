@@ -2,25 +2,135 @@
 
 
 // *******************************************************************************************
-//     NODE ACTIONS
+//     PANELS
 // *******************************************************************************************
 
-// TO DO
+/**
+* Implementation of hook_ctools_plugin_api().
+*/
+function rd_digital_keyboard_ctools_plugin_api($module, $api) {
+  if ($module == 'page_manager' && $api == 'pages_default') {
+    return array('version' => 1);
+  }
+}
 
+/**
+ * Implements hook_ctools_plugin_directory()
+ */
+function rd_digital_keyboard_ctools_plugin_directory($module, $plugin) {
+  // if ($module == "panels" && in_array($plugin, array('layouts', 'styles'))) {
+  //   return "plugins/". $plugin;
+  // }
+  if ($module == 'page_manager' && $plugin == 'content_types' || $module == 'ctools') {
+    return 'plugins/' . $plugin;
+  }
+}
 
 
 // *******************************************************************************************
-//     VIEWS
+//     MENU
 // *******************************************************************************************
 
+/**
+ * Implements hook_menu().
+ */
+function rd_digital_keyboard_menu(){
+  $items = array();
+
+  $items['keyboard_button/nojs/%'] = array(
+    'page callback' => 'rd_digital_keyboard_button_callback',
+    'page arguments' => array(1, 2),
+    'access callback' => TRUE,
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK
+  );
+
+  $items['keyboard_button/ajax/%'] = array(
+    'delivery callback' => 'ajax_deliver'
+  ) + $items['keyboard_button/nojs/%'];
+
+  return $items;
+
+}
 
 
 /**
-* Implementation of hook_views_api().
-*/
-// function rd_digital_keyboard_views_api() {
-//   return array(
-//     'api' => '3.0',
-//     'path' => drupal_get_path('module', 'rd_patient')
-//   );
-// }
+ * Update tweet status and reload the views
+ * @param  [type] $ajax     [description]
+ * @param  [type] $action   [description]
+ * @param  [type] $node_id [description]
+ * @return [type]           [description]
+ */
+function rd_digital_keyboard_button_callback($ajax, $text) {
+  $isAjax = $ajax === 'ajax';
+  $treatment = node_load(13);
+  $treatment->field_nuevo_comentario['und'][0]['value'] .= 'AJAX';
+  node_save($treatment);
+
+  // ACTIONS DONE IN THE SERVER
+  // $actions = vimn_twitter_voting_chat_get_actions();
+  // $status = array(
+  //   'pre_select' => 'pre_selected',
+  //   'on_air_next' => 'on_air_next',
+  //   'on_air_now' => 'on_air_next',
+  //   'delete' => 'deleted');
+
+  // $node = node_load($node_id);
+  // $chat_id = $node->vimn_f_tweet_parent_chat['und'][0]['nid'];
+  // $current_status = $node->vimn_f_tweet_status['und'][0]['value'];
+  // $new_status = $status[$action];
+
+  // if (vimn_twitter_voting_chat_validate_action_id($action) && $node){
+  //   $a = ($action == 'unpin') ? 'pin' : $action;
+  //   rules_invoke_all('action_link_clicked', $node, $a);
+  // }
+
+  if ($isAjax) {
+    $commands = array();
+
+    // if ($action == 'pin' || $action == 'unpin') {
+    //   $commands[] = create_reload_view_command($current_status, $chat_id);
+    // }
+    // else {
+    //   $commands[] = create_reload_view_command($current_status, $chat_id);
+    //   $commands[] = create_reload_view_command($new_status, $chat_id);
+    // }
+    // // If the tweet is listed in Aired View, refresh that view as well
+    // if ($node->vimn_f_tweet_times_aired['und'][0]['value'] > 0) {
+    //   $commands[] = ajax_command_replace('.view-display-id-page_3',
+    //     views_embed_view('tweets', 'page_3', $chat_id));
+    // }
+    // $commands[] = ajax_command_replace('pane-digital-keyboard', $text);
+    // $commands[] = ajax_command_invoke('.tooltip', 'hide'); //workaround to hide any tooltips that are still displayed
+
+
+    //$commands[] = ajax_command_after('div h2.pane-title', $text);
+    //$commands[] = ajax_command_append('#edit-field-nuevo-comentario-und-0-value', 'AJAX');
+    $commands[] = ajax_command_invoke('div#nuevo textarea', 'html', array($treatment->field_nuevo_comentario['und'][0]['value']));
+    //$commands[] = ajax_command_invoke('cke_contents_edit-rd-f-treat-fin-comments-und-0-value iframe', 'html', array('hola'));
+    return array('#type' => 'ajax', '#commands' => $commands);
+  }
+  else {
+    drupal_goto();
+  }
+}
+
+/**
+ * Implement hook_page_build
+ * Load module assets for page and views defined in includes/pages and includes/views only
+ */
+function rd_digital_keyboard_page_build(&$page) {
+  $url_patterns = array(
+    '#^create-treatment/.+$#i',
+  );
+
+  foreach ($url_patterns as $pattern) {
+    if (preg_match($pattern, request_path())) {
+      drupal_add_library('system', 'drupal.ajax');
+      drupal_add_library('system', 'jquery.form');
+      drupal_add_js(drupal_get_path('module', 'rd_digital_keyboard') .'/js/button.js');
+      //drupal_add_js(drupal_get_path('module', 'vimn_twitter_voting_chat') .'/javascripts/chat.ui.js');
+      //drupal_add_css(drupal_get_path('module', 'vimn_twitter_voting_chat') . '/themes/stylesheets/vimn_twitter_voting_chat.css', array('group' => CSS_THEME, 'every_page' => FALSE));
+    }
+  }
+}

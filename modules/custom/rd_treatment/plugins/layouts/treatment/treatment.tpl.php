@@ -26,7 +26,7 @@
         <?php print t('Patient Details'); ?>
       </h4>
     </div>
-    <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
+    <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
       <div class="panel-body row">
         <div class="col-xs-6">
           <?php print $content['patient_details_left']; ?>
@@ -155,7 +155,7 @@
         <?php print $layout['regions'][$reg_machine_name]; ?>
       </h4>
     </div>
-    <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
+    <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
       <div class="panel-body">
         <?php print $content[$reg_machine_name]; ?>
       </div>

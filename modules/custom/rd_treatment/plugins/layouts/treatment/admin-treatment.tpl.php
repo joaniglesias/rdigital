@@ -32,6 +32,5 @@
   <div class="full-size">
     <?php print $content['final_comments']; ?>
   </div>
-<div class="clear"></div>
 </div>
 
