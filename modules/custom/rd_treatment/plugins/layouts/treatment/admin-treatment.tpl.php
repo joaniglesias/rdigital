@@ -2,11 +2,13 @@
   <div class="full-size">
     <?php print $content['patient']; ?>
   </div>
-  <div class="half-size">
-    <?php print $content['patient_details_left']; ?>
+  <div class="full-size">
+    <div class="half-size">
+      <?php print $content['patient_details_left']; ?>
+    </div>
+    <div class="half-size">
+      <?php print $content['patient_details_right']; ?>
   </div>
-  <div class="half-size">
-    <?php print $content['patient_details_right']; ?>
   </div>
   <div class="full-size">
     <?php print $content['rdforms_actions']; ?>
@@ -17,11 +19,13 @@
   <div class="full-size">
     <?php print $content['measures_record']; ?>
   </div>
-  <div class="half-size">
-    <?php print $content['treatment_details_left']; ?>
-  </div>
-  <div class="half-size">
-    <?php print $content['treatment_details_right']; ?>
+  <div class="full-size">
+    <div class="half-size">
+      <?php print $content['treatment_details_left']; ?>
+    </div>
+    <div class="half-size">
+      <?php print $content['treatment_details_right']; ?>
+    </div>
   </div>
   <div class="full-size">
     <?php print $content['initial_comments']; ?>

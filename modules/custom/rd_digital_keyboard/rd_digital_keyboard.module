@@ -18,9 +18,9 @@ function rd_digital_keyboard_ctools_plugin_api($module, $api) {
  * Implements hook_ctools_plugin_directory()
  */
 function rd_digital_keyboard_ctools_plugin_directory($module, $plugin) {
-  // if ($module == "panels" && in_array($plugin, array('layouts', 'styles'))) {
-  //   return "plugins/". $plugin;
-  // }
+  if ($module == "panels" && in_array($plugin, array('layouts', 'styles'))) {
+    return "plugins/". $plugin;
+  }
   if ($module == 'page_manager' && $plugin == 'content_types' || $module == 'ctools') {
     return 'plugins/' . $plugin;
   }
