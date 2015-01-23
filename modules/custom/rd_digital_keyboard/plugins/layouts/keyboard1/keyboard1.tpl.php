@@ -28,44 +28,48 @@
 <!-- Columns 1,2,3 and 4 Region -->
 <div class="row">
   <div class="col-xs-3">
-    <?php print $content['col_1_top']; ?>
+    <div class="row">
+      <?php print $content['col_1_top']; ?>
+    </div>
+    <div class="row">
+      <?php print $content['col_1_middle']; ?>
+    </div>
+    <div class="row">
+      <?php print $content['col_1_bottom']; ?>
+    </div>
   </div>
   <div class="col-xs-3">
-    <?php print $content['col_2_top']; ?>
+    <div class="row">
+      <?php print $content['col_2_top']; ?>
+    </div>
+    <div class="row">
+      <?php print $content['col_2_middle']; ?>
+    </div>
+    <div class="row">
+      <?php print $content['col_2_bottom']; ?>
+    </div>
   </div>
   <div class="col-xs-3">
-    <?php print $content['col_3_top']; ?>
+    <div class="row">
+      <?php print $content['col_3_top']; ?>
+    </div>
+    <div class="row">
+      <?php print $content['col_3_middle']; ?>
+    </div>
+    <div class="row">
+      <?php print $content['col_3_bottom']; ?>
+    </div>
   </div>
   <div class="col-xs-3">
-    <?php print $content['col_4_top']; ?>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-3">
-    <?php print $content['col_1_middle']; ?>
-  </div>
-  <div class="col-xs-3">
-    <?php print $content['col_2_middle']; ?>
-  </div>
-  <div class="col-xs-3">
-    <?php print $content['col_3_middle']; ?>
-  </div>
-  <div class="col-xs-3">
-    <?php print $content['col_4_middle']; ?>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-3">
-    <?php print $content['col_1_bottom']; ?>
-  </div>
-  <div class="col-xs-3">
-    <?php print $content['col_2_bottom']; ?>
-  </div>
-  <div class="col-xs-3">
-    <?php print $content['col_3_bottom']; ?>
-  </div>
-  <div class="col-xs-3">
-    <?php print $content['col_4_bottom']; ?>
+    <div class="row">
+      <?php print $content['col_4_top']; ?>
+    </div>
+    <div class="row">
+      <?php print $content['col_4_middle']; ?>
+    </div>
+    <div class="row">
+      <?php print $content['col_4_bottom']; ?>
+    </div>
   </div>
 </div>
 
