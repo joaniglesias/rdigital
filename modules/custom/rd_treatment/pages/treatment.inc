@@ -95,6 +95,7 @@ $display->panel_settings = array(
     'initial_comments' => NULL,
     'measures' => NULL,
     'final_comments' => NULL,
+    'rdforms_actions' => NULL,
   ),
 );
 $display->cache = array();
@@ -128,7 +129,10 @@ $display->panels = array();
   $pane->style = array(
     'settings' => NULL,
   );
-  $pane->css = array();
+  $pane->css = array(
+    'css_id' => 'final_comments',
+    'css_class' => '',
+  );
   $pane->extras = array();
   $pane->position = 0;
   $pane->locks = array();
@@ -161,7 +165,10 @@ $display->panels = array();
   $pane->style = array(
     'settings' => NULL,
   );
-  $pane->css = array();
+  $pane->css = array(
+    'css_id' => 'initial_comments',
+    'css_class' => '',
+  );
   $pane->extras = array();
   $pane->position = 0;
   $pane->locks = array();
@@ -194,7 +201,10 @@ $display->panels = array();
   $pane->style = array(
     'settings' => NULL,
   );
-  $pane->css = array();
+  $pane->css = array(
+    'css_id' => 'measures',
+    'css_class' => '',
+  );
   $pane->extras = array();
   $pane->position = 0;
   $pane->locks = array();

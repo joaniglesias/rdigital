@@ -22,9 +22,10 @@ console.log('hola');
       $('button.vm-js').once('vimn-twitter', function() {
         $(this).click(function() {
           //var content = $('div#nuevo textarea').val();
-          var ckeditor_id = $('div#medidas textarea').attr('id');
+          var field_to_edit = $(this).attr('field-to-edit');
+          var ckeditor_id = $('div#' + field_to_edit + ' textarea').attr('id');
           var ckeditor_text = CKEDITOR.instances[ckeditor_id].getData();
-          var button_text = $(this).attr('text-boto');
+          var button_text = $(this).attr('text-to-print');
           //insert text with no <p> tag http://ckeditor.com/forums/CKEditor/Jquery-data-insert-into-editor
           //Background color: http://jsbin.com/osohak/7/edit?html,js,output
           //console.log(content);

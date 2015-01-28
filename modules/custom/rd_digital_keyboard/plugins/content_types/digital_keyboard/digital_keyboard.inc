@@ -55,7 +55,7 @@ $link_ajax = l($link_inner, 'keyboard_button/nojs/'. $value,
                   'class' => 'use-ajax btn btn-info vm-icon-button',
                   'data-toggle' => 'tooltip',
                   'data-placement' => 'top',
-                  'text-boto' => '<b>barcelona</p>',
+                  'text-to-print' => '<b>barcelona</p>',
                   'title' => $value),
                 'html' => TRUE)
         );
@@ -69,70 +69,70 @@ $link_js = l($link_inner, '/create-treatment/12/13',
                     'data-toggle' => 'tooltip',
                     //'data-target' => '11/13',
                     'data-placement' => 'top',
-                    'text-boto' => 'Joan',
+                    'text-to-print' => 'Joan',
                     'title' => 'JS'),
                   //'external' => FALSE, //NOTE: this is to create an anchor '#' to th href link
                   //'fragment' => FALSE,
                   'html' => TRUE
                 )
               );
-$link_js = "<button class='btn btn-danger vm-js' text-boto='\n\tHOLA'>Hola</button>";
+$link_js = "<button class='btn btn-danger vm-js' text-to-print='\n\tHOLA'>Hola</button>";
 $output = "
-<div class='row well'>
+<div class='row panel'>
   <div class='col-xs-3'>
-    <div class='row' >
-         <button class='btn btn-danger vm-js' text-boto='MF'>MF</button>
-         <button class='btn btn-danger vm-js' text-boto='F'>F</button>
-         <button class='btn btn-danger vm-js' text-boto='+'>+</button>
-         <button class='btn btn-danger vm-js' text-boto='+++'>+++</button>
+    <div class='row panel' >
+         <button class='btn btn-danger vm-js' text-to-print='MF'>MF</button>
+         <button class='btn btn-danger vm-js' text-to-print='F'>F</button>
+         <button class='btn btn-danger vm-js' text-to-print='+'>+</button>
+         <button class='btn btn-danger vm-js' text-to-print='+++'>+++</button>
     </div>
-    <div class='row' >
-         <button class='btn btn-danger vm-js' text-boto='\n'>ENTER</button>
-         <button class='btn btn-danger vm-js' text-boto='\t'>TAB</button>
+    <div class='row panel' >
+         <button class='btn btn-danger vm-js' text-to-print='\n'>ENTER</button>
+         <button class='btn btn-danger vm-js' text-to-print='\t'>TAB</button>
     </div>
   </div>
   <div class='col-xs-3'>
-    <div class='row' >
-         <button class='btn btn-danger vm-js' text-boto='\n\tf/F'>f / F</button>
-         <button class='btn btn-danger vm-js' text-boto='\n\tr/F'>r / F</button>
-         <button class='btn btn-danger vm-js' text-boto='\n\tp/F'>p / F</button>
+    <div class='row panel' >
+         <button class='btn btn-danger vm-js' text-to-print='\n\tf/F'>f / F</button>
+         <button class='btn btn-danger vm-js' text-to-print='\n\tr/F'>r / F</button>
+         <button class='btn btn-danger vm-js' text-to-print='\n\tp/F'>p / F</button>
     </div>
-    <div class='row' >
-         <button class='btn btn-danger vm-js' text-boto='\n\tf/R'>f / R</button>
-         <button class='btn btn-danger vm-js' text-boto='\n\tr/R'>r / R</button>
-         <button class='btn btn-danger vm-js' text-boto='\n\tp/R'>p / R</button>
+    <div class='row panel' >
+         <button class='btn btn-danger vm-js' text-to-print='\n\tf/R'>f / R</button>
+         <button class='btn btn-danger vm-js' text-to-print='\n\tr/R'>r / R</button>
+         <button class='btn btn-danger vm-js' text-to-print='\n\tp/R'>p / R</button>
     </div>
-    <div class='row' >
-         <button class='btn btn-danger vm-js' text-boto='\n\tf/P'>f / P</button>
-         <button class='btn btn-danger vm-js' text-boto='\n\tr/P'>r / P</button>
-         <button class='btn btn-danger vm-js' text-boto='\n\tp/P'>p / P</button>
+    <div class='row panel' >
+         <button class='btn btn-danger vm-js' text-to-print='\n\tf/P'>f / P</button>
+         <button class='btn btn-danger vm-js' text-to-print='\n\tr/P'>r / P</button>
+         <button class='btn btn-danger vm-js' text-to-print='\n\tp/P'>p / P</button>
     </div>
   </div>
   <div class='col-xs-3'>
-        <div class='row' >
-         <button class='btn btn-danger vm-js' text-boto='ABB'>ABB</button>
-         <button class='btn btn-danger vm-js' text-boto='Material'>Material</button>
-         <button class='btn btn-danger vm-js' text-boto='Immaterial'>Immaterial</button>
+        <div class='row panel' >
+         <button class='btn btn-danger vm-js' text-to-print='ABB'>ABB</button>
+         <button class='btn btn-danger vm-js' text-to-print='Material'>Material</button>
+         <button class='btn btn-danger vm-js' text-to-print='Immaterial'>Immaterial</button>
         </div>
-        <div class='row' >
-         <button class='btn btn-danger vm-js' text-boto='A'>A</button>
-         <button class='btn btn-danger vm-js' text-boto='T'>T</button>
-         <button class='btn btn-danger vm-js' text-boto='G'>G</button>
-         <button class='btn btn-danger vm-js' text-boto='C'>C</button>
+        <div class='row panel' >
+         <button class='btn btn-danger vm-js' text-to-print='A'>A</button>
+         <button class='btn btn-danger vm-js' text-to-print='T'>T</button>
+         <button class='btn btn-danger vm-js' text-to-print='G'>G</button>
+         <button class='btn btn-danger vm-js' text-to-print='C'>C</button>
         </div>
   </div>
   <div class='col-xs-3'>
-        <div class='row' >
-         <button class='btn btn-danger vm-js' text-boto='dreta'>dreta</button>
-         <button class='btn btn-danger vm-js' text-boto='esquerre'>esquerre</button>
-         <button class='btn btn-danger vm-js' text-boto='davant'>davant</button>
-         <button class='btn btn-danger vm-js' text-boto='darrera'>darrera</button>
+        <div class='row panel' >
+         <button class='btn btn-danger vm-js' text-to-print='dreta'>dreta</button>
+         <button class='btn btn-danger vm-js' text-to-print='esquerre'>esquerre</button>
+         <button class='btn btn-danger vm-js' text-to-print='davant'>davant</button>
+         <button class='btn btn-danger vm-js' text-to-print='darrera'>darrera</button>
         </div>
-        <div class='row' >
-         <button class='btn btn-danger vm-js' text-boto='16'>16</button>
-         <button class='btn btn-danger vm-js' text-boto='75'>75</button>
-         <button class='btn btn-danger vm-js' text-boto='55'>55</button>
-         <button class='btn btn-danger vm-js' text-boto='70'>70</button>
+        <div class='row panel' >
+         <button class='btn btn-danger vm-js' text-to-print='16'>16</button>
+         <button class='btn btn-danger vm-js' text-to-print='75'>75</button>
+         <button class='btn btn-danger vm-js' text-to-print='55'>55</button>
+         <button class='btn btn-danger vm-js' text-to-print='70'>70</button>
         </div>
   </div>
 </div>";
