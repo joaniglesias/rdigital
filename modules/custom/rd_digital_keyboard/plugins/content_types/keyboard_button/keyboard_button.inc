@@ -43,26 +43,12 @@ function keyboard_button_edit_form($form, &$form_state) {
     '#all_buttons' => $all_buttons,
     );
 
-  $form['field_to_edit'] = array(
-    '#type' => 'select',
-    '#title' => t('Field to edit'),
-    '#description' => t('Select the text field which this button will edit'),
-    '#options' => array(
-      'initial_comments' => t('Initial Comments'),
-      'measures' => t('Measures'),
-      'final_comments' => t('Final Comments'),
-      ),
-    '#required' => true,
-    '#default_value' => $conf['field_to_edit'],
-    );
-
   return $form;
 
 }
 
 function keyboard_button_edit_form_submit($form, &$form_state) {
   $form_state['conf']['button'] = $form_state['values']['button'];
-  $form_state['conf']['field_to_edit'] = $form_state['values']['field_to_edit'];
   $form_state['conf']['all_buttons'] = $form['button']['#all_buttons'];
 }
 
@@ -77,12 +63,11 @@ function button_admin_info($subtype, $conf, $context) {
 
 function keyboard_button_render($subtype, $conf, $panel_args, $context) {
   $button_nid = $conf['button'];
-  $field_to_edit = $conf['field_to_edit'];
   $button_cover_text = $conf['all_buttons'][$button_nid]->rd_f_keyb_button_cover_name['und'][0]['value'];
   $button_text_to_print = $conf['all_buttons'][$button_nid]->rd_f_keyb_button_text['und'][0]['value'];
   $block = new stdClass();
   //$block->title = t('Digital Keyboard');
-  $block->content = "<button class='btn btn-danger vm-js' text-to-print='" . $button_text_to_print . "' field-to-edit='" . $field_to_edit . "'>" . $button_cover_text . "</button>";
+  $block->content = "<button class='btn btn-danger vm-js' text-to-print='" . $button_text_to_print . "'>" . $button_cover_text . "</button>";
   return $block;
 }
 

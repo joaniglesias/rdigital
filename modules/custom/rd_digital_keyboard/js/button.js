@@ -22,8 +22,9 @@ console.log('hola');
       $('button.vm-js').once('vimn-twitter', function() {
         $(this).click(function() {
           //var content = $('div#nuevo textarea').val();
-          var field_to_edit = $(this).attr('field-to-edit');
-          var ckeditor_id = $('div#' + field_to_edit + ' textarea').attr('id');
+
+          var layout_area_id = $(this).parents('.panel-body').attr('id');
+          var ckeditor_id = $('div#' + layout_area_id + ' textarea').attr('id');
           var ckeditor_text = CKEDITOR.instances[ckeditor_id].getData();
           var button_text = $(this).attr('text-to-print');
           //insert text with no <p> tag http://ckeditor.com/forums/CKEditor/Jquery-data-insert-into-editor

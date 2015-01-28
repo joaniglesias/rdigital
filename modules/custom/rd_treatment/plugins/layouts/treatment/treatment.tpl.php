@@ -118,7 +118,7 @@
       </h4>
     </div>
     <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
-      <div class="panel-body">
+      <div class="panel-body" id='initial-comments-area'>
         <?php print $content[$reg_machine_name]; ?>
       </div>
     </div>
@@ -137,7 +137,7 @@
       </h4>
     </div>
     <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
-      <div class="panel-body">
+      <div class="panel-body" id='measures-area'>
         <?php print $content[$reg_machine_name]; ?>
       </div>
     </div>
@@ -156,7 +156,7 @@
       </h4>
     </div>
     <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
-      <div class="panel-body">
+      <div class="panel-body" id='final-comments-area'>
         <?php print $content[$reg_machine_name]; ?>
       </div>
     </div>

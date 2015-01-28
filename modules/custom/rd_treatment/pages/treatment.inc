@@ -130,7 +130,7 @@ $display->panels = array();
     'settings' => NULL,
   );
   $pane->css = array(
-    'css_id' => 'final_comments',
+    'css_id' => '',
     'css_class' => '',
   );
   $pane->extras = array();
@@ -166,7 +166,7 @@ $display->panels = array();
     'settings' => NULL,
   );
   $pane->css = array(
-    'css_id' => 'initial_comments',
+    'css_id' => '',
     'css_class' => '',
   );
   $pane->extras = array();
@@ -202,7 +202,7 @@ $display->panels = array();
     'settings' => NULL,
   );
   $pane->css = array(
-    'css_id' => 'measures',
+    'css_id' => '',
     'css_class' => '',
   );
   $pane->extras = array();
