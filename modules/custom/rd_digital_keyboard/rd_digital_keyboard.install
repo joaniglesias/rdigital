@@ -158,14 +158,16 @@ function _get_ckeditor_profiles_keyboard_button() {
 
 function _get_vocabularies_keyboard_button() {
   $t = get_t();
-  $vocabularies['rd_voc_keyb_button_type'] = array(
-    'name' => $t('Digital Keyboard Button Type'),
-    'machine_name' => 'rd_voc_keyb_button_type',
+  $vocabularies['rd_voc_products'] = array(
+    'name' => $t('Products'),
+    'machine_name' => 'rd_voc_products',
     'module' => 'rd_digital_keyboard',
     'terms' => array(
-      $t('Text'),
-      $t('List'),
-      $t('Core Button'),
+      $t('Tobacco'),
+      $t('Serotonina'),
+      $t('Melamina'),
+      $t('Hashis'),
+      $t('DHLH'),
       ),
     );
 
@@ -186,34 +188,6 @@ function _get_fields_keyboard_button() {
   $t = get_t();
   $fields = array();
 
-  $fields['rd_f_keyb_button_type'] = array(
-    'field_name' => 'rd_f_keyb_button_type',
-    'label' => $t('Button Type'),
-    'cardinality' => 1,
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'rd_voc_keyb_button_type',
-          'parent' => 0,
-        ),
-      ),
-    ),
-    'type' => 'taxonomy_term_reference',
-  );
   $fields['rd_f_keyb_button_cover_name'] = array(
     'field_name' => 'rd_f_keyb_button_cover_name',
     'type' => 'text',
@@ -223,33 +197,32 @@ function _get_fields_keyboard_button() {
       'max_length' => 255,
     ),
   );
+  $fields['rd_f_keyb_add_to_text'] = array(
+    'field_name' => 'rd_f_keyb_add_to_text',
+    'label' => $t('Add to the text'),
+    'cardinality' => -1,
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'line_break' => $t('Line break'),
+        'tab' => $t('Tab'),
+      ),
+      'allowed_values_function' => '',
+    ),
+    'type' => 'list_text',
+  );
   $fields['rd_f_keyb_button_text'] = array(
     'field_name' => 'rd_f_keyb_button_text',
     'type' => 'text_long',
     'label' => $t('Button Text'),
     'cardinality' => 1,
     'settings' => array(),
-  );
-  $fields['rd_f_keyb_button_vocabulary'] = array(
-    'field_name' => 'rd_f_keyb_button_vocabulary',
-    'type' => 'entityreference',
-    'label' => $t('Button Related Vocabulary'),
-    'cardinality' => 1,
-    'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(),
-      ),
-      'target_type' => 'taxonomy_vocabulary',
-    ),
   );
 
   return $fields;
@@ -261,23 +234,6 @@ function _get_fields_keyboard_button() {
 function _get_instances_keyboard_button() {
   $t = get_t();
   $instances = array(
-    'rd_f_keyb_button_type' => array(
-      'field_name' => 'rd_f_keyb_button_type',
-      'entity_type' => 'node',
-      'bundle' => 'rd_ct_keyboard_button',
-      'label' => $t('Button Type'),
-      'description' => '',
-      'required' => FALSE,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
-      ),
-    ),
     'rd_f_keyb_button_cover_name' => array(
       'field_name' => 'rd_f_keyb_button_cover_name',
       'entity_type' => 'node',
@@ -296,6 +252,46 @@ function _get_instances_keyboard_button() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
+      ),
+    ),
+    'rd_f_keyb_add_to_text' => array(
+      'field_name' => 'rd_f_keyb_add_to_text',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_keyboard_button',
+      'label' => $t('Add to the text'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+      ),
+    ),
+    'vimn_f_tweet_pinned' => array(
+      'field_name' => 'vimn_f_tweet_pinned',
+      'entity_type' => 'node',
+      'bundle' => 'vimn_ct_tweet',
+      'label' => $t('Is this tweet pinned?'),
+      'description' => '',
+      'required' => TRUE,
+      'default_value' => array(
+        0 => array(
+          'value' => 0,
+        ),
+      ),
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => 65,
       ),
     ),
     'rd_f_keyb_button_text' => array(
@@ -323,24 +319,6 @@ function _get_instances_keyboard_button() {
           'rows' => 3,
         ),
         'type' => 'text_textarea',
-      ),
-    ),
-    'rd_f_keyb_button_vocabulary' => array(
-      'field_name' => 'rd_f_keyb_button_vocabulary',
-      'entity_type' => 'node',
-      'bundle' => 'rd_ct_keyboard_button',
-      'label' => $t('Button Related Vocabulary'),
-      'description' => '',
-      'required' => FALSE,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
-        'weight' => 26,
       ),
     ),
   );
