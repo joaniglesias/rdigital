@@ -36,7 +36,7 @@ console.log('hola');
    console.log( ckeditor_text.slice(0,-4));
    console.log( ckeditor_text.slice(0,-5));
 //}
-          CKEDITOR.instances[ckeditor_id].insertHtml('<p></p>');
+          //CKEDITOR.instances[ckeditor_id].insertHtml('<p></p>');
           CKEDITOR.instances[ckeditor_id].insertHtml(button_text);
           //CKEDITOR.instances[ckeditor_id].insertText('\rhola');
 //           CKEDITOR.instances[ckeditor_id].setData(ckeditor_text.slice(0,-5) + button_text, function() {

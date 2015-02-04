@@ -2,72 +2,80 @@
 
 $plugin = array(
   'single' => TRUE,
-  'title' => t('Keyboard Button'),
+  'title' => t('Keyboard List'),
   'category' => t('Recat Digital - Keyboard'),
-  'description' => t("Choose which keyboard button you want to insert"),
+  'description' => t("Choose which keyboard list you want to insert"),
   //'required context' => new ctools_context_required(t('Patient'), 'node'),
-  'render callback' => 'keyboard_button_render',
-  'edit form' => 'keyboard_button_edit_form',
+  'render callback' => 'keyboard_list_render',
+  'edit form' => 'keyboard_list_edit_form',
   //'admin title' => t('Keyboard Button 2'),
-  'admin info' => "button_admin_info",
+  'admin info' => "keyboard_list_admin_info",
 );
 
 
-function keyboard_button_edit_form($form, &$form_state) {
+function keyboard_list_edit_form($form, &$form_state) {
 
   $conf = $form_state['conf'];
+  $vocabularies = array();
 
-  $button_options = array();
-  $all_buttons = array();
-
-  $query = new EntityFieldQuery();
-  $query->entityCondition('entity_type', 'node')
-    ->entityCondition('bundle', 'rd_ct_keyboard_button')
-    ->addTag('DANGEROUS_ACCESS_CHECK_OPT_OUT');
-  $result = $query->execute();
-
-  if (!empty($result['node'])) {
-    $all_buttons = node_load_multiple(array_keys($result['node']));
-    foreach ($all_buttons as $nid => $button) {
-      $button_options[$nid] = $button->title;
-    }
+  foreach (taxonomy_get_vocabularies() as $vid => $vocabulary) {
+    $vocabularies[$vocabulary->machine_name] = $vocabulary->name;
   }
 
-  $form['button'] = array(
+  // $button_options = array();
+  // $all_buttons = array();
+
+  // $query = new EntityFieldQuery();
+  // $query->entityCondition('entity_type', 'node')
+  //   ->entityCondition('bundle', 'rd_ct_keyboard_list')
+  //   ->addTag('DANGEROUS_ACCESS_CHECK_OPT_OUT');
+  // $result = $query->execute();
+
+  // if (!empty($result['node'])) {
+  //   $all_buttons = node_load_multiple(array_keys($result['node']));
+  //   foreach ($all_buttons as $nid => $button) {
+  //     $button_options[$nid] = $button->title;
+  //   }
+  // }
+
+  $form['vocabulary'] = array(
     '#type' => 'select',
-    '#title' => t('Button'),
-    '#description' => t('Select the button'),
-    '#options' => $button_options,
+    '#title' => t('List'),
+    '#description' => t('Select the Taxonomy List'),
+    '#options' => $vocabularies,
     '#required' => true,
-    '#default_value' => $conf['button'],
-    '#all_buttons' => $all_buttons,
+    '#default_value' => $conf['vocabulary'],
+    '#all_vocabularies' => $vocabularies,
     );
 
   return $form;
 
 }
 
-function keyboard_button_edit_form_submit($form, &$form_state) {
-  $form_state['conf']['button'] = $form_state['values']['button'];
-  $form_state['conf']['all_buttons'] = $form['button']['#all_buttons'];
+function keyboard_list_edit_form_submit($form, &$form_state) {
+  $form_state['conf']['vocabulary'] = $form_state['values']['vocabulary'];
+  $form_state['conf']['all_vocabularies'] = $form['vocabulary']['#all_vocabularies'];
 }
 
 
-function button_admin_info($subtype, $conf, $context) {
-  $button_nid = $conf['button'];
+function keyboard_list_admin_info($subtype, $conf, $context) {
+  $voc_machine_name = $conf['vocabulary'];
   $block = new stdClass();
-  $block->title = $conf['all_buttons'][$button_nid]->title . ' - ' . l(t('edit button'), 'node/' . $button_nid . '/edit', array('attributes' => array('target' => '_blank')));
-  //$block->content = l(t('Edit button'), 'node/' . $button->nid . '/edit', array());
+  $block->title = $conf['all_vocabularies'][$voc_machine_name] . ' - ' . l(t('edit list'), 'admin/structure/taxonomy/' . $voc_machine_name , array('attributes' => array('target' => '_blank')));
   return $block;
 }
 
-function keyboard_button_render($subtype, $conf, $panel_args, $context) {
-  $button_nid = $conf['button'];
-  $button_cover_text = $conf['all_buttons'][$button_nid]->rd_f_keyb_button_cover_name['und'][0]['value'];
-  $button_text_to_print = $conf['all_buttons'][$button_nid]->rd_f_keyb_button_text['und'][0]['value'];
+function keyboard_list_render($subtype, $conf, $panel_args, $context) {
+  $voc_machine_name = $conf['vocabulary'];
+  $output = '';
+  foreach (_get_vocabulary_terms($voc_machine_name) as $tid => $term_name) {
+    $button_cover_text = $term_name;
+    $button_text_to_print = $term_name;
+    $output .= "<button class='btn btn-danger vm-js rd-button-list' text-to-print='" . $button_text_to_print . "'>" . $button_cover_text . "</button>";
+  }
+
   $block = new stdClass();
-  //$block->title = t('Digital Keyboard');
-  $block->content = "<button class='btn btn-danger vm-js' text-to-print='" . $button_text_to_print . "'>" . $button_cover_text . "</button>";
+  $block->content = '<div class="pane-keyboard-button">' . $output . '</div>';
   return $block;
 }
 
@@ -77,7 +85,7 @@ function keyboard_button_render($subtype, $conf, $panel_args, $context) {
 // $value = 5;
 // $link_inner = '<span class="glyphicon glyphicon-home">' . $value . '</span>';
 
-// $link_ajax = l($link_inner, 'keyboard_button/nojs/'. $value,
+// $link_ajax = l($link_inner, 'keyboard_list/nojs/'. $value,
 //           array('attributes' => array(
 //                   'class' => 'use-ajax btn btn-info vm-icon-button',
 //                   'data-toggle' => 'tooltip',
