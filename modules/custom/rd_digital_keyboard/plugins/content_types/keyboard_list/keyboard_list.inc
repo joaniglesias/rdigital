@@ -75,7 +75,7 @@ function keyboard_list_render($subtype, $conf, $panel_args, $context) {
   }
 
   $block = new stdClass();
-  $block->content = '<div class="pane-keyboard-button">' . $output . '</div>';
+  $block->content = $output;
   return $block;
 }
 

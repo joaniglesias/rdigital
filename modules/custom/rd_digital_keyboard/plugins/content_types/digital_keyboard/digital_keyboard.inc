@@ -81,58 +81,58 @@ $output = "
 <div class='row panel'>
   <div class='col-xs-3'>
     <div class='row panel' >
-         <button class='btn btn-danger vm-js' text-to-print='MF'>MF</button>
-         <button class='btn btn-danger vm-js' text-to-print='F'>F</button>
-         <button class='btn btn-danger vm-js' text-to-print='+'>+</button>
-         <button class='btn btn-danger vm-js' text-to-print='+++'>+++</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='MF'>MF</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='F'>F</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='+'>+</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='+++'>+++</button>
     </div>
     <div class='row panel' >
-         <button class='btn btn-danger vm-js' text-to-print='\n'>ENTER</button>
-         <button class='btn btn-danger vm-js' text-to-print='\t'>TAB</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='</p><p>'>ENTER</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='&nbsp;'>TAB</button>
     </div>
   </div>
   <div class='col-xs-3'>
     <div class='row panel' >
-         <button class='btn btn-danger vm-js' text-to-print='\n\tf/F'>f / F</button>
-         <button class='btn btn-danger vm-js' text-to-print='\n\tr/F'>r / F</button>
-         <button class='btn btn-danger vm-js' text-to-print='\n\tp/F'>p / F</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='<p></p><p>Ff</p>'>F f</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='<p></p>Fr'>F r</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='<p></p>Fp'>F p</button>
     </div>
     <div class='row panel' >
-         <button class='btn btn-danger vm-js' text-to-print='\n\tf/R'>f / R</button>
-         <button class='btn btn-danger vm-js' text-to-print='\n\tr/R'>r / R</button>
-         <button class='btn btn-danger vm-js' text-to-print='\n\tp/R'>p / R</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='<p></p>Rf'>R f</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='<p></p>Rr'>R r</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='<p></p>Rp'>R p</button>
     </div>
     <div class='row panel' >
-         <button class='btn btn-danger vm-js' text-to-print='\n\tf/P'>f / P</button>
-         <button class='btn btn-danger vm-js' text-to-print='\n\tr/P'>r / P</button>
-         <button class='btn btn-danger vm-js' text-to-print='\n\tp/P'>p / P</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='<p></p>Pf'>P f</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='<p></p>Pr'>P r</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='<p></p>Pp'>P p</button>
     </div>
   </div>
   <div class='col-xs-3'>
         <div class='row panel' >
-         <button class='btn btn-danger vm-js' text-to-print='ABB'>ABB</button>
-         <button class='btn btn-danger vm-js' text-to-print='Material'>Material</button>
-         <button class='btn btn-danger vm-js' text-to-print='Immaterial'>Immaterial</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='ABB'>ABB</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='Material'>Material</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='Immaterial'>Immaterial</button>
         </div>
         <div class='row panel' >
-         <button class='btn btn-danger vm-js' text-to-print='A'>A</button>
-         <button class='btn btn-danger vm-js' text-to-print='T'>T</button>
-         <button class='btn btn-danger vm-js' text-to-print='G'>G</button>
-         <button class='btn btn-danger vm-js' text-to-print='C'>C</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='A'>A</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='T'>T</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='G'>G</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='C'>C</button>
         </div>
   </div>
   <div class='col-xs-3'>
         <div class='row panel' >
-         <button class='btn btn-danger vm-js' text-to-print='dreta'>dreta</button>
-         <button class='btn btn-danger vm-js' text-to-print='esquerre'>esquerre</button>
-         <button class='btn btn-danger vm-js' text-to-print='davant'>davant</button>
-         <button class='btn btn-danger vm-js' text-to-print='darrera'>darrera</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='dreta'>dreta</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='esquerre'>esquerre</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='davant'>davant</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='darrera'>darrera</button>
         </div>
         <div class='row panel' >
-         <button class='btn btn-danger vm-js' text-to-print='16'>16</button>
-         <button class='btn btn-danger vm-js' text-to-print='75'>75</button>
-         <button class='btn btn-danger vm-js' text-to-print='55'>55</button>
-         <button class='btn btn-danger vm-js' text-to-print='70'>70</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='16'>16</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='75'>75</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='55'>55</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='70'>70</button>
         </div>
   </div>
 </div>";
