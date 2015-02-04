@@ -271,29 +271,6 @@ function _get_instances_keyboard_button() {
         'type' => 'options_buttons',
       ),
     ),
-    'vimn_f_tweet_pinned' => array(
-      'field_name' => 'vimn_f_tweet_pinned',
-      'entity_type' => 'node',
-      'bundle' => 'vimn_ct_tweet',
-      'label' => $t('Is this tweet pinned?'),
-      'description' => '',
-      'required' => TRUE,
-      'default_value' => array(
-        0 => array(
-          'value' => 0,
-        ),
-      ),
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_buttons',
-        'weight' => 65,
-      ),
-    ),
     'rd_f_keyb_button_text' => array(
       'field_name' => 'rd_f_keyb_button_text',
       'entity_type' => 'node',
