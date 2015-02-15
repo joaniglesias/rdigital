@@ -39,13 +39,21 @@ $handler->display->display_options['fields']['title']['table'] = 'node';
 $handler->display->display_options['fields']['title']['field'] = 'title';
 $handler->display->display_options['fields']['title']['label'] = 'Name';
 $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+/* Field: Content: Nid */
+$handler->display->display_options['fields']['nid']['id'] = 'nid';
+$handler->display->display_options['fields']['nid']['table'] = 'node';
+$handler->display->display_options['fields']['nid']['field'] = 'nid';
+$handler->display->display_options['fields']['nid']['exclude'] = TRUE;
 /* Field: Global: Custom text */
 $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
 $handler->display->display_options['fields']['nothing']['table'] = 'views';
 $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
 $handler->display->display_options['fields']['nothing']['label'] = 'Operations';
-$handler->display->display_options['fields']['nothing']['alter']['text'] = 'Crear Tratamiento';
-$handler->display->display_options['fields']['nothing']['alter']['path'] = 'create-treatment/';
+$handler->display->display_options['fields']['nothing']['alter']['text'] = 'See Patient';
+$handler->display->display_options['fields']['nothing']['alter']['make_link'] = TRUE;
+$handler->display->display_options['fields']['nothing']['alter']['path'] = 'patient/[nid]';
+$handler->display->display_options['fields']['nothing']['alter']['alt'] = 'See Patient';
+$handler->display->display_options['fields']['nothing']['alter']['link_class'] = 'btn btn-info';
 /* Sort criterion: Content: Title */
 $handler->display->display_options['sorts']['title']['id'] = 'title';
 $handler->display->display_options['sorts']['title']['table'] = 'node';
@@ -121,7 +129,8 @@ $translatables['search_patients'] = array(
   t('last »'),
   t('Number'),
   t('Name'),
+  t('Nid'),
   t('Operations'),
-  t('Crear Tratamiento'),
+  t('See Patient'),
   t('Page'),
 );

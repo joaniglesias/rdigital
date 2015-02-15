@@ -1,3 +1,9 @@
+<?php
+  $path = current_path();
+  $path_params = explode("/", $path);
+  $patient_nid = $path_params[1];
+?>
+
 <!-- Patient Region -->
 <?php $reg_machine_name='patient'; ?>
 <div class="panel panel-primary">
@@ -26,7 +32,7 @@
         <?php print t('Patient Details'); ?>
       </h4>
     </div>
-    <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
+    <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
       <div class="panel-body row">
         <div class="col-xs-6">
           <?php print $content['patient_details_left']; ?>
@@ -55,7 +61,7 @@
         <?php print $layout['regions'][$reg_machine_name]; ?>
       </h4>
     </div>
-    <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
+    <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
       <div class="panel-body">
         <?php print $content[$reg_machine_name]; ?>
       </div>
@@ -74,94 +80,27 @@
         <?php print $layout['regions'][$reg_machine_name]; ?>
       </h4>
     </div>
-    <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
+    <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
       <div class="panel-body">
         <?php print $content[$reg_machine_name]; ?>
       </div>
     </div>
   </div>
 
-  <!-- Treatment Details Region -->
-  <?php $reg_machine_name='treatment-details'; ?>
+  <!-- Treatment Region -->
+  <?php $reg_machine_name='treatment'; ?>
   <div class="panel panel-danger">
     <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
-      <a class="btn btn-danger pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
-        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
-        </span>
-      </a>
+      <div class="pull-right">
+        <a class="btn btn-danger btn-lg" href="<?php print $patient_nid; ?>/create-treatment">
+          <?php print t('Create Treatment'); ?>
+        </a>
+      </div>
       <h4 class="panel-title" style="margin-top: 7.5px;">
-        <?php print t('Treatment Details'); ?>
+        <?php print t('Treatment'); ?>
       </h4>
     </div>
-    <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
-      <div class="panel-body row">
-        <div class="col-xs-6">
-          <?php print $content['treatment_details_left']; ?>
-        </div>
-        <div class="col-xs-6">
-          <?php print $content['treatment_details_right']; ?>
-        </div>
-      </div>
-    </div>
   </div>
-
-  <!-- Initial Comments Region -->
-  <?php $reg_machine_name='initial_comments'; ?>
-  <div class="panel panel-danger">
-    <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
-      <a class="btn btn-danger pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
-        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
-        </span>
-      </a>
-      <h4 class="panel-title" style="margin-top: 7.5px;">
-        <?php print $layout['regions'][$reg_machine_name]; ?>
-      </h4>
-    </div>
-    <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
-      <div class="panel-body" id='initial-comments-area'>
-        <?php print $content[$reg_machine_name]; ?>
-      </div>
-    </div>
-  </div>
-
-  <!-- Measures Region -->
-  <?php $reg_machine_name='measures'; ?>
-  <div class="panel panel-danger">
-    <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
-      <a class="btn btn-danger pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
-        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
-        </span>
-      </a>
-      <h4 class="panel-title" style="margin-top: 7.5px;">
-        <?php print $layout['regions'][$reg_machine_name]; ?>
-      </h4>
-    </div>
-    <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
-      <div class="panel-body" id='measures-area'>
-        <?php print $content[$reg_machine_name]; ?>
-      </div>
-    </div>
-  </div>
-
-  <!-- Final Comments Region -->
-  <?php $reg_machine_name='final_comments'; ?>
-  <div class="panel panel-danger">
-    <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
-      <a class="btn btn-danger pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
-        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
-        </span>
-      </a>
-      <h4 class="panel-title" style="margin-top: 7.5px;">
-        <?php print $layout['regions'][$reg_machine_name]; ?>
-      </h4>
-    </div>
-    <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
-      <div class="panel-body" id='final-comments-area'>
-        <?php print $content[$reg_machine_name]; ?>
-      </div>
-    </div>
-  </div>
-</div>
 <?php //dpm(get_defined_vars()); ?>
 
 <!-- Modal Create Form -->

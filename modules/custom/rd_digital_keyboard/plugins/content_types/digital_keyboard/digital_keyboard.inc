@@ -35,7 +35,7 @@ $plugin = array(
 function digital_keyboard_render($subtype, $conf, $panel_args, $context) {
 
   $block = new stdClass();
-  $block->title = t('Digital Keyboard');
+  //$block->title = t('Digital Keyboard');
   $block->content = _create_keyboard();
   return $block;
 }

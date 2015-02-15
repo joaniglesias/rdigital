@@ -57,3 +57,47 @@ function rd_treatment_js_alter(&$javascript) {
 }
 
 
+// *******************************************************************************************
+//     MENU
+// *******************************************************************************************
+
+/**
+ * Implements hook_menu().
+ */
+function rd_treatment_menu(){
+  $items = array();
+
+  $items['patient/%/create-treatment'] = array(
+    'page callback' => 'rd_treatment_create_treatment_callback',
+    'page arguments' => array(1),
+    'access callback' => TRUE,
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK
+  );
+
+  return $items;
+
+}
+
+function rd_treatment_create_treatment_callback($patient_nid){
+  $patient = node_load($patient_nid);
+  global $user;
+  $user = user_load($user->uid);
+  //Create Treatment
+  $treatment = new stdClass();
+  $treatment->type = 'rd_ct_treatment';
+  $treatment->uid = $user->uid;
+  $treatment->language = LANGUAGE_NONE; // TO DO: review
+  $treatment->status = 1;
+  $treatment->promote = 0;
+  $treatment->sticky = 0;
+  $treatment->title = $patient->title;
+  $treatment->rd_f_treat_related_patient['und'][0]['target_id'] = $patient->nid;
+  $treatment->rd_f_treat_related_pract['und'][0]['target_id'] = $user->uid;
+  $treatment->rd_f_treat_date_time['und'][0]['value'] = date('Y-m-d H:i:s'); //IMP: store UTC time, not the timezone time
+  if (isset($user->rd_f_access_user_centre['und'][0]['tid'])) {
+    $treatment->rd_f_access_treat_centre['und'][0]['tid'] = $user->rd_f_access_user_centre['und'][0]['tid'];
+  }
+  node_save($treatment);
+  drupal_goto('treatment/' . $patient_nid . '/' . $treatment->nid);
+}

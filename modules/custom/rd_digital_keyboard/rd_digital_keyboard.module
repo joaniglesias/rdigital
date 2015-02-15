@@ -121,7 +121,7 @@ function rd_digital_keyboard_button_callback($ajax, $text) {
  */
 function rd_digital_keyboard_page_build(&$page) {
   $url_patterns = array(
-    '#^create-treatment/.+$#i',
+    '#^treatment/.+$#i',
   );
 
   foreach ($url_patterns as $pattern) {
