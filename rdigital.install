@@ -71,7 +71,7 @@ function rdigital_install() {
     'theme' => $default_theme,
     'status' => 1,
     'weight' => 0,
-    'region' => 'sidebar_first',
+    'region' => 'highlighted',
     'pages' => '',
     'cache' => -1,
   );
