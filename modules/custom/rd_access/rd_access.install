@@ -27,7 +27,7 @@ function rd_access_install() {
   drupal_write_record('abt_map', $data);
 
   //set frontpage
-  variable_set('site_frontpage', 'rd_login');
+  variable_set('site_frontpage', 'frontpage');
 }
 
 
