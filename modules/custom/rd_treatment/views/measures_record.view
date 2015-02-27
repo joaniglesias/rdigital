@@ -121,7 +121,7 @@ $handler->display->display_options['filters']['type']['value'] = array(
 
 /* Display: Page */
 $handler = $view->new_display('page', 'Page', 'page');
-$handler->display->display_options['path'] = 'historial-medidas/%';
+$handler->display->display_options['path'] = 'measures_record/%';
 $translatables['measures_record'] = array(
   t('Master'),
   t('Measures\' record'),
