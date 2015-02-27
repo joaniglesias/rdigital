@@ -45,10 +45,10 @@ function rdigital_install() {
     'rd_secretariat',
   ));
 
-  //this has to be the last module enabled due to the translations
-  // module_enable(array(
-  //   'rd_multilanguage',
-  // ));
+  this has to be the last module enabled due to the translations
+  module_enable(array(
+    'rd_multilanguage',
+  ));
 
   // Enable blocks
   // $block = array(
