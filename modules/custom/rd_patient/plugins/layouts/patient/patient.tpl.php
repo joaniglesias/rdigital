@@ -86,21 +86,22 @@
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Treatment Region -->
-  <?php $reg_machine_name='treatment'; ?>
-  <div class="panel panel-danger">
-    <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
-      <div class="pull-right">
-        <a class="btn btn-danger btn-lg" href="<?php print $patient_nid; ?>/create-treatment">
-          <?php print t('Create Treatment'); ?>
-        </a>
-      </div>
-      <h4 class="panel-title" style="margin-top: 7.5px;">
-        <?php print t('Treatment'); ?>
-      </h4>
+<!-- Treatment Region -->
+<?php $reg_machine_name='treatment'; ?>
+<div class="panel panel-danger">
+  <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
+    <div class="pull-right">
+      <a class="btn btn-danger btn-lg" href="<?php print $patient_nid; ?>/create-treatment">
+        <?php print t('Create Treatment'); ?>
+      </a>
     </div>
+    <h4 class="panel-title" style="margin-top: 7.5px;">
+      <?php print t('Treatment'); ?>
+    </h4>
   </div>
+</div>
 <?php //dpm(get_defined_vars()); ?>
 
 <!-- Modal Create Form -->

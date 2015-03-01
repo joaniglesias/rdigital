@@ -75,6 +75,14 @@ function rd_treatment_menu(){
     'type' => MENU_CALLBACK
   );
 
+  $items['delete_treatment/%/%'] = array(
+    'page callback' => 'rd_treatment_delete_treatment_callback',
+    'page arguments' => array(1,2),
+    'access callback' => TRUE,
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK
+  );
+
   return $items;
 
 }
@@ -100,4 +108,9 @@ function rd_treatment_create_treatment_callback($patient_nid){
   }
   node_save($treatment);
   drupal_goto('treatment/' . $patient_nid . '/' . $treatment->nid);
+}
+
+function rd_treatment_delete_treatment_callback($patient_nid, $treatment_nid){
+  node_delete($treatment_nid);
+  drupal_goto('patient/' . $patient_nid);
 }

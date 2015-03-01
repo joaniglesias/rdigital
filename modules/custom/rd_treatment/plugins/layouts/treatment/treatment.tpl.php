@@ -1,3 +1,9 @@
+<?php
+  $path = current_path();
+  $path_params = explode("/", $path);
+  $patient_nid = $path_params[1];
+?>
+
 <!-- Patient Region -->
 <?php $reg_machine_name='patient'; ?>
 <div class="panel panel-primary">
@@ -164,6 +170,24 @@
 </div>
 <?php //dpm(get_defined_vars()); ?>
 
+<!-- Treatment Actions Region -->
+<?php $reg_machine_name='treatment_actions'; ?>
+<div class="panel panel-default">
+  <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
+    <div class="pull-right">
+      <a class="btn btn-default btn-lg" data-toggle="modal" data-target="#DeleteTreatment">
+        <?php print t('Delete Treatment'); ?>
+      </a>
+      <a class="btn btn-primary btn-lg" href="/">
+        <?php print t('Close Treatment'); ?>
+      </a>
+    </div>
+    <h4 class="panel-title" style="margin-top: 7.5px;">
+      <?php print t('Actions'); ?>
+    </h4>
+  </div>
+</div>
+
 <!-- Modal Create Form -->
 <div class="modal fade" id="CreateForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -185,3 +209,24 @@
   </div>
 </div>
 
+<!-- Modal Create Form -->
+<div class="modal fade" id="DeleteTreatment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="myModalLabel">
+          <?php print t('Delete Treatment'); ?>
+        </h3>
+      </div>
+      <div class="modal-body"><div class="te"></div>
+        <h4> <?php print t('Are you sure you want to delete this treatment?'); ?>
+        </h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">No</button>
+        <a type="button" class="btn btn-default" href="<?php print '/delete_' . $path; ?>">Yes</a>
+      </div>
+    </div>
+  </div>
+</div>
