@@ -7,3 +7,4 @@ package = Recat Digital
 dependencies[] = locale
 dependencies[] = i18n
 dependencies[] = l10n_update
+dependencies[] = i18nviews

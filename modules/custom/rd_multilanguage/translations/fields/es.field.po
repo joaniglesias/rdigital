@@ -5,18 +5,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: 2014-08-29 09:03+0100\n"
-"PO-Revision-Date: 2014-08-29 09:03+0100\n"
+"PO-Revision-Date: 2015-02-27 15:40+1000\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Poedit 1.6.7\n"
 
 #: field:rd_f_patient_first_surname:#field:label
 msgctxt "rd_f_patient_first_surname:#field:label"
 msgid "First Surename"
-msgstr "Primer Apellido"
+msgstr "Primer Cognom"
 
 #: field:rd_f_patient_second_surname:#field:label
 msgctxt "rd_f_patient_second_surname:#field:label"
@@ -51,7 +52,7 @@ msgstr "Direccion"
 #: field:rd_f_patient_first_surname:rd_ct_patient:label
 msgctxt "rd_f_patient_first_surname:rd_ct_patient:label"
 msgid "First Surename"
-msgstr "Primer Apellido"
+msgstr "Primer Cognom"
 
 #: field:rd_f_patient_second_surname:rd_ct_patient:label
 msgctxt "rd_f_patient_second_surname:rd_ct_patient:label"

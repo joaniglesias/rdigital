@@ -88,6 +88,7 @@ dependencies[] = i18n_sync
 dependencies[] = i18n_taxonomy
 dependencies[] = i18n_redirect
 dependencies[] = i18n_variable
+dependencies[] = i18nviews
 
 ;Forms
 dependencies[] = entityform
