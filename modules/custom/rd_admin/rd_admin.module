@@ -199,6 +199,9 @@ function _create_content_type($ct_name) {
     $content_type = node_type_set_defaults($node);
     node_type_save($content_type);
 
+    //Disable option "Promoted to front page"
+    variable_set("node_options_" . $ct_name, array('status'));
+
     // Create instances for this content type
     _create_instances($ct_name);
   }

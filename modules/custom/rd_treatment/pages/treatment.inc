@@ -62,10 +62,23 @@ $handler->conf = array(
         'name' => 'node_type',
         'settings' => array(
           'type' => array(
-            'rd_ct_patient' => 'rd_ct_patient',
+            'rd_ct_treatment' => 'rd_ct_treatment',
           ),
         ),
-        'context' => 'argument_entity_id:node_1',
+        'context' => 'argument_entity_id:node_2',
+        'not' => FALSE,
+      ),
+      2 => array(
+        'name' => 'php',
+        'settings' => array(
+          'description' => 'treatment id is related with patient id',
+          'php' => 'if($contexts[\'argument_entity_id:node_2\']->data->rd_f_treat_related_patient[\'und\'][0][\'target_id\'] == $contexts[\'argument_entity_id:node_1\']->data->nid) {
+return TRUE;
+}
+else{
+return FALSE;
+}',
+        ),
         'not' => FALSE,
       ),
     ),
