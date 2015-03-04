@@ -114,7 +114,7 @@ projects[jquery_update][subdir] = "contrib"
 projects[jquery_update][version] = "2.x-dev"
 
 projects[i18nviews][subdir] = "contrib"
-projects[i18nviews][version] = "3.x-dev"
+projects[i18nviews][version] = "3.1-beta2+24-dev"
 
 
 
