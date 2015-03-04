@@ -139,4 +139,4 @@ libraries[ckeditor][directory_name] = "ckeditor"
 ; Themes
 
 projects[bootstrap][subdir] = "contrib"
-projects[bootstrap][version] = "3.1-beta2+24-dev"
+projects[bootstrap][version] = "3.x-dev"
