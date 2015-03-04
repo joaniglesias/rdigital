@@ -13,14 +13,13 @@ function rdigital_install() {
   variable_set('cron_safe_threshold', 3600);
 
 
-  $default_theme = 'bootstrap';
+  $default_theme = 'rdigital_bootstrap';
   $admin_theme = 'seven';
   // Enable themes
   $enable = array(
     'theme_default' => $default_theme,
     'admin_theme' => $admin_theme,
     'bootstrap' => 'bootstrap',
-    //'vimn_bootstrap_subtheme' => 'vimn_bootstrap_subtheme',
   );
   theme_enable($enable);
 
