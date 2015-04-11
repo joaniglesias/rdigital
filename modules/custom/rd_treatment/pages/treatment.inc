@@ -348,7 +348,10 @@ $display->panels = array();
   $pane->style = array(
     'settings' => NULL,
   );
-  $pane->css = array();
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'text-xlg',
+  );
   $pane->extras = array();
   $pane->position = 0;
   $pane->locks = array();
@@ -379,7 +382,10 @@ $display->panels = array();
   $pane->style = array(
     'settings' => NULL,
   );
-  $pane->css = array();
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'text-bg',
+  );
   $pane->extras = array();
   $pane->position = 1;
   $pane->locks = array();
