@@ -177,10 +177,12 @@
 <div class="panel panel-default">
   <div class="panel-heading clearfix no-bg panel-padding" role="tab" id="heading-<?php print $reg_machine_name; ?>">
     <div class="pull-right">
-      <a class="btn btn-danger btn-lg" data-toggle="modal" data-target="#DeleteTreatment">
+      <a class="btn btn-danger btn-lg btn-labeled" data-toggle="modal" data-target="#DeleteTreatment">
+        <span class="btn-label icon fa fa-trash-o"></span>
         <?php print t('Delete Treatment'); ?>
       </a>
-      <a class="btn btn-success btn-lg" href="/">
+      <a class="btn btn-success btn-lg btn-labeled" href="/">
+        <span class="btn-label icon fa fa-check"></span>
         <?php print t('Close Treatment'); ?>
       </a>
     </div>
