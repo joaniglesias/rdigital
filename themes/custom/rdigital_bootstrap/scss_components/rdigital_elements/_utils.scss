@@ -9,3 +9,32 @@
 .float-right {
   float: right;
 }
+
+
+
+// *******************************************************************************************
+//     BUTTONS
+// *******************************************************************************************
+
+// Button outline white. NOTE: you need to add class .btn-outline as well
+// For light background
+.btn.btn-outline-white,
+.btn.btn-outline-white.btn-flat,
+.btn.btn-outline-white.btn-primary,
+.btn.btn-outline-white.btn-flat.btn-primary {
+  background: none;
+  color: white;
+  @include ie-background-none(); // IE fallback
+
+  &,
+  &:focus,
+  .btn-group > &,
+  .btn-group > &:focus,
+  .input-group-btn > &,
+  .input-group-btn > &:focus {
+    background: none;
+    border-color: #e0e0e0; // IE fallback
+    border-color: white;
+    @include ie-background-none(); // IE fallback
+  }
+}

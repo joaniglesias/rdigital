@@ -94,7 +94,7 @@
 .btn.btn-outline.btn-primary,
 .btn.btn-outline.btn-flat.btn-primary {
   background: none;
-  color: white;
+  color: $text-color;
   @include ie-background-none(); // IE fallback
 
   &,
@@ -105,7 +105,7 @@
   .input-group-btn > &:focus {
     background: none;
     border-color: #e0e0e0; // IE fallback
-    border-color: white;
+    border-color: rgba(0, 0, 0, .12);
     @include ie-background-none(); // IE fallback
   }
 }
