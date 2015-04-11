@@ -7656,6 +7656,89 @@ html.CSS1Compat { background-color: #f4f4f4; }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a { background: rgba(0, 0, 0, 0.15); color: #75c6f3; }
   /* line 117, ../scss_components/rdigital_elements/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus { background: rgba(0, 0, 0, 0.15); color: #75c6f3; } }
+/* line 12, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs > li > a > .badge, .nav-tabs > li > a > .label, .nav-pills > li > a > .badge, .nav-pills > li > a > .label { position: relative; background-color: rgba(0, 0, 0, 0.25); border: 1px solid transparent; margin: 0 -5px -100px 5px; padding: 0 6px; line-height: 14px; top: 0; }
+/* line 23, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs > li > a > .label, .nav-pills > li > a > .label { padding-left: 4px; padding-right: 4px; }
+/* line 28, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs > li > a > .badge.badge-success, .nav-tabs > li > a > .label.label-success, .nav-pills > li > a > .badge.badge-success, .nav-pills > li > a > .label.label-success { background-color: #5ebd5e; }
+/* line 33, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs > li > a > .badge.badge-warning, .nav-tabs > li > a > .label.label-warning, .nav-pills > li > a > .badge.badge-warning, .nav-pills > li > a > .label.label-warning { background-color: #f4b04f; }
+/* line 38, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs > li > a > .badge.badge-danger, .nav-tabs > li > a > .label.label-danger, .nav-pills > li > a > .badge.badge-danger, .nav-pills > li > a > .label.label-danger { background-color: #e66454; }
+/* line 43, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs > li > a > .badge.badge-info, .nav-tabs > li > a > .label.label-info, .nav-pills > li > a > .badge.badge-info, .nav-pills > li > a > .label.label-info { background-color: #5bc0de; }
+
+/* line 51, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs:not(.nav-tabs-simple) > li.active > a > .badge, .nav-tabs:not(.nav-tabs-simple) > li.active > a > .label, .nav-pills > li.active > a > .badge, .nav-pills > li.active > a > .label { background-color: rgba(0, 0, 0, 0.25); border-color: transparent; color: #fff; }
+
+/* line 59, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs.nav-justified > li > a, .nav-pills.nav-justified > li > a { margin: 0; }
+
+/* line 70, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs.nav-tabs-sm > li > a > .badge, .nav-tabs.nav-tabs-sm > li > a > .label { margin-left: 4px; margin-right: -4px; }
+
+/* line 78, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs.nav-tabs-xs > li > a { font-size: 12px; }
+/* line 81, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs.nav-tabs-xs > li > a > .badge, .nav-tabs.nav-tabs-xs > li > a > .label { padding-left: 4px; padding-right: 4px; line-height: 13px; font-size: 10px; margin-left: 3px; margin-right: -3px; top: -1px; }
+/* line 92, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs.nav-tabs-xs > li > a > .label { padding-left: 3px; padding-right: 3px; }
+
+/* line 102, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs { border-bottom: 2px solid #e4e4e4; }
+/* line 108, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs > li > a { background-color: #f3f3f3; background-color: rgba(0, 0, 0, 0.05); border: 0; border-bottom: 2px solid #e4e4e4; color: #777; margin: 0 6px -1px 0; padding: 8px 20px; }
+/* line 117, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs > li > a:hover, .nav-tabs > li > a:active { background-color: rgba(0, 0, 0, 0.06); border-bottom-color: #d7d7d7; color: #555; }
+/* line 124, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs > li > a > .fa-caret-down { font-size: 12px; }
+/* line 130, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs > li.dropdown.open > a:focus { border-bottom: 2px solid #e4e4e4; }
+/* line 136, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs li.active > a, .nav-tabs li.active > a:hover, .nav-tabs li.active > a:focus { border: none; color: #fff; }
+/* line 145, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs.nav-justified > li > a { border-bottom: 2px solid #e4e4e4; border-left: none !important; border-right: none !important; border-top: none !important; }
+/* line 154, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs.nav-stacked > li > a { margin: 0; border-bottom-width: 1px !important; }
+/* line 159, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs.nav-stacked > li:last-child > a { border-bottom-width: 0 !important; }
+/* line 163, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs.nav-stacked > li:last-child.active > a { border-bottom-width: 2px !important; margin-bottom: -3px; }
+/* line 168, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs.nav-stacked > li:not(:first-child):not(:last-child) > a { border-radius: 0; }
+
+/* line 179, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs.nav-tabs-simple > li > a { background-color: transparent !important; margin-right: 0; }
+/* line 184, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs.nav-tabs-simple > li.active > a { color: #555 !important; }
+
+/* line 193, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs.nav-tabs-sm > li > a { padding: 6px 15px; }
+
+/* line 198, ../scss_components/rdigital_elements/_navs.scss */
+.nav-tabs.nav-tabs-xs > li > a { padding: 4px 15px; }
+
+/* line 206, ../scss_components/rdigital_elements/_navs.scss */
+.tab-content { padding: 15px 0; }
+/* line 209, ../scss_components/rdigital_elements/_navs.scss */
+.tab-content.tab-content-bordered { border: 1px solid #d7d7d7; border-top: none; padding-left: 15px; padding-right: 15px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; }
+
+/* line 223, ../scss_components/rdigital_elements/_navs.scss */
+.nav-pills > li > a { color: #777; background-color: #f3f3f3; background-color: rgba(0, 0, 0, 0.05); border-radius: 2px; padding: 8px 20px; }
+/* line 230, ../scss_components/rdigital_elements/_navs.scss */
+.nav-pills > li > a:hover { background-color: rgba(0, 0, 0, 0.06); color: #555; }
+/* line 235, ../scss_components/rdigital_elements/_navs.scss */
+.nav-pills > li > a > .fa-caret-down { font-size: 12px; }
+/* line 239, ../scss_components/rdigital_elements/_navs.scss */
+.nav-pills > li > a > .badge, .nav-pills > li > a > .label { top: -1px; }
+/* line 245, ../scss_components/rdigital_elements/_navs.scss */
+.nav-pills > li { margin-left: 0; margin-right: 6px; }
+/* line 249, ../scss_components/rdigital_elements/_navs.scss */
+.nav-pills > li + li { margin-left: 0; }
+/* line 254, ../scss_components/rdigital_elements/_navs.scss */
+.nav-pills.nav-stacked > li { margin: 0 0 4px 0; }
+
 /* line 2, ../scss_components/rdigital_elements/_breadcrumb.scss */
 .breadcrumb { background-color: rgba(0, 0, 0, 0.03); box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.15); border-bottom: 1px solid #d6d6d6; margin-bottom: 0px; border-radius: 0px; }
 
