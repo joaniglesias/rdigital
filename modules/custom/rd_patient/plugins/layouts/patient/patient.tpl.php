@@ -6,14 +6,16 @@
 
 <!-- Patient Region -->
 <?php $reg_machine_name='patient'; ?>
-<div class="panel panel-primary">
-  <div id="treatment-patient" class="panel-heading" >
-    <h5>
+
+<div class="stat-panel">
+  <div class="stat-cell bg-default darker valign-middle">
+    <i class="fa fa-user bg-icon"></i>
+     <div class="text-sm">
       <?php print $layout['regions'][$reg_machine_name]; ?>
-    </h5>
-    <h3>
+    </div><br>
+    <span>
       <?php print $content['patient']; ?>
-    </h3>
+    </span>
   </div>
 </div>
 
@@ -21,11 +23,11 @@
 
   <!-- Patient Details Region -->
   <?php $reg_machine_name='patient-details'; ?>
-  <div class="panel panel-info">
+  <div class="panel panel-rd-blue">
 
     <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
-      <a class="btn btn-primary pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
-        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
+      <a class="btn btn-rd-dark-blue pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
+        <span class="glyphicon accordion-toggle" aria-hidden="true">
         </span>
       </a>
       <h4 class="panel-title" style="margin-top: 7.5px;">
@@ -46,14 +48,14 @@
 
   <!-- Form Region -->
   <?php $reg_machine_name='rdforms'; ?>
-  <div class="panel panel-info">
+  <div class="panel panel-rd-blue">
     <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
       <div class="pull-right">
-        <a class="btn btn-primary" data-toggle="modal" data-target="#CreateForm">
+        <a class="btn btn-rd-dark-blue" data-toggle="modal" data-target="#CreateForm">
           Create Form
         </a>
-        <a class="btn btn-primary" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
-          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
+        <a class="btn btn-rd-dark-blue" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
+          <span class="glyphicon accordion-toggle" aria-hidden="true">
           </span>
         </a>
       </div>
@@ -70,10 +72,10 @@
 
   <!-- Measures Record Region -->
   <?php $reg_machine_name='measures_record'; ?>
-  <div class="panel panel-success">
+  <div class="panel panel-rd-green">
     <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
       <a class="btn btn-success pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
-        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
+        <span class="glyphicon accordion-toggle" aria-hidden="true">
         </span>
       </a>
       <h4 class="panel-title" style="margin-top: 7.5px;">
@@ -86,29 +88,31 @@
       </div>
     </div>
   </div>
-</div>
 
-<!-- Treatment Region -->
-<?php $reg_machine_name='treatment'; ?>
-<div class="panel panel-danger">
-  <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
-    <div class="pull-right">
-      <a class="btn btn-danger btn-lg" href="<?php print $patient_nid; ?>/create-treatment">
-        <?php print t('Create Treatment'); ?>
-      </a>
+  <!-- Treatment Region -->
+  <?php $reg_machine_name='treatment'; ?>
+  <div class="panel panel-rd-red">
+    <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
+      <div class="pull-right">
+        <a class="btn btn-rd-dark-red btn-lg" href="<?php print $patient_nid; ?>/create-treatment">
+          <?php print t('Create Treatment'); ?>
+        </a>
+      </div>
+      <h4 class="panel-title" style="margin-top: 7.5px;">
+        <?php print t('Treatment'); ?>
+      </h4>
     </div>
-    <h4 class="panel-title" style="margin-top: 7.5px;">
-      <?php print t('Treatment'); ?>
-    </h4>
   </div>
 </div>
 <?php //dpm(get_defined_vars()); ?>
 
+
+
 <!-- Modal Create Form -->
-<div class="modal fade" id="CreateForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal fade in" id="CreateForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+  <div class="modal-dialog animated shake">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header bg-rd-blue">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">
           <?php print t('Create From'); ?>

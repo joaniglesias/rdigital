@@ -1,0 +1,122 @@
+
+// backgroung
+.navbar-default, .navbar-fixed-top {
+  @include gradient-vertical(#52aded, #418ce4);
+  border: none;
+  border-radius: 0px;
+  padding-left: 0px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+}
+
+.navbar-fixed-top .container {
+  padding-left: 0px;
+}
+
+// Brand Name
+.navbar-header {
+  background: #418ce4;
+  text-shadow: rgba(0, 0, 0, 0.2) 0px -1px 0;
+  @include box-shadow(rgba(255, 255, 255, 0.25) 0px 1px 0px inset);
+  padding-left: 15px;
+  a.navbar-brand {
+    color: $white;
+    &:hover, &:focus {
+      //color: $black-grey;
+      color: rgba(255,255,255,.7)
+    }
+  }
+  //right border
+  border: 0px solid;
+  border-color: #3470b6;
+  border-color: rgba(0,0,0,.2);
+  border-right-width: 1px;
+  @include box-shadow(1px 0 0 rgba(255,255,255,.2));
+}
+
+//Main Menu
+
+.navbar-default .navbar-nav > li > a {
+  text-shadow: rgba(0, 0, 0, 0.2) 0px -1px 0;
+  color: $white;
+  &:hover, &:focus {
+    //color: $black-grey;
+    color: rgba(255,255,255,.7)
+  }
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background: rgba(0,0,0,.15);
+  border: none;
+  margin: 0;
+  color: $white;
+  &:hover, &:focus {
+    //color: $black-grey;
+    color: rgba(255,255,255,.7)
+  }
+}
+
+.navbar-default .dropdown-menu > li > a:hover {
+  background: #3690e6;
+  color: $white;
+}
+
+//Hamburguer
+.navbar-default .navbar-toggle {
+  &:hover, &:focus {
+    background: $black-grey;
+  }
+  border: 0px solid;
+  border-color: #3470b6;
+  border-color: rgba(0,0,0,.2);
+  border-left-width: 1px;
+  @include box-shadow(1px 0 0 rgba(255,255,255,.2)inset);
+  border-radius: 0px;
+  margin: 0px;
+  padding: 18px;
+  //background: rgba(0,0,0,.15);
+  @include gradient-vertical(#52aded, #418ce4);
+
+
+  .icon-bar {
+    background-color: $white !important;
+  }
+
+}
+
+// Hamburguer menu
+@media (max-width: $screen-sm-min) {
+  .navbar-collapse {
+    background: $black-grey;
+    padding-left: 30px;
+    .navbar-nav > li > a {
+      color: $hamburguer-text-grey;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.6);
+      &:hover, &:focus {
+        color: $white;
+      }
+      &.active {
+        color: $hamburguer-text-selected;
+        &:hover, &:focus {
+          color: $hamburguer-text-selected;
+        }
+      }
+    }
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+      color: $hamburguer-text-grey;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.6);
+      &:hover, &:focus {
+        color: $white;
+      }
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a {
+    background: rgba(0,0,0,.15);
+    color: $hamburguer-text-selected;
+      &:hover, &:focus {
+        background: rgba(0,0,0,.15);
+        color: $hamburguer-text-selected;
+      }
+  }
+}

@@ -1,0 +1,50 @@
+// *******************************************************************************************
+//     PATIENT AND TREATMENT PANEL PAGE
+// *******************************************************************************************
+
+//Accordion toggle
+.collapsed {
+  .accordion-toggle.glyphicon:before {
+    content: "\e114"; //glyphicon-chevron-down
+  }
+}
+
+.accordion-toggle.glyphicon:before {
+    content: "\e113"; //glyphicon-chevron-up
+}
+
+
+//Panel Patient Details
+#collapse-patient-details {
+  .col-xs-6{
+    padding-left: 0px;
+  }
+}
+
+
+//Panel Forms
+#collapse-rdforms {
+  h2 {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+  .content .submitted {
+    display: none;
+  }
+  .views-row {
+    margin-bottom: 15px;
+  }
+  .views-row-last {
+    margin-bottom: 0px;
+  }
+}
+
+//Treatment Details Panel
+#rd-f-treat-date-time-add-more-wrapper legend {
+  display: none;
+}
+
+// Textarea
+fieldset.filter-wrapper {
+  display: none;
+}

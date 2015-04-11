@@ -1,0 +1,16 @@
+
+.breadcrumb {
+  background-color: $breadcrumb-bg-grey;
+  box-shadow: 0 1px 0px 0 rgba(0,0,0,.15);
+  border-bottom: 1px solid #d6d6d6;
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.main-container > .breadcrumb {
+  padding-left: 0px;
+}

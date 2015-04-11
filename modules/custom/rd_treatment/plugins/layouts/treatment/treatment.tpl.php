@@ -6,14 +6,16 @@
 
 <!-- Patient Region -->
 <?php $reg_machine_name='patient'; ?>
-<div class="panel panel-primary">
-  <div id="treatment-patient" class="panel-heading" >
-    <h5>
+
+<div class="stat-panel">
+  <div class="stat-cell bg-default darker valign-middle">
+    <i class="fa fa-list-alt bg-icon"></i>
+     <div class="text-sm">
       <?php print $layout['regions'][$reg_machine_name]; ?>
-    </h5>
-    <h3>
+    </div><br>
+    <span>
       <?php print $content['patient']; ?>
-    </h3>
+    </span>
   </div>
 </div>
 
@@ -21,11 +23,11 @@
 
   <!-- Patient Details Region -->
   <?php $reg_machine_name='patient-details'; ?>
-  <div class="panel panel-info">
+  <div class="panel panel-rd-blue">
 
     <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
-      <a class="btn btn-primary pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
-        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
+      <a class="btn btn-rd-dark-blue pull-right collapsed" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
+        <span class="glyphicon accordion-toggle" aria-hidden="true">
         </span>
       </a>
       <h4 class="panel-title" style="margin-top: 7.5px;">
@@ -46,14 +48,14 @@
 
   <!-- Form Region -->
   <?php $reg_machine_name='rdforms'; ?>
-  <div class="panel panel-info">
+  <div class="panel panel-rd-blue">
     <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
       <div class="pull-right">
-        <a class="btn btn-primary" data-toggle="modal" data-target="#CreateForm">
+        <a class="btn btn-rd-dark-blue" data-toggle="modal" data-target="#CreateForm">
           Create Form
         </a>
-        <a class="btn btn-primary" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
-          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
+        <a class="btn btn-rd-dark-blue collapsed" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
+          <span class="glyphicon accordion-toggle" aria-hidden="true">
           </span>
         </a>
       </div>
@@ -70,10 +72,10 @@
 
   <!-- Measures Record Region -->
   <?php $reg_machine_name='measures_record'; ?>
-  <div class="panel panel-success">
+  <div class="panel panel-rd-green">
     <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
-      <a class="btn btn-success pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
-        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
+      <a class="btn btn-success pull-right collapsed" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
+        <span class="glyphicon accordion-toggle" aria-hidden="true">
         </span>
       </a>
       <h4 class="panel-title" style="margin-top: 7.5px;">
@@ -89,10 +91,10 @@
 
   <!-- Treatment Details Region -->
   <?php $reg_machine_name='treatment-details'; ?>
-  <div class="panel panel-danger">
+  <div class="panel panel-rd-red">
     <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
-      <a class="btn btn-danger pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
-        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
+      <a class="btn btn-rd-dark-red pull-right collapsed" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
+        <span class="glyphicon accordion-toggle" aria-hidden="true">
         </span>
       </a>
       <h4 class="panel-title" style="margin-top: 7.5px;">
@@ -113,10 +115,10 @@
 
   <!-- Initial Comments Region -->
   <?php $reg_machine_name='initial_comments'; ?>
-  <div class="panel panel-danger">
+  <div class="panel panel-rd-red">
     <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
-      <a class="btn btn-danger pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
-        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
+      <a class="btn btn-rd-dark-red pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
+        <span class="glyphicon accordion-toggle" aria-hidden="true">
         </span>
       </a>
       <h4 class="panel-title" style="margin-top: 7.5px;">
@@ -132,10 +134,10 @@
 
   <!-- Measures Region -->
   <?php $reg_machine_name='measures'; ?>
-  <div class="panel panel-danger">
+  <div class="panel panel-rd-red">
     <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
-      <a class="btn btn-danger pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
-        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
+      <a class="btn btn-rd-dark-red pull-right collapsed" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
+        <span class="glyphicon accordion-toggle" aria-hidden="true">
         </span>
       </a>
       <h4 class="panel-title" style="margin-top: 7.5px;">
@@ -151,10 +153,10 @@
 
   <!-- Final Comments Region -->
   <?php $reg_machine_name='final_comments'; ?>
-  <div class="panel panel-danger">
+  <div class="panel panel-rd-red">
     <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
-      <a class="btn btn-danger pull-right" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
-        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true">
+      <a class="btn btn-rd-dark-red pull-right collapsed" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
+        <span class="glyphicon accordion-toggle" aria-hidden="true">
         </span>
       </a>
       <h4 class="panel-title" style="margin-top: 7.5px;">
@@ -173,26 +175,26 @@
 <!-- Treatment Actions Region -->
 <?php $reg_machine_name='treatment_actions'; ?>
 <div class="panel panel-default">
-  <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
+  <div class="panel-heading clearfix no-bg panel-padding" role="tab" id="heading-<?php print $reg_machine_name; ?>">
     <div class="pull-right">
-      <a class="btn btn-default btn-lg" data-toggle="modal" data-target="#DeleteTreatment">
+      <a class="btn btn-danger btn-lg" data-toggle="modal" data-target="#DeleteTreatment">
         <?php print t('Delete Treatment'); ?>
       </a>
-      <a class="btn btn-primary btn-lg" href="/">
+      <a class="btn btn-success btn-lg" href="/">
         <?php print t('Close Treatment'); ?>
       </a>
     </div>
-    <h4 class="panel-title" style="margin-top: 7.5px;">
-      <?php print t('Actions'); ?>
+    <h4 class="text-default text-lg text-semibold" style="margin-top: 7.5px;">
+      <?php print t('ACTIONS'); ?>
     </h4>
   </div>
 </div>
 
 <!-- Modal Create Form -->
-<div class="modal fade" id="CreateForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal fade in" id="CreateForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+  <div class="modal-dialog animated shake">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header bg-rd-blue">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">
           <?php print t('Create From'); ?>
@@ -210,7 +212,7 @@
 </div>
 
 <!-- Modal Create Form -->
-<div class="modal fade" id="DeleteTreatment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="DeleteTreatment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -225,6 +227,23 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">No</button>
+        <a type="button" class="btn btn-default" href="<?php print '/delete_' . $path; ?>">Yes</a>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- Modal Create Form -->
+<div class="modal modal-alert modal-warning fade in" id="DeleteTreatment" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <i class="fa fa-warning"></i>
+      </div>
+      <div class="modal-title"><?php print t('Delete Treatment'); ?></div>
+      <div class="modal-body"><?php print t('Are you sure you want to delete this treatment?'); ?></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">No</button>
         <a type="button" class="btn btn-default" href="<?php print '/delete_' . $path; ?>">Yes</a>
       </div>
     </div>
