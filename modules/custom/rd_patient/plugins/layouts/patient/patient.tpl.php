@@ -52,7 +52,7 @@
     <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
       <div class="pull-right">
         <a class="btn btn-rd-dark-blue" data-toggle="modal" data-target="#CreateForm">
-          Create Form
+        <?php print t('Create Form'); ?>
         </a>
         <a class="btn btn-rd-dark-blue" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
           <span class="glyphicon accordion-toggle" aria-hidden="true">
@@ -115,7 +115,7 @@
       <div class="modal-header bg-rd-blue">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">
-          <?php print t('Create From'); ?>
+          <?php print t('Create Form'); ?>
         </h4>
       </div>
       <div class="modal-body"><div class="te"></div>

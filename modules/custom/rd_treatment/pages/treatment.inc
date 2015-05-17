@@ -784,8 +784,8 @@ $display->panels = array();
       'formulario_tabaco_test' => 'formulario_tabaco_test',
     ),
     'context' => 'argument_entity_id:node_1',
-    'override_title' => 0,
-    'override_title_text' => 'Pane Forms',
+    'override_title' => 1,
+    'override_title_text' => '',
   );
   $pane->cache = array();
   $pane->style = array(
