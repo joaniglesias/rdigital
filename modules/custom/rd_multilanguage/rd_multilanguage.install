@@ -69,21 +69,21 @@ function _locale_module_configuration() {
 
   // set configuration managed within this form: /admin/config/regional/language/configure
   $lang_detection = array (
-    'locale-user' => '-10',
-    'locale-url' => '-9',
+    'locale-url' => '-10',
+    'locale-user' => '-9',
     'locale-session' => '-8',
     'locale-browser' => '-7',
     'language-default' => '-6',
   );
   $lang_negotiation = array (
-    'locale-user' =>
-    array (
-      'callbacks' =>
-      array (
-        'language' => 'locale_language_from_user',
-      ),
-      'file' => 'includes/locale.inc',
-    ),
+    // 'locale-user' =>
+    // array (
+    //   'callbacks' =>
+    //   array (
+    //     'language' => 'locale_language_from_user',
+    //   ),
+    //   'file' => 'includes/locale.inc',
+    // ),
     'locale-url' =>
     array (
       'callbacks' =>
