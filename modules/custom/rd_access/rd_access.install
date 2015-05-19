@@ -86,6 +86,10 @@ function _get_vocabularies_access() {
 
 function _get_roles_and_permissions_access() {
   $roles = array(
+    'authenticated user' => array(
+      //from text formats config (filter module)
+      'use text format treatment',
+      ),
     'Administrator' => array(
       // 'access administration menu',
       // 'access administration pages',
@@ -114,6 +118,11 @@ function _get_roles_and_permissions_access() {
     'Secretary' => array(
       ),
     'Practicioner' => array(
+      'create rd_ct_treatment content',
+      'delete own rd_ct_treatment content',
+      'edit any rd_ct_treatment content',
+      'edit own rd_ct_treatment content',
+      'use editablefields',
       ),
     );
 
