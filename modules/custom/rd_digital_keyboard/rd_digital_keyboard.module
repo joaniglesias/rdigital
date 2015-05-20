@@ -117,20 +117,14 @@ function rd_digital_keyboard_button_callback($ajax, $text) {
 
 /**
  * Implement hook_page_build
- * Load module assets for page and views defined in includes/pages and includes/views only
+ * Load module assets for page treatment only
  */
 function rd_digital_keyboard_page_build(&$page) {
-  $url_patterns = array(
-    '#^treatment/.+$#i',
-  );
-
-  foreach ($url_patterns as $pattern) {
-    if (preg_match($pattern, request_path())) {
-      drupal_add_library('system', 'drupal.ajax');
-      drupal_add_library('system', 'jquery.form');
-      drupal_add_js(drupal_get_path('module', 'rd_digital_keyboard') .'/js/button.js');
-      //drupal_add_js(drupal_get_path('module', 'vimn_twitter_voting_chat') .'/javascripts/chat.ui.js');
-      //drupal_add_css(drupal_get_path('module', 'vimn_twitter_voting_chat') . '/themes/stylesheets/vimn_twitter_voting_chat.css', array('group' => CSS_THEME, 'every_page' => FALSE));
-    }
+  if (strpos(request_path(), 'treatment')) {
+    drupal_add_library('system', 'drupal.ajax');
+    drupal_add_library('system', 'jquery.form');
+    drupal_add_js(drupal_get_path('module', 'rd_digital_keyboard') .'/js/button.js');
+    //drupal_add_js(drupal_get_path('module', 'vimn_twitter_voting_chat') .'/javascripts/chat.ui.js');
+    //drupal_add_css(drupal_get_path('module', 'vimn_twitter_voting_chat') . '/themes/stylesheets/vimn_twitter_voting_chat.css', array('group' => CSS_THEME, 'every_page' => FALSE));
   }
 }
