@@ -18,7 +18,7 @@ function create_rdform_edit_form($form, &$form_state) {
   $form['rdforms'] = array(
     '#type' => 'checkboxes',
     '#title' => t('Forms'),
-    '#description' => t('Select the Forms the user will be able to create'),
+    '#description' => t('Select the forms the user will be able to create'),
     '#options' => _get_rdforms(),
     '#required' => true,
     '#default_value' => $conf['rdforms'],
@@ -56,7 +56,7 @@ function _create_rd_form($form, &$form_state, $conf, $context) {
   $form['rdform'] = array(
     '#type' => 'select',
     '#title' => t('Forms'),
-    '#description' => t('Select the Form you want to create'),
+    '#description' => t('Select the form you want to create'),
     '#options' => $rdforms,
     '#required' => true,
     );

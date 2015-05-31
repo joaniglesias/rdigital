@@ -52,7 +52,7 @@
     <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
       <div class="pull-right">
         <a class="btn btn-rd-dark-blue" data-toggle="modal" data-target="#CreateForm">
-          Create Form
+          <?php print t('Create Form'); ?>
         </a>
         <a class="btn btn-rd-dark-blue collapsed" data-toggle="collapse" href="#collapse-<?php print $reg_machine_name; ?>" aria-expanded="false" aria-controls="collapseOne">
           <span class="glyphicon accordion-toggle" aria-hidden="true">
@@ -199,7 +199,7 @@
       <div class="modal-header bg-rd-blue">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">
-          <?php print t('Create From'); ?>
+          <?php print t('Create Form'); ?>
         </h4>
       </div>
       <div class="modal-body"><div class="te"></div>
@@ -245,8 +245,12 @@
       <div class="modal-title"><?php print t('Delete Treatment'); ?></div>
       <div class="modal-body"><?php print t('Are you sure you want to delete this treatment?'); ?></div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">No</button>
-        <a type="button" class="btn btn-default" href="<?php print '/delete_' . $path; ?>">Yes</a>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">
+          <?php print t('No'); ?>
+        </button>
+        <a type="button" class="btn btn-default" href="<?php print '/delete_' . $path; ?>">
+          <?php print t('Yes'); ?>
+        </a>
       </div>
     </div>
   </div>
