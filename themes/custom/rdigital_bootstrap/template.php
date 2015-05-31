@@ -14,6 +14,8 @@ function rdigital_bootstrap_colorize_text_alter(&$texts) {
   $texts['matches'][t('Apply')] = 'success';
   $texts['matches'][t('Insert')] = 'success';
   $texts['matches'][t('Import')] = 'success';
+  $texts['matches'][t('Log in')] = 'primary';
+  $texts['matches'][t('E-mail new password')] = 'primary';
 
   // // This would also match the string above, however the class returned would
   // // also be the one above; "matches" takes precedence over "contains".

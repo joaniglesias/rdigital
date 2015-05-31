@@ -39,6 +39,10 @@ h1, .h1 {
   font-size: 32px;
 }
 
+.navbar.container {
+  margin-top: 0px;
+}
+
 
 // *******************************************************************************************
 //     FULL PAGE
@@ -69,4 +73,51 @@ html.CSS1Compat{
 /* fix issue modals behing the background */
 .modal-backdrop {
   z-index: 1040;
+}
+
+
+// *******************************************************************************************
+//     LOG IN
+// *******************************************************************************************
+
+@media (min-width: 10px){
+  .not-logged-in {
+    .navbar-header{
+      background: none;
+      box-shadow: none;
+      border-right-width: 0;
+      //margin-left: 40%;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .navbar-toggle {
+      display: none;
+    }
+
+    .highlighted, .main-container{
+      width: 326px;
+      margin: 0 auto;
+    }
+
+    #edit-submit {
+      width: 100%;
+    }
+
+    .container .jumbotron {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .navbar.container>.container{
+      width: 182px;
+      margin: 0 auto;
+    }
+    .footer #block-lang-dropdown-language {
+      float: none;
+      width: 192px;
+      margin: 0 auto;
+    }
+    .new-breadcrumb{
+      display: none;
+    }
+  }
 }

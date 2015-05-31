@@ -7615,19 +7615,38 @@ body { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif 
 /* line 38, ../scss_components/rdigital_elements/_base.scss */
 h1, .h1 { font-size: 32px; }
 
-/* line 47, ../scss_components/rdigital_elements/_base.scss */
+/* line 42, ../scss_components/rdigital_elements/_base.scss */
+.navbar.container { margin-top: 0px; }
+
+/* line 51, ../scss_components/rdigital_elements/_base.scss */
 html { background-color: #313131; }
 
-/* line 52, ../scss_components/rdigital_elements/_base.scss */
+/* line 56, ../scss_components/rdigital_elements/_base.scss */
 html.CSS1Compat { background-color: #f4f4f4; }
 
-/* line 61, ../scss_components/rdigital_elements/_base.scss */
+/* line 65, ../scss_components/rdigital_elements/_base.scss */
 .main-container { margin-top: 15px; }
 
 /* fix issue modals behing the background */
-/* line 70, ../scss_components/rdigital_elements/_base.scss */
+/* line 74, ../scss_components/rdigital_elements/_base.scss */
 .modal-backdrop { z-index: 1040; }
 
+@media (min-width: 10px) { /* line 85, ../scss_components/rdigital_elements/_base.scss */
+  .not-logged-in .navbar-header { background: none; box-shadow: none; border-right-width: 0; margin-top: 5px; margin-bottom: 5px; }
+  /* line 93, ../scss_components/rdigital_elements/_base.scss */
+  .not-logged-in .navbar-toggle { display: none; }
+  /* line 97, ../scss_components/rdigital_elements/_base.scss */
+  .not-logged-in .highlighted, .not-logged-in .main-container { width: 326px; margin: 0 auto; }
+  /* line 102, ../scss_components/rdigital_elements/_base.scss */
+  .not-logged-in #edit-submit { width: 100%; }
+  /* line 106, ../scss_components/rdigital_elements/_base.scss */
+  .not-logged-in .container .jumbotron { padding-left: 0; padding-right: 0; }
+  /* line 110, ../scss_components/rdigital_elements/_base.scss */
+  .not-logged-in .navbar.container > .container { width: 182px; margin: 0 auto; }
+  /* line 114, ../scss_components/rdigital_elements/_base.scss */
+  .not-logged-in .footer #block-lang-dropdown-language { float: none; width: 192px; margin: 0 auto; }
+  /* line 119, ../scss_components/rdigital_elements/_base.scss */
+  .not-logged-in .new-breadcrumb { display: none; } }
 /* line 3, ../scss_components/rdigital_elements/_navbar.scss */
 .navbar-default, .navbar-fixed-top { background-image: -webkit-linear-gradient(top, #52aded 0%, #418ce4 100%); background-image: -o-linear-gradient(top, #52aded 0%, #418ce4 100%); background-image: linear-gradient(to bottom, #52aded 0%, #418ce4 100%); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF52ADED', endColorstr='#FF418CE4', GradientType=0); border: none; border-radius: 0px; padding-left: 0px; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15); }
 
