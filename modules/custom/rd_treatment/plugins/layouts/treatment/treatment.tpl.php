@@ -8,11 +8,8 @@
 <?php $reg_machine_name='patient'; ?>
 
 <div class="stat-panel">
-  <div class="stat-cell bg-default darker valign-middle">
+  <div class="stat-cell no-bg valign-middle bordered">
     <i class="fa fa-list-alt bg-icon"></i>
-     <div class="text-sm">
-      <?php print $layout['regions'][$reg_machine_name]; ?>
-    </div><br>
     <span>
       <?php print $content['patient']; ?>
     </span>

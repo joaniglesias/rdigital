@@ -323,7 +323,7 @@ $display->panels = array();
   );
   $pane->css = array(
     'css_id' => '',
-    'css_class' => 'text-xlg',
+    'css_class' => 'text-xlg  text-semibold',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -357,7 +357,7 @@ $display->panels = array();
   );
   $pane->css = array(
     'css_id' => '',
-    'css_class' => 'text-bg',
+    'css_class' => 'text-bg text-default',
   );
   $pane->extras = array();
   $pane->position = 1;
