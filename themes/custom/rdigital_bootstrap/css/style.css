@@ -7604,7 +7604,7 @@ textarea.input-sm, .input-group-sm > textarea.form-control, .input-group-sm > te
 .theme-adminflare .widget-rating .active a { color: #3690e6; }
 
 /* line 8, ../scss_components/rdigital_elements/_base.scss */
-.container, .navbar.container { width: 100%; max-width: 1770px; }
+.container, .navbar.container { width: 100%; max-width: none; }
 
 /* line 19, ../scss_components/rdigital_elements/_base.scss */
 body { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important; font-size: 14px; line-height: 1.42857143; color: #555555; background-color: #ffffff; background: #f4f4f4 url(../images/body-bg.png); }
