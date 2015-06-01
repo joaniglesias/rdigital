@@ -25,3 +25,31 @@ function rd_access_ctools_plugin_directory($module, $plugin) {
   }
 }
 
+
+
+// *******************************************************************************************
+//     PERMISSIONS
+// *******************************************************************************************
+
+/**
+ * Implements hook_permission().
+ */
+function rd_access_permission() {
+  return array(
+    t('administer own user centre') => array(
+      'title' => t('Administer own user centre'), 
+      'description' => t('See User Centre field when editing your account details'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function rd_access_form_alter(&$form, &$form_state, $form_id){
+  if(isset($form_id) & $form_id == 'user_profile_form'){
+    if (!user_access('administer own user centre')){
+	  unset($form['rd_f_access_user_centre']);
+	}
+  }
+}

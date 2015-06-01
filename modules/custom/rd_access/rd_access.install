@@ -116,6 +116,7 @@ function _get_roles_and_permissions_access() {
       // 'view own vimn_ct_event content',
       ),
     'Secretary' => array(
+      'administer own user centre',
       ),
     'Practicioner' => array(
       'create rd_ct_treatment content',
@@ -324,6 +325,15 @@ function _get_instances_access() {
       'type' => 'options_select',
       'weight' => 12,
     ),
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 0,
+      ),
+    ),
   );
   $instances['rd_f_user_access_key'] = array(
     'field_name' => 'rd_f_access_key',
@@ -341,6 +351,15 @@ function _get_instances_access() {
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 14,
+    ),
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 1,
+      ),
     ),
   );
 
