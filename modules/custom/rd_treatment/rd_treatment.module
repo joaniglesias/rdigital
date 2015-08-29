@@ -102,7 +102,10 @@ function rd_treatment_create_treatment_callback($patient_nid){
   $treatment->title = $patient->title;
   $treatment->rd_f_treat_related_patient['und'][0]['target_id'] = $patient->nid;
   $treatment->rd_f_treat_related_pract['und'][0]['target_id'] = $user->uid;
+  $default_timezone = date_default_timezone_get();
+  date_default_timezone_set('UTC');
   $treatment->rd_f_treat_date_time['und'][0]['value'] = date('Y-m-d H:i:s'); //IMP: store UTC time, not the timezone time
+  date_default_timezone_set($default_timezone);
   if (isset($user->rd_f_access_user_centre['und'][0]['tid'])) {
     $treatment->rd_f_access_treat_centre['und'][0]['tid'] = $user->rd_f_access_user_centre['und'][0]['tid'];
   }
