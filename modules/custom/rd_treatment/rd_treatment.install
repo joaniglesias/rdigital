@@ -219,7 +219,7 @@ function _get_fields_treatment() {
       ),
       'timezone_db' => 'UTC',
       'todate' => '',
-      'tz_handling' => 'site',
+      'tz_handling' => 'date', //more info on timezone handling here: https://www.drupal.org/node/1455578
     ),
   );
   $fields['rd_f_treat_ini_comments'] = array(
