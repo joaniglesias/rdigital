@@ -70,6 +70,19 @@ $handler->display->display_options['fields']['uid']['table'] = 'users';
 $handler->display->display_options['fields']['uid']['field'] = 'uid';
 $handler->display->display_options['fields']['uid']['exclude'] = TRUE;
 $handler->display->display_options['fields']['uid']['link_to_user'] = FALSE;
+/* Field: Global: PHP */
+$handler->display->display_options['fields']['php']['id'] = 'php';
+$handler->display->display_options['fields']['php']['table'] = 'views';
+$handler->display->display_options['fields']['php']['field'] = 'php';
+$handler->display->display_options['fields']['php']['label'] = 'Timezone';
+$handler->display->display_options['fields']['php']['use_php_setup'] = 0;
+$handler->display->display_options['fields']['php']['php_output'] = '<?php
+$user = user_load($row->uid);
+print_r($user->timezone);
+
+?>';
+$handler->display->display_options['fields']['php']['use_php_click_sortable'] = '0';
+$handler->display->display_options['fields']['php']['php_click_sortable'] = '';
 /* Field: Global: Custom text */
 $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
 $handler->display->display_options['fields']['nothing']['table'] = 'views';
