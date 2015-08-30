@@ -120,7 +120,7 @@ function rd_digital_keyboard_button_callback($ajax, $text) {
  * Load module assets for page treatment only
  */
 function rd_digital_keyboard_page_build(&$page) {
-  if (strpos(request_path(), 'treatment')) {
+  if (strpos(request_path(), 'treatment') !== FALSE) {
     drupal_add_library('system', 'drupal.ajax');
     drupal_add_library('system', 'jquery.form');
     drupal_add_js(drupal_get_path('module', 'rd_digital_keyboard') .'/js/button.js');
