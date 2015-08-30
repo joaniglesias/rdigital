@@ -188,6 +188,16 @@ function _get_fields_keyboard_button() {
   $t = get_t();
   $fields = array();
 
+  $fields['rd_f_keyb_button_int_id'] = array(
+    'field_name' => 'rd_f_keyb_button_int_id',
+    'type' => 'text',
+    'label' => $t("Button Internal ID"),
+    'cardinality' => 1,
+    'settings' => array(
+      'max_length' => 255,
+    ),
+  );
+
   $fields['rd_f_keyb_button_cover_name'] = array(
     'field_name' => 'rd_f_keyb_button_cover_name',
     'type' => 'text',
@@ -234,13 +244,33 @@ function _get_fields_keyboard_button() {
 function _get_instances_keyboard_button() {
   $t = get_t();
   $instances = array(
+    'rd_f_keyb_button_int_id' => array(
+      'field_name' => 'rd_f_keyb_button_int_id',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_keyboard_button',
+      'label' => $t("Button Internal ID"),
+      'description' => $t("IMP: this ID needs to be unique"),
+      'required' => TRUE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+      ),
+    ),
     'rd_f_keyb_button_cover_name' => array(
       'field_name' => 'rd_f_keyb_button_cover_name',
       'entity_type' => 'node',
       'bundle' => 'rd_ct_keyboard_button',
       'label' => $t("Button Cover's Name"),
       'description' => $t("Name that will appear on the button's cover"),
-      'required' => FALSE,
+      'required' => TRUE,
       'settings' => array(
         'text_processing' => 0,
         'user_register_form' => FALSE,
@@ -328,6 +358,23 @@ function _get_content_type_keyboard_button() {
 //     UPDATE FUNCTIONS
 // *******************************************************************************************
 
-// function rd_digital_keyboard_update_7000() {
+/**
+* Update 7000
+* Create field and instance 'Button Internal ID'
+*/
+function rd_digital_keyboard_update_7000() {
+  $fields = _get_fields_keyboard_button();
+  $instances = _get_instances_keyboard_button();
 
-// }
+  $new_field = $fields['rd_f_keyb_button_int_id'];
+  $new_instance = $instances['rd_f_keyb_button_int_id'];
+  $new_instance['widget']['weight'] = '-2';
+
+  field_create_field($new_field);
+  field_create_instance($new_instance);
+
+  //Field Button Cover's Name mandatory
+  $update_instance = $instances['rd_f_keyb_button_cover_name'];
+  $update_instance['widget']['weight'] = '0';
+  field_update_instance($update_instance);
+}

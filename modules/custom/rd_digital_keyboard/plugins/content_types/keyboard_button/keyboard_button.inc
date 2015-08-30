@@ -29,9 +29,12 @@ function keyboard_button_edit_form($form, &$form_state) {
   if (!empty($result['node'])) {
     $all_buttons = node_load_multiple(array_keys($result['node']));
     foreach ($all_buttons as $nid => $button) {
-      $button_options[$nid] = $button->title;
+      $button_options[$button->rd_f_keyb_button_int_id['und'][0]['value']] = $button->title;
     }
   }
+
+  // sort alphabetically
+  asort($button_options);
 
   $form['button'] = array(
     '#type' => 'select',
@@ -40,7 +43,7 @@ function keyboard_button_edit_form($form, &$form_state) {
     '#options' => $button_options,
     '#required' => true,
     '#default_value' => $conf['button'],
-    '#all_buttons' => $all_buttons,
+    '#all_buttons' => $button_options,
     );
 
 
@@ -64,22 +67,42 @@ function keyboard_button_edit_form_submit($form, &$form_state) {
 
 
 function button_admin_info($subtype, $conf, $context) {
-  $button_nid = $conf['button'];
+  $button_int_id = $conf['button'];
   $block = new stdClass();
-  $block->title = $conf['all_buttons'][$button_nid]->title . ' - ' . l(t('edit button'), 'node/' . $button_nid . '/edit', array('attributes' => array('target' => '_blank')));
-  if(isset($conf['collapse_panel_id'])) $block->title .= ' (Show collapse_panel_id: ' . $conf['collapse_panel_id'] . ')';
-  //$block->content = l(t('Edit button'), 'node/' . $button->nid . '/edit', array());
+  $button_nid = _find_button_nid($button_int_id);
+  $block->title = $conf['all_buttons'][$button_int_id] . ' - ' . l(t('edit button'), 'node/' . $button_nid . '/edit', array('attributes' => array('target' => '_blank')));
+
+  if(!empty($conf['collapse_panel_id'])) $block->title .= ' (Show collapse_panel_id: ' . $conf['collapse_panel_id'] . ')';
   return $block;
 }
 
 function keyboard_button_render($subtype, $conf, $panel_args, $context) {
-  $button_nid = $conf['button'];
-  $node=node_load($button_nid);
-  //$button_cover_text = $conf['all_buttons'][$button_nid]->rd_f_keyb_button_cover_name['und'][0]['value'];
-  //$button_text_to_print = $conf['all_buttons'][$button_nid]->rd_f_keyb_button_text['und'][0]['value'];
+  $button_int_id = $conf['button'];
+  $button_nid = _find_button_nid($button_int_id);
+  $node = node_load($button_nid);
 
   $button_cover_text = $node->rd_f_keyb_button_cover_name['und'][0]['value'];
-  $button_text_to_print = $node->rd_f_keyb_button_text['und'][0]['value'];
+  $button_text_to_print = '';
+  if (isset($node->rd_f_keyb_button_text['und'][0]['value'])){
+    $button_text_to_print = $node->rd_f_keyb_button_text['und'][0]['value'];
+  }
+  if (isset($node->rd_f_keyb_add_to_text['und'][0]['value'])){
+    $line_break = false;
+    foreach ($node->rd_f_keyb_add_to_text['und'] as $key => $value) {
+      switch ($value['value']) {
+        case 'line_break':
+          $button_text_to_print .= '<p>&nbsp;</p>';
+          $line_break = true;
+          break;
+        case 'tab':
+        dpm($button_text_to_print);
+          $button_text_to_print = ($line_break) ? substr($button_text_to_print, 0, -10) : substr($button_text_to_print, 0, -6);
+          $button_text_to_print .= '&nbsp;&nbsp;&nbsp;</p>';
+          dpm($button_text_to_print);
+          break;
+      }
+    }
+  }
   $block = new stdClass();
   //$block->title = t('Digital Keyboard');
 

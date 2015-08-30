@@ -22,21 +22,7 @@ function keyboard_list_edit_form($form, &$form_state) {
     $vocabularies[$vocabulary->machine_name] = $vocabulary->name;
   }
 
-  // $button_options = array();
-  // $all_buttons = array();
-
-  // $query = new EntityFieldQuery();
-  // $query->entityCondition('entity_type', 'node')
-  //   ->entityCondition('bundle', 'rd_ct_keyboard_list')
-  //   ->addTag('DANGEROUS_ACCESS_CHECK_OPT_OUT');
-  // $result = $query->execute();
-
-  // if (!empty($result['node'])) {
-  //   $all_buttons = node_load_multiple(array_keys($result['node']));
-  //   foreach ($all_buttons as $nid => $button) {
-  //     $button_options[$nid] = $button->title;
-  //   }
-  // }
+  asort($vocabularies);
 
   $form['vocabulary'] = array(
     '#type' => 'select',
@@ -80,7 +66,9 @@ function keyboard_list_render($subtype, $conf, $panel_args, $context) {
   $output = '';
   foreach (_get_vocabulary_terms($voc_machine_name) as $tid => $term_name) {
     $button_cover_text = $term_name;
-    $button_text_to_print = $term_name;
+    // add 3 spaces at the end
+    $tab = '&nbsp;&nbsp;&nbsp;';
+    $button_text_to_print = $term_name . $tab;
     $output .= "<button class='btn btn-danger vm-js rd-button-list' text-to-print='" . $button_text_to_print . "'>" . $button_cover_text . "</button>";
   }
 

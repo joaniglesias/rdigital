@@ -54,6 +54,63 @@ function rd_digital_keyboard_menu(){
 }
 
 
+// *******************************************************************************************
+//     NODE ACTIONS
+// *******************************************************************************************
+
+/**
+* Implements hooh_node_validate
+*/
+function rd_digital_keyboard_node_validate($node, $form, &$form_state) {
+  if ($node->type == 'rd_ct_keyboard_button') {
+    // Button Internal ID field
+    if (isset($node->rd_f_keyb_button_int_id['und'][0]['value'])) {
+      $button_int_id = $node->rd_f_keyb_button_int_id['und'][0]['value'];
+      // check if 'Button Internal ID' already exists
+      $query = new EntityFieldQuery();
+      $query->entityCondition('entity_type', 'node')
+      ->fieldCondition('rd_f_keyb_button_int_id', 'value', $button_int_id, '=')
+      ->addTag('DANGEROUS_ACCESS_CHECK_OPT_OUT');
+      $result = $query->execute();
+
+      if (!empty($result['node']) and !isset($result['node'][$node->nid])) {
+        form_set_error('rd_f_keyb_button_int_id', t('Button Internal ID: This ID already exists. Choose another one'));
+      }
+    }
+  }
+}
+
+
+// *******************************************************************************************
+//     CUSTOM ACTIONS
+// *******************************************************************************************
+
+/**
+* Implements hooh_node_validate
+*/
+function _find_button_nid($button_int_id) {
+
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+  ->fieldCondition('rd_f_keyb_button_int_id', 'value', $button_int_id, '=')
+  ->addTag('DANGEROUS_ACCESS_CHECK_OPT_OUT');
+  $result = $query->execute();
+
+  if (!empty($result['node'])) {
+    return key($result['node']);
+  }
+  else {
+    return false;
+  }
+
+}
+
+
+// *******************************************************************************************
+//     AJAX / JS
+// *******************************************************************************************
+
+
 /**
  * Update tweet status and reload the views
  * @param  [type] $ajax     [description]
