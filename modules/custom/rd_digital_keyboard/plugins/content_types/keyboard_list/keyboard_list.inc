@@ -48,6 +48,14 @@ function keyboard_list_edit_form($form, &$form_state) {
     '#all_vocabularies' => $vocabularies,
     );
 
+  $form['collapse_panel_id'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Collapsed panel ID'),
+    '#description' => t("If you want to collapse this panel, write an ID (IMP: the ID needs to be unique). Leave it blank if you don't want to callapse it"),
+    '#required' => false,
+    '#default_value' => $conf['collapse_panel_id'],
+    );
+
   return $form;
 
 }
@@ -55,6 +63,7 @@ function keyboard_list_edit_form($form, &$form_state) {
 function keyboard_list_edit_form_submit($form, &$form_state) {
   $form_state['conf']['vocabulary'] = $form_state['values']['vocabulary'];
   $form_state['conf']['all_vocabularies'] = $form['vocabulary']['#all_vocabularies'];
+  $form_state['conf']['collapse_panel_id'] = $form_state['values']['collapse_panel_id'];
 }
 
 
@@ -62,6 +71,7 @@ function keyboard_list_admin_info($subtype, $conf, $context) {
   $voc_machine_name = $conf['vocabulary'];
   $block = new stdClass();
   $block->title = $conf['all_vocabularies'][$voc_machine_name] . ' - ' . l(t('edit list'), 'admin/structure/taxonomy/' . $voc_machine_name , array('attributes' => array('target' => '_blank')));
+  if(isset($conf['collapse_panel_id'])) $block->title .= ' (collapse_panel_id: ' . $conf['collapse_panel_id'] . ')';
   return $block;
 }
 
@@ -72,6 +82,12 @@ function keyboard_list_render($subtype, $conf, $panel_args, $context) {
     $button_cover_text = $term_name;
     $button_text_to_print = $term_name;
     $output .= "<button class='btn btn-danger vm-js rd-button-list' text-to-print='" . $button_text_to_print . "'>" . $button_cover_text . "</button>";
+  }
+
+  if(isset($conf['collapse_panel_id'])){
+    $collapse_panel_id = $conf['collapse_panel_id'];
+    $output = '<div class="collapse alert alert-danger fade" id="' . $collapse_panel_id . '">
+  <a href="#' . $collapse_panel_id . '" class="close" data-toggle="collapse" aria-label="close" aria-expanded="false" >&times;</a>' . $output . '</div>';
   }
 
   $block = new stdClass();

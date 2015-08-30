@@ -43,6 +43,15 @@ function keyboard_button_edit_form($form, &$form_state) {
     '#all_buttons' => $all_buttons,
     );
 
+
+  $form['collapse_panel_id'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Collapsed panel ID'),
+    '#description' => t("If you want to show a collapsed panel when clicking this button, write its collapsed panel ID"),
+    '#required' => false,
+    '#default_value' => $conf['collapse_panel_id'],
+    );
+
   return $form;
 
 }
@@ -50,6 +59,7 @@ function keyboard_button_edit_form($form, &$form_state) {
 function keyboard_button_edit_form_submit($form, &$form_state) {
   $form_state['conf']['button'] = $form_state['values']['button'];
   $form_state['conf']['all_buttons'] = $form['button']['#all_buttons'];
+  $form_state['conf']['collapse_panel_id'] = $form_state['values']['collapse_panel_id'];
 }
 
 
@@ -57,17 +67,30 @@ function button_admin_info($subtype, $conf, $context) {
   $button_nid = $conf['button'];
   $block = new stdClass();
   $block->title = $conf['all_buttons'][$button_nid]->title . ' - ' . l(t('edit button'), 'node/' . $button_nid . '/edit', array('attributes' => array('target' => '_blank')));
+  if(isset($conf['collapse_panel_id'])) $block->title .= ' (Show collapse_panel_id: ' . $conf['collapse_panel_id'] . ')';
   //$block->content = l(t('Edit button'), 'node/' . $button->nid . '/edit', array());
   return $block;
 }
 
 function keyboard_button_render($subtype, $conf, $panel_args, $context) {
   $button_nid = $conf['button'];
-  $button_cover_text = $conf['all_buttons'][$button_nid]->rd_f_keyb_button_cover_name['und'][0]['value'];
-  $button_text_to_print = $conf['all_buttons'][$button_nid]->rd_f_keyb_button_text['und'][0]['value'];
+  $node=node_load($button_nid);
+  //$button_cover_text = $conf['all_buttons'][$button_nid]->rd_f_keyb_button_cover_name['und'][0]['value'];
+  //$button_text_to_print = $conf['all_buttons'][$button_nid]->rd_f_keyb_button_text['und'][0]['value'];
+
+  $button_cover_text = $node->rd_f_keyb_button_cover_name['und'][0]['value'];
+  $button_text_to_print = $node->rd_f_keyb_button_text['und'][0]['value'];
   $block = new stdClass();
   //$block->title = t('Digital Keyboard');
-  $block->content = "<button class='btn btn-danger vm-js' text-to-print='" . $button_text_to_print . "'>" . $button_cover_text . "</button>";
+
+  if(isset($conf['collapse_panel_id'])){
+    $collapse_panel_id = $conf['collapse_panel_id'];
+    $block->content = "<button class='btn btn-danger vm-js' text-to-print='" . $button_text_to_print . "' data-toggle='collapse' data-target='#" . $collapse_panel_id . "' aria-expanded='false' aria-controls='" . $collapse_panel_id . "'>" . $button_cover_text . "</button>";
+  }
+  else {
+    $block->content = "<button class='btn btn-danger vm-js' text-to-print='" . $button_text_to_print . "'>" . $button_cover_text . "</button>";
+  }
+  
   return $block;
 }
 

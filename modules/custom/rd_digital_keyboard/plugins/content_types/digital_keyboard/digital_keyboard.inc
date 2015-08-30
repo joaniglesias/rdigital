@@ -135,7 +135,20 @@ $output = "
          <button class='btn btn-danger vm-js rd-button-list' text-to-print='70'>70</button>
         </div>
   </div>
-</div>";
+</div>" . '
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+  Button with data-target
+</button>
+
+<div class="collapse alert alert-danger fade" id="collapseExample">
+  <a href="#collapseExample" class="close" data-toggle="collapse" aria-label="close" aria-expanded="false" >&times;</a>
+    ' . "
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='16'>16gjgfjhg</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='75'>75lhgkjhgjkhg</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='55'>55</button>
+         <button class='btn btn-danger vm-js rd-button-list' text-to-print='70'>70</button>
+
+" . '</div>';
   return $output;
 
 }
