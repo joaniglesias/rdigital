@@ -14,6 +14,9 @@ function rd_digital_keyboard_install() {
   // create new fields and content types
   _create_content_type($ct_name);
 
+  // create new nodes
+  _create_nodes_keyboard_button();
+
 }
 
 
@@ -172,6 +175,107 @@ function _get_vocabularies_keyboard_button() {
     );
 
   return $vocabularies;
+}
+
+
+// *******************************************************************************************
+//     NODES
+// *******************************************************************************************
+
+function _get_nodes_keyboard_button() {
+
+  // ARRAY FORMAT: button_internal_id = array(button_name, button_cover_name, line_break, tab, button_text);
+  // NOTE: all fields are mandatory.
+  // VALUES: 
+       // - button_name: text
+       // - button_cover_name: text
+       // - line_break: line_break/false
+       // - tab: tab/false
+       // - button_text: html_code/false
+
+  $nodes = array(
+    'WBX' => array('WBX', 'WBX', 'line_break', false, '<p><span style="color:#ff0000;"><strong>WBX</strong></span></p>'),
+    'WBX+' => array('WBX+', 'WBX+', 'line_break', false, '<p><span style="color:#ff0000;"><strong>WBX+</strong></span></p>'),
+    '/ +' => array('/ +', '/ +', false, 'tab', '<p><span style="color:#800080;"><strong>/ +</strong></span></p>'),
+    '/ +++ ' => array('/ +++ ', '/ +++ ', false, 'tab', '<p><span style="color:#800080;"><strong>/ +++</strong></span></p>'),
+    'W' => array('W', 'W', 'line_break', false, '<p><span style="color:#ff0000;"><strong>W</strong></span></p>'),
+    'B' => array('B', 'B', 'line_break', false, '<p><span style="color:#ff0000;"><strong>B</strong></span></p>'),
+    'X' => array('X', 'X', 'line_break', false, '<p><span style="color:#ff0000;"><strong>X</strong></span></p>'),
+    'A' => array('A', 'A', false, 'tab', '<p><span style="color:#800080;"><strong>A</strong></span></p>'),
+    'T' => array('T', 'T', false, 'tab', '<p><span style="color:#800080;"><strong>T</strong></span></p>'),
+    'G' => array('G', 'G', false, 'tab', '<p><span style="color:#800080;"><strong>G</strong></span></p>'),
+    'C' => array('C', 'C', false, 'tab', '<p><span style="color:#800080;"><strong>C</strong></span></p>'),
+    'Dt' => array('Dt', 'Dt', false, 'tab', '<p>Dt</p>'),
+    'Gch' => array('Gch', 'Gch', false, 'tab', '<p>Gch</p>'),
+    'Avt' => array('Avt', 'Avt', false, 'tab', '<p>Avt</p>'),
+    'Arr' => array('Arr', 'Arr', false, 'tab', '<p>Arr</p>'),
+    '16' => array('16', '16', false, 'tab', '<p>16</p>'),
+    '75' => array('75', '75', false, 'tab', '<p>75</p>'),
+    '55' => array('55', '55', false, 'tab', '<p>55</p>'),
+    '70' => array('70', '70', false, 'tab', '<p>70</p>'),
+    '//' => array('//', '//', false, 'tab', '<p>// </p>'),
+    '⏊' => array('⏊', '⏊', false, 'tab', '<p>⏊ </p>'),
+    '---' => array('---', '---', 'line_break', 'tab', '<p>-------------</p>'),
+    '(' => array('(', '(', false, 'tab', '<p>(</p>'),
+    ')' => array(')', ')', false, 'tab', '<p>)</p>'),
+    ',' => array(',', ',', false, 'tab', '<p>,</p>'),
+    '/0' => array('/0', '/0', 'line_break', 'tab', '<p>/ &nbsp; 0</p>'),
+    'bla' => array('bla', 'bla', false, 'tab', '<p>bla</p>'),
+    'ent' => array('ent', 'ent', 'line_break', 'tab', '<p>ent</p>'),
+    'C1D' => array('C1D', 'C1D', false, 'tab', '<p>C1 Dt</p>'),
+    'C1G' => array('C1G', 'C1G', false, 'tab', '<p>C1 Gch</p>'),
+    '1CoD' => array('1CoD', '1CoD', false, 'tab', '<p>1r Côte Dt</p>'),
+    '1CoG' => array('1CoG', '1CoG', false, 'tab', '<p>1r Côte Gch</p>'),
+    'Cox' => array('Cox', 'Cox', false, 'tab', '<p>Coxis</p>'),
+    'TpeD' => array('TpeD', 'TpeD', false, 'tab', '<p>Tête peroné Dt</p>'),
+    'TpeG' => array('TpeG', 'TpeG', false, 'tab', '<p>Tête peroné Gch</p>'),
+    '+Med' => array('+Med', '+Med', false, 'tab', '<p>+ Medicaments</p>'),
+    '-Med' => array('-Med', '-Med', false, 'tab', '<p>- Medicaments</p>'),
+    'id' => array('id', 'id', false, 'tab', '<p>Idem</p>'),
+    'Prod' => array('Prod', 'Prod', false, false, false),
+    'M' => array('M', 'M', 'line_break', 'tab', '<p>M/</p>'),
+    'O' => array('O', 'O', false, 'tab', '<p>O/</p>'),
+    'I' => array('I', 'I', false, 'tab', '<p>I/</p>'),
+    'N' => array('N', 'N', false, 'tab', '<p>N/</p>'),
+    'Ext' => array('Ext', 'Ext', false, 'tab', '<p>Ext/</p>'),
+    'Int' => array('Int', 'Int', false, 'tab', '<p>Int/</p>'),
+    'Obj' => array('Obj', 'Obj', false, 'tab', '<p>Obj/</p>'),
+    'P' => array('P', 'P', false, 'tab', '<p>P/</p>'),
+    'Sub' => array('Sub', 'Sub', false, 'tab', '<p>Sub/</p>'),
+    'TAB' => array('TAB', 'TAB', false, 'tab', false),
+    'ENTER' => array('ENTER', 'ENTER', 'line_break', false, false),
+    );
+
+  return $nodes;
+}
+
+function _create_nodes_keyboard_button() {
+
+  $nodes_details = _get_nodes_keyboard_button();
+  foreach ($nodes_details as $button_internal_id => $button_values) {
+    $button_name = $button_values[0];
+    $button_cover_name = $button_values[1];
+    $line_break = $button_values[2];
+    $tab = $button_values[3];
+    $button_text = $button_values[4];
+    //Create Node
+    $button_node = new stdClass();
+    $button_node->type = 'rd_ct_keyboard_button';
+    $button_node->language = 'en';
+    $button_node->status = 1;
+    $button_node->promote = 0;
+    $button_node->sticky = 0;
+    $button_node->title = $button_name;
+    $button_node->rd_f_keyb_button_int_id['und'][0]['value'] = $button_internal_id;
+    $button_node->rd_f_keyb_button_cover_name['und'][0]['value'] = $button_cover_name;
+    if($line_break) $button_node->rd_f_keyb_add_to_text['und'][]['value'] = 'line_break';
+    if($tab) $button_node->rd_f_keyb_add_to_text['und'][]['value'] = 'tab';
+    if($button_text){
+      $button_node->rd_f_keyb_button_text['und'][0]['value'] = $button_text;
+      $button_node->rd_f_keyb_button_text['und'][0]['format'] = 'digital_keyboard_button_text';
+    }
+    node_save($button_node);
+  }
 }
 
 
@@ -376,5 +480,8 @@ function rd_digital_keyboard_update_7000() {
   //Field Button Cover's Name mandatory
   $update_instance = $instances['rd_f_keyb_button_cover_name'];
   $update_instance['widget']['weight'] = '0';
-  field_update_instance($update_instance);
+  field_update_instance($update_instance);  
+
+  // create new nodes
+  _create_nodes_keyboard_button();
 }
