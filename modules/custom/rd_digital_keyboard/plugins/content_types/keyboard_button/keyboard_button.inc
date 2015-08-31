@@ -95,7 +95,7 @@ function keyboard_button_render($subtype, $conf, $panel_args, $context) {
           $line_break = true;
           break;
         case 'tab':
-          $button_text_to_print = ($line_break) ? substr($button_text_to_print, 0, -10) : substr($button_text_to_print, 0, -6);
+          $button_text_to_print = ($line_break) ? substr($button_text_to_print, 0, -10) : substr($button_text_to_print, 0, -4);
           $button_text_to_print .= '&nbsp;&nbsp;&nbsp;</p>';
           break;
       }
