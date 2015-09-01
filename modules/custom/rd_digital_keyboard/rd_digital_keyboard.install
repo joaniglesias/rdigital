@@ -165,17 +165,254 @@ function _get_vocabularies_keyboard_button() {
     'name' => $t('Products'),
     'machine_name' => 'rd_voc_products',
     'module' => 'rd_digital_keyboard',
-    'terms' => array(
-      $t('Tobacco'),
+    'terms' => array( // TO DO: translate them to English and then include Spanish translation
+      $t('ACTH'),
+      $t('Adrenalina'),
+      $t('Alcohol'),
+      $t('Azúcar'),
+      $t('Café'),
+      $t('Citocina'),
+      $t('Cocaína'),
+      $t('DHEA'),
+      $t('Dopamina'),
+      $t('Estradiol'),
+      $t('Estrógenos'),
+      $t('FSH'),
+      $t('Glucagon'),
+      $t('Grasa'),
+      $t('Hachís'),
+      $t('Heroína'),
+      $t('Histamina'),
+      $t('Insulina'),
+      $t('LH'),
+      $t('LH-RH'),
+      $t('LTH'),
+      $t('Melatonina'),
+      $t('Oxitocina'),
+      $t('Premium'),
+      $t('Progesterona'),
+      $t('Receptores'),
       $t('Serotonina'),
-      $t('Melamina'),
-      $t('Hashis'),
-      $t('DHLH'),
+      $t('STH'),
+      $t('T3T4'),
+      $t('Tabaco'),
+      $t('Té Verde'),
+      $t('Testosterona'),
+      $t('TSH'),
+      ),
+    );
+
+  $vocabularies['rd_voc_m_filters'] = array(
+    'name' => $t('M Filters'),
+    'machine_name' => 'rd_voc_m_filters',
+    'module' => 'rd_digital_keyboard',
+    'terms' => array(
+      'Inf.E', 
+      'Elm.E',
+      'Elm.C',
+      'Elm.T', 
+      'Inf.C',
+      'Inf.T',                
+      'PfS.C',
+      'PfS.T', 
+      'PfG.C', 
+      'PfG.T', 
+      'PfG.M', 
+      'PfG.A', 
+      'PfG.V', 
+      'PfG.H',
+      ),
+    );
+
+  $vocabularies['rd_voc_o_filters'] = array(
+    'name' => $t('O Filters'),
+    'machine_name' => 'rd_voc_o_filters',
+    'module' => 'rd_digital_keyboard',
+    'terms' => array(
+      'Elm.M',
+      'Elm.A', 
+      'Elm.V', 
+      'Elm.H',
+      ),
+    );
+
+  $vocabularies['rd_voc_i_filters'] = array(
+    'name' => $t('I Filters'),
+    'machine_name' => 'rd_voc_i_filters',
+    'module' => 'rd_digital_keyboard',
+    'terms' => array(
+      'LUI',
+      'LUD',
+      'LTG',
+      'LTS',
+      'MtG',
+      'MtS',
+      'Ms',
+      'MgC', 
+      'MgT',
+      'MgM',
+      'MgA',
+      'MgV',
+      'MgH',
+      ),
+    );
+
+  $vocabularies['rd_voc_n_filters'] = array(
+    'name' => $t('N Filters'),
+    'machine_name' => 'rd_voc_n_filters',
+    'module' => 'rd_digital_keyboard',
+    'terms' => array(      
+      'Inf.E', 
+      'Elm.E',
+      'Elm.C',
+      'Elm.T', 
+      'Elm.M',
+      'Elm.A', 
+      'Elm.V', 
+      'Elm.H',
+      'Inf.C',
+      'Inf.T',            
+      'PfS.C',
+      'PfS.T', 
+      'PfG.C', 
+      'PfG.T', 
+      'PfG.M', 
+      'PfG.A', 
+      'PfG.V', 
+      'PfG.H',
+      ),
+    );
+
+  $vocabularies['rd_voc_ext_filters'] = array(
+    'name' => $t('Ext Filters'),
+    'machine_name' => 'rd_voc_ext_filters',
+    'module' => 'rd_digital_keyboard',
+    'terms' => array(
+      'LUI',
+      'LUD',
+      'LTG',
+      'LTS',
+      ),
+    );
+
+  $vocabularies['rd_voc_int_filters'] = array(
+    'name' => $t('Int Filters'),
+    'machine_name' => 'rd_voc_int_filters',
+    'module' => 'rd_digital_keyboard',
+    'terms' => array(
+      'MtG',
+      'MtS',
+      'Ms',
+      'MgC', 
+      'MgT',
+      'MgM',
+      'MgA',
+      'MgV',
+      'MgH',
+      ),
+    );
+
+  $vocabularies['rd_voc_obj_filters'] = array(
+    'name' => $t('Obj Filters'),
+    'machine_name' => 'rd_voc_obj_filters',
+    'module' => 'rd_digital_keyboard',
+    'terms' => array(
+      'Ms',
+      'MgM',
+      'MgA',
+      'MgV',
+      'MgH',
+      'Inf.E', 
+      'Elm.E',
+      'PfS.M-A', 
+      'PfS.V-H', 
+      'PfG.M', 
+      'PfG.A', 
+      'PfG.V', 
+      'PfG.H',
+      ),
+    );
+
+  $vocabularies['rd_voc_p_filters'] = array(
+    'name' => $t('P Filters'),
+    'machine_name' => 'rd_voc_p_filters',
+    'module' => 'rd_digital_keyboard',
+    'terms' => array(
+      'LUI',
+      'LUD',
+      'LTG',
+      'LTS',
+      'Elm.M',
+      'Elm.A', 
+      'Elm.V', 
+      'Elm.H',
+      ),
+    );
+
+  $vocabularies['rd_voc_sub_filters'] = array(
+    'name' => $t('Sub Filters'),
+    'machine_name' => 'rd_voc_sub_filters',
+    'module' => 'rd_digital_keyboard',
+    'terms' => array(
+      'MtG',
+      'MtS',
+      'Ms',
+      'MgC', 
+      'MgT',
+      'Elm.C',
+      'Elm.T', 
+      'Inf.C',
+      'Inf.T',             
+      'PfS.C',
+      'PfS.T', 
+      'PfG.C', 
+      'PfG.T', 
       ),
     );
 
   return $vocabularies;
 }
+
+
+// ALL
+// 'LUI',
+// 'LUD',
+// 'LTG',
+// 'LTS',
+
+// 'MtG',
+// 'MtS',
+// 'Ms',
+// 'MgC', 
+// 'MgT',
+// 'MgM',
+// 'MgA',
+// 'MgV',
+// 'MgH',
+
+// 'Inf.E', 
+// 'Elm.E',
+// 'Elm.C',
+// 'Elm.T', 
+// 'Elm.M',
+// 'Elm.A', 
+// 'Elm.V', 
+// 'Elm.H',
+
+// 'Inf.C',
+// 'Inf.T', 
+// 'PfS.M-A', 
+// 'PfS.V-H',               
+// 'PfS.C',
+// 'PfS.T', 
+// 'PfG.C', 
+// 'PfG.T', 
+// 'PfG.M', 
+// 'PfG.A', 
+// 'PfG.V', 
+// 'PfG.H',
+
+
 
 
 // *******************************************************************************************
@@ -484,4 +721,7 @@ function rd_digital_keyboard_update_7000() {
 
   // create new nodes
   _create_nodes_keyboard_button();
+
+  //create new vocabularies
+  _create_vocabularies('keyboard_button');
 }
