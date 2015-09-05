@@ -470,6 +470,7 @@ function _get_nodes_keyboard_button() {
     'mie' => array('mie', 'mie', false, 'tab', '<p>Mieux</p>'),
     'mal' => array('mal', 'mal', false, 'tab', '<p>Mal</p>'),
     'Prod' => array('Prod', 'Prod', false, false, false),
+    'Com' => array('Com', 'Com', false, false, false),
     'M' => array('M', 'M', false, 'tab', '<p>M/</p>'),
     'O' => array('O', 'O', false, 'tab', '<p>O/</p>'),
     'I' => array('I', 'I', false, 'tab', '<p>I/</p>'),
