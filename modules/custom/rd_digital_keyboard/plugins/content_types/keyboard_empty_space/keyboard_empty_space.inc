@@ -34,6 +34,6 @@ function keyboard_empty_space_admin_info($subtype, $conf, $context) {
 function keyboard_empty_space_render($subtype, $conf, $panel_args, $context) {
 
   $block = new stdClass();
-  $block->content = '<div class="keyboard_empty_space" style="width: 20px;float: left;"">&nbsp;</div>';
+  $block->content = '<div class="keyboard_empty_space" style="width: 20px;float: left;">&nbsp;</div>';
   return $block;
 }
