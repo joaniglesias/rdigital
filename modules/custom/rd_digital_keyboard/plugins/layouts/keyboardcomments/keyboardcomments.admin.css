@@ -1,0 +1,29 @@
+
+.full-size {
+  width: 100%;
+}
+
+.three-quarts-size {
+  width: 75%;
+}
+
+.half-size {
+  width: 50%;
+}
+
+.quarter-size {
+  width: 25%;
+}
+
+.position {
+  float: left;
+  margin: 10px 0 0 0 ;
+}
+
+#edit-buttons {
+  float: left;
+}
+
+#panel-region-comments {
+	background-color: rgb(208, 209, 210) !important;
+}

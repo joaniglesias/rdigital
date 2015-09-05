@@ -1,0 +1,9 @@
+.pane-keyboard-button {
+  float: left;
+  margin: 2px 4px 2px 0px !important;
+}
+
+#KeyboardComments { 
+  float: left;
+  width: 100%;
+}
