@@ -106,10 +106,10 @@ function keyboard_button_render($subtype, $conf, $panel_args, $context) {
 
   if(!empty($conf['collapse_panel_id'])){
     $collapse_panel_id = $conf['collapse_panel_id'];
-    $block->content = "<button class='btn btn-danger vm-js' text-to-print='" . $button_text_to_print . "' data-toggle='collapse' data-target='#" . $collapse_panel_id . "' aria-expanded='false' aria-controls='" . $collapse_panel_id . "'>" . $button_cover_text . "</button>";
+    $block->content = "<button class='btn btn-pa-purple vm-js' text-to-print='" . $button_text_to_print . "' data-toggle='collapse' data-target='#" . $collapse_panel_id . "' aria-expanded='false' aria-controls='" . $collapse_panel_id . "'>" . $button_cover_text . "</button>";
   }
   else {
-    $block->content = "<button class='btn btn-warning vm-js' text-to-print='" . $button_text_to_print . "'>" . $button_cover_text . "</button>";
+    $block->content = "<button class='btn btn-danger vm-js' text-to-print='" . $button_text_to_print . "'>" . $button_cover_text . "</button>";
   }
   
   return $block;
