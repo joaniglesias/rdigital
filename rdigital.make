@@ -116,6 +116,9 @@ projects[jquery_update][version] = "2.x-dev"
 projects[i18nviews][subdir] = "contrib"
 projects[i18nviews][version] = "3.x-dev"
 
+projects[backup_migrate][subdir] = "contrib"
+projects[backup_migrate][version] = "3.1"
+
 
 
 ; Modules for development

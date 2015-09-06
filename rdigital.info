@@ -38,6 +38,7 @@ dependencies[] = views_php
 dependencies[] = libraries
 dependencies[] = pathauto
 dependencies[] = token
+dependencies[] = backup_migrate
 
 
 ;dependencies[] = content_access
