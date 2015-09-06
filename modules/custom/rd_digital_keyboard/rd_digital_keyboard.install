@@ -40,11 +40,6 @@ function _get_text_formats_keyboard_button() {
         'weight' => 0,
         'status' => 1,
       ),
-      // Display any HTML as plain text
-      'filter_html_escape' => array(
-        'weight' => 1,
-        'status' => 1,
-      ),
     ),
   );
 
