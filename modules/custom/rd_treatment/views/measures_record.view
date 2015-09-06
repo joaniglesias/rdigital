@@ -94,11 +94,6 @@ $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div
 <div class="view-treat-measures-text">[rd_f_treat_measures]</div>
 <div class="view-treat-fin-comments-text">[rd_f_treat_fin_comments]</div>';
 $handler->display->display_options['fields']['nothing']['element_class'] = 'view-measures-comments';
-/* Sort criterion: Content: Post date */
-$handler->display->display_options['sorts']['created']['id'] = 'created';
-$handler->display->display_options['sorts']['created']['table'] = 'node';
-$handler->display->display_options['sorts']['created']['field'] = 'created';
-$handler->display->display_options['sorts']['created']['order'] = 'DESC';
 /* Sort criterion: Content: Treatment Date and Time (rd_f_treat_date_time) */
 $handler->display->display_options['sorts']['rd_f_treat_date_time_value']['id'] = 'rd_f_treat_date_time_value';
 $handler->display->display_options['sorts']['rd_f_treat_date_time_value']['table'] = 'field_data_rd_f_treat_date_time';
