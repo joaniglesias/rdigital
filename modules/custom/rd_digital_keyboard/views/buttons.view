@@ -1,0 +1,106 @@
+<?php
+
+$view = new view();
+$view->name = 'buttons';
+$view->description = '';
+$view->tag = 'default';
+$view->base_table = 'node';
+$view->human_name = 'BUTTONS';
+$view->core = 7;
+$view->api_version = '3.0';
+$view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+/* Display: Master */
+$handler = $view->new_display('default', 'Master', 'default');
+$handler->display->display_options['title'] = 'BUTTONS';
+$handler->display->display_options['use_more_always'] = FALSE;
+$handler->display->display_options['access']['type'] = 'role';
+$handler->display->display_options['access']['role'] = array(
+  3 => '3',
+);
+$handler->display->display_options['cache']['type'] = 'none';
+$handler->display->display_options['query']['type'] = 'views_query';
+$handler->display->display_options['exposed_form']['type'] = 'basic';
+$handler->display->display_options['pager']['type'] = 'full';
+$handler->display->display_options['pager']['options']['items_per_page'] = '0';
+$handler->display->display_options['pager']['options']['offset'] = '0';
+$handler->display->display_options['pager']['options']['id'] = '0';
+$handler->display->display_options['pager']['options']['quantity'] = '9';
+$handler->display->display_options['style_plugin'] = 'table';
+/* Field: Content: Title */
+$handler->display->display_options['fields']['title']['id'] = 'title';
+$handler->display->display_options['fields']['title']['table'] = 'node';
+$handler->display->display_options['fields']['title']['field'] = 'title';
+$handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+$handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+/* Field: Content: Button Text */
+$handler->display->display_options['fields']['rd_f_keyb_button_text_1']['id'] = 'rd_f_keyb_button_text_1';
+$handler->display->display_options['fields']['rd_f_keyb_button_text_1']['table'] = 'field_data_rd_f_keyb_button_text';
+$handler->display->display_options['fields']['rd_f_keyb_button_text_1']['field'] = 'rd_f_keyb_button_text';
+/* Field: Content: Button Text */
+$handler->display->display_options['fields']['rd_f_keyb_button_text']['id'] = 'rd_f_keyb_button_text';
+$handler->display->display_options['fields']['rd_f_keyb_button_text']['table'] = 'field_data_rd_f_keyb_button_text';
+$handler->display->display_options['fields']['rd_f_keyb_button_text']['field'] = 'rd_f_keyb_button_text';
+$handler->display->display_options['fields']['rd_f_keyb_button_text']['type'] = 'editable';
+$handler->display->display_options['fields']['rd_f_keyb_button_text']['settings'] = array(
+  'click_to_edit' => 1,
+  'click_to_edit_style' => 'hover',
+  'empty_text' => '',
+  'fallback_format' => 'text_default',
+);
+/* Field: Content: Button Cover's Name */
+$handler->display->display_options['fields']['rd_f_keyb_button_cover_name']['id'] = 'rd_f_keyb_button_cover_name';
+$handler->display->display_options['fields']['rd_f_keyb_button_cover_name']['table'] = 'field_data_rd_f_keyb_button_cover_name';
+$handler->display->display_options['fields']['rd_f_keyb_button_cover_name']['field'] = 'rd_f_keyb_button_cover_name';
+$handler->display->display_options['fields']['rd_f_keyb_button_cover_name']['type'] = 'editable';
+$handler->display->display_options['fields']['rd_f_keyb_button_cover_name']['settings'] = array(
+  'click_to_edit' => 1,
+  'click_to_edit_style' => 'hover',
+  'empty_text' => '',
+  'fallback_format' => 'text_default',
+);
+/* Field: Content: Add to the text */
+$handler->display->display_options['fields']['rd_f_keyb_add_to_text']['id'] = 'rd_f_keyb_add_to_text';
+$handler->display->display_options['fields']['rd_f_keyb_add_to_text']['table'] = 'field_data_rd_f_keyb_add_to_text';
+$handler->display->display_options['fields']['rd_f_keyb_add_to_text']['field'] = 'rd_f_keyb_add_to_text';
+$handler->display->display_options['fields']['rd_f_keyb_add_to_text']['type'] = 'editable';
+$handler->display->display_options['fields']['rd_f_keyb_add_to_text']['settings'] = array(
+  'click_to_edit' => 1,
+  'click_to_edit_style' => 'hover',
+  'empty_text' => '',
+  'fallback_format' => 'list_default',
+);
+$handler->display->display_options['fields']['rd_f_keyb_add_to_text']['delta_offset'] = '0';
+/* Field: Content: Button Internal ID */
+$handler->display->display_options['fields']['rd_f_keyb_button_int_id']['id'] = 'rd_f_keyb_button_int_id';
+$handler->display->display_options['fields']['rd_f_keyb_button_int_id']['table'] = 'field_data_rd_f_keyb_button_int_id';
+$handler->display->display_options['fields']['rd_f_keyb_button_int_id']['field'] = 'rd_f_keyb_button_int_id';
+$handler->display->display_options['fields']['rd_f_keyb_button_int_id']['type'] = 'editable';
+$handler->display->display_options['fields']['rd_f_keyb_button_int_id']['settings'] = array(
+  'click_to_edit' => 1,
+  'click_to_edit_style' => 'hover',
+  'empty_text' => '',
+  'fallback_format' => 'text_default',
+);
+/* Sort criterion: Content: Nid */
+$handler->display->display_options['sorts']['nid']['id'] = 'nid';
+$handler->display->display_options['sorts']['nid']['table'] = 'node';
+$handler->display->display_options['sorts']['nid']['field'] = 'nid';
+/* Filter criterion: Content: Type */
+$handler->display->display_options['filters']['type']['id'] = 'type';
+$handler->display->display_options['filters']['type']['table'] = 'node';
+$handler->display->display_options['filters']['type']['field'] = 'type';
+$handler->display->display_options['filters']['type']['value'] = array(
+  'rd_ct_keyboard_button' => 'rd_ct_keyboard_button',
+);
+$handler->display->display_options['filters']['type']['group'] = 1;
+
+/* Display: Page */
+$handler = $view->new_display('page', 'Page', 'page');
+$handler->display->display_options['path'] = 'secretariat/buttons';
+$handler->display->display_options['menu']['type'] = 'normal';
+$handler->display->display_options['menu']['title'] = 'Buttons';
+$handler->display->display_options['menu']['weight'] = '4';
+$handler->display->display_options['menu']['name'] = 'main-menu';
+$handler->display->display_options['menu']['context'] = 0;
+$handler->display->display_options['menu']['context_only_inline'] = 0;
