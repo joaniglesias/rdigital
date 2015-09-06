@@ -1,4 +1,6 @@
 <?php
+  global $language;
+  $lang_code = ($language->language == 'en') ? '' : $language->language;
   $path = current_path();
   $path_params = explode("/", $path);
   $patient_nid = $path_params[1];
@@ -178,7 +180,7 @@
         <span class="btn-label icon fa fa-trash-o"></span>
         <?php print t('Delete Treatment'); ?>
       </a>
-      <a class="btn btn-success btn-lg btn-labeled" href="/">
+      <a class="btn btn-success btn-lg btn-labeled" href="<?php print ('/' . $lang_code ); ?>">
         <span class="btn-label icon fa fa-check"></span>
         <?php print t('Close Treatment'); ?>
       </a>
@@ -245,7 +247,7 @@
         <button type="button" class="btn btn-warning" data-dismiss="modal">
           <?php print t('No'); ?>
         </button>
-        <a type="button" class="btn btn-default" href="<?php print '/delete_' . $path; ?>">
+        <a type="button" class="btn btn-default" href="<?php print '/' . $lang_code . '/delete_' . $path; ?>">
           <?php print t('Yes'); ?>
         </a>
       </div>
