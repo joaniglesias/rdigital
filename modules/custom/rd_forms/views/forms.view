@@ -22,6 +22,12 @@ $handler->display->display_options['pager']['type'] = 'some';
 $handler->display->display_options['pager']['options']['items_per_page'] = '10';
 $handler->display->display_options['style_plugin'] = 'default';
 $handler->display->display_options['row_plugin'] = 'entity';
+/* No results behavior: Global: Unfiltered text */
+$handler->display->display_options['empty']['area_text_custom']['id'] = 'area_text_custom';
+$handler->display->display_options['empty']['area_text_custom']['table'] = 'views';
+$handler->display->display_options['empty']['area_text_custom']['field'] = 'area_text_custom';
+$handler->display->display_options['empty']['area_text_custom']['empty'] = TRUE;
+$handler->display->display_options['empty']['area_text_custom']['content'] = 'No Form founded';
 /* Field: Entityform Submission: Entityform submission ID */
 $handler->display->display_options['fields']['entityform_id']['id'] = 'entityform_id';
 $handler->display->display_options['fields']['entityform_id']['table'] = 'entityform';
@@ -61,6 +67,7 @@ $handler->display->display_options['arguments']['rd_f_forms_related_patient_targ
 /* Display: Page */
 $handler = $view->new_display('page', 'Page', 'page');
 $handler->display->display_options['path'] = 'forms/%patient';
+
 $translatables['forms'] = array(
   t('Master'),
   t('Forms'),

@@ -24,6 +24,12 @@ $handler->display->display_options['pager']['options']['offset'] = '0';
 $handler->display->display_options['pager']['options']['id'] = '0';
 $handler->display->display_options['pager']['options']['quantity'] = '9';
 $handler->display->display_options['style_plugin'] = 'table';
+/* No results behavior: Global: Unfiltered text */
+$handler->display->display_options['empty']['area_text_custom']['id'] = 'area_text_custom';
+$handler->display->display_options['empty']['area_text_custom']['table'] = 'views';
+$handler->display->display_options['empty']['area_text_custom']['field'] = 'area_text_custom';
+$handler->display->display_options['empty']['area_text_custom']['empty'] = TRUE;
+$handler->display->display_options['empty']['area_text_custom']['content'] = 'No Measures founded';
 /* Field: Content: Treatment Date and Time */
 $handler->display->display_options['fields']['rd_f_treat_date_time']['id'] = 'rd_f_treat_date_time';
 $handler->display->display_options['fields']['rd_f_treat_date_time']['table'] = 'field_data_rd_f_treat_date_time';
@@ -84,9 +90,10 @@ $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
 $handler->display->display_options['fields']['nothing']['table'] = 'views';
 $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
 $handler->display->display_options['fields']['nothing']['label'] = 'Measures & Comments';
-$handler->display->display_options['fields']['nothing']['alter']['text'] = '[rd_f_treat_ini_comments]</p>
-[rd_f_treat_measures]</p>
-[rd_f_treat_fin_comments]';
+$handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="view-treat-ini-comments-text">[rd_f_treat_ini_comments]</div>
+<div class="view-treat-measures-text">[rd_f_treat_measures]</div>
+<div class="view-treat-fin-comments-text">[rd_f_treat_fin_comments]</div>';
+$handler->display->display_options['fields']['nothing']['element_class'] = 'view-measures-comments';
 /* Sort criterion: Content: Post date */
 $handler->display->display_options['sorts']['created']['id'] = 'created';
 $handler->display->display_options['sorts']['created']['table'] = 'node';
