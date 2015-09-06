@@ -25,6 +25,7 @@ dependencies[] = admin_menu
 dependencies[] = module_filter
 dependencies[] = panels
 dependencies[] = panels_everywhere
+dependencies[] = panels_mini
 dependencies[] = ctools
 dependencies[] = page_manager
 dependencies[] = entity
