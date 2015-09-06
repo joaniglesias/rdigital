@@ -24,16 +24,12 @@ function keyboard_empty_space_edit_form_submit($form, &$form_state) {
 
 
 function keyboard_empty_space_admin_info($subtype, $conf, $context) {
-  // $voc_machine_name = $conf['vocabulary'];
-  // $block = new stdClass();
-  // $block->title = $conf['all_vocabularies'][$voc_machine_name] . ' - ' . l(t('edit list'), 'admin/structure/taxonomy/' . $voc_machine_name , array('attributes' => array('target' => '_blank')));
-  // if(isset($conf['collapse_panel_id'])) $block->title .= ' (collapse_panel_id: ' . $conf['collapse_panel_id'] . ')';
-  // return $block;
 }
 
 function keyboard_empty_space_render($subtype, $conf, $panel_args, $context) {
 
   $block = new stdClass();
-  $block->content = '<div class="keyboard_empty_space" style="width: 20px;float: left;">&nbsp;</div>';
+  //$block->content = '<div class="keyboard_empty_space" style="width: 20px;float: left;">&nbsp;</div>';
+  $block->content = '<div class="keyboard_empty_space">&nbsp;</div>';
   return $block;
 }

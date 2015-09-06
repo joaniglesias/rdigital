@@ -7836,3 +7836,31 @@ ul.tabs--primary { margin-bottom: 20px; }
 
 /* line 48, ../scss_components/rdigital_elements/_panel_pages.scss */
 fieldset.filter-wrapper { display: none; }
+
+/* line 51, ../scss_components/rdigital_elements/_panel_pages.scss */
+a.ckeditor_links { display: none !important; }
+
+/* line 54, ../scss_components/rdigital_elements/_panel_pages.scss */
+.cke_skin_kama { margin-top: -14px; }
+
+/* line 58, ../scss_components/rdigital_elements/_panel_pages.scss */
+html.CSS1Compat body { margin: 10px; }
+/* line 61, ../scss_components/rdigital_elements/_panel_pages.scss */
+html.CSS1Compat p { margin: 0px; }
+
+/* line 68, ../scss_components/rdigital_elements/_panel_pages.scss */
+.keyboard_empty_space { width: 18px; float: left; }
+
+/* line 72, ../scss_components/rdigital_elements/_panel_pages.scss */
+.pane-keyboard-list .alert { margin-bottom: 5px; margin-top: 5px; padding: 10px; }
+
+/* line 77, ../scss_components/rdigital_elements/_panel_pages.scss */
+#KeyboardComments { margin-bottom: 5px; margin-top: 5px; padding: 10px; }
+
+/* line 82, ../scss_components/rdigital_elements/_panel_pages.scss */
+.rd-button-list { margin: 3px; }
+
+/* line 9, ../scss_components/rdigital_elements/_views.scss */
+.view-measures-record .view-treat-ini-comments-text, .view-measures-record .view-treat-measures-text, .view-measures-record .view-treat-fin-comments-text { padding-bottom: 15px; }
+/* line 11, ../scss_components/rdigital_elements/_views.scss */
+.view-measures-record .view-treat-ini-comments-text p, .view-measures-record .view-treat-measures-text p, .view-measures-record .view-treat-fin-comments-text p { margin: 0px; }

@@ -48,3 +48,37 @@
 fieldset.filter-wrapper {
   display: none;
 }
+a.ckeditor_links {
+  display: none !important;
+}
+.cke_skin_kama {
+  margin-top: -14px;
+}
+html.CSS1Compat {
+  body {
+    margin: 10px;
+  }
+  p {
+    margin: 0px;
+  }
+
+}
+
+// Digital Keyboard
+.keyboard_empty_space {
+  width: 18px;
+  float: left;
+}
+.pane-keyboard-list .alert {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 10px;
+}
+#KeyboardComments {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 10px;
+}
+.rd-button-list {
+  margin: 3px;
+}
