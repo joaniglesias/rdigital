@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2015-05-17 13:03+0200\n"
-"PO-Revision-Date: 2015-05-17 13:03+0200\n"
+"POT-Creation-Date: 2015-09-06 14:03+0200\n"
+"PO-Revision-Date: 2015-09-06 14:03+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -899,9 +899,11 @@ msgstr ""
 #: views:measures_record:default:field:views:nothing:alter:text
 msgctxt "measures_record:default:field:views:nothing:alter:text"
 msgid ""
-"[rd_f_treat_ini_comments]</p>\n"
-"[rd_f_treat_measures]</p>\n"
-"[rd_f_treat_fin_comments]"
+"<div "
+"class=\"view-treat-ini-comments-text\">[rd_f_treat_ini_comments]</div>\n"
+"<div class=\"view-treat-measures-text\">[rd_f_treat_measures]</div>\n"
+"<div "
+"class=\"view-treat-fin-comments-text\">[rd_f_treat_fin_comments]</div>"
 msgstr ""
 
 #: views:measures_record:default:argument:field_data_rd_f_treat_related_patient:rd_f_treat_related_patient_target_id:exception:title
@@ -2269,6 +2271,191 @@ msgctxt "measures_record:page:display_title"
 msgid "Page"
 msgstr ""
 
+#: views:buttons:default:display_title
+msgctxt "buttons:default:display_title"
+msgid "Master"
+msgstr ""
+
+#: views:buttons:default:title
+msgctxt "buttons:default:title"
+msgid "BUTTONS"
+msgstr ""
+
+#: views:buttons:default:use_more_text
+msgctxt "buttons:default:use_more_text"
+msgid "more"
+msgstr ""
+
+#: views:buttons:default:exposed_form:submit_button
+msgctxt "buttons:default:exposed_form:submit_button"
+msgid "Apply"
+msgstr ""
+
+#: views:buttons:default:exposed_form:reset_button_label
+msgctxt "buttons:default:exposed_form:reset_button_label"
+msgid "Reset"
+msgstr ""
+
+#: views:buttons:default:exposed_form:exposed_sorts_label
+msgctxt "buttons:default:exposed_form:exposed_sorts_label"
+msgid "Sort by"
+msgstr ""
+
+#: views:buttons:default:exposed_form:sort_asc_label
+msgctxt "buttons:default:exposed_form:sort_asc_label"
+msgid "Asc"
+msgstr ""
+
+#: views:buttons:default:exposed_form:sort_desc_label
+msgctxt "buttons:default:exposed_form:sort_desc_label"
+msgid "Desc"
+msgstr ""
+
+#: views:buttons:default:pager:expose:items_per_page_label
+msgctxt "buttons:default:pager:expose:items_per_page_label"
+msgid "Items per page"
+msgstr ""
+
+#: views:buttons:default:pager:expose:items_per_page_options_all_label
+msgctxt "buttons:default:pager:expose:items_per_page_options_all_label"
+msgid "- All -"
+msgstr ""
+
+#: views:buttons:default:pager:expose:offset_label
+msgctxt "buttons:default:pager:expose:offset_label"
+msgid "Offset"
+msgstr ""
+
+#: views:buttons:default:pager:tags:first
+msgctxt "buttons:default:pager:tags:first"
+msgid "« first"
+msgstr ""
+
+#: views:buttons:default:pager:tags:previous
+msgctxt "buttons:default:pager:tags:previous"
+msgid "‹ previous"
+msgstr ""
+
+#: views:buttons:default:pager:tags:next
+msgctxt "buttons:default:pager:tags:next"
+msgid "next ›"
+msgstr ""
+
+#: views:buttons:default:pager:tags:last
+msgctxt "buttons:default:pager:tags:last"
+msgid "last »"
+msgstr ""
+
+#: views:buttons:default:field:node:title:label
+msgctxt "buttons:default:field:node:title:label"
+msgid "Title"
+msgstr ""
+
+#: views:buttons:default:field:field_data_rd_f_keyb_add_to_text:rd_f_keyb_add_to_text:label
+msgctxt "buttons:default:field:field_data_rd_f_keyb_add_to_text:rd_f_keyb_add_to_text:label"
+msgid "Add to the text"
+msgstr ""
+
+#: views:buttons:default:field:field_data_rd_f_keyb_button_cover_name:rd_f_keyb_button_cover_name:label
+msgctxt "buttons:default:field:field_data_rd_f_keyb_button_cover_name:rd_f_keyb_button_cover_name:label"
+msgid "Button Cover's Name"
+msgstr ""
+
+#: views:buttons:default:field:field_data_rd_f_keyb_button_int_id:rd_f_keyb_button_int_id:label
+msgctxt "buttons:default:field:field_data_rd_f_keyb_button_int_id:rd_f_keyb_button_int_id:label"
+msgid "Button Internal ID"
+msgstr ""
+
+#: views:buttons:default:field:field_data_rd_f_keyb_button_text:rd_f_keyb_button_text:label
+msgctxt "buttons:default:field:field_data_rd_f_keyb_button_text:rd_f_keyb_button_text:label"
+msgid "Button Text"
+msgstr ""
+
+#: views:buttons:page:display_title
+msgctxt "buttons:page:display_title"
+msgid "Page"
+msgstr ""
+
+#: views:buttons:page:use_more_text
+msgctxt "buttons:page:use_more_text"
+msgid "more"
+msgstr ""
+
+#: views:buttons:page:exposed_form:submit_button
+msgctxt "buttons:page:exposed_form:submit_button"
+msgid "Apply"
+msgstr ""
+
+#: views:buttons:page:exposed_form:reset_button_label
+msgctxt "buttons:page:exposed_form:reset_button_label"
+msgid "Reset"
+msgstr ""
+
+#: views:buttons:page:exposed_form:exposed_sorts_label
+msgctxt "buttons:page:exposed_form:exposed_sorts_label"
+msgid "Sort by"
+msgstr ""
+
+#: views:buttons:page:exposed_form:sort_asc_label
+msgctxt "buttons:page:exposed_form:sort_asc_label"
+msgid "Asc"
+msgstr ""
+
+#: views:buttons:page:exposed_form:sort_desc_label
+msgctxt "buttons:page:exposed_form:sort_desc_label"
+msgid "Desc"
+msgstr ""
+
+#: views:buttons:page:pager:expose:items_per_page_label
+msgctxt "buttons:page:pager:expose:items_per_page_label"
+msgid "Items per page"
+msgstr ""
+
+#: views:buttons:page:pager:expose:items_per_page_options_all_label
+msgctxt "buttons:page:pager:expose:items_per_page_options_all_label"
+msgid "- All -"
+msgstr ""
+
+#: views:buttons:page:pager:expose:offset_label
+msgctxt "buttons:page:pager:expose:offset_label"
+msgid "Offset"
+msgstr ""
+
+#: views:buttons:page:pager:tags:first
+msgctxt "buttons:page:pager:tags:first"
+msgid "« first"
+msgstr ""
+
+#: views:buttons:page:pager:tags:previous
+msgctxt "buttons:page:pager:tags:previous"
+msgid "‹ previous"
+msgstr ""
+
+#: views:buttons:page:pager:tags:next
+msgctxt "buttons:page:pager:tags:next"
+msgid "next ›"
+msgstr ""
+
+#: views:buttons:page:pager:tags:last
+msgctxt "buttons:page:pager:tags:last"
+msgid "last »"
+msgstr ""
+
+#: views:buttons:default:field:field_data_rd_f_keyb_button_text:rd_f_keyb_button_text_1:label
+msgctxt "buttons:default:field:field_data_rd_f_keyb_button_text:rd_f_keyb_button_text_1:label"
+msgid "Button Text"
+msgstr ""
+
+#: views:forms:default:display_title
+msgctxt "forms:default:display_title"
+msgid "Master"
+msgstr ""
+
+#: views:forms:page:display_title
+msgctxt "forms:page:display_title"
+msgid "Page"
+msgstr ""
+
 #: views:measures_record:default:field:field_data_rd_f_treat_date_time:rd_f_treat_date_time:label
 msgctxt "measures_record:default:field:field_data_rd_f_treat_date_time:rd_f_treat_date_time:label"
 msgid "Treatment Date and Time"
@@ -2298,4 +2485,39 @@ msgstr "Ver Paciente"
 msgctxt "search_patients:default:field:views:nothing:alter:alt"
 msgid "See Patient"
 msgstr "Ver Paciente"
+
+#: views:measures_record:default:field:views:nothing_1:label
+msgctxt "measures_record:default:field:views:nothing_1:label"
+msgid "Date / Practitioner / Centre"
+msgstr "Fecha / Practicante / Centro"
+
+#: views:measures_record:default:field:views:nothing:label
+msgctxt "measures_record:default:field:views:nothing:label"
+msgid "Measures & Comments"
+msgstr "Medidas y comentarios"
+
+#: views:search_patients:default:title
+msgctxt "search_patients:default:title"
+msgid "Search Patients"
+msgstr "Buscar Pacientes"
+
+#: views:search_patients:default:field:views:nothing:alter:text
+msgctxt "search_patients:default:field:views:nothing:alter:text"
+msgid "See Patient"
+msgstr "Ver Paciente"
+
+#: views:search_patients:default:field:views:nothing:alter:alt
+msgctxt "search_patients:default:field:views:nothing:alter:alt"
+msgid "See Patient"
+msgstr "Ver Paciente"
+
+#: views:forms:default:empty:views:area_text_custom:content
+msgctxt "forms:default:empty:views:area_text_custom:content"
+msgid "No Form founded"
+msgstr "No se han encontrado Formularios"
+
+#: views:measures_record:default:empty:views:area_text_custom:content
+msgctxt "measures_record:default:empty:views:area_text_custom:content"
+msgid "No Measures founded"
+msgstr "No se han encontrado Medidas"
 

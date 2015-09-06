@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2015-05-17 13:03+0200\n"
-"PO-Revision-Date: 2015-05-17 13:03+0200\n"
+"POT-Creation-Date: 2015-09-06 14:04+0200\n"
+"PO-Revision-Date: 2015-09-06 14:04+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -2017,6 +2017,7 @@ msgstr ""
 msgid "%name is not a valid IP address."
 msgstr ""
 
+#: ; profiles/rdigital/modules/contrib/token/token.js
 msgid "First click a text field to insert your tokens into."
 msgstr ""
 
@@ -4529,6 +4530,3294 @@ msgstr ""
 msgid "15_10_14"
 msgstr ""
 
+#: profiles/rdigital/modules/contrib/i18n/i18n_block/i18n_block.js
+msgid "Translatable"
+msgstr ""
+
+#: profiles/rdigital/modules/contrib/i18n/i18n_block/i18n_block.js
+msgid "Not translatable"
+msgstr ""
+
+#: profiles/rdigital/modules/contrib/i18n/i18n_block/i18n_block.js
+msgid "Restricted to certain languages"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Abidjan"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Accra"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Addis Ababa"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Algiers"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Asmara"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Bamako"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Bangui"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Banjul"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Bissau"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Blantyre"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Brazzaville"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Bujumbura"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Cairo"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Casablanca"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Ceuta"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Conakry"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Dakar"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Dar es Salaam"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Djibouti"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Douala"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/El Aaiun"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Freetown"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Gaborone"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Harare"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Johannesburg"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Juba"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Kampala"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Khartoum"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Kigali"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Kinshasa"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Lagos"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Libreville"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Lome"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Luanda"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Lubumbashi"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Lusaka"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Malabo"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Maputo"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Maseru"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Mbabane"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Mogadishu"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Monrovia"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Nairobi"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Ndjamena"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Niamey"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Nouakchott"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Ouagadougou"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Porto-Novo"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Sao Tome"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Tripoli"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Tunis"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Africa/Windhoek"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Adak"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Anchorage"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Anguilla"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Antigua"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Araguaina"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Argentina/Buenos Aires"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Argentina/Catamarca"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Argentina/Cordoba"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Argentina/Jujuy"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Argentina/La Rioja"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Argentina/Mendoza"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Argentina/Rio Gallegos"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Argentina/Salta"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Argentina/San Juan"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Argentina/San Luis"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Argentina/Tucuman"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Argentina/Ushuaia"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Aruba"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Asuncion"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Atikokan"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Bahia"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Bahia Banderas"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Barbados"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Belem"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Belize"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Blanc-Sablon"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Boa Vista"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Bogota"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Boise"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Cambridge Bay"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Campo Grande"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Cancun"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Caracas"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Cayenne"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Cayman"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Chicago"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Chihuahua"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Costa Rica"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Creston"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Cuiaba"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Curacao"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Danmarkshavn"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Dawson"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Dawson Creek"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Denver"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Detroit"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Dominica"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Edmonton"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Eirunepe"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/El Salvador"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Fortaleza"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Glace Bay"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Godthab"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Goose Bay"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Grand Turk"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Grenada"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Guadeloupe"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Guatemala"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Guayaquil"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Guyana"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Halifax"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Havana"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Hermosillo"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Indiana/Indianapolis"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Indiana/Knox"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Indiana/Marengo"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Indiana/Petersburg"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Indiana/Tell City"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Indiana/Vevay"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Indiana/Vincennes"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Indiana/Winamac"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Inuvik"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Iqaluit"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Jamaica"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Juneau"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Kentucky/Louisville"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Kentucky/Monticello"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Kralendijk"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/La Paz"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Lima"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Los Angeles"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Lower Princes"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Maceio"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Managua"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Manaus"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Marigot"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Martinique"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Matamoros"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Mazatlan"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Menominee"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Merida"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Metlakatla"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Mexico City"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Miquelon"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Moncton"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Monterrey"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Montevideo"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Montserrat"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Nassau"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/New York"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Nipigon"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Nome"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Noronha"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/North Dakota/Beulah"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/North Dakota/Center"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/North Dakota/New Salem"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Ojinaga"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Panama"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Pangnirtung"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Paramaribo"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Phoenix"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Port-au-Prince"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Port of Spain"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Porto Velho"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Puerto Rico"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Rainy River"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Rankin Inlet"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Recife"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Regina"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Resolute"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Rio Branco"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Santa Isabel"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Santarem"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Santiago"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Santo Domingo"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Sao Paulo"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Scoresbysund"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Sitka"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/St Barthelemy"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/St Johns"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/St Kitts"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/St Lucia"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/St Thomas"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/St Vincent"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Swift Current"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Tegucigalpa"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Thule"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Thunder Bay"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Tijuana"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Toronto"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Tortola"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Vancouver"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Whitehorse"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Winnipeg"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Yakutat"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "America/Yellowknife"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Antarctica/Casey"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Antarctica/Davis"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Antarctica/DumontDUrville"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Antarctica/Macquarie"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Antarctica/Mawson"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Antarctica/McMurdo"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Antarctica/Palmer"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Antarctica/Rothera"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Antarctica/Syowa"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Antarctica/Troll"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Antarctica/Vostok"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Arctic/Longyearbyen"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Aden"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Almaty"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Amman"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Anadyr"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Aqtau"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Aqtobe"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Ashgabat"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Baghdad"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Bahrain"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Baku"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Bangkok"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Beirut"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Bishkek"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Brunei"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Chita"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Choibalsan"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Colombo"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Damascus"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Dhaka"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Dili"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Dubai"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Dushanbe"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Gaza"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Hebron"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Ho Chi Minh"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Hong Kong"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Hovd"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Irkutsk"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Jakarta"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Jayapura"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Jerusalem"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Kabul"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Kamchatka"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Karachi"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Kathmandu"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Khandyga"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Kolkata"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Krasnoyarsk"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Kuala Lumpur"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Kuching"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Kuwait"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Macau"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Magadan"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Makassar"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Manila"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Muscat"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Nicosia"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Novokuznetsk"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Novosibirsk"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Omsk"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Oral"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Phnom Penh"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Pontianak"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Pyongyang"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Qatar"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Qyzylorda"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Rangoon"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Riyadh"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Sakhalin"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Samarkand"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Seoul"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Shanghai"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Singapore"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Srednekolymsk"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Taipei"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Tashkent"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Tbilisi"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Tehran"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Thimphu"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Tokyo"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Ulaanbaatar"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Urumqi"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Ust-Nera"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Vientiane"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Vladivostok"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Yakutsk"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Yekaterinburg"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Asia/Yerevan"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Atlantic/Azores"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Atlantic/Bermuda"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Atlantic/Canary"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Atlantic/Cape Verde"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Atlantic/Faroe"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Atlantic/Madeira"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Atlantic/Reykjavik"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Atlantic/South Georgia"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Atlantic/St Helena"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Atlantic/Stanley"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Australia/Adelaide"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Australia/Brisbane"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Australia/Broken Hill"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Australia/Currie"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Australia/Darwin"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Australia/Eucla"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Australia/Hobart"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Australia/Lindeman"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Australia/Lord Howe"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Australia/Melbourne"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Australia/Perth"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Australia/Sydney"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Amsterdam"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Andorra"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Athens"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Belgrade"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Berlin"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Bratislava"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Brussels"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Bucharest"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Budapest"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Busingen"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Chisinau"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Copenhagen"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Dublin"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Gibraltar"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Guernsey"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Helsinki"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Isle of Man"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Istanbul"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Jersey"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Kaliningrad"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Kiev"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Lisbon"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Ljubljana"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/London"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Luxembourg"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Madrid"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Malta"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Mariehamn"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Minsk"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Monaco"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Moscow"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Oslo"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Paris"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Podgorica"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Prague"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Riga"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Rome"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Samara"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/San Marino"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Sarajevo"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Simferopol"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Skopje"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Sofia"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Stockholm"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Tallinn"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Tirane"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Uzhgorod"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Vaduz"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Vatican"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Vienna"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Vilnius"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Volgograd"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Warsaw"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Zagreb"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Zaporozhye"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Europe/Zurich"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Indian/Antananarivo"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Indian/Chagos"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Indian/Christmas"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Indian/Cocos"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Indian/Comoro"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Indian/Kerguelen"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Indian/Mahe"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Indian/Maldives"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Indian/Mauritius"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Indian/Mayotte"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Indian/Reunion"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Apia"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Auckland"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Bougainville"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Chatham"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Chuuk"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Easter"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Efate"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Enderbury"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Fakaofo"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Fiji"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Funafuti"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Galapagos"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Gambier"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Guadalcanal"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Guam"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Honolulu"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Johnston"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Kiritimati"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Kosrae"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Kwajalein"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Majuro"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Marquesas"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Midway"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Nauru"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Niue"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Norfolk"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Noumea"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Pago Pago"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Palau"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Pitcairn"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Pohnpei"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Port Moresby"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Rarotonga"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Saipan"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Tahiti"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Tarawa"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Tongatapu"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Wake"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "Pacific/Wallis"
+msgstr ""
+
+#: /es/user/5/edit
+msgid "UTC"
+msgstr ""
+
+#: /es
+msgid "Claves de Acceso"
+msgstr ""
+
+#: /es
+msgid "Crear Claves de Acceso"
+msgstr ""
+
+#: /es
+msgid "Pacientes"
+msgstr ""
+
+#: /es/centre/recat-badalona
+msgid "previous"
+msgstr ""
+
+#: /es/centre/recat-badalona
+msgid "next"
+msgstr ""
+
+#: /es/panels/ajax/editor/edit-pane/panel_context%3Apage-treatment%3Apage_treatment_panel_context/new-1
+msgid "Select the Taxonomy List"
+msgstr ""
+
+#: /es/admin/config/regional/translate/rd_update
+msgid "Fecha de modificación"
+msgstr ""
+
+#: /es/admin/config/regional/translate/rd_update
+msgid "Option %name"
+msgstr ""
+
+#: /es/admin/structure/taxonomy/rd_voc_centre/edit
+msgid "Multilingual options"
+msgstr ""
+
+#: /es/admin/structure/taxonomy/rd_voc_centre/edit
+msgid "Translation mode"
+msgstr ""
+
+#: /es/admin/structure/taxonomy/rd_voc_centre/edit
+msgid ""
+"No multilingual options for @item_name_multiple. Only the "
+"@container_name will be translatable."
+msgstr ""
+
+#: /es/admin/structure/taxonomy/rd_voc_centre/edit
+msgid ""
+"Localize. @item_name_multiple_capitalized are common for all "
+"languages, but their name and description may be localized."
+msgstr ""
+
+#: /es/admin/structure/taxonomy/rd_voc_centre/edit
+msgid ""
+"Translate. Different @item_name_multiple will be allowed for each "
+"language and they can be translated."
+msgstr ""
+
+#: /es/admin/structure/taxonomy/rd_voc_centre/edit
+msgid ""
+"Translate and Localize. @item_name_multiple_capitalized with language "
+"will allow translations. @item_name_multiple_capitalized without "
+"language will be localized."
+msgstr ""
+
+#: /es/admin/structure/taxonomy/rd_voc_centre/edit
+msgid ""
+"Fixed Language. @item_name_multiple_capitalized will have a global "
+"language and they will only show up for pages in that language."
+msgstr ""
+
+#: /es/admin/structure/taxonomy/rd_voc_centre/edit
+msgid ""
+"For localizable elements, to have all items available for translation "
+"visit the <a href=\"@locale-refresh\">translation refresh</a> page."
+msgstr ""
+
+#: /es/admin/structure/taxonomy/rd_voc_centre/edit
+msgid "Predefined language. If set, it will apply to all items."
+msgstr ""
+
+#: /es/admin/structure/taxonomy/rd_voc_centre/edit
+msgid "- Select a language -"
+msgstr ""
+
+#: /es/admin/structure/taxonomy/rd_voc_centre/edit
+msgid "Save and translate"
+msgstr ""
+
+#: /es/admin/structure/taxonomy/rd_voc_products
+msgid ""
+"%capital_name is a localizable vocabulary. You will be able to "
+"translate term names and descriptions using the <a "
+"href=\"@translate-interface\">translate interface</a> pages."
+msgstr ""
+
+#: /es/treatment/2/28
+msgid "RECAT Badalona"
+msgstr ""
+
+#: /es/treatment/2/28
+msgid "Tobacco"
+msgstr ""
+
+#: /es/treatment/2/28
+msgid "Serotonina"
+msgstr ""
+
+#: /es/treatment/2/28
+msgid "Melamina"
+msgstr ""
+
+#: /es/treatment/2/28
+msgid "Hashis"
+msgstr ""
+
+#: /es/treatment/2/28
+msgid "DHLH"
+msgstr ""
+
+#: /es/devel/php
+msgid "PHP code to execute"
+msgstr ""
+
+#: /es/devel/php
+msgid "Enter some code. Do not use <code>&lt;?php ?&gt;</code> tags."
+msgstr ""
+
+#: /es/admin/structure/taxonomy/rd_voc_products/translate
+msgid "Create new translation"
+msgstr ""
+
+#: /es/admin/structure/taxonomy/rd_voc_products
+msgid ""
+"%capital_name is a full multilingual vocabulary. You will be able to "
+"set a language for each term and create translation relationships."
+msgstr ""
+
+#: /es/taxonomy/term/1/edit?destination=admin/structure/taxonomy/rd_voc_products
+msgid ""
+"This term belongs to a multilingual vocabulary. You can set a language "
+"for it."
+msgstr ""
+
+#: /es/treatment/2/27
+msgid "Water"
+msgstr ""
+
+#: /es/treatment/2/27
+msgid "Language selection"
+msgstr ""
+
+#: /es/taxonomy/term/10/translate
+msgid "Translations of term %title"
+msgstr ""
+
+#: /es/taxonomy/term/10/translate
+msgid "Select translations"
+msgstr ""
+
+#: /es/taxonomy/term/10/translate
+msgid ""
+"Select existing terms or type new ones that will be created for each "
+"language."
+msgstr ""
+
+#: /es/admin/structure/views/ajax/config-item/measures_record/default/field/nothing_1
+msgid "Views Distinct Settings"
+msgstr ""
+
+#: /es/admin/structure/views/ajax/config-item/measures_record/default/field/nothing_1
+msgid "Filter Repeats"
+msgstr ""
+
+#: /es/admin/structure/views/ajax/config-item/measures_record/default/field/nothing_1
+msgid "Aggregate Repeats"
+msgstr ""
+
+#: /es/admin/structure/views/ajax/config-item/measures_record/default/field/nothing_1
+msgid "Filter/Aggregate this field"
+msgstr ""
+
+#: /es/admin/structure/views/ajax/config-item/measures_record/default/field/nothing_1
+msgid ""
+"Filter (remove) or aggregate (group) result rows based on repetition "
+"of this field value. If a field handler applies special post-query "
+"formatting (such as the User Name handler that creates links to "
+"profiles), Aggregation may break the View unless rendered field output "
+"is used (below)."
+msgstr ""
+
+#: /es/admin/structure/views/ajax/config-item/measures_record/default/field/nothing_1
+msgid "Aggregation Separator"
+msgstr ""
+
+#: /es/admin/structure/views/ajax/config-item/measures_record/default/field/nothing_1
+msgid ""
+"This value will be used between each value when aggregated results are "
+"combined. HTML is allowed, so be careful."
+msgstr ""
+
+#: /es/admin/structure/views/ajax/config-item/measures_record/default/field/nothing_1
+msgid "Use the rendered output of this field"
+msgstr ""
+
+#: /es/admin/structure/views/ajax/config-item/measures_record/default/field/nothing_1
+msgid ""
+"Filter/aggregate based on the rendered output of this field, including "
+"any Rewrite Results changes. This has performance implications (the "
+"queries are not impacted but the View must be built twice."
+msgstr ""
+
+#: /es
+msgid "new password"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "Africa/Addis_Ababa"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "Africa/Dar_es_Salaam"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "Africa/El_Aaiun"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "Africa/Sao_Tome"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Argentina/Buenos_Aires"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Argentina/La_Rioja"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Argentina/Rio_Gallegos"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Argentina/San_Juan"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Argentina/San_Luis"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Bahia_Banderas"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Boa_Vista"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Cambridge_Bay"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Campo_Grande"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Costa_Rica"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Dawson_Creek"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/El_Salvador"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Glace_Bay"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Goose_Bay"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Grand_Turk"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Indiana/Tell_City"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/La_Paz"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Los_Angeles"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Lower_Princes"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Mexico_City"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/New_York"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/North_Dakota/Beulah"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/North_Dakota/Center"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/North_Dakota/New_Salem"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Port_of_Spain"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Porto_Velho"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Puerto_Rico"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Rainy_River"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Rankin_Inlet"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Rio_Branco"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Santa_Isabel"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Santo_Domingo"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Sao_Paulo"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/St_Barthelemy"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/St_Johns"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/St_Kitts"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/St_Lucia"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/St_Thomas"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/St_Vincent"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Swift_Current"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "America/Thunder_Bay"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "Asia/Ho_Chi_Minh"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "Asia/Hong_Kong"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "Asia/Kuala_Lumpur"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "Asia/Phnom_Penh"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "Atlantic/Cape_Verde"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "Atlantic/South_Georgia"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "Atlantic/St_Helena"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "Australia/Broken_Hill"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "Australia/Lord_Howe"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "Europe/Isle_of_Man"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "Europe/San_Marino"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "Pacific/Pago_Pago"
+msgstr ""
+
+#: /es/treatment/2/44
+msgid "Pacific/Port_Moresby"
+msgstr ""
+
+#: /es/treatment/2/113
+msgid "Button Internal ID"
+msgstr ""
+
+#: /es/treatment/2/113
+msgid "Keyboard comments"
+msgstr ""
+
+#: /es/treatment/2/113
+msgid "Row 1"
+msgstr ""
+
+#: /es/treatment/2/113
+msgid "Row 2"
+msgstr ""
+
+#: /es/treatment/2/113
+msgid "Row 3"
+msgstr ""
+
+#: /es/treatment/2/113
+msgid "Row 4"
+msgstr ""
+
+#: /es/treatment/2/113
+msgid "KeyboardComments"
+msgstr ""
+
+#: /es/treatment/2/113
+msgid "Keyboard Empty Space"
+msgstr ""
+
+#: /es/treatment/2/113
+msgid "Empty space between buttons within the keyboard"
+msgstr ""
+
+#: /es/treatment/2/113
+msgid ""
+"Add, edit or delete mini panels, which can be used as blocks or "
+"content panes in other panels."
+msgstr ""
+
+#: /es
+msgid "Buttons"
+msgstr ""
+
+#: /es/patient/1
+msgid "Recat Digital Forms"
+msgstr ""
+
+#: /es/treatment/1/117
+msgid "Recat Digital Keyboard"
+msgstr ""
+
+#: /es/admin/structure/block
+msgid "BUTTONS"
+msgstr ""
+
+#: /es/secretariat/buttons
+msgid "Edit this field"
+msgstr ""
+
+#: /es/admin/structure/pages/nojs/operation/page-treatment/handlers/page_treatment_panel_context/content?destination=treatment/8/122
+msgid "Digital Keyboard v0"
+msgstr ""
+
+#: /es/admin/structure/pages/nojs/operation/page-treatment/handlers/page_treatment_panel_context/content?destination=treatment/8/122
+msgid "Digital Keyboard - initial draft "
+msgstr ""
+
+#: /es/admin/config
+msgid "User clicks a button field"
+msgstr ""
+
+#: /es/admin/config
+msgid "Button field"
+msgstr ""
+
+#: /es/admin/config
+msgid "Button field that was clicked."
+msgstr ""
+
+#: /es/admin/config
+msgid "Entity from the button that was clicked."
+msgstr ""
+
+#: /es/admin/config
+msgid "After saving a new @entity"
+msgstr ""
+
+#: /es/admin/config
+msgid "created @entity"
+msgstr ""
+
+#: /es/admin/config
+msgid "After updating an existing @entity"
+msgstr ""
+
+#: /es/admin/config
+msgid "updated @entity"
+msgstr ""
+
+#: /es/admin/config
+msgid "unchanged entity"
+msgstr ""
+
+#: /es/admin/config
+msgid "Before saving a @entity"
+msgstr ""
+
+#: /es/admin/config
+msgid "saved @entity"
+msgstr ""
+
+#: /es/admin/config
+msgid "After deleting a @entity"
+msgstr ""
+
+#: /es/admin/config
+msgid "deleted @entity"
+msgstr ""
+
+#: /es/admin/config
+msgid "@entity is viewed"
+msgstr ""
+
+#: /es/admin/config
+msgid "viewed @entity"
+msgstr ""
+
+#: /es/admin/config
+msgid "jQuery Update"
+msgstr ""
+
+#: /es/admin/config
+msgid "jQuery %jquery (<a href=\"@link\">configure</a>) and jQuery UI %ui"
+msgstr ""
+
+#: /es/admin/config
+msgid "The %library library could not be found."
+msgstr ""
+
+#: /es/admin/config
+msgid ""
+"To enable YAML HTTP requets/responses, please download <a "
+"href=\"@download\">spyc</a> and create a file called spyc.php in "
+"rest_server/lib or use Libraries to retrieve spyc."
+msgstr ""
+
+#: /es/admin/config
+msgid "Missing spyc library"
+msgstr ""
+
+#: /es/admin/config
+msgid "Backup and Migrate"
+msgstr ""
+
+#: /es/admin/config
+msgid ""
+"Backup/restore your database and files or migrate data to or from "
+"another Drupal site."
+msgstr ""
+
+#: /es/admin/config
+msgid "restore feature"
+msgstr ""
+
+#: /es/admin/config
+msgid ""
+"Backup and Migrate makes the task of backing up your Drupal database "
+"and migrating data from one Drupal install to another easier. It "
+"provides a function to backup the entire database to file or download, "
+"and to restore from a previous backup. You can also schedule the "
+"backup operation. Compression of backup files is also supported.  The "
+"database backup files created with this module can be imported into "
+"this or any other Drupal installation with the !restorelink, or you "
+"can use a database tool such as <a "
+"href=\"!phpmyadminurl\">phpMyAdmin</a> or the mysql command line "
+"command."
+msgstr ""
+
+#: /es/admin/config
+msgid "Quick Backup Tab"
+msgstr ""
+
+#: /es/admin/config
+msgid "Use this form to run simple manual backups of your database and files."
+msgstr ""
+
+#: /es/admin/config
+msgid "Advanced Backup Tab"
+msgstr ""
+
+#: /es/admin/config
+msgid "settings profiles"
+msgstr ""
+
+#: /es/admin/config
+msgid ""
+"Use this form to run manual backups of your database and files with "
+"more advanced options. If you have any !profilelink saved you can load "
+"those settings. You can save any of the changes you make to these "
+"settings as a new settings profile."
+msgstr ""
+
+#: /es/admin/config
+msgid "Restore Tab"
+msgstr ""
+
+#: /es/admin/config
+msgid ""
+"Upload a backup and migrate backup file. The restore function will not "
+"work with database dumps from other sources such as phpMyAdmin."
+msgstr ""
+
+#: /es/admin/config
+msgid "Destinations"
+msgstr ""
+
+#: /es/admin/config
+msgid ""
+"Destinations are the places you can save your backup files to or them "
+"load from."
+msgstr ""
+
+#: /es/admin/config
+msgid ""
+"Files can be saved to a directory on your web server, downloaded to "
+"your desktop or emailed to a specified email account. From the "
+"Destinations tab you can create, delete and edit destinations or list "
+"the files which have already been backed up to the available "
+"destinations."
+msgstr ""
+
+#: /es/admin/config
+msgid ""
+"Sources are the things that can be backed up such as database or file "
+"directories."
+msgstr ""
+
+#: /es/admin/config
+msgid "schedules"
+msgstr ""
+
+#: /es/admin/config
+msgid "manual backups"
+msgstr ""
+
+#: /es/admin/config
+msgid ""
+"Profiles are saved backup settings. Profiles store your table "
+"exclusion settings as well as your backup file name, compression and "
+"timestamp settings. You can use profiles in !schedulelink and for "
+"!manuallink."
+msgstr ""
+
+#: /es/admin/config
+msgid ""
+"You can create new profiles using the add profiles tab or by checking "
+"the \"Save these settings\" button on the advanced backup page."
+msgstr ""
+
+#: /es/admin/config
+msgid "Scheduling"
+msgstr ""
+
+#: /es/admin/config
+msgid ""
+"Automatically backup up your database and files on a regular schedule "
+"using <a href=\"!cronurl\">cron</a>."
+msgstr ""
+
+#: /es/admin/config
+msgid ""
+"Each schedule will run a maximum of once per cron run, so they will "
+"not run more frequently than your cron is configured to run. If you "
+"specify a number of backups to keep for a schedule, old backups will "
+"be deleted as new ones created. <strong>If specifiy a number of files "
+"to keep other backup files in that schedule's destination will get "
+"deleted</strong>."
+msgstr ""
+
+#: /es/admin/config
+msgid "Importing Settings"
+msgstr ""
+
+#: /es/admin/config
+msgid ""
+"Import a settings profile, backup schedule, source or destination by "
+"pasting the export code into the textarea."
+msgstr ""
+
+#: /es/admin/config
+msgid "help page"
+msgstr ""
+
+#: /es/admin/config
+msgid "Visit the !helppage for more help using this module."
+msgstr ""
+
+#: /es/admin/config
+msgid "Backup"
+msgstr ""
+
+#: /es/admin/config
+msgid "Backup the database."
+msgstr ""
+
+#: /es/admin/config
+msgid "Advanced Backup"
+msgstr ""
+
+#: /es/admin/config
+msgid "Quick Backup"
+msgstr ""
+
+#: /es/admin/config
+msgid "NodeSquirrel"
+msgstr ""
+
+#: /es/admin/config
+msgid "Restore the database from a previous backup"
+msgstr ""
+
+#: /es/admin/config
+msgid "Saved Backups"
+msgstr ""
+
+#: /es/admin/config
+msgid "Previously created backups"
+msgstr ""
+
+#: /es/admin/config
+msgid "Schedules"
+msgstr ""
+
+#: /es/admin/config
+msgid "Add !type"
+msgstr ""
+
+#: /es/admin/config
+msgid "List !type"
+msgstr ""
+
+#: /es/admin/config
+msgid "Module settings."
+msgstr ""
+
+#: /es/admin/config
+msgid "Delete File"
+msgstr ""
+
+#: /es/admin/config
+msgid "Delete a backup file"
+msgstr ""
+
+#: /es/admin/config
+msgid "Destination Files"
+msgstr ""
+
+#: /es/admin/config
+msgid "Restore from backup"
+msgstr ""
+
+#: /es/admin/config
+msgid "Restore database from a backup file on the server"
+msgstr ""
+
+#: /es/admin/config
+msgid "Import backup and migrate settings."
+msgstr ""
+
+#: /es/admin/config
+msgid "Settings Profiles"
+msgstr ""
+
+#: /es/admin/config
+msgid "backup_migrate"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Untitled Schedule"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid ""
+"Save the backup files to any directory on this server which the "
+"web-server can write to."
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Server Directory"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Save the backup files to the NodeSquirrel.com backup service."
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "NodeSquirrel.com"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Save the backup files to any a directory on an FTP server."
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "FTP Directory"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Amazon S3 account"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Save the backup files to a bucket on your !link."
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Amazon S3 Bucket"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Send the backup as an email attachment to the specified email address."
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Database"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid ""
+"Import the backup directly into another database. Database sources can "
+"also be used as a source to backup from."
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "MySQL Database"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid ""
+"Import the backup directly into another MySQL database. Database "
+"sources can also be used as a source to backup from."
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "A files directory which can be backed up from."
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "File Directory"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Create an archive of your entire site."
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Site Archive"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Destination"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Manual Backups Directory"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Scheduled Backups Directory"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "No Compression"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "GZip"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "BZip"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgctxt "compression format"
+msgid "Zip"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Default Database"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Public Files Directory"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Entire Site (code, files & DB)"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Untitled Profile"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Settings Profile"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Backup Settings Profile"
+msgstr ""
+
+#: /es/admin_menu/flush-cache?token=qKWETFuG1Vh5i8yta3LQR-Lf9sj2S-w4KYYbSx23EDY&destination=admin/config/regional/translate/translate
+msgid "Backup and Migrate Quick Backup"
+msgstr ""
+
+#: /es/admin/config/regional/translate/edit/12101?destination=admin/config/regional/translate/translate
+msgid "Administration XSS filter."
+msgstr ""
+
+#: /es/admin/config/regional/translate/edit/12101?destination=admin/config/regional/translate/translate
+msgid "It will allow most HTML tags but not scripts nor styles."
+msgstr ""
+
+#: /es/admin/modules
+msgid "About ABT"
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"ABT (Access by Term) is a module that controls node access based on "
+"relationship between node-&gt;term&lt;-user where taxonomy terms allow "
+"for hierarchical content access control."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Install & enable."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"After enabling the module, make sure you set appropriate permissions "
+"for your roles."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Add some taxonomy terms in the vocabularies you intent to use. Do not "
+"forget to think hierarchically. ABT handles access inheritance in such "
+"way that parent has equal or greater access then it's child."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Create fields:"
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Add a \"Term reference\" field instance to the content type(s) you "
+"want to control."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Add a \"Term reference\" field instance to the user."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"ABT has support for multiple access flags, so you may set the field "
+"instances to \"unlimited\" values, if you need. When editing/adding "
+"settings for the field instance, pick the type of access to control by "
+"checking any or all of the flags view/update/delete. If you check any "
+"of these, access for this content type will be controlled by ABT. If "
+"none are checked, this remains a regular field. Let's say you check "
+"only \"delete\" flag. This would mean you want to control the "
+"\"delete\" access with the field. Other two unchecked boxes will "
+"result in \"access denied\"."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"If your setup requires, you can create any number of different fields "
+"(with different vocabularies attached) and have each control one of "
+"the flags (view/update/delete). It's completely up to you how you set "
+"it up. If you ame to use more then one field per content type - It is "
+"your responsibility to make sure that there fields controlling are not "
+"overlapping (For example: field A and field B are both set to control "
+"view-access for content type Articles - this could have unexpected "
+"results)."
+msgstr ""
+
+#: /es/admin/modules
+msgid "\"Tag\" nodes with appropriate access terms."
+msgstr ""
+
+#: /es/admin/modules
+msgid "\"Tag\" users with appropriate access terms."
+msgstr ""
+
+#: /es/admin/modules
+msgid "ABT controls access based on relationship between node->term<-user."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Backup the Drupal database and files or migrate them to another "
+"environment."
+msgstr ""
+
+#: /es/admin/modules
+msgid "This module provides support for multilingual blocks."
+msgstr ""
+
+#: /es/admin/modules
+msgid "You can set up a language for a block or define it as translatable:"
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Blocks with a language will be displayed only in pages with that "
+"language."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Translatable blocks can be translated using the localization "
+"interface."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"To search and translate strings, use the <a "
+"href=\"@translate-interface\">translation interface</a> pages."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Enables language selector for blocks and optional block translation."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Adds a button field type"
+msgstr ""
+
+#: /es/admin/modules
+msgid "Makes contact categories and replies available for translation."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Various blocks, pages, and functions for developers."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Developer blocks and page illustrating relevant node_access records."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Allows you to make some fields editable from the display."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Enables modules to work with any entity type and to provide entities."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Provides some example code for implementing Entity Reference "
+"behaviors."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Provides token replacements for all properties that have no tokens and "
+"are known to the entity API."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Allows tracking of anonymous Entityform submissions"
+msgstr ""
+
+#: /es/admin/modules
+msgid "Feature for Entityform simpletest"
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Enable this module if you want Entityforms to send e-mail "
+"notifications when a form is submitted."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Translate field properties"
+msgstr ""
+
+#: /es/admin/modules
+msgid "This module improves support for multilingual content in Drupal sites:"
+msgstr ""
+
+#: /es/admin/modules
+msgid "Shows content depending on page language."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Handles multilingual variables."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Extended language option for chosen content types. For these content "
+"types transations will be allowed for all defined languages, not only "
+"for enabled ones."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Provides a block for language selection and two theme functions: "
+"<em>i18n_flags</em> and <em>i18n_links</em>."
+msgstr ""
+
+#: /es/admin/modules
+msgid "This is the base module for several others adding different features:"
+msgstr ""
+
+#: /es/admin/modules
+msgid "Multilingual menu items."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Multilingual taxonomy adds a language field for taxonomy vocabularies "
+"and terms."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"For more information, see the online handbook entry for <a "
+"href=\"@i18n\">Internationalization module</a>."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Extends Drupal support for multilingual features."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Update jQuery and jQuery UI to a more recent version."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"The module will populate a new block named \"Language switcher "
+"dropdown\" under <a href=\"@block_admin\">blocks admin page</a>."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"For more information on blocks, please see <a "
+"href=\"@blocks_help\">block help section</a>."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"The module Provides same functionality as the core language switcher "
+"block but with a better look&feel."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"For more information on multilingual sites, please see <a "
+"href=\"@locale_help\">locale help section</a>."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Marghoob Suleman Custom skin"
+msgstr ""
+
+#: /es/admin/modules
+msgid "To create custom skins for Marghoob Suleman output follow these steps:"
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Copy the sample file \"ldsCustom.css.sample\" that you can find in the "
+"folder where you installed the module -normally "
+"\"sites/all/modules/lang_dropdown/msdropdown/css/msdropdown/ldsCustom.css.sample\"- "
+"into the css folder of Marghoob Suleman library path -normally "
+"\"sites/all/libraries/ms-Dropdown/css/msdropdown/\"-."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Rename the file to ldsCustom.css."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Edit the CSS file to your needs."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"On the block Marghoob Suleman Settings select to use a custom skin "
+"with name ldsCustom."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"The name of the custom skin does not neccesarely has to be ldsCustom "
+"but if you use other name you must change the name of the "
+"corresponding CSS file and the name of the class on all CSS rules on "
+"that file. For example if you want \"myskin\" as the name of your "
+"custom skin then you must rename the sample CSS file to \"myskin.css\" "
+"and edit the CSS so all the rules start with .myskin instead of "
+".ldsCustom."
+msgstr ""
+
+#: /es/admin/modules
+msgid "ddSlick Custom skin"
+msgstr ""
+
+#: /es/admin/modules
+msgid "To create custom skins for ddSlick output follow these steps:"
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Copy the sample file \"ddsCustom.css.sample\" that you can find in the "
+"folder where you installed the module -normally "
+"\"sites/all/modules/lang_dropdown/ddslick/ddsCustom.css.sample\"- into "
+"the css folder of ddSlick library path -normally "
+"\"sites/all/libraries/ddSlick/\"-."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Rename the file to ddsCustom.css."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"On the block ddSlick Settings select to use a custom skin with name "
+"ddsCustom."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"The name of the custom skin does not neccesarely has to be ddsCustom "
+"but if you use other name you must change the name of the "
+"corresponding CSS file and the name of the class on all CSS rules on "
+"that file. For example if you want \"myskin\" as the name of your "
+"custom skin then you must rename the sample CSS file to \"myskin.css\" "
+"and edit the CSS so all the rules start with .myskin instead of "
+".ddsCustom."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Provides a dropdown select to switch between available languages."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Allow to hide specific languages from the switcher for certain roles."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Allows version-dependent and shared usage of external libraries."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"This module adds support for multilingual menus. You can setup "
+"multilingual options for each menu:"
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Menus can be fully multilingual with translatable (or localized) menu "
+"items."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Menus can be configured to have a fixed language. All menu items share "
+"this language setting and the menu will be visible in that language "
+"only."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Menus can also be configured to have no translations."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"The multilingual options of a menu must be configured before "
+"individual menu items can be translated. Go to the <a "
+"href=\"@menu-admin\">Menus administration page</a> and follow the "
+"\"edit menu\" link to the menu in question."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Supports translatable custom menu items."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Provides some extended multilingual options for nodes."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Additionally, if <em>String translation</em> enabled, this module will "
+"localize all content type configuration texts."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Content type names"
+msgstr ""
+
+#: /es/admin/modules
+msgid "Submission guidelines"
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Content type descriptions were previously localized so they won't be "
+"affected."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Extended node options for multilingual content"
+msgstr ""
+
+#: /es/admin/modules
+msgid "Enables multilingual forum, translates names and containers."
+msgstr ""
+
+#: /es/admin/modules
+msgid "API module for multilingual content selection"
+msgstr ""
+
+#: /es/admin/modules
+msgid "Provides OAuth authentication for the services module"
+msgstr ""
+
+#: /es/admin/modules
+msgid "Define translations for generic paths"
+msgstr ""
+
+#: /es/admin/modules
+msgid "Allows form elements to be prepopulated from the URL."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Custom access functionalities for Recat Digital site ( Roles, "
+"Permissions, Vocabularies, Fields, etc)"
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"This module creates custom forms to be used across the site (i.e: "
+"within treatments)"
+msgstr ""
+
+#: /es/admin/modules
+msgid "Secretariat functionalities for Recat Digital site"
+msgstr ""
+
+#: /es/admin/modules
+msgid "Create Treatment Content Type and related entities and functionalities"
+msgstr ""
+
+#: /es/admin/modules
+msgid "Provides an REST server."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Visit the <a href=\"@handbook_url\">Services Handbook</a> for help and "
+"information."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Provide an API for creating web services."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"This module adds support for other modules to translate user defined "
+"strings. Depending on which modules you have enabled that use this "
+"feature you may see different text groups to translate."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"This works differently to Drupal standard localization system: The "
+"strings will be translated from the <a "
+"href=\"@configure-strings\">source language</a>, which defaults to the "
+"site default language (it may not be English), so changing the default "
+"language may cause all these translations to be broken."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"If you are missing strings to translate, use the <a "
+"href=\"@refresh-strings\">refresh strings</a> page."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Read more on the <em>Internationalization handbook</em>: <a "
+"href=\"http://drupal.org/node/313293\">Translating user defined "
+"strings</a>."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Provides support for translation of user defined strings."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"This module synchronizes content taxonomy and fields accross "
+"translations:"
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"First you need to select which fields should be synchronized. Then, "
+"after a node has been updated, all enabled vocabularies and fields "
+"will be synchronized as follows:"
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"All the node fields selected for synchronization will be set to the "
+"same value for all translations."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"For multilingual vocabularies, the terms for all translations will be "
+"replaced by the translations of the original node terms."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"For other vocabularies, the terms will be just copied over to all the "
+"translations."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Note that permissions are not checked for each node. So if someone can "
+"edit a node and it is set to synchronize, all the translations will be "
+"synchronized anyway."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"To enable synchronization check content type options to select which "
+"fields to synchronize for each node type."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"The list of available fields for synchronization will include some "
+"standard node fields and all CCK fields. You can add more fields to "
+"the list in a configuration variable. See README.txt for how to do it."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Synchronizes taxonomy and fields accross translations of the same "
+"content."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"This module adds support for multilingual taxonomy. You can set up "
+"multilingual options for each vocabulary:"
+msgstr ""
+
+#: /es/admin/modules
+msgid "A language can be assigned globaly for a vocabulary."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Different terms for each language with translation relationships."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Terms can be common to all languages, but may be localized."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Enables multilingual taxonomy."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Redirect to translated page when available. SEO for multilingual "
+"sites."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Simple translation sets API for generic objects"
+msgstr ""
+
+#: /es/admin/modules
+msgid "Translate emails sent from the User module."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Variable Information and basic variable API"
+msgstr ""
+
+#: /es/admin/modules
+msgid "Database storage for variable realms. This is an API module."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Multilingual variables that switch language depending on page "
+"language."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Provides views integration for variable, included a default variable "
+"argument."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Allow filtering/aggregating \"distinct\" Views result rows based on "
+"arbitrary fields."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Allows the usage of PHP to construct a view."
+msgstr ""
+
+#: /es/admin/modules
+msgid ""
+"Translation of views strings and content selection for views. Requires "
+"Views 3.x"
+msgstr ""
+
+#: /es/admin/modules
+msgid "Provides xCal and iCal formatters for the REST server."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Provides a XMLRPC server."
+msgstr ""
+
+#: /es/admin/modules
+msgid "Services - authentication"
+msgstr ""
+
+#: /es/admin/modules
+msgid "Services - servers"
+msgstr ""
+
 msgid "Rd Admin"
 msgstr "Rd Admin"
 
@@ -4952,6 +8241,7 @@ msgstr "Página y demás"
 msgid "Update data"
 msgstr "Actualizar datos"
 
+#: ; profiles/rdigital/modules/contrib/admin_menu/admin_menu.admin.js
 msgid "Also allow !name role to !permission?"
 msgstr "¿También permitir al rol !name el permiso !permission?"
 
@@ -5050,9 +8340,11 @@ msgstr "Cancelar"
 msgid "Language"
 msgstr "Idioma"
 
+#: ; modules/filter/filter.admin.js
 msgid "Disabled"
 msgstr "Desactivado"
 
+#: ; modules/filter/filter.admin.js
 msgid "Enabled"
 msgstr "Activado"
 
@@ -5833,7 +9125,7 @@ msgstr "Ir"
 msgid "Login"
 msgstr "Inicio de sesión"
 
-#: ; misc/machine-name.js
+#: ; misc/machine-name.js; profiles/rdigital/modules/develop/features/features.js
 msgid "Edit"
 msgstr "Editar"
 
@@ -11034,6 +14326,7 @@ msgstr "Fecha final"
 msgid "!time ago"
 msgstr "Hace !time"
 
+#: ; profiles/rdigital/modules/contrib/date/date_api/date_year_range.js
 msgid "Other"
 msgstr "Otro(s)"
 
@@ -12083,6 +15376,7 @@ msgstr "Opciones de la fecha de sistema ausentes"
 msgid "System date settings"
 msgstr "Configurar Fechas de sistema"
 
+#: ; profiles/rdigital/modules/contrib/date/date_api/date_year_range.js
 msgid "@count year from now"
 msgid_plural "@count years from now"
 msgstr[0] "@count año desde ahora"
@@ -19242,6 +22536,7 @@ msgstr ""
 "El bloque %info se asignó a la región %region no válida y se ha "
 "desactivado."
 
+#: ; modules/block/block.js
 msgid ""
 "The changes to these blocks will not be saved until the <em>Save "
 "blocks</em> button is clicked."
@@ -21787,6 +25082,7 @@ msgstr "Comprobar actualizaciones de módulos y temas no activados"
 msgid "Fetcher"
 msgstr "Recuperador"
 
+#: ; modules/user/user.permissions.js
 msgid "This permission is inherited from the authenticated user role."
 msgstr "Este permiso se hereda del rol de usuario registrado."
 
@@ -21825,6 +25121,7 @@ msgstr "Necesita un título"
 msgid "Private files"
 msgstr "Campos privados"
 
+#: ; modules/block/block.js; profiles/rdigital/modules/contrib/i18n/i18n_block/i18n_block.js
 msgid "Not restricted"
 msgstr "Sin restricción"
 
@@ -22782,6 +26079,7 @@ msgstr ""
 msgid "Customizable per user"
 msgstr "Personalizable por usuario"
 
+#: ; modules/block/block.js
 msgid "Not customizable"
 msgstr "No personalizable"
 
@@ -22933,9 +26231,11 @@ msgstr ""
 "página. Los bloques son cajas de contenido que se representan en una "
 "zona o región de una página web."
 
+#: ; modules/block/block.js
 msgid "Restricted to certain pages"
 msgstr "Restringido a algunas páginas"
 
+#: ; modules/block/block.js
 msgid "The block cannot be placed in this region."
 msgstr "El bloque no se puede colocar en esta región."
 
@@ -34024,9 +37324,11 @@ msgstr "Estado"
 msgid "Cleanup"
 msgstr "Limpieza"
 
+#: ; profiles/rdigital/modules/develop/features/features.js
 msgid "Select all"
 msgstr "Seleccionar todo"
 
+#: ; profiles/rdigital/modules/develop/features/features.js
 msgid "Deselect all"
 msgstr "Deseleccionar todo"
 
@@ -35176,6 +38478,7 @@ msgstr ""
 "Configurar qué contenido está disponible para agregarse a "
 "presentaciones de nodos de panel."
 
+#: ; profiles/rdigital/modules/contrib/panels/plugins/layouts/flexible/flexible-admin.js
 msgid "Show layout designer"
 msgstr "Mostrar maquetador de diseño."
 
@@ -35239,6 +38542,7 @@ msgstr ""
 "Los elementos no se pueden establecer a fluidos si ya existen "
 "elementos fijos en ese lado."
 
+#: ; profiles/rdigital/modules/contrib/panels/plugins/layouts/flexible/flexible-admin.js
 msgid "Hide layout designer"
 msgstr "Ocultar el maquetador de diseño"
 
@@ -37966,6 +41270,7 @@ msgstr "Aleatorio"
 msgid "Root"
 msgstr "Raíz"
 
+#: ; profiles/rdigital/modules/contrib/token/token.js
 msgid "Available tokens"
 msgstr "Comodines disponibles"
 
@@ -38014,6 +41319,7 @@ msgstr ""
 "Proporciona una interfaz de usuario para el API de comodines, además "
 "de algunos comodines que faltan en el núcleo de Drupal."
 
+#: ; profiles/rdigital/modules/contrib/token/token.js
 msgid "Insert this token into your form"
 msgstr "Inserte este comodín en su formulario"
 
@@ -38339,6 +41645,7 @@ msgstr ""
 msgid "Browse available tokens."
 msgstr "Ojear comodines disponibles."
 
+#: ; profiles/rdigital/modules/contrib/token/token.js
 msgid "Loading token browser..."
 msgstr "Cargando navegador de comodines..."
 
@@ -45154,7 +48461,7 @@ msgstr "Eliminar Tratamiento"
 
 #: /es/treatment/2/19
 msgid "Close Treatment"
-msgstr "Cerrar Tratamineto"
+msgstr "Cerrar Tratamiento"
 
 #: /es/treatment/2/19
 msgid "ACTIONS"
@@ -45217,4 +48524,12 @@ msgstr ""
 #: /es/secretariat/access_keys/delete
 msgid "Select the Access Keys to delete"
 msgstr "Selecciona las Claves de Acceso a eliminar"
+
+#: /es/treatment/3/127
+msgid ""
+"If you close the treatment without saving the data, they will be lost. "
+"Did you save all comments and measures?"
+msgstr ""
+"Si cierras el tratamiento sin guardar los datos, se perderán. Estás "
+"seguro que has guardado todos los comentarios y medidas?"
 

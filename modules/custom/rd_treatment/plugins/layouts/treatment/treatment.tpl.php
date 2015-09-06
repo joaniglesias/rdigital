@@ -180,7 +180,7 @@
         <span class="btn-label icon fa fa-trash-o"></span>
         <?php print t('Delete Treatment'); ?>
       </a>
-      <a class="btn btn-success btn-lg btn-labeled" href="<?php print ('/' . $lang_code ); ?>">
+      <a class="btn btn-success btn-lg btn-labeled"  data-toggle="modal" data-target="#CloseTreatment">
         <span class="btn-label icon fa fa-check"></span>
         <?php print t('Close Treatment'); ?>
       </a>
@@ -234,7 +234,7 @@
   </div>
 </div> -->
 
-<!-- Modal Create Form -->
+<!-- Modal Delete Treatment -->
 <div class="modal modal-alert modal-warning fade in" id="DeleteTreatment" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -248,6 +248,27 @@
           <?php print t('No'); ?>
         </button>
         <a type="button" class="btn btn-default" href="<?php print '/' . $lang_code . '/delete_' . $path; ?>">
+          <?php print t('Yes'); ?>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Close Treatment -->
+<div class="modal modal-alert modal-warning fade in" id="CloseTreatment" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <i class="fa fa-warning"></i>
+      </div>
+      <div class="modal-title"><?php print t('Close Treatment'); ?></div>
+      <div class="modal-body"><?php print t('If you close the treatment without saving the data, they will be lost. Did you save all comments and measures?'); ?></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">
+          <?php print t('No'); ?>
+        </button>
+        <a type="button" class="btn btn-default" href="<?php print ('/' . $lang_code ); ?>">
           <?php print t('Yes'); ?>
         </a>
       </div>
