@@ -3,7 +3,7 @@
 $plugin = array(
   'single' => TRUE,
   'title' => t('Keyboard Empty Space'),
-  'category' => t('Recat Digital - Keyboard'),
+  'category' => t('Recat Digital Keyboard'),
   'description' => t("Empty space between buttons within the keyboard"),
   //'required context' => new ctools_context_required(t('Patient'), 'node'),
   'render callback' => 'keyboard_empty_space_render',

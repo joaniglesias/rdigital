@@ -3,7 +3,7 @@
 $plugin = array(
   'single' => TRUE,
   'title' => t('Create Form'),
-  'category' => t('Recat Digital - Forms'),
+  'category' => t('Recat Digital Forms'),
   'description' => t("Choose wich forms you'll be able to create"),
   'required context' => new ctools_context_required(t('Patient'), 'node'),
   'render callback' => 'create_rdform_render',

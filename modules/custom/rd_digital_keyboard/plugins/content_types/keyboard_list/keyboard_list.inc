@@ -3,7 +3,7 @@
 $plugin = array(
   'single' => TRUE,
   'title' => t('Keyboard List'),
-  'category' => t('Recat Digital - Keyboard'),
+  'category' => t('Recat Digital Keyboard'),
   'description' => t("Choose which keyboard list you want to insert"),
   //'required context' => new ctools_context_required(t('Patient'), 'node'),
   'render callback' => 'keyboard_list_render',

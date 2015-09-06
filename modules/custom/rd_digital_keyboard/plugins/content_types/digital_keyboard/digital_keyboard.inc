@@ -2,9 +2,9 @@
 
 $plugin = array(
   'single' => TRUE,
-  'title' => t('Digital Keyboard'),
-  'category' => t('Recat Digital - Keyboard'),
-  'description' => t("Choose which digital keyboard you want to insert"),
+  'title' => t('Digital Keyboard v0'),
+  'category' => t('Recat Digital Keyboard'),
+  'description' => t("Digital Keyboard - initial draft "),
   //'required context' => new ctools_context_required(t('Patient'), 'node'),
   'render callback' => 'digital_keyboard_render',
   //'edit form' => 'digital_keyboard_edit_form',
