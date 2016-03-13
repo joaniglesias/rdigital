@@ -49,7 +49,7 @@ function _add_languages($languages) {
  */
 function rd_multilanguage_block_info_alter(&$blocks, $theme, $code_blocks) {
   // enable language selector block in the header
-  if (isset($blocks['lang_dropdown']['language']) and $blocks['lang_dropdown']['theme'] == 'rdigital_bootstrap') {
+  if (isset($blocks['lang_dropdown']['language']) and $blocks['lang_dropdown']['language']['theme'] == 'rdigital_bootstrap') {
       $blocks['lang_dropdown']['language']['status'] = 1;
       $blocks['lang_dropdown']['language']['region'] = 'footer';
   }
