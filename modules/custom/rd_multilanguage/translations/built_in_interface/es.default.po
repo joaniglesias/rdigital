@@ -48533,3 +48533,7 @@ msgstr ""
 "Si cierras el tratamiento sin guardar los datos, se perderán. Estás "
 "seguro que has guardado todos los comentarios y medidas?"
 
+
+msgid "Create full patient"
+msgstr "Crear paciente completo"
+
