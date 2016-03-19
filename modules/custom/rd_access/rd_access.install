@@ -80,14 +80,14 @@ function _get_vocabularies_access() {
 // *******************************************************************************************
 
 /**
- * Create and optionally populate a vocabulary
- * @param  [array] $vocabulary fields: name, machine_name, module and terms (array)
+ * NOTE: all permissions can be found within table role_permission
  */
 
 function _get_roles_and_permissions_access() {
   $roles = array(
     'authenticated user' => array(
       //from text formats config (filter module)
+      'access content',
       'use text format treatment',
       ),
     'Administrator' => array(
@@ -116,7 +116,18 @@ function _get_roles_and_permissions_access() {
       // 'view own vimn_ct_event content',
       ),
     'Secretary' => array(
+      'access secretariat actions',
+      'access user profiles',
       'administer own user centre',
+      'administer users',
+      'allow edit abt field content in node',
+      'allow view abt field content in node',
+      'create rd_ct_patient content',
+      'delete any rd_ct_patient content',
+      'delete own rd_ct_patient content',
+      'edit any rd_ct_patient content',
+      'edit own rd_ct_patient content',
+      'use editablefields',
       ),
     'Practicioner' => array(
       'create rd_ct_treatment content',
@@ -385,4 +396,19 @@ function _get_instances_access() {
 
   return $instances;
 
+}
+
+
+
+
+// *******************************************************************************************
+//     UPDATE FUNCTIONS
+// *******************************************************************************************
+
+/**
+ * Update permissions
+ */
+function rd_access_update_7001() {
+  // update permissions
+  _create_update_roles_and_permissions('access');
 }
