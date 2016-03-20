@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2016-03-20 03:02+0100\n"
-"PO-Revision-Date: 2016-03-20 03:02+0100\n"
+"POT-Creation-Date: 2016-03-20 03:17+0100\n"
+"PO-Revision-Date: 2016-03-20 03:17+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -5240,10 +5240,6 @@ msgstr ""
 
 #: /rdigital/rdigital/es/secretariat/patients/manage
 msgid "T"
-msgstr ""
-
-#: /rdigital/rdigital/es/secretariat/patients/manage
-msgid "DOB"
 msgstr ""
 
 #: /rdigital/rdigital/es/secretariat/patients/manage
@@ -48277,6 +48273,10 @@ msgstr ""
 
 msgid "Create full patient"
 msgstr "Crear paciente completo"
+
+#: /rdigital/rdigital/es/secretariat/patients/manage
+msgid "DOB"
+msgstr "Nació"
 
 #: /rdigital/rdigital/es/secretariat/patients/manage
 msgid "Incidences"
