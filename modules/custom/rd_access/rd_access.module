@@ -37,7 +37,7 @@ function rd_access_ctools_plugin_directory($module, $plugin) {
 function rd_access_permission() {
   return array(
     t('administer own user centre') => array(
-      'title' => t('Administer own user centre'), 
+      'title' => t('Administer own user centre'),
       'description' => t('See User Centre field when editing your account details'),
     ),
   );
@@ -50,6 +50,38 @@ function rd_access_form_alter(&$form, &$form_state, $form_id){
   if(isset($form_id) & $form_id == 'user_profile_form'){
     if (!user_access('administer own user centre')){
 	  unset($form['rd_f_access_user_centre']);
-	}
+	 }
+  }
+}
+
+
+
+// *******************************************************************************************
+//     NODE
+// *******************************************************************************************
+
+/**
+ * Implements hook_node_submit().
+ */
+function rd_access_node_submit($node, $form, &$form_state) {
+  // Make sure Access Key: '0 - ALL' is always selected when creating / updating patients
+  if ($node->type == 'rd_ct_patient'){
+    // get taxonomy id for Access Key: '0 - ALL'
+    $tid_key_all_terms = taxonomy_get_term_by_name('0 - All', 'rd_voc_access_key');
+    $tid_key_all_terms = array_keys($tid_key_all_terms);
+    $tid_key_all_terms = reset($tid_key_all_terms);
+
+    // insert the key if needed
+    if(isset($node->rd_f_access_key['und'][0])){
+      //verify the key doesn't already exist
+      $key_exists = false;
+      foreach ($node->rd_f_access_key['und'] as $key_node => $value) {
+        if($value['tid'] == $tid_key_all_terms) $key_exists = true;
+      }
+      if(!$key_exists) $node->rd_f_access_key['und'][]['tid'] = $tid_key_all_terms;
+    }
+    else {
+      $node->rd_f_access_key['und'][0]['tid'] = $tid_key_all_terms;
+    }
   }
 }
