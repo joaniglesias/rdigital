@@ -198,6 +198,15 @@ function _get_fields_patient() {
       'max_length' => 255,
     ),
   );
+  $fields['rd_f_patient_incidences'] = array(
+    'field_name' => 'rd_f_patient_incidences',
+    'label' => $t('Incidences'),
+    'type' => 'text',
+    'cardinality' => -1,
+    'settings' => array(
+      'max_length' => 600,
+    ),
+  );
 
   return $fields;
 }
@@ -574,6 +583,26 @@ function _get_instances_patient() {
         'type' => 'text_textfield',
       ),
     ),
+    'rd_f_patient_incidences' => array(
+      'field_name' => 'rd_f_patient_incidences',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Incidences'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+      ),
+    ),
   );
 
   return $instances;
@@ -604,6 +633,16 @@ function _get_content_type_patient() {
 //     UPDATE FUNCTIONS
 // *******************************************************************************************
 
-// function rd_patient_update_7000() {
+/**
+ * Create field incidencies
+ * @return [type] [description]
+ */
+function rd_patient_update_7000() {
+    $ct_name = 'patient';
+    $fields = _get_fields_patient();
+    $instances = _get_instances_patient();
 
-// }
+    field_create_field($fields['rd_f_patient_incidences']);
+    field_create_instance($instances['rd_f_patient_incidences']);
+
+}
