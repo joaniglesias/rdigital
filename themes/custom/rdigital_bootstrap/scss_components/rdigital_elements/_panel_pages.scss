@@ -21,6 +21,15 @@
   }
 }
 
+//Panel heading
+#layout-treatment, #layout-patient {
+  .panel-heading {
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 0px;
+    padding-top: 0px;
+  }
+}
 
 //Panel Forms
 #collapse-rdforms {
