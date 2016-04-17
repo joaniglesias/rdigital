@@ -1,9 +1,12 @@
 <?php
   global $language;
-  $lang_code = ($language->language == 'en') ? '' : $language->language;
+  $base_url = $GLOBALS['base_url'];
+  $base_url = ($language->language == 'en') ? $base_url : $base_url . '/' . $language->language;
+
   $path = current_path();
   $path_params = explode("/", $path);
   $patient_nid = $path_params[1];
+  $treatment_nid = $path_params[2];
 ?>
 
 <div id="layout-treatment" >
@@ -264,7 +267,7 @@
           <button type="button" class="btn btn-warning" data-dismiss="modal">
             <?php print t('No'); ?>
           </button>
-          <a type="button" class="btn btn-default" href="<?php print '/' . $lang_code . '/delete_' . $path; ?>">
+          <a type="button" class="btn btn-default" href="<?php print $base_url . '/delete_treatment/' . $patient_nid . '/' . $treatment_nid; ?>">
             <?php print t('Yes'); ?>
           </a>
         </div>
@@ -285,7 +288,7 @@
           <button type="button" class="btn btn-warning" data-dismiss="modal">
             <?php print t('No'); ?>
           </button>
-          <a type="button" class="btn btn-default" href="<?php print ('/' . $lang_code ); ?>">
+          <a type="button" class="btn btn-default" href="<?php print $base_url; ?>">
             <?php print t('Yes'); ?>
           </a>
         </div>
