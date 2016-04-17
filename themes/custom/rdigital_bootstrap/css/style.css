@@ -7790,62 +7790,62 @@ ul.tabs--primary { margin-bottom: 20px; }
 /* line 29, ../scss_components/rdigital_elements/_utils.scss */
 .btn.btn-outline-white, .btn.btn-outline-white:focus, .btn-group > .btn.btn-outline-white, .btn-group > .btn.btn-outline-white:focus, .input-group-btn > .btn.btn-outline-white, .input-group-btn > .btn.btn-outline-white:focus, .btn.btn-outline-white.btn-flat, .btn.btn-outline-white.btn-flat:focus, .btn-group > .btn.btn-outline-white.btn-flat, .btn-group > .btn.btn-outline-white.btn-flat:focus, .input-group-btn > .btn.btn-outline-white.btn-flat, .input-group-btn > .btn.btn-outline-white.btn-flat:focus, .btn.btn-outline-white.btn-primary, .btn.btn-outline-white.btn-primary:focus, .btn-group > .btn.btn-outline-white.btn-primary, .btn-group > .btn.btn-outline-white.btn-primary:focus, .input-group-btn > .btn.btn-outline-white.btn-primary, .input-group-btn > .btn.btn-outline-white.btn-primary:focus, .btn.btn-outline-white.btn-flat.btn-primary, .btn.btn-outline-white.btn-flat.btn-primary:focus, .btn-group > .btn.btn-outline-white.btn-flat.btn-primary, .btn-group > .btn.btn-outline-white.btn-flat.btn-primary:focus, .input-group-btn > .btn.btn-outline-white.btn-flat.btn-primary, .input-group-btn > .btn.btn-outline-white.btn-flat.btn-primary:focus { background: none; border-color: #e0e0e0; border-color: white; background: url("../images/pixel-admin/blank.png") \9; }
 
-/* line 7, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 8, ../scss_components/rdigital_elements/_panel_pages.scss */
 .collapsed .accordion-toggle.glyphicon:before { content: "\e114"; }
 
-/* line 12, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 13, ../scss_components/rdigital_elements/_panel_pages.scss */
 .accordion-toggle.glyphicon:before { content: "\e113"; }
 
-/* line 19, ../scss_components/rdigital_elements/_panel_pages.scss */
-#collapse-patient-details .col-xs-6 { padding-left: 0px; }
-
-/* line 24, ../scss_components/rdigital_elements/_panel_pages.scss */
-#layout-treatment #patient-title, #layout-patient #patient-title { margin-right: 40px; }
-/* line 27, ../scss_components/rdigital_elements/_panel_pages.scss */
-#layout-treatment .bg-icon, #layout-patient .bg-icon { font-size: 86px; height: 90px; }
-
-/* line 35, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 18, ../scss_components/rdigital_elements/_panel_pages.scss */
 #layout-treatment .panel-heading, #layout-patient .panel-heading { padding-bottom: 0px; padding-left: 10px; padding-right: 0px; padding-top: 0px; }
 
-/* line 45, ../scss_components/rdigital_elements/_panel_pages.scss */
-#collapse-rdforms h2 { font-size: 18px; margin-top: 0px; }
+/* line 31, ../scss_components/rdigital_elements/_panel_pages.scss */
+#layout-treatment #patient-title, #layout-patient #patient-title { margin-right: 40px; }
+/* line 34, ../scss_components/rdigital_elements/_panel_pages.scss */
+#layout-treatment .bg-icon, #layout-patient .bg-icon { font-size: 86px; height: 90px; }
+
+/* line 42, ../scss_components/rdigital_elements/_panel_pages.scss */
+#layout-treatment #incidences, #layout-patient #incidences { margin-bottom: 0px !important; }
+
 /* line 49, ../scss_components/rdigital_elements/_panel_pages.scss */
+#collapse-rdforms h2 { font-size: 18px; margin-top: 0px; }
+/* line 53, ../scss_components/rdigital_elements/_panel_pages.scss */
 #collapse-rdforms .content .submitted { display: none; }
-/* line 52, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 56, ../scss_components/rdigital_elements/_panel_pages.scss */
 #collapse-rdforms .views-row { margin-bottom: 15px; }
-/* line 55, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 59, ../scss_components/rdigital_elements/_panel_pages.scss */
 #collapse-rdforms .views-row-last { margin-bottom: 0px; }
 
-/* line 61, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 65, ../scss_components/rdigital_elements/_panel_pages.scss */
 #rd-f-treat-date-time-add-more-wrapper legend { display: none; }
 
-/* line 66, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 70, ../scss_components/rdigital_elements/_panel_pages.scss */
 fieldset.filter-wrapper { display: none; }
 
-/* line 69, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 73, ../scss_components/rdigital_elements/_panel_pages.scss */
 a.ckeditor_links { display: none !important; }
 
-/* line 72, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 76, ../scss_components/rdigital_elements/_panel_pages.scss */
 .cke_skin_kama { margin-top: -14px; }
 
-/* line 76, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 80, ../scss_components/rdigital_elements/_panel_pages.scss */
 html.CSS1Compat body { margin: 10px; }
-/* line 79, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 83, ../scss_components/rdigital_elements/_panel_pages.scss */
 html.CSS1Compat p { margin: 0px; }
 
-/* line 86, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 90, ../scss_components/rdigital_elements/_panel_pages.scss */
 .keyboard_empty_space { width: 18px; float: left; }
 
-/* line 90, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 94, ../scss_components/rdigital_elements/_panel_pages.scss */
 .pane-keyboard-list .alert { margin-bottom: 5px; margin-top: 5px; padding: 10px; }
 
-/* line 95, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 99, ../scss_components/rdigital_elements/_panel_pages.scss */
 #KeyboardComments { margin-bottom: 5px; margin-top: 5px; padding: 10px; }
 
-/* line 100, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 104, ../scss_components/rdigital_elements/_panel_pages.scss */
 .rd-button-list { margin: 3px; }
 
-/* line 104, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 108, ../scss_components/rdigital_elements/_panel_pages.scss */
 #cke_contents_edit-rd-f-treat-ini-comments-und-0-value, #cke_contents_edit-rd-f-treat-fin-comments-und-0-value { height: 54px !important; }
 
 /* line 9, ../scss_components/rdigital_elements/_views.scss */

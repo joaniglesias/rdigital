@@ -2,25 +2,32 @@
 //     PATIENT AND TREATMENT PANEL PAGE
 // *******************************************************************************************
 
-//Accordion toggle
-.collapsed {
+// ALL FORMS - GENERAL ======================================================
+  //Accordion toggle
+  .collapsed {
+    .accordion-toggle.glyphicon:before {
+      content: "\e114"; //glyphicon-chevron-down
+    }
+  }
+
   .accordion-toggle.glyphicon:before {
-    content: "\e114"; //glyphicon-chevron-down
+      content: "\e113"; //glyphicon-chevron-up
   }
-}
-
-.accordion-toggle.glyphicon:before {
-    content: "\e113"; //glyphicon-chevron-up
-}
-
-
-//Panel Patient Details
-#collapse-patient-details {
-  .col-xs-6{
-    padding-left: 0px;
+  //Panel Header
+  #layout-treatment, #layout-patient {
+    .panel-heading {
+      padding-bottom: 0px;
+      padding-left: 10px;
+      padding-right: 0px;
+      padding-top: 0px;
+    }
   }
-}
+
+//FORMS =====================================================================
+
+//Panel Patient (header)
 #layout-treatment, #layout-patient {
+
   #patient-title{
     margin-right: 40px;
   }
@@ -30,17 +37,14 @@
   }
 }
 
-//Panel heading (Patient Region)
+//Patient Details Panel
 #layout-treatment, #layout-patient {
-  .panel-heading {
-    padding-bottom: 0px;
-    padding-left: 10px;
-    padding-right: 0px;
-    padding-top: 0px;
+  #incidences {
+    margin-bottom: 0px !important;
   }
 }
 
-//Panel Forms
+//Forms Panel
 #collapse-rdforms {
   h2 {
     font-size: 18px;
