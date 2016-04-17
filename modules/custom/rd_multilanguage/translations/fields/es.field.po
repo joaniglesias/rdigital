@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2016-04-17 06:57+0200\n"
-"PO-Revision-Date: 2016-04-17 06:57+0200\n"
+"POT-Creation-Date: 2016-04-17 07:47+0200\n"
+"PO-Revision-Date: 2016-04-17 07:47+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -108,11 +108,6 @@ msgctxt "rd_f_patient_homeopathy:#field:label"
 msgid "Homeopathy"
 msgstr ""
 
-#: field:rd_f_patient_c_medicine:#field:label
-msgctxt "rd_f_patient_c_medicine:#field:label"
-msgid "Classic Medicine"
-msgstr ""
-
 #: field:rd_f_patient_a_therapies:#field:label
 msgctxt "rd_f_patient_a_therapies:#field:label"
 msgid "Alternative Therapies"
@@ -126,11 +121,6 @@ msgstr ""
 #: field:rd_f_patient_notes:rd_ct_patient:label
 msgctxt "rd_f_patient_notes:rd_ct_patient:label"
 msgid "Notes"
-msgstr ""
-
-#: field:rd_f_patient_c_medicine:rd_ct_patient:label
-msgctxt "rd_f_patient_c_medicine:rd_ct_patient:label"
-msgid "Classic Medicine"
 msgstr ""
 
 #: field:rd_f_treat_related_patient:#field:label
@@ -273,6 +263,11 @@ msgctxt "rd_f_patient_tried_before:#field:label"
 msgid "Tried Before"
 msgstr "Lo intentó antes"
 
+#: field:rd_f_patient_c_medicine:#field:label
+msgctxt "rd_f_patient_c_medicine:#field:label"
+msgid "Classic Medicine"
+msgstr "Medicina Clássica"
+
 #: field:rd_f_patient_o_symptoms:#field:label
 msgctxt "rd_f_patient_o_symptoms:#field:label"
 msgid "Other Symptoms"
@@ -337,6 +332,11 @@ msgstr "Lo intentó antes"
 msgctxt "rd_f_patient_homeopathy:rd_ct_patient:label"
 msgid "Homeopathy"
 msgstr "Homeopatía"
+
+#: field:rd_f_patient_c_medicine:rd_ct_patient:label
+msgctxt "rd_f_patient_c_medicine:rd_ct_patient:label"
+msgid "Classic Medicine"
+msgstr "Medicina Clássica"
 
 #: field:rd_f_patient_a_therapies:rd_ct_patient:label
 msgctxt "rd_f_patient_a_therapies:rd_ct_patient:label"
