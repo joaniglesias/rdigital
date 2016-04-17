@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2016-03-20 03:17+0100\n"
-"PO-Revision-Date: 2016-03-20 03:17+0100\n"
+"POT-Creation-Date: 2016-04-17 06:56+0200\n"
+"PO-Revision-Date: 2016-04-17 06:56+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -3696,10 +3696,6 @@ msgid "Appointment Type"
 msgstr ""
 
 #: /rdigital/rdigital/es/patient/53
-msgid "Tried Before"
-msgstr ""
-
-#: /rdigital/rdigital/es/patient/53
 msgid "Homeopathy"
 msgstr ""
 
@@ -3709,10 +3705,6 @@ msgstr ""
 
 #: /rdigital/rdigital/es/patient/53
 msgid "Alternative Therapies"
-msgstr ""
-
-#: /rdigital/rdigital/es/patient/53
-msgid "Other Symptoms"
 msgstr ""
 
 #: /rdigital/rdigital/es/patient/53
@@ -5244,6 +5236,2120 @@ msgstr ""
 
 #: /rdigital/rdigital/es/secretariat/patients/manage
 msgid "[edit_node]&nbsp;&nbsp;&nbsp;[delete_node]"
+msgstr ""
+
+#: /rdigital/rdigital/es/secretariat/patients/create
+msgid "Patient Number already exists"
+msgstr ""
+
+#: /rdigital/rdigital/es/secretariat/patients/create
+msgid "Patient has been created : PROVA2, Prova2"
+msgstr ""
+
+#: /rdigital/rdigital/es/secretariat/patients/manage
+msgid ""
+"Helper functions, pages, and blocks to assist Drupal developers. The "
+"devel blocks can be managed via the <a "
+"href=\"/admin/structure/block\">block administration</a> page."
+msgstr ""
+
+#: /rdigital/rdigital/es/secretariat/patients/manage
+msgid "Caution: this user will be unable to switch back."
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Please wait"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Opens in new window"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Abidjan"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Accra"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Addis_Ababa"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Algiers"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Asmara"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Bamako"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Bangui"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Banjul"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Bissau"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Blantyre"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Brazzaville"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Bujumbura"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Cairo"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Casablanca"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Ceuta"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Conakry"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Dakar"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Dar_es_Salaam"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Djibouti"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Douala"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/El_Aaiun"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Freetown"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Gaborone"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Harare"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Johannesburg"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Juba"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Kampala"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Khartoum"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Kigali"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Kinshasa"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Lagos"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Libreville"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Lome"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Luanda"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Lubumbashi"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Lusaka"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Malabo"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Maputo"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Maseru"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Mbabane"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Mogadishu"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Monrovia"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Nairobi"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Ndjamena"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Niamey"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Nouakchott"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Ouagadougou"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Porto-Novo"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Sao_Tome"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Tripoli"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Tunis"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Africa/Windhoek"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Adak"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Anchorage"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Anguilla"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Antigua"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Araguaina"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Argentina/Buenos_Aires"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Argentina/Catamarca"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Argentina/Cordoba"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Argentina/Jujuy"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Argentina/La_Rioja"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Argentina/Mendoza"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Argentina/Rio_Gallegos"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Argentina/Salta"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Argentina/San_Juan"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Argentina/San_Luis"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Argentina/Tucuman"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Argentina/Ushuaia"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Aruba"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Asuncion"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Atikokan"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Bahia"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Bahia_Banderas"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Barbados"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Belem"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Belize"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Blanc-Sablon"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Boa_Vista"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Bogota"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Boise"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Cambridge_Bay"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Campo_Grande"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Cancun"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Caracas"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Cayenne"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Cayman"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Chicago"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Chihuahua"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Costa_Rica"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Creston"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Cuiaba"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Curacao"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Danmarkshavn"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Dawson"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Dawson_Creek"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Denver"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Detroit"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Dominica"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Edmonton"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Eirunepe"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/El_Salvador"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Fortaleza"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Glace_Bay"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Godthab"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Goose_Bay"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Grand_Turk"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Grenada"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Guadeloupe"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Guatemala"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Guayaquil"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Guyana"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Halifax"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Havana"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Hermosillo"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Indiana/Indianapolis"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Indiana/Knox"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Indiana/Marengo"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Indiana/Petersburg"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Indiana/Tell_City"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Indiana/Vevay"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Indiana/Vincennes"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Indiana/Winamac"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Inuvik"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Iqaluit"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Jamaica"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Juneau"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Kentucky/Louisville"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Kentucky/Monticello"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Kralendijk"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/La_Paz"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Lima"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Los_Angeles"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Lower_Princes"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Maceio"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Managua"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Manaus"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Marigot"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Martinique"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Matamoros"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Mazatlan"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Menominee"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Merida"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Metlakatla"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Mexico_City"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Miquelon"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Moncton"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Monterrey"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Montevideo"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Montserrat"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Nassau"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/New_York"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Nipigon"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Nome"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Noronha"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/North_Dakota/Beulah"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/North_Dakota/Center"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/North_Dakota/New_Salem"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Ojinaga"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Panama"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Pangnirtung"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Paramaribo"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Phoenix"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Port-au-Prince"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Port_of_Spain"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Porto_Velho"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Puerto_Rico"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Rainy_River"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Rankin_Inlet"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Recife"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Regina"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Resolute"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Rio_Branco"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Santa_Isabel"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Santarem"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Santiago"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Santo_Domingo"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Sao_Paulo"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Scoresbysund"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Sitka"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/St_Barthelemy"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/St_Johns"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/St_Kitts"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/St_Lucia"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/St_Thomas"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/St_Vincent"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Swift_Current"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Tegucigalpa"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Thule"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Thunder_Bay"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Tijuana"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Toronto"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Tortola"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Vancouver"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Whitehorse"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Winnipeg"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Yakutat"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "America/Yellowknife"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Antarctica/Casey"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Antarctica/Davis"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Antarctica/DumontDUrville"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Antarctica/Macquarie"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Antarctica/Mawson"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Antarctica/McMurdo"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Antarctica/Palmer"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Antarctica/Rothera"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Antarctica/Syowa"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Antarctica/Troll"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Antarctica/Vostok"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Arctic/Longyearbyen"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Aden"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Almaty"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Amman"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Anadyr"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Aqtau"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Aqtobe"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Ashgabat"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Baghdad"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Bahrain"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Baku"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Bangkok"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Beirut"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Bishkek"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Brunei"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Chita"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Choibalsan"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Colombo"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Damascus"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Dhaka"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Dili"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Dubai"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Dushanbe"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Gaza"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Hebron"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Ho_Chi_Minh"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Hong_Kong"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Hovd"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Irkutsk"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Jakarta"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Jayapura"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Jerusalem"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Kabul"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Kamchatka"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Karachi"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Kathmandu"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Khandyga"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Kolkata"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Krasnoyarsk"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Kuala_Lumpur"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Kuching"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Kuwait"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Macau"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Magadan"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Makassar"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Manila"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Muscat"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Nicosia"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Novokuznetsk"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Novosibirsk"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Omsk"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Oral"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Phnom_Penh"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Pontianak"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Pyongyang"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Qatar"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Qyzylorda"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Rangoon"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Riyadh"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Sakhalin"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Samarkand"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Seoul"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Shanghai"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Singapore"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Srednekolymsk"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Taipei"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Tashkent"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Tbilisi"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Tehran"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Thimphu"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Tokyo"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Ulaanbaatar"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Urumqi"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Ust-Nera"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Vientiane"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Vladivostok"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Yakutsk"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Yekaterinburg"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Asia/Yerevan"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Atlantic/Azores"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Atlantic/Bermuda"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Atlantic/Canary"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Atlantic/Cape_Verde"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Atlantic/Faroe"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Atlantic/Madeira"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Atlantic/Reykjavik"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Atlantic/South_Georgia"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Atlantic/St_Helena"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Atlantic/Stanley"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Australia/Adelaide"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Australia/Brisbane"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Australia/Broken_Hill"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Australia/Currie"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Australia/Darwin"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Australia/Eucla"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Australia/Hobart"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Australia/Lindeman"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Australia/Lord_Howe"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Australia/Melbourne"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Australia/Perth"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Australia/Sydney"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Amsterdam"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Andorra"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Athens"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Belgrade"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Berlin"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Bratislava"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Brussels"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Bucharest"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Budapest"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Busingen"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Chisinau"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Copenhagen"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Dublin"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Gibraltar"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Guernsey"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Helsinki"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Isle_of_Man"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Istanbul"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Jersey"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Kaliningrad"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Kiev"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Lisbon"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Ljubljana"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/London"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Luxembourg"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Madrid"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Malta"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Mariehamn"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Minsk"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Monaco"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Moscow"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Oslo"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Paris"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Podgorica"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Prague"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Riga"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Rome"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Samara"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/San_Marino"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Sarajevo"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Simferopol"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Skopje"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Sofia"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Stockholm"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Tallinn"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Tirane"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Uzhgorod"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Vaduz"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Vatican"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Vienna"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Vilnius"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Volgograd"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Warsaw"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Zagreb"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Zaporozhye"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Europe/Zurich"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Indian/Antananarivo"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Indian/Chagos"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Indian/Christmas"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Indian/Cocos"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Indian/Comoro"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Indian/Kerguelen"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Indian/Mahe"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Indian/Maldives"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Indian/Mauritius"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Indian/Mayotte"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Indian/Reunion"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Apia"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Auckland"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Bougainville"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Chatham"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Chuuk"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Easter"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Efate"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Enderbury"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Fakaofo"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Fiji"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Funafuti"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Galapagos"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Gambier"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Guadalcanal"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Guam"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Honolulu"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Johnston"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Kiritimati"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Kosrae"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Kwajalein"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Majuro"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Marquesas"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Midway"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Nauru"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Niue"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Norfolk"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Noumea"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Pago_Pago"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Palau"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Pitcairn"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Pohnpei"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Port_Moresby"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Rarotonga"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Saipan"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Tahiti"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Tarawa"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Tongatapu"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Wake"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "Pacific/Wallis"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/54/70
+msgid "UTC"
+msgstr ""
+
+#: /rdigital/rdigital/es/users/admin
+msgid "Load"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "Africa/Addis Ababa"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "Africa/Dar es Salaam"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "Africa/El Aaiun"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "Africa/Sao Tome"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Argentina/Buenos Aires"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Argentina/La Rioja"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Argentina/Rio Gallegos"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Argentina/San Juan"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Argentina/San Luis"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Bahia Banderas"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Boa Vista"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Cambridge Bay"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Campo Grande"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Costa Rica"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Dawson Creek"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/El Salvador"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Glace Bay"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Goose Bay"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Grand Turk"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Indiana/Tell City"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/La Paz"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Los Angeles"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Lower Princes"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Mexico City"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/New York"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/North Dakota/Beulah"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/North Dakota/Center"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/North Dakota/New Salem"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Port of Spain"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Porto Velho"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Puerto Rico"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Rainy River"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Rankin Inlet"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Rio Branco"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Santa Isabel"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Santo Domingo"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Sao Paulo"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/St Barthelemy"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/St Johns"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/St Kitts"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/St Lucia"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/St Thomas"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/St Vincent"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Swift Current"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "America/Thunder Bay"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "Asia/Ho Chi Minh"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "Asia/Hong Kong"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "Asia/Kuala Lumpur"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "Asia/Phnom Penh"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "Atlantic/Cape Verde"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "Atlantic/South Georgia"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "Atlantic/St Helena"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "Australia/Broken Hill"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "Australia/Lord Howe"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "Europe/Isle of Man"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "Europe/San Marino"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "Pacific/Pago Pago"
+msgstr ""
+
+#: /rdigital/rdigital/es/user/1/edit
+msgid "Pacific/Port Moresby"
+msgstr ""
+
+#: /rdigital/rdigital/es/secretariat/patients/manage
+msgid "Incidences_test"
+msgstr ""
+
+#: /rdigital/rdigital/es/secretariat/patients/manage
+msgid "Add @entity_type"
+msgstr ""
+
+#: /rdigital/rdigital/es/secretariat/patients/manage
+msgid "Import @entity_type"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "Content-type"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "Current-user"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "Menu-link"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "Current-page"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "Date-field-value"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "Entityform_type"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "Site"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "Rules_text"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "Rules_integer"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "Rules_uri"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "Rules_token"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "Rules_decimal"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "Rules_date"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "Rules_duration"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "Rules_config"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "List<entityform>"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "List<entityform_type>"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "List<node>"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "List<file>"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "List<term>"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "List<vocabulary>"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "List<user>"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "List<rules_config>"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "List<date>"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "Taxonomy_term"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-Patient/handlers/page_Patient_panel_context/content?destination=patient/54
+msgid "Rendered @entity_type"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/appearance
+msgid "A Bootstrap Sub-theme."
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/appearance
+msgid ""
+"Built to use Bootstrap, a sleek, intuitive, and powerful front-end "
+"framework for faster and easier web development."
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/config
+msgid "jQuery Update"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/config
+msgid "jQuery %jquery (<a href=\"@link\">configure</a>) and jQuery UI %ui"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/config
+msgid "The %library library could not be found."
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/config
+msgid ""
+"To enable YAML HTTP requets/responses, please download <a "
+"href=\"@download\">spyc</a> and create a file called spyc.php in "
+"rest_server/lib or use Libraries to retrieve spyc."
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/config
+msgid "Missing spyc library"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-treatment/handlers/page_treatment_panel_context/criteria
+msgid "I18n_translation"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/nojs/operation/page-treatment/handlers/page_treatment_panel_context/criteria
+msgid "Taxonomy_vocabulary"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/ajax/operation/page-treatment/handlers/page_treatment_panel_context/settings
+msgid ""
+"The CSS classes to remove from the body element of this page. "
+"Separated by a space. For example: no-sidebars one-sidebar "
+"sidebar-first sidebar-second two-sidebars."
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/pages/ajax/operation/page-treatment/handlers/page_treatment_panel_context/settings
+msgid ""
+"The CSS classes to add to the body element of this page. Separated by "
+"a space. For example: no-sidebars one-sidebar sidebar-first "
+"sidebar-second two-sidebars."
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/55/81
+msgid "Patient Details - Middle"
+msgstr ""
+
+#: /rdigital/rdigital/es/admin/structure/views/view/measures_record/translate
+msgid "Translate !name"
+msgstr ""
+
+#: /rdigital/rdigital/es/treatment/55/84
+msgid "Sessions"
 msgstr ""
 
 msgid "Rd Admin"
@@ -48271,6 +50377,14 @@ msgstr ""
 "en la sección 'Enlazar visualización' debajo de avanzado. Usted "
 "puede sobreescribir la url en los ajustes de visualización de enlace."
 
+#: /rdigital/rdigital/es/patient/53
+msgid "Tried Before"
+msgstr "Lo intentó antes"
+
+#: /rdigital/rdigital/es/patient/53
+msgid "Other Symptoms"
+msgstr "Otros Síntomas"
+
 msgid "Create full patient"
 msgstr "Crear paciente completo"
 
@@ -48280,5 +50394,5 @@ msgstr "Nació"
 
 #: /rdigital/rdigital/es/secretariat/patients/manage
 msgid "Incidences"
-msgstr "Ojo"
+msgstr "Incidencias"
 

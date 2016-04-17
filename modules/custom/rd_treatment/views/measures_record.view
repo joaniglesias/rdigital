@@ -60,7 +60,7 @@ $handler->display->display_options['fields']['rd_f_access_treat_centre']['type']
 $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
 $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
 $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
-$handler->display->display_options['fields']['nothing_1']['label'] = 'Date / Practitioner / Centre';
+$handler->display->display_options['fields']['nothing_1']['label'] = 'Sessions';
 $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<b>[rd_f_treat_date_time]</b><br>
 [rd_f_treat_related_pract]<br>
 [rd_f_access_treat_centre]';
