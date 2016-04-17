@@ -30,7 +30,7 @@
   }
 }
 
-//Panel heading
+//Panel heading (Patient Region)
 #layout-treatment, #layout-patient {
   .panel-heading {
     padding-bottom: 0px;
@@ -99,4 +99,8 @@ html.CSS1Compat {
 }
 .rd-button-list {
   margin: 3px;
+}
+
+#cke_contents_edit-rd-f-treat-ini-comments-und-0-value, #cke_contents_edit-rd-f-treat-fin-comments-und-0-value {
+  height: 54px !important;
 }
