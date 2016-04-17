@@ -36,11 +36,26 @@
       </div>
       <div id="collapse-<?php print $reg_machine_name; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-<?php print $reg_machine_name; ?>">
         <div class="panel-body row">
-          <div class="col-xs-6">
+          <div class="col-xs-4">
             <?php print $content['patient_details_left']; ?>
           </div>
-          <div class="col-xs-6">
-            <?php print $content['patient_details_right']; ?>
+          <div class="col-xs-4">
+            <?php print $content['patient_details_middle']; ?>
+          </div>
+          <div class="col-xs-4">
+            <!-- Incidences Region -->
+            <?php $incidences_bg = " " . (empty($content['patient_details_right']) ? "" : "bg-warning" ); ?>
+            <div class="stat-panel<?php print $incidences_bg; ?>" id="incidences">
+              <div class="stat-cell no-bg bordered valign-middle">
+                <p class="text-uppercase bold">
+                  <strong><?php print t('Incidences'); ?></strong>
+                </p>
+                <i class="fa fa-exclamation-circle bg-icon"></i>
+                <span>
+                  <?php print $content['patient_details_right']; ?>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

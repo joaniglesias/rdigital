@@ -3,10 +3,13 @@
     <?php print $content['patient']; ?>
   </div>
   <div class="full-size">
-    <div class="half-size">
+    <div class="third-size">
       <?php print $content['patient_details_left']; ?>
     </div>
-    <div class="half-size">
+    <div class="third-size">
+      <?php print $content['patient_details_middle']; ?>
+    </div>
+    <div class="third-size">
       <?php print $content['patient_details_right']; ?>
   </div>
   </div>

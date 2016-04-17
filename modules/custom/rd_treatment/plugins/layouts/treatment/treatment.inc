@@ -14,6 +14,7 @@ $plugin = array(
   'regions' => array(
     'patient' => t('Patient'),
     'patient_details_left' => t('Patient Details - Left'),
+    'patient_details_middle' => t('Patient Details - Middle'),
     'patient_details_right' => t('Patient Detials - Right'),
     'rdforms_actions' => t('Form Actions'),
     'rdforms' => t('Forms'),
