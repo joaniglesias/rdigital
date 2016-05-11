@@ -42,7 +42,7 @@ function _get_vocabularies_access() {
     'machine_name' => 'rd_voc_centre',
     'module' => 'rd_access',
     'terms' => array(
-      $t('RECAT Badalona'),
+      $t('Badalona'),
       ),
     );
   $vocabularies['rd_voc_access_key'] = array(
