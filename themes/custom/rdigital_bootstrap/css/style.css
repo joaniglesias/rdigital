@@ -7852,3 +7852,6 @@ html.CSS1Compat p { margin: 0px; }
 .view-measures-record .view-treat-ini-comments-text, .view-measures-record .view-treat-measures-text, .view-measures-record .view-treat-fin-comments-text { padding-bottom: 15px; }
 /* line 11, ../scss_components/rdigital_elements/_views.scss */
 .view-measures-record .view-treat-ini-comments-text p, .view-measures-record .view-treat-measures-text p, .view-measures-record .view-treat-fin-comments-text p { margin: 0px; }
+
+/* line 21, ../scss_components/rdigital_elements/_views.scss */
+.view-patients-secretary .table td { padding: 2px; }
