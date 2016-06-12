@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2016-04-17 08:00+0200\n"
-"PO-Revision-Date: 2016-04-17 08:00+0200\n"
+"POT-Creation-Date: 2016-06-12 04:30+0200\n"
+"PO-Revision-Date: 2016-06-12 04:30+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -49491,7 +49491,7 @@ msgstr "Lo intentó antes"
 
 #: /rdigital/rdigital/es/patient/53
 msgid "Classic Medicine"
-msgstr "Medicina Clássica"
+msgstr "Medicina Clásica"
 
 #: /rdigital/rdigital/es/patient/53
 msgid "Other Symptoms"
@@ -51809,5 +51809,5 @@ msgstr ""
 
 #: /es/patient/2
 msgid "Sessions"
-msgstr "Sessiones"
+msgstr "Sesiones"
 
