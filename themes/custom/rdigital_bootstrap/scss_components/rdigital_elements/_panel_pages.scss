@@ -13,20 +13,17 @@
   .accordion-toggle.glyphicon:before {
       content: "\e113"; //glyphicon-chevron-up
   }
-  //Panel Header
-  #layout-treatment, #layout-patient {
-    .panel-heading {
-      padding-bottom: 0px;
-      padding-left: 10px;
-      padding-right: 0px;
-      padding-top: 0px;
-    }
-  }
 
 //FORMS =====================================================================
 
 //Panel Patient (header)
 #layout-treatment, #layout-patient {
+  .panel-heading {
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 0px;
+    padding-top: 0px;
+  }
 
   #patient-title{
     margin-right: 40px;
@@ -41,6 +38,10 @@
 #layout-treatment, #layout-patient {
   #incidences {
     margin-bottom: 0px !important;
+    color: black;
+    .stat-cell {
+      padding: 14px;
+    }
   }
 }
 

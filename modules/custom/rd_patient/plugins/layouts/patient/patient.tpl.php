@@ -47,9 +47,9 @@
             <?php $incidences_bg = " " . (empty($content['patient_details_right']) ? "" : "bg-warning" ); ?>
             <div class="stat-panel<?php print $incidences_bg; ?>" id="incidences">
               <div class="stat-cell no-bg bordered valign-middle">
-                <p class="text-uppercase bold">
+<!--                 <p class="text-uppercase bold">
                   <strong><?php print t('Incidences'); ?></strong>
-                </p>
+                </p> -->
                 <i class="fa fa-exclamation-circle bg-icon"></i>
                 <span>
                   <?php print $content['patient_details_right']; ?>

@@ -7796,53 +7796,54 @@ ul.tabs--primary { margin-bottom: 20px; }
 /* line 13, ../scss_components/rdigital_elements/_panel_pages.scss */
 .accordion-toggle.glyphicon:before { content: "\e113"; }
 
-/* line 18, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 21, ../scss_components/rdigital_elements/_panel_pages.scss */
 #layout-treatment .panel-heading, #layout-patient .panel-heading { padding-bottom: 0px; padding-left: 10px; padding-right: 0px; padding-top: 0px; }
-
-/* line 31, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 28, ../scss_components/rdigital_elements/_panel_pages.scss */
 #layout-treatment #patient-title, #layout-patient #patient-title { margin-right: 40px; }
-/* line 34, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 31, ../scss_components/rdigital_elements/_panel_pages.scss */
 #layout-treatment .bg-icon, #layout-patient .bg-icon { font-size: 86px; height: 90px; }
 
+/* line 39, ../scss_components/rdigital_elements/_panel_pages.scss */
+#layout-treatment #incidences, #layout-patient #incidences { margin-bottom: 0px !important; color: black; }
 /* line 42, ../scss_components/rdigital_elements/_panel_pages.scss */
-#layout-treatment #incidences, #layout-patient #incidences { margin-bottom: 0px !important; }
+#layout-treatment #incidences .stat-cell, #layout-patient #incidences .stat-cell { padding: 14px; }
 
-/* line 49, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 50, ../scss_components/rdigital_elements/_panel_pages.scss */
 #collapse-rdforms h2 { font-size: 18px; margin-top: 0px; }
-/* line 53, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 54, ../scss_components/rdigital_elements/_panel_pages.scss */
 #collapse-rdforms .content .submitted { display: none; }
-/* line 56, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 57, ../scss_components/rdigital_elements/_panel_pages.scss */
 #collapse-rdforms .views-row { margin-bottom: 15px; }
-/* line 59, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 60, ../scss_components/rdigital_elements/_panel_pages.scss */
 #collapse-rdforms .views-row-last { margin-bottom: 0px; }
 
-/* line 65, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 66, ../scss_components/rdigital_elements/_panel_pages.scss */
 #rd-f-treat-date-time-add-more-wrapper legend { display: none; }
 
-/* line 70, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 71, ../scss_components/rdigital_elements/_panel_pages.scss */
 fieldset.filter-wrapper { display: none; }
 
-/* line 73, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 74, ../scss_components/rdigital_elements/_panel_pages.scss */
 a.ckeditor_links { display: none !important; }
 
-/* line 76, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 77, ../scss_components/rdigital_elements/_panel_pages.scss */
 .cke_skin_kama { margin-top: -14px; }
 
-/* line 80, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 81, ../scss_components/rdigital_elements/_panel_pages.scss */
 html.CSS1Compat body { margin: 10px; }
-/* line 83, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 84, ../scss_components/rdigital_elements/_panel_pages.scss */
 html.CSS1Compat p { margin: 0px; }
 
-/* line 90, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 91, ../scss_components/rdigital_elements/_panel_pages.scss */
 .keyboard_empty_space { width: 18px; float: left; }
 
-/* line 94, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 95, ../scss_components/rdigital_elements/_panel_pages.scss */
 .pane-keyboard-list .alert { margin-bottom: 5px; margin-top: 5px; padding: 10px; }
 
-/* line 99, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 100, ../scss_components/rdigital_elements/_panel_pages.scss */
 #KeyboardComments { margin-bottom: 5px; margin-top: 5px; padding: 10px; }
 
-/* line 104, ../scss_components/rdigital_elements/_panel_pages.scss */
+/* line 105, ../scss_components/rdigital_elements/_panel_pages.scss */
 .rd-button-list { margin: 3px; }
 
 /* line 9, ../scss_components/rdigital_elements/_views.scss */

@@ -331,7 +331,7 @@ $display->panels = array();
   );
   $pane->css = array(
     'css_id' => '',
-    'css_class' => 'pull-left padding-xs-vr panel-padding-h bg-rd-blue',
+    'css_class' => 'pull-left padding-xs-vr panel-padding-h bg-rd-blue text-bg',
   );
   $pane->extras = array();
   $pane->position = 1;
@@ -365,7 +365,7 @@ $display->panels = array();
   );
   $pane->css = array(
     'css_id' => '',
-    'css_class' => 'pull-left padding-xs-vr bg-rd-blue',
+    'css_class' => 'pull-left padding-xs-vr bg-rd-blue text-bg',
   );
   $pane->extras = array();
   $pane->position = 2;
@@ -399,7 +399,7 @@ $display->panels = array();
   );
   $pane->css = array(
     'css_id' => '',
-    'css_class' => 'pull-left padding-xs-vr panel-padding-h bg-rd-blue',
+    'css_class' => 'pull-left padding-xs-vr panel-padding-h bg-rd-blue text-bg',
   );
   $pane->extras = array();
   $pane->position = 3;
