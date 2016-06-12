@@ -7845,9 +7845,6 @@ html.CSS1Compat p { margin: 0px; }
 /* line 104, ../scss_components/rdigital_elements/_panel_pages.scss */
 .rd-button-list { margin: 3px; }
 
-/* line 108, ../scss_components/rdigital_elements/_panel_pages.scss */
-#cke_contents_edit-rd-f-treat-ini-comments-und-0-value, #cke_contents_edit-rd-f-treat-fin-comments-und-0-value { height: 54px !important; }
-
 /* line 9, ../scss_components/rdigital_elements/_views.scss */
 .view-measures-record .view-treat-ini-comments-text, .view-measures-record .view-treat-measures-text, .view-measures-record .view-treat-fin-comments-text { padding-bottom: 15px; }
 /* line 11, ../scss_components/rdigital_elements/_views.scss */

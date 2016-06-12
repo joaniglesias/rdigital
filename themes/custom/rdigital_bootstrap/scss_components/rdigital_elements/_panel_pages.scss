@@ -105,6 +105,8 @@ html.CSS1Compat {
   margin: 3px;
 }
 
-#cke_contents_edit-rd-f-treat-ini-comments-und-0-value, #cke_contents_edit-rd-f-treat-fin-comments-und-0-value {
-  height: 54px !important;
-}
+// Force height of "initial Comments" and "Final Comments" cke editor. CONS - user can't modify editor text area using
+//       the botom right corner icon
+// #cke_contents_edit-rd-f-treat-ini-comments-und-0-value, #cke_contents_edit-rd-f-treat-fin-comments-und-0-value {
+//   height: 54px !important;
+// }
