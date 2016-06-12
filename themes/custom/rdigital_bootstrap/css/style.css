@@ -7853,3 +7853,5 @@ html.CSS1Compat p { margin: 0px; }
 
 /* line 21, ../scss_components/rdigital_elements/_views.scss */
 .view-patients-secretary .table td { padding: 2px; }
+/* line 25, ../scss_components/rdigital_elements/_views.scss */
+.view-patients-secretary #edit-rd-f-patient-incidences-value-wrapper { display: block !important; }
