@@ -124,3 +124,99 @@ $handler->display->display_options['filters']['type']['value'] = array(
 /* Display: Page */
 $handler = $view->new_display('page', 'Page', 'page');
 $handler->display->display_options['path'] = 'measures_record/%';
+
+/* Display: Sessions Secretary */
+$handler = $view->new_display('page', 'Sessions Secretary', 'page_1');
+$handler->display->display_options['defaults']['title'] = FALSE;
+$handler->display->display_options['title'] = 'Sessions - [title]';
+$handler->display->display_options['defaults']['pager'] = FALSE;
+$handler->display->display_options['pager']['type'] = 'full';
+$handler->display->display_options['pager']['options']['items_per_page'] = '0';
+$handler->display->display_options['pager']['options']['offset'] = '0';
+$handler->display->display_options['pager']['options']['id'] = '0';
+$handler->display->display_options['pager']['options']['quantity'] = '9';
+$handler->display->display_options['defaults']['header'] = FALSE;
+/* Header: Global: PHP */
+$handler->display->display_options['header']['php']['id'] = 'php';
+$handler->display->display_options['header']['php']['table'] = 'views';
+$handler->display->display_options['header']['php']['field'] = 'php';
+$handler->display->display_options['header']['php']['label'] = 'Total rows';
+$handler->display->display_options['header']['php']['php_output'] = '<?php
+$view = views_get_current_view();
+print t(\'TOTAL\') . \': \' .  $view->total_rows;
+?>
+';
+$handler->display->display_options['defaults']['fields'] = FALSE;
+/* Field: Content: Treatment Date and Time */
+$handler->display->display_options['fields']['rd_f_treat_date_time']['id'] = 'rd_f_treat_date_time';
+$handler->display->display_options['fields']['rd_f_treat_date_time']['table'] = 'field_data_rd_f_treat_date_time';
+$handler->display->display_options['fields']['rd_f_treat_date_time']['field'] = 'rd_f_treat_date_time';
+$handler->display->display_options['fields']['rd_f_treat_date_time']['exclude'] = TRUE;
+$handler->display->display_options['fields']['rd_f_treat_date_time']['settings'] = array(
+  'format_type' => 'short',
+  'fromto' => 'both',
+  'multiple_number' => '',
+  'multiple_from' => '',
+  'multiple_to' => '',
+);
+/* Field: Content: Related Practitioner */
+$handler->display->display_options['fields']['rd_f_treat_related_pract']['id'] = 'rd_f_treat_related_pract';
+$handler->display->display_options['fields']['rd_f_treat_related_pract']['table'] = 'field_data_rd_f_treat_related_pract';
+$handler->display->display_options['fields']['rd_f_treat_related_pract']['field'] = 'rd_f_treat_related_pract';
+$handler->display->display_options['fields']['rd_f_treat_related_pract']['exclude'] = TRUE;
+$handler->display->display_options['fields']['rd_f_treat_related_pract']['settings'] = array(
+  'link' => 0,
+);
+/* Field: Content: Centre */
+$handler->display->display_options['fields']['rd_f_access_treat_centre']['id'] = 'rd_f_access_treat_centre';
+$handler->display->display_options['fields']['rd_f_access_treat_centre']['table'] = 'field_data_rd_f_access_treat_centre';
+$handler->display->display_options['fields']['rd_f_access_treat_centre']['field'] = 'rd_f_access_treat_centre';
+$handler->display->display_options['fields']['rd_f_access_treat_centre']['exclude'] = TRUE;
+$handler->display->display_options['fields']['rd_f_access_treat_centre']['type'] = 'taxonomy_term_reference_plain';
+/* Field: Global: Custom text */
+$handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+$handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+$handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+$handler->display->display_options['fields']['nothing_1']['label'] = 'Sessions';
+$handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<b>[rd_f_treat_date_time]</b><br>
+[rd_f_treat_related_pract]<br>
+[rd_f_access_treat_centre]';
+/* Field: Content: Initial Comments */
+$handler->display->display_options['fields']['rd_f_treat_ini_comments']['id'] = 'rd_f_treat_ini_comments';
+$handler->display->display_options['fields']['rd_f_treat_ini_comments']['table'] = 'field_data_rd_f_treat_ini_comments';
+$handler->display->display_options['fields']['rd_f_treat_ini_comments']['field'] = 'rd_f_treat_ini_comments';
+$handler->display->display_options['fields']['rd_f_treat_ini_comments']['exclude'] = TRUE;
+/* Field: Content: Measures */
+$handler->display->display_options['fields']['rd_f_treat_measures']['id'] = 'rd_f_treat_measures';
+$handler->display->display_options['fields']['rd_f_treat_measures']['table'] = 'field_data_rd_f_treat_measures';
+$handler->display->display_options['fields']['rd_f_treat_measures']['field'] = 'rd_f_treat_measures';
+$handler->display->display_options['fields']['rd_f_treat_measures']['exclude'] = TRUE;
+$handler->display->display_options['fields']['rd_f_treat_measures']['settings'] = array(
+  'click_to_edit' => 0,
+  'click_to_edit_style' => 'button',
+  'empty_text' => '',
+  'fallback_format' => 'text_default',
+);
+/* Field: Content: Final Comments */
+$handler->display->display_options['fields']['rd_f_treat_fin_comments']['id'] = 'rd_f_treat_fin_comments';
+$handler->display->display_options['fields']['rd_f_treat_fin_comments']['table'] = 'field_data_rd_f_treat_fin_comments';
+$handler->display->display_options['fields']['rd_f_treat_fin_comments']['field'] = 'rd_f_treat_fin_comments';
+$handler->display->display_options['fields']['rd_f_treat_fin_comments']['exclude'] = TRUE;
+/* Field: Global: Custom text */
+$handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+$handler->display->display_options['fields']['nothing']['table'] = 'views';
+$handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+$handler->display->display_options['fields']['nothing']['label'] = 'Measures & Comments';
+$handler->display->display_options['fields']['nothing']['exclude'] = TRUE;
+$handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="view-treat-ini-comments-text">[rd_f_treat_ini_comments]</div>
+<div class="view-treat-measures-text">[rd_f_treat_measures]</div>
+<div class="view-treat-fin-comments-text">[rd_f_treat_fin_comments]</div>';
+$handler->display->display_options['fields']['nothing']['element_class'] = 'view-measures-comments';
+/* Field: Content: Title */
+$handler->display->display_options['fields']['title']['id'] = 'title';
+$handler->display->display_options['fields']['title']['table'] = 'node';
+$handler->display->display_options['fields']['title']['field'] = 'title';
+$handler->display->display_options['fields']['title']['label'] = 'Patient';
+$handler->display->display_options['fields']['title']['exclude'] = TRUE;
+$handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+$handler->display->display_options['path'] = 'sessions/%';

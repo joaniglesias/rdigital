@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2016-06-12 07:37+0200\n"
-"PO-Revision-Date: 2016-06-12 07:37+0200\n"
+"POT-Creation-Date: 2016-06-13 04:03+0200\n"
+"PO-Revision-Date: 2016-06-13 04:03+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -7338,6 +7338,18 @@ msgstr ""
 
 #: /rdigital/rdigital/es/admin/structure/views/view/measures_record/translate
 msgid "Translate !name"
+msgstr ""
+
+#: /rdigital/rdigital/es/sessions/54
+msgid "TOTAL"
+msgstr ""
+
+#: /rdigital/rdigital/es/sessions/54
+msgid "Total rows"
+msgstr ""
+
+#: /rdigital/rdigital/es/secretariat/patients/manage
+msgid "[edit_node]&nbsp;&nbsp;[nothing_1]&nbsp;&nbsp;[delete_node]"
 msgstr ""
 
 msgid "Rd Admin"
@@ -50395,4 +50407,8 @@ msgstr "Incidencias"
 #: /es/patient/2
 msgid "Sessions"
 msgstr "Sesiones"
+
+#: /rdigital/rdigital/es/sessions/54
+msgid "Sessions - [title]"
+msgstr "Sesiones - [title]"
 

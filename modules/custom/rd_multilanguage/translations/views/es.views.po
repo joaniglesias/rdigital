@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2016-06-12 06:50+0200\n"
-"PO-Revision-Date: 2016-06-12 06:50+0200\n"
+"POT-Creation-Date: 2016-06-13 04:04+0200\n"
+"PO-Revision-Date: 2016-06-13 04:04+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -2386,7 +2386,7 @@ msgstr ""
 
 #: views:patients_secretary:default:filter:field_data_rd_f_patient_incidences:rd_f_patient_incidences_value:expose:label
 msgctxt "patients_secretary:default:filter:field_data_rd_f_patient_incidences:rd_f_patient_incidences_value:expose:label"
-msgid "Incidences (rd_f_patient_incidences)"
+msgid "Incidences"
 msgstr ""
 
 #: views:patients_secretary:default:sort:field_data_rd_f_patient_first_surname:rd_f_patient_first_surname_value:expose:label
@@ -2396,7 +2396,7 @@ msgstr ""
 
 #: views:patients_secretary:default:sort:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number_value:expose:label
 msgctxt "patients_secretary:default:sort:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number_value:expose:label"
-msgid "Patient Number"
+msgid "Num"
 msgstr ""
 
 #: views:patients_secretary:default:sort:field_data_rd_f_patient_name:rd_f_patient_name_value:expose:label
@@ -2412,6 +2412,164 @@ msgstr ""
 #: views:patients_secretary:default:sort:node:title:expose:label
 msgctxt "patients_secretary:default:sort:node:title:expose:label"
 msgid "Title"
+msgstr ""
+
+#: views:measures_record:page_1:use_more_text
+msgctxt "measures_record:page_1:use_more_text"
+msgid "more"
+msgstr ""
+
+#: views:measures_record:page_1:exposed_form:submit_button
+msgctxt "measures_record:page_1:exposed_form:submit_button"
+msgid "Apply"
+msgstr ""
+
+#: views:measures_record:page_1:exposed_form:reset_button_label
+msgctxt "measures_record:page_1:exposed_form:reset_button_label"
+msgid "Reset"
+msgstr ""
+
+#: views:measures_record:page_1:exposed_form:exposed_sorts_label
+msgctxt "measures_record:page_1:exposed_form:exposed_sorts_label"
+msgid "Sort by"
+msgstr ""
+
+#: views:measures_record:page_1:exposed_form:sort_asc_label
+msgctxt "measures_record:page_1:exposed_form:sort_asc_label"
+msgid "Asc"
+msgstr ""
+
+#: views:measures_record:page_1:exposed_form:sort_desc_label
+msgctxt "measures_record:page_1:exposed_form:sort_desc_label"
+msgid "Desc"
+msgstr ""
+
+#: views:measures_record:page_1:pager:expose:items_per_page_label
+msgctxt "measures_record:page_1:pager:expose:items_per_page_label"
+msgid "Items per page"
+msgstr ""
+
+#: views:measures_record:page_1:pager:expose:items_per_page_options_all_label
+msgctxt "measures_record:page_1:pager:expose:items_per_page_options_all_label"
+msgid "- All -"
+msgstr ""
+
+#: views:measures_record:page_1:pager:expose:offset_label
+msgctxt "measures_record:page_1:pager:expose:offset_label"
+msgid "Offset"
+msgstr ""
+
+#: views:measures_record:page_1:pager:tags:first
+msgctxt "measures_record:page_1:pager:tags:first"
+msgid "« first"
+msgstr ""
+
+#: views:measures_record:page_1:pager:tags:previous
+msgctxt "measures_record:page_1:pager:tags:previous"
+msgid "‹ previous"
+msgstr ""
+
+#: views:measures_record:page_1:pager:tags:next
+msgctxt "measures_record:page_1:pager:tags:next"
+msgid "next ›"
+msgstr ""
+
+#: views:measures_record:page_1:pager:tags:last
+msgctxt "measures_record:page_1:pager:tags:last"
+msgid "last »"
+msgstr ""
+
+#: views:measures_record:page_1:header:views:area:label
+msgctxt "measures_record:page_1:header:views:area:label"
+msgid "Title"
+msgstr ""
+
+#: views:measures_record:page_1:field:field_data_rd_f_treat_date_time:rd_f_treat_date_time:label
+msgctxt "measures_record:page_1:field:field_data_rd_f_treat_date_time:rd_f_treat_date_time:label"
+msgid "Treatment Date and Time"
+msgstr ""
+
+#: views:measures_record:page_1:field:field_data_rd_f_treat_related_pract:rd_f_treat_related_pract:label
+msgctxt "measures_record:page_1:field:field_data_rd_f_treat_related_pract:rd_f_treat_related_pract:label"
+msgid "Related Practitioner"
+msgstr ""
+
+#: views:measures_record:page_1:field:field_data_rd_f_access_treat_centre:rd_f_access_treat_centre:label
+msgctxt "measures_record:page_1:field:field_data_rd_f_access_treat_centre:rd_f_access_treat_centre:label"
+msgid "Centre"
+msgstr ""
+
+#: views:measures_record:page_1:field:views:nothing_1:alter:text
+msgctxt "measures_record:page_1:field:views:nothing_1:alter:text"
+msgid ""
+"<b>[rd_f_treat_date_time]</b><br>\n"
+"[rd_f_treat_related_pract]<br>\n"
+"[rd_f_access_treat_centre]"
+msgstr ""
+
+#: views:measures_record:page_1:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label
+msgctxt "measures_record:page_1:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label"
+msgid "Initial Comments"
+msgstr ""
+
+#: views:measures_record:page_1:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label
+msgctxt "measures_record:page_1:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label"
+msgid "Measures"
+msgstr ""
+
+#: views:measures_record:page_1:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label
+msgctxt "measures_record:page_1:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label"
+msgid "Final Comments"
+msgstr ""
+
+#: views:measures_record:page_1:field:views:nothing:label
+msgctxt "measures_record:page_1:field:views:nothing:label"
+msgid "Measures & Comments"
+msgstr ""
+
+#: views:measures_record:page_1:field:views:nothing:alter:text
+msgctxt "measures_record:page_1:field:views:nothing:alter:text"
+msgid ""
+"<div "
+"class=\"view-treat-ini-comments-text\">[rd_f_treat_ini_comments]</div>\n"
+"<div class=\"view-treat-measures-text\">[rd_f_treat_measures]</div>\n"
+"<div "
+"class=\"view-treat-fin-comments-text\">[rd_f_treat_fin_comments]</div>"
+msgstr ""
+
+#: views:measures_record:page_1:field:node:title:label
+msgctxt "measures_record:page_1:field:node:title:label"
+msgid "Patient"
+msgstr ""
+
+#: views:measures_record:page_1:field:file_usage:count:label
+msgctxt "measures_record:page_1:field:file_usage:count:label"
+msgid "Use count"
+msgstr ""
+
+#: views:measures_record:page_1:field:file_usage:count:decimal
+msgctxt "measures_record:page_1:field:file_usage:count:decimal"
+msgid "."
+msgstr ""
+
+#: views:measures_record:page_1:field:file_usage:count:separator
+msgctxt "measures_record:page_1:field:file_usage:count:separator"
+msgid ","
+msgstr ""
+
+#: views:measures_record:page_1:header:views:php:label
+msgctxt "measures_record:page_1:header:views:php:label"
+msgid "Total rows"
+msgstr ""
+
+#: views:patients_secretary:default:field:node:nid:label
+msgctxt "patients_secretary:default:field:node:nid:label"
+msgid "Nid"
+msgstr ""
+
+#: views:patients_secretary:default:field:views:nothing_2:alter:text
+msgctxt "patients_secretary:default:field:views:nothing_2:alter:text"
+msgid "[edit_node]&nbsp;&nbsp;[nothing_1]&nbsp;&nbsp;[delete_node]"
 msgstr ""
 
 #: views:measures_record:default:field:field_data_rd_f_treat_date_time:rd_f_treat_date_time:label
@@ -2611,17 +2769,17 @@ msgstr "Patients Secretary"
 
 #: views:patients_secretary:default:use_more_text
 msgctxt "patients_secretary:default:use_more_text"
-msgid "más"
+msgid "more"
 msgstr "more"
 
 #: views:patients_secretary:default:exposed_form:submit_button
 msgctxt "patients_secretary:default:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr "Apply"
 
 #: views:patients_secretary:default:exposed_form:reset_button_label
 msgctxt "patients_secretary:default:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr "Reset"
 
 #: views:patients_secretary:default:exposed_form:sort_asc_label
@@ -2636,37 +2794,37 @@ msgstr "Desc"
 
 #: views:patients_secretary:default:pager:expose:items_per_page_label
 msgctxt "patients_secretary:default:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr "Items per page"
 
 #: views:patients_secretary:default:pager:expose:items_per_page_options_all_label
 msgctxt "patients_secretary:default:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr "- All -"
 
 #: views:patients_secretary:default:pager:expose:offset_label
 msgctxt "patients_secretary:default:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr "Offset"
 
 #: views:patients_secretary:default:pager:tags:first
 msgctxt "patients_secretary:default:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr "« first"
 
 #: views:patients_secretary:default:pager:tags:previous
 msgctxt "patients_secretary:default:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr "‹ previous"
 
 #: views:patients_secretary:default:pager:tags:next
 msgctxt "patients_secretary:default:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr "next ›"
 
 #: views:patients_secretary:default:pager:tags:last
 msgctxt "patients_secretary:default:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr "last »"
 
 #: views:patients_secretary:default:field:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number:label
@@ -2701,12 +2859,12 @@ msgstr "more"
 
 #: views:patients_secretary:page:exposed_form:submit_button
 msgctxt "patients_secretary:page:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr "Apply"
 
 #: views:patients_secretary:page:exposed_form:reset_button_label
 msgctxt "patients_secretary:page:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr "Reset"
 
 #: views:patients_secretary:page:exposed_form:sort_asc_label
@@ -2721,37 +2879,37 @@ msgstr "Desc"
 
 #: views:patients_secretary:page:pager:expose:items_per_page_label
 msgctxt "patients_secretary:page:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr "Items per page"
 
 #: views:patients_secretary:page:pager:expose:items_per_page_options_all_label
 msgctxt "patients_secretary:page:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr "- All -"
 
 #: views:patients_secretary:page:pager:expose:offset_label
 msgctxt "patients_secretary:page:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr "Offset"
 
 #: views:patients_secretary:page:pager:tags:first
 msgctxt "patients_secretary:page:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr "« first"
 
 #: views:patients_secretary:page:pager:tags:previous
 msgctxt "patients_secretary:page:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr "‹ previous"
 
 #: views:patients_secretary:page:pager:tags:next
 msgctxt "patients_secretary:page:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr "next ›"
 
 #: views:patients_secretary:page:pager:tags:last
 msgctxt "patients_secretary:page:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr "last »"
 
 #: views:patients_secretary:default:field:field_data_rd_f_patient_appo_type:rd_f_patient_appo_type:label
@@ -2786,7 +2944,7 @@ msgstr "Operaciones"
 
 #: views:patients_secretary:default:field:views:nothing:alter:text
 msgctxt "patients_secretary:default:field:views:nothing:alter:text"
-msgid "[edit_node]&nbsp;&nbsp;&nbsp;[delete_node]"
+msgid "[edit_node]&nbsp;&nbsp;[nothing_1]&nbsp;&nbsp;[delete_node]"
 msgstr "[edit_node]&nbsp;&nbsp;&nbsp;[delete_node]"
 
 #: views:measures_record:default:field:views:nothing_1:label
@@ -2823,11 +2981,6 @@ msgstr "Apply"
 msgctxt "patients_secretary:default:exposed_form:reset_button_label"
 msgid "Reset"
 msgstr "Reset"
-
-#: views:patients_secretary:default:exposed_form:exposed_sorts_label
-msgctxt "patients_secretary:default:exposed_form:exposed_sorts_label"
-msgid "Sort by"
-msgstr "Sort by"
 
 #: views:patients_secretary:default:pager:expose:items_per_page_label
 msgctxt "patients_secretary:default:pager:expose:items_per_page_label"
@@ -2873,11 +3026,6 @@ msgstr "Apply"
 msgctxt "patients_secretary:page:exposed_form:reset_button_label"
 msgid "Reset"
 msgstr "Reset"
-
-#: views:patients_secretary:page:exposed_form:exposed_sorts_label
-msgctxt "patients_secretary:page:exposed_form:exposed_sorts_label"
-msgid "Sort by"
-msgstr "Sort by"
 
 #: views:patients_secretary:page:pager:expose:items_per_page_label
 msgctxt "patients_secretary:page:pager:expose:items_per_page_label"
@@ -3083,4 +3231,54 @@ msgstr "Name"
 msgctxt "patients_secretary:page:use_more_text"
 msgid "más"
 msgstr "more"
+
+#: views:patients_secretary:default:exposed_form:exposed_sorts_label
+msgctxt "patients_secretary:default:exposed_form:exposed_sorts_label"
+msgid "Sort by"
+msgstr "Sort by"
+
+#: views:patients_secretary:page:exposed_form:exposed_sorts_label
+msgctxt "patients_secretary:page:exposed_form:exposed_sorts_label"
+msgid "Sort by"
+msgstr "Sort by"
+
+#: views:patients_secretary:default:exposed_form:exposed_sorts_label
+msgctxt "patients_secretary:default:exposed_form:exposed_sorts_label"
+msgid "Sort by"
+msgstr "Sort by"
+
+#: views:patients_secretary:page:exposed_form:exposed_sorts_label
+msgctxt "patients_secretary:page:exposed_form:exposed_sorts_label"
+msgid "Sort by"
+msgstr "Sort by"
+
+#: views:measures_record:page_1:display_title
+msgctxt "measures_record:page_1:display_title"
+msgid "Sessions Secretary"
+msgstr "Sesiones Secretaría"
+
+#: views:measures_record:page_1:title
+msgctxt "measures_record:page_1:title"
+msgid "Sessions - [title]"
+msgstr "Sesiones - [title]"
+
+#: views:measures_record:page_1:field:views:nothing_1:label
+msgctxt "measures_record:page_1:field:views:nothing_1:label"
+msgid "Sessions"
+msgstr "Sesiones"
+
+#: views:patients_secretary:default:field:views:nothing_1:label
+msgctxt "patients_secretary:default:field:views:nothing_1:label"
+msgid "Sessions"
+msgstr "Sesiones"
+
+#: views:patients_secretary:default:field:views:nothing_1:alter:text
+msgctxt "patients_secretary:default:field:views:nothing_1:alter:text"
+msgid "Sessions"
+msgstr "Sesiones"
+
+#: views:patients_secretary:default:field:views:nothing_2:label
+msgctxt "patients_secretary:default:field:views:nothing_2:label"
+msgid "Operations"
+msgstr "Operaciones"
 
