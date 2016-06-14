@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2016-06-13 04:03+0200\n"
-"PO-Revision-Date: 2016-06-13 04:03+0200\n"
+"POT-Creation-Date: 2016-06-14 11:43+0200\n"
+"PO-Revision-Date: 2016-06-14 11:43+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -4809,10 +4809,6 @@ msgid ""
 "queries are not impacted but the View must be built twice."
 msgstr ""
 
-#: /rdigital/rdigital/es
-msgid "Título"
-msgstr ""
-
 #: /rdigital/rdigital/es/secretariat/practitioners
 msgid "Nombre"
 msgstr ""
@@ -7350,6 +7346,10 @@ msgstr ""
 
 #: /rdigital/rdigital/es/secretariat/patients/manage
 msgid "[edit_node]&nbsp;&nbsp;[nothing_1]&nbsp;&nbsp;[delete_node]"
+msgstr ""
+
+#: /rdigital/rdigital/es/secretariat/patients/interest
+msgid "Título"
 msgstr ""
 
 msgid "Rd Admin"
@@ -50411,4 +50411,12 @@ msgstr "Sesiones"
 #: /rdigital/rdigital/es/sessions/54
 msgid "Sessions - [title]"
 msgstr "Sesiones - [title]"
+
+#: /rdigital/rdigital/es/secretariat/patients/manage
+msgid "Interest"
+msgstr "Interés"
+
+#: /rdigital/rdigital/es/secretariat/patients/interest
+msgid "No results found"
+msgstr "No se han encontrado resultados"
 

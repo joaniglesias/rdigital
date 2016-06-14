@@ -207,6 +207,15 @@ function _get_fields_patient() {
       'max_length' => 600,
     ),
   );
+  $fields['rd_f_patient_interest'] = array(
+    'field_name' => 'rd_f_patient_interest',
+    'type' => 'text',
+    'label' => $t('Interest'),
+    'cardinality' => 1,
+    'settings' => array(
+      'max_length' => 600,
+    ),
+  );
 
   return $fields;
 }
@@ -603,6 +612,26 @@ function _get_instances_patient() {
         'type' => 'text_textfield',
       ),
     ),
+    'rd_f_patient_interest' => array(
+      'field_name' => 'rd_f_patient_interest',
+      'entity_type' => 'node',
+      'bundle' => 'rd_ct_patient',
+      'label' => $t('Interest'),
+      'description' => '',
+      'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 600,
+        ),
+        'type' => 'text_textfield',
+      ),
+    ),
   );
 
   return $instances;
@@ -644,5 +673,19 @@ function rd_patient_update_7000() {
 
     field_create_field($fields['rd_f_patient_incidences']);
     field_create_instance($instances['rd_f_patient_incidences']);
+
+}
+
+/**
+ * Create field interest
+ * @return [type] [description]
+ */
+function rd_patient_update_7001() {
+    $ct_name = 'patient';
+    $fields = _get_fields_patient();
+    $instances = _get_instances_patient();
+
+    field_create_field($fields['rd_f_patient_interest']);
+    field_create_instance($instances['rd_f_patient_interest']);
 
 }
