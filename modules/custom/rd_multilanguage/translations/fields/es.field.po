@@ -321,7 +321,7 @@ msgstr "Recomendado por"
 #: field:rd_f_patient_appo_type:rd_ct_patient:label
 msgctxt "rd_f_patient_appo_type:rd_ct_patient:label"
 msgid "Appointment Type"
-msgstr "Tipo visita"
+msgstr "1ª visita"
 
 #: field:rd_f_patient_tried_before:rd_ct_patient:label
 msgctxt "rd_f_patient_tried_before:rd_ct_patient:label"
