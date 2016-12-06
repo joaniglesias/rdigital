@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2016-06-14 11:44+0200\n"
-"PO-Revision-Date: 2016-06-14 11:44+0200\n"
+"POT-Creation-Date: 2016-12-06 13:17+0100\n"
+"PO-Revision-Date: 2016-12-06 13:17+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -261,7 +261,7 @@ msgstr "Número del Paciente (Excel)"
 #: field:rd_f_patient_tried_before:#field:label
 msgctxt "rd_f_patient_tried_before:#field:label"
 msgid "Tried Before"
-msgstr "Lo intentó antes"
+msgstr "Intentó antes"
 
 #: field:rd_f_patient_c_medicine:#field:label
 msgctxt "rd_f_patient_c_medicine:#field:label"
@@ -271,7 +271,7 @@ msgstr "Medicina Clásica"
 #: field:rd_f_patient_o_symptoms:#field:label
 msgctxt "rd_f_patient_o_symptoms:#field:label"
 msgid "Other Symptoms"
-msgstr "Otros Síntomas"
+msgstr "Síntomas"
 
 #: field:rd_f_patient_first_surname:rd_ct_patient:label
 msgctxt "rd_f_patient_first_surname:rd_ct_patient:label"
@@ -316,17 +316,17 @@ msgstr "Profesión"
 #: field:rd_f_patient_recommended:rd_ct_patient:label
 msgctxt "rd_f_patient_recommended:rd_ct_patient:label"
 msgid "Recommended by"
-msgstr "Recomendado por"
+msgstr "Viene por"
 
 #: field:rd_f_patient_appo_type:rd_ct_patient:label
 msgctxt "rd_f_patient_appo_type:rd_ct_patient:label"
 msgid "Appointment Type"
-msgstr "1ª visita"
+msgstr "Tipo visita"
 
 #: field:rd_f_patient_tried_before:rd_ct_patient:label
 msgctxt "rd_f_patient_tried_before:rd_ct_patient:label"
 msgid "Tried Before"
-msgstr "Lo intentó antes"
+msgstr "Intentó antes"
 
 #: field:rd_f_patient_homeopathy:rd_ct_patient:label
 msgctxt "rd_f_patient_homeopathy:rd_ct_patient:label"
@@ -341,12 +341,12 @@ msgstr "Medicina Clásica"
 #: field:rd_f_patient_a_therapies:rd_ct_patient:label
 msgctxt "rd_f_patient_a_therapies:rd_ct_patient:label"
 msgid "Alternative Therapies"
-msgstr "Terapias Alternativas"
+msgstr "Alternativas"
 
 #: field:rd_f_patient_o_symptoms:rd_ct_patient:label
 msgctxt "rd_f_patient_o_symptoms:rd_ct_patient:label"
 msgid "Other Symptoms"
-msgstr "Otros Síntomas"
+msgstr "Síntomas"
 
 #: field:rd_f_treat_date_time:rd_ct_treatment:label
 msgctxt "rd_f_treat_date_time:rd_ct_treatment:label"

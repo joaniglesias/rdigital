@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2016-06-14 11:43+0200\n"
-"PO-Revision-Date: 2016-06-14 11:43+0200\n"
+"POT-Creation-Date: 2016-12-06 13:16+0100\n"
+"PO-Revision-Date: 2016-12-06 13:16+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -7350,6 +7350,14 @@ msgstr ""
 
 #: /rdigital/rdigital/es/secretariat/patients/interest
 msgid "Título"
+msgstr ""
+
+#: /rdigital/public_html/es/secretariat/patients/manage?rd_f_patient_excel_number_value=&title=&rd_f_patient_incidences_value_op=%3D&rd_f_patient_incidences_value=&sort_by=rd_f_patient_excel_number_value&sort_order=DESC
+msgid ""
+"Helper functions, pages, and blocks to assist Drupal developers. The "
+"devel blocks can be managed via the <a "
+"href=\"/rdigital/public_html/admin/structure/block\">block "
+"administration</a> page."
 msgstr ""
 
 msgid "Rd Admin"
@@ -50387,7 +50395,7 @@ msgstr "Medicina Clásica"
 
 #: /rdigital/rdigital/es/patient/53
 msgid "Other Symptoms"
-msgstr "Otros Síntomas"
+msgstr "Síntomas"
 
 #: /es/admin_menu/flush-cache?token=R9i-lXZjRLs5dXFVq3GjiqF9t1RFIo9TbponWVo5lzg&destination=admin/config/regional/language
 msgid "Measures & Comments"
