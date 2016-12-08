@@ -127,6 +127,8 @@ function _get_roles_and_permissions_access() {
       'delete own rd_ct_patient content',
       'edit any rd_ct_patient content',
       'edit own rd_ct_patient content',
+      'edit any rd_ct_treatment content',
+      'delete any rd_ct_treatment content',
       'use editablefields',
       ),
     'Practicioner' => array(

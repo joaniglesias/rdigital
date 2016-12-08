@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2016-12-06 13:16+0100\n"
-"PO-Revision-Date: 2016-12-06 13:16+0100\n"
+"POT-Creation-Date: 2016-12-08 12:22+0100\n"
+"PO-Revision-Date: 2016-12-08 12:22+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -7358,6 +7358,22 @@ msgid ""
 "devel blocks can be managed via the <a "
 "href=\"/rdigital/public_html/admin/structure/block\">block "
 "administration</a> page."
+msgstr ""
+
+#: /rdigital/public_html/es/sessions/54
+msgid ""
+"Helper functions, pages, and blocks to assist Drupal developers. The "
+"devel blocks can be managed via the <a "
+"href=\"/rdigital/public_html/es/admin/structure/block\">block "
+"administration</a> page."
+msgstr ""
+
+#: /rdigital/public_html/es/secretariat/patients/manage
+msgid "Contenido referencing Contenido from rd_f_treat_related_patient"
+msgstr ""
+
+#: /rdigital/public_html/es/node/95/edit
+msgid "Fecha y Hora del Tratamiento"
 msgstr ""
 
 msgid "Rd Admin"
@@ -50427,4 +50443,8 @@ msgstr "Interés"
 #: /rdigital/rdigital/es/secretariat/patients/interest
 msgid "No results found"
 msgstr "No se han encontrado resultados"
+
+#: /rdigital/public_html/es/secretariat/patients
+msgid "Empty Treatments"
+msgstr "Sesiones Vacías"
 

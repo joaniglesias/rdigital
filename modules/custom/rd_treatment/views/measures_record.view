@@ -125,6 +125,100 @@ $handler->display->display_options['filters']['type']['value'] = array(
 $handler = $view->new_display('page', 'Page', 'page');
 $handler->display->display_options['path'] = 'measures_record/%';
 
+/* Display: Measures Record Secretary */
+$handler = $view->new_display('page', 'Measures Record Secretary', 'page_2');
+$handler->display->display_options['defaults']['access'] = FALSE;
+$handler->display->display_options['access']['type'] = 'perm';
+$handler->display->display_options['access']['perm'] = 'access secretariat actions';
+$handler->display->display_options['defaults']['fields'] = FALSE;
+/* Field: Content: Treatment Date and Time */
+$handler->display->display_options['fields']['rd_f_treat_date_time']['id'] = 'rd_f_treat_date_time';
+$handler->display->display_options['fields']['rd_f_treat_date_time']['table'] = 'field_data_rd_f_treat_date_time';
+$handler->display->display_options['fields']['rd_f_treat_date_time']['field'] = 'rd_f_treat_date_time';
+$handler->display->display_options['fields']['rd_f_treat_date_time']['exclude'] = TRUE;
+$handler->display->display_options['fields']['rd_f_treat_date_time']['settings'] = array(
+  'format_type' => 'short',
+  'fromto' => 'both',
+  'multiple_number' => '',
+  'multiple_from' => '',
+  'multiple_to' => '',
+);
+/* Field: Content: Related Practitioner */
+$handler->display->display_options['fields']['rd_f_treat_related_pract']['id'] = 'rd_f_treat_related_pract';
+$handler->display->display_options['fields']['rd_f_treat_related_pract']['table'] = 'field_data_rd_f_treat_related_pract';
+$handler->display->display_options['fields']['rd_f_treat_related_pract']['field'] = 'rd_f_treat_related_pract';
+$handler->display->display_options['fields']['rd_f_treat_related_pract']['exclude'] = TRUE;
+$handler->display->display_options['fields']['rd_f_treat_related_pract']['settings'] = array(
+  'link' => 0,
+);
+/* Field: Content: Centre */
+$handler->display->display_options['fields']['rd_f_access_treat_centre']['id'] = 'rd_f_access_treat_centre';
+$handler->display->display_options['fields']['rd_f_access_treat_centre']['table'] = 'field_data_rd_f_access_treat_centre';
+$handler->display->display_options['fields']['rd_f_access_treat_centre']['field'] = 'rd_f_access_treat_centre';
+$handler->display->display_options['fields']['rd_f_access_treat_centre']['exclude'] = TRUE;
+$handler->display->display_options['fields']['rd_f_access_treat_centre']['type'] = 'taxonomy_term_reference_plain';
+/* Field: Global: Custom text */
+$handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+$handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+$handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+$handler->display->display_options['fields']['nothing_1']['label'] = 'Sessions';
+$handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<b>[rd_f_treat_date_time]</b><br>
+[rd_f_treat_related_pract]<br>
+[rd_f_access_treat_centre]';
+/* Field: Content: Initial Comments */
+$handler->display->display_options['fields']['rd_f_treat_ini_comments']['id'] = 'rd_f_treat_ini_comments';
+$handler->display->display_options['fields']['rd_f_treat_ini_comments']['table'] = 'field_data_rd_f_treat_ini_comments';
+$handler->display->display_options['fields']['rd_f_treat_ini_comments']['field'] = 'rd_f_treat_ini_comments';
+$handler->display->display_options['fields']['rd_f_treat_ini_comments']['exclude'] = TRUE;
+/* Field: Content: Measures */
+$handler->display->display_options['fields']['rd_f_treat_measures']['id'] = 'rd_f_treat_measures';
+$handler->display->display_options['fields']['rd_f_treat_measures']['table'] = 'field_data_rd_f_treat_measures';
+$handler->display->display_options['fields']['rd_f_treat_measures']['field'] = 'rd_f_treat_measures';
+$handler->display->display_options['fields']['rd_f_treat_measures']['exclude'] = TRUE;
+$handler->display->display_options['fields']['rd_f_treat_measures']['settings'] = array(
+  'click_to_edit' => 0,
+  'click_to_edit_style' => 'button',
+  'empty_text' => '',
+  'fallback_format' => 'text_default',
+);
+/* Field: Content: Final Comments */
+$handler->display->display_options['fields']['rd_f_treat_fin_comments']['id'] = 'rd_f_treat_fin_comments';
+$handler->display->display_options['fields']['rd_f_treat_fin_comments']['table'] = 'field_data_rd_f_treat_fin_comments';
+$handler->display->display_options['fields']['rd_f_treat_fin_comments']['field'] = 'rd_f_treat_fin_comments';
+$handler->display->display_options['fields']['rd_f_treat_fin_comments']['exclude'] = TRUE;
+/* Field: Global: Custom text */
+$handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+$handler->display->display_options['fields']['nothing']['table'] = 'views';
+$handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+$handler->display->display_options['fields']['nothing']['label'] = 'Measures & Comments';
+$handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="view-treat-ini-comments-text">[rd_f_treat_ini_comments]</div>
+<div class="view-treat-measures-text">[rd_f_treat_measures]</div>
+<div class="view-treat-fin-comments-text">[rd_f_treat_fin_comments]</div>';
+$handler->display->display_options['fields']['nothing']['element_class'] = 'view-measures-comments';
+/* Field: Content: Edit link */
+$handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+$handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+$handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+$handler->display->display_options['fields']['edit_node']['exclude'] = TRUE;
+$handler->display->display_options['fields']['edit_node']['alter']['make_link'] = TRUE;
+$handler->display->display_options['fields']['edit_node']['alter']['link_class'] = 'btn btn-info btn-sm';
+$handler->display->display_options['fields']['edit_node']['text'] = 'Edit';
+/* Field: Content: Delete link */
+$handler->display->display_options['fields']['delete_node']['id'] = 'delete_node';
+$handler->display->display_options['fields']['delete_node']['table'] = 'views_entity_node';
+$handler->display->display_options['fields']['delete_node']['field'] = 'delete_node';
+$handler->display->display_options['fields']['delete_node']['exclude'] = TRUE;
+$handler->display->display_options['fields']['delete_node']['alter']['make_link'] = TRUE;
+$handler->display->display_options['fields']['delete_node']['alter']['link_class'] = 'btn btn-danger btn-sm';
+$handler->display->display_options['fields']['delete_node']['text'] = 'Delete';
+/* Field: Global: Custom text */
+$handler->display->display_options['fields']['nothing_2']['id'] = 'nothing_2';
+$handler->display->display_options['fields']['nothing_2']['table'] = 'views';
+$handler->display->display_options['fields']['nothing_2']['field'] = 'nothing';
+$handler->display->display_options['fields']['nothing_2']['label'] = 'Operations';
+$handler->display->display_options['fields']['nothing_2']['alter']['text'] = '[edit_node]&nbsp;&nbsp;[delete_node]';
+$handler->display->display_options['path'] = 'measures_record_secretary/%';
+
 /* Display: Sessions Secretary */
 $handler = $view->new_display('page', 'Sessions Secretary', 'page_1');
 $handler->display->display_options['defaults']['title'] = FALSE;
@@ -218,3 +312,130 @@ $handler->display->display_options['fields']['title']['label'] = 'Patient';
 $handler->display->display_options['fields']['title']['exclude'] = TRUE;
 $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
 $handler->display->display_options['path'] = 'sessions/%';
+
+/* Display: Empty Treatments */
+$handler = $view->new_display('page', 'Empty Treatments', 'page_3');
+$handler->display->display_options['defaults']['access'] = FALSE;
+$handler->display->display_options['access']['type'] = 'perm';
+$handler->display->display_options['access']['perm'] = 'access secretariat actions';
+$handler->display->display_options['defaults']['pager'] = FALSE;
+$handler->display->display_options['pager']['type'] = 'full';
+$handler->display->display_options['pager']['options']['items_per_page'] = '0';
+$handler->display->display_options['pager']['options']['offset'] = '0';
+$handler->display->display_options['pager']['options']['id'] = '0';
+$handler->display->display_options['pager']['options']['quantity'] = '9';
+$handler->display->display_options['defaults']['fields'] = FALSE;
+/* Field: Content: Title */
+$handler->display->display_options['fields']['title']['id'] = 'title';
+$handler->display->display_options['fields']['title']['table'] = 'node';
+$handler->display->display_options['fields']['title']['field'] = 'title';
+$handler->display->display_options['fields']['title']['label'] = 'Name';
+$handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+/* Field: Content: Treatment Date and Time */
+$handler->display->display_options['fields']['rd_f_treat_date_time']['id'] = 'rd_f_treat_date_time';
+$handler->display->display_options['fields']['rd_f_treat_date_time']['table'] = 'field_data_rd_f_treat_date_time';
+$handler->display->display_options['fields']['rd_f_treat_date_time']['field'] = 'rd_f_treat_date_time';
+$handler->display->display_options['fields']['rd_f_treat_date_time']['exclude'] = TRUE;
+$handler->display->display_options['fields']['rd_f_treat_date_time']['settings'] = array(
+  'format_type' => 'short',
+  'fromto' => 'both',
+  'multiple_number' => '',
+  'multiple_from' => '',
+  'multiple_to' => '',
+);
+/* Field: Content: Related Practitioner */
+$handler->display->display_options['fields']['rd_f_treat_related_pract']['id'] = 'rd_f_treat_related_pract';
+$handler->display->display_options['fields']['rd_f_treat_related_pract']['table'] = 'field_data_rd_f_treat_related_pract';
+$handler->display->display_options['fields']['rd_f_treat_related_pract']['field'] = 'rd_f_treat_related_pract';
+$handler->display->display_options['fields']['rd_f_treat_related_pract']['exclude'] = TRUE;
+$handler->display->display_options['fields']['rd_f_treat_related_pract']['settings'] = array(
+  'link' => 0,
+);
+/* Field: Content: Centre */
+$handler->display->display_options['fields']['rd_f_access_treat_centre']['id'] = 'rd_f_access_treat_centre';
+$handler->display->display_options['fields']['rd_f_access_treat_centre']['table'] = 'field_data_rd_f_access_treat_centre';
+$handler->display->display_options['fields']['rd_f_access_treat_centre']['field'] = 'rd_f_access_treat_centre';
+$handler->display->display_options['fields']['rd_f_access_treat_centre']['exclude'] = TRUE;
+$handler->display->display_options['fields']['rd_f_access_treat_centre']['type'] = 'taxonomy_term_reference_plain';
+/* Field: Global: Custom text */
+$handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+$handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+$handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+$handler->display->display_options['fields']['nothing_1']['label'] = 'Sessions';
+$handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<b>[rd_f_treat_date_time]</b> -
+[rd_f_treat_related_pract] -
+[rd_f_access_treat_centre]';
+/* Field: Content: Initial Comments */
+$handler->display->display_options['fields']['rd_f_treat_ini_comments']['id'] = 'rd_f_treat_ini_comments';
+$handler->display->display_options['fields']['rd_f_treat_ini_comments']['table'] = 'field_data_rd_f_treat_ini_comments';
+$handler->display->display_options['fields']['rd_f_treat_ini_comments']['field'] = 'rd_f_treat_ini_comments';
+$handler->display->display_options['fields']['rd_f_treat_ini_comments']['exclude'] = TRUE;
+/* Field: Content: Measures */
+$handler->display->display_options['fields']['rd_f_treat_measures']['id'] = 'rd_f_treat_measures';
+$handler->display->display_options['fields']['rd_f_treat_measures']['table'] = 'field_data_rd_f_treat_measures';
+$handler->display->display_options['fields']['rd_f_treat_measures']['field'] = 'rd_f_treat_measures';
+$handler->display->display_options['fields']['rd_f_treat_measures']['exclude'] = TRUE;
+$handler->display->display_options['fields']['rd_f_treat_measures']['settings'] = array(
+  'click_to_edit' => 0,
+  'click_to_edit_style' => 'button',
+  'empty_text' => '',
+  'fallback_format' => 'text_default',
+);
+/* Field: Content: Final Comments */
+$handler->display->display_options['fields']['rd_f_treat_fin_comments']['id'] = 'rd_f_treat_fin_comments';
+$handler->display->display_options['fields']['rd_f_treat_fin_comments']['table'] = 'field_data_rd_f_treat_fin_comments';
+$handler->display->display_options['fields']['rd_f_treat_fin_comments']['field'] = 'rd_f_treat_fin_comments';
+$handler->display->display_options['fields']['rd_f_treat_fin_comments']['exclude'] = TRUE;
+/* Field: Global: Custom text */
+$handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+$handler->display->display_options['fields']['nothing']['table'] = 'views';
+$handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+$handler->display->display_options['fields']['nothing']['label'] = 'Measures & Comments';
+$handler->display->display_options['fields']['nothing']['alter']['text'] = '[rd_f_treat_ini_comments] -
+[rd_f_treat_measures] -
+[rd_f_treat_fin_comments] - ';
+$handler->display->display_options['fields']['nothing']['element_class'] = 'view-measures-comments';
+/* Field: Content: Delete link */
+$handler->display->display_options['fields']['delete_node']['id'] = 'delete_node';
+$handler->display->display_options['fields']['delete_node']['table'] = 'views_entity_node';
+$handler->display->display_options['fields']['delete_node']['field'] = 'delete_node';
+$handler->display->display_options['fields']['delete_node']['label'] = 'Operations';
+$handler->display->display_options['fields']['delete_node']['alter']['make_link'] = TRUE;
+$handler->display->display_options['fields']['delete_node']['alter']['link_class'] = 'btn btn-danger btn-xs';
+$handler->display->display_options['fields']['delete_node']['text'] = 'Delete';
+$handler->display->display_options['defaults']['arguments'] = FALSE;
+$handler->display->display_options['defaults']['filter_groups'] = FALSE;
+$handler->display->display_options['defaults']['filters'] = FALSE;
+/* Filter criterion: Content: Type */
+$handler->display->display_options['filters']['type']['id'] = 'type';
+$handler->display->display_options['filters']['type']['table'] = 'node';
+$handler->display->display_options['filters']['type']['field'] = 'type';
+$handler->display->display_options['filters']['type']['value'] = array(
+  'rd_ct_treatment' => 'rd_ct_treatment',
+);
+$handler->display->display_options['filters']['type']['group'] = 1;
+/* Filter criterion: Content: Initial Comments (rd_f_treat_ini_comments) */
+$handler->display->display_options['filters']['rd_f_treat_ini_comments_value']['id'] = 'rd_f_treat_ini_comments_value';
+$handler->display->display_options['filters']['rd_f_treat_ini_comments_value']['table'] = 'field_data_rd_f_treat_ini_comments';
+$handler->display->display_options['filters']['rd_f_treat_ini_comments_value']['field'] = 'rd_f_treat_ini_comments_value';
+$handler->display->display_options['filters']['rd_f_treat_ini_comments_value']['operator'] = 'empty';
+$handler->display->display_options['filters']['rd_f_treat_ini_comments_value']['group'] = 1;
+/* Filter criterion: Content: Measures (rd_f_treat_measures) */
+$handler->display->display_options['filters']['rd_f_treat_measures_value']['id'] = 'rd_f_treat_measures_value';
+$handler->display->display_options['filters']['rd_f_treat_measures_value']['table'] = 'field_data_rd_f_treat_measures';
+$handler->display->display_options['filters']['rd_f_treat_measures_value']['field'] = 'rd_f_treat_measures_value';
+$handler->display->display_options['filters']['rd_f_treat_measures_value']['operator'] = 'empty';
+$handler->display->display_options['filters']['rd_f_treat_measures_value']['group'] = 1;
+/* Filter criterion: Content: Final Comments (rd_f_treat_fin_comments) */
+$handler->display->display_options['filters']['rd_f_treat_fin_comments_value']['id'] = 'rd_f_treat_fin_comments_value';
+$handler->display->display_options['filters']['rd_f_treat_fin_comments_value']['table'] = 'field_data_rd_f_treat_fin_comments';
+$handler->display->display_options['filters']['rd_f_treat_fin_comments_value']['field'] = 'rd_f_treat_fin_comments_value';
+$handler->display->display_options['filters']['rd_f_treat_fin_comments_value']['operator'] = 'empty';
+$handler->display->display_options['filters']['rd_f_treat_fin_comments_value']['group'] = 1;
+$handler->display->display_options['path'] = 'secretariat/patients/empty_treatments';
+$handler->display->display_options['menu']['type'] = 'tab';
+$handler->display->display_options['menu']['title'] = 'Empty Treatments';
+$handler->display->display_options['menu']['weight'] = '5';
+$handler->display->display_options['menu']['name'] = 'main-menu';
+$handler->display->display_options['menu']['context'] = 1;
+$handler->display->display_options['menu']['context_only_inline'] = 0;

@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2016-12-06 13:16+0100\n"
-"PO-Revision-Date: 2016-12-06 13:16+0100\n"
+"POT-Creation-Date: 2016-12-08 12:22+0100\n"
+"PO-Revision-Date: 2016-12-08 12:22+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -2374,11 +2374,6 @@ msgctxt "measures_record:page:display_title"
 msgid "Page"
 msgstr ""
 
-#: views:patients_secretary:default:filter:field_data_rd_f_patient_incidences:rd_f_patient_incidences_value:expose:label
-msgctxt "patients_secretary:default:filter:field_data_rd_f_patient_incidences:rd_f_patient_incidences_value:expose:label"
-msgid "Incidences"
-msgstr ""
-
 #: views:patients_secretary:default:sort:field_data_rd_f_patient_first_surname:rd_f_patient_first_surname_value:expose:label
 msgctxt "patients_secretary:default:sort:field_data_rd_f_patient_first_surname:rd_f_patient_first_surname_value:expose:label"
 msgid "First Surename (rd_f_patient_first_surname)"
@@ -2482,8 +2477,8 @@ msgstr ""
 #: views:measures_record:page_1:field:views:nothing_1:alter:text
 msgctxt "measures_record:page_1:field:views:nothing_1:alter:text"
 msgid ""
-"<b>[rd_f_treat_date_time]</b><br>\n"
-"[rd_f_treat_related_pract]<br>\n"
+"<b>[rd_f_treat_date_time]</b> - \n"
+"[rd_f_treat_related_pract] - \n"
 "[rd_f_access_treat_centre]"
 msgstr ""
 
@@ -2620,6 +2615,315 @@ msgstr ""
 #: views:patients_secretary:page_1:field:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number:label
 msgctxt "patients_secretary:page_1:field:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number:label"
 msgid "Num"
+msgstr ""
+
+#: views:patients_secretary:page:relationship:node:reverse_rd_f_treat_related_patient_node:label
+msgctxt "patients_secretary:page:relationship:node:reverse_rd_f_treat_related_patient_node:label"
+msgid "Related Treatment"
+msgstr ""
+
+#: views:patients_secretary:page:field:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number:label
+msgctxt "patients_secretary:page:field:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number:label"
+msgid "Num"
+msgstr ""
+
+#: views:patients_secretary:page:field:field_data_rd_f_patient_appo_type:rd_f_patient_appo_type:label
+msgctxt "patients_secretary:page:field:field_data_rd_f_patient_appo_type:rd_f_patient_appo_type:label"
+msgid "T"
+msgstr ""
+
+#: views:patients_secretary:page:field:field_data_rd_f_patient_incidences:rd_f_patient_incidences:label
+msgctxt "patients_secretary:page:field:field_data_rd_f_patient_incidences:rd_f_patient_incidences:label"
+msgid "Incidences"
+msgstr ""
+
+#: views:patients_secretary:page:field:field_data_rd_f_patient_interest:rd_f_patient_interest:alter:text
+msgctxt "patients_secretary:page:field:field_data_rd_f_patient_interest:rd_f_patient_interest:alter:text"
+msgid "x"
+msgstr ""
+
+#: views:patients_secretary:page:field:views_entity_node:edit_node:label
+msgctxt "patients_secretary:page:field:views_entity_node:edit_node:label"
+msgid "Edit"
+msgstr ""
+
+#: views:patients_secretary:page:field:views_entity_node:edit_node:text
+msgctxt "patients_secretary:page:field:views_entity_node:edit_node:text"
+msgid "Edit"
+msgstr ""
+
+#: views:patients_secretary:page:field:views_entity_node:delete_node:label
+msgctxt "patients_secretary:page:field:views_entity_node:delete_node:label"
+msgid "Delete"
+msgstr ""
+
+#: views:patients_secretary:page:field:node:nid:label
+msgctxt "patients_secretary:page:field:node:nid:label"
+msgid "Nid"
+msgstr ""
+
+#: views:patients_secretary:page:field:views:nothing_1:label
+msgctxt "patients_secretary:page:field:views:nothing_1:label"
+msgid "Sessions"
+msgstr ""
+
+#: views:patients_secretary:page:field:views:nothing_1:alter:text
+msgctxt "patients_secretary:page:field:views:nothing_1:alter:text"
+msgid "Sessions"
+msgstr ""
+
+#: views:patients_secretary:page:field:views:nothing_2:alter:text
+msgctxt "patients_secretary:page:field:views:nothing_2:alter:text"
+msgid "[edit_node]&nbsp;&nbsp;[nothing_1]&nbsp;&nbsp;[delete_node]"
+msgstr ""
+
+#: views:patients_secretary:page:sort:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number_value:expose:label
+msgctxt "patients_secretary:page:sort:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number_value:expose:label"
+msgid "Num"
+msgstr ""
+
+#: views:measures_record:page_2:display_title
+msgctxt "measures_record:page_2:display_title"
+msgid "Measures Record Secretary"
+msgstr ""
+
+#: views:measures_record:page_2:use_more_text
+msgctxt "measures_record:page_2:use_more_text"
+msgid "more"
+msgstr ""
+
+#: views:measures_record:page_2:exposed_form:submit_button
+msgctxt "measures_record:page_2:exposed_form:submit_button"
+msgid "Apply"
+msgstr ""
+
+#: views:measures_record:page_2:exposed_form:reset_button_label
+msgctxt "measures_record:page_2:exposed_form:reset_button_label"
+msgid "Reset"
+msgstr ""
+
+#: views:measures_record:page_2:exposed_form:exposed_sorts_label
+msgctxt "measures_record:page_2:exposed_form:exposed_sorts_label"
+msgid "Sort by"
+msgstr ""
+
+#: views:measures_record:page_2:exposed_form:sort_asc_label
+msgctxt "measures_record:page_2:exposed_form:sort_asc_label"
+msgid "Asc"
+msgstr ""
+
+#: views:measures_record:page_2:exposed_form:sort_desc_label
+msgctxt "measures_record:page_2:exposed_form:sort_desc_label"
+msgid "Desc"
+msgstr ""
+
+#: views:measures_record:page_2:pager:expose:items_per_page_label
+msgctxt "measures_record:page_2:pager:expose:items_per_page_label"
+msgid "Items per page"
+msgstr ""
+
+#: views:measures_record:page_2:pager:expose:items_per_page_options_all_label
+msgctxt "measures_record:page_2:pager:expose:items_per_page_options_all_label"
+msgid "- All -"
+msgstr ""
+
+#: views:measures_record:page_2:pager:expose:offset_label
+msgctxt "measures_record:page_2:pager:expose:offset_label"
+msgid "Offset"
+msgstr ""
+
+#: views:measures_record:page_2:pager:tags:first
+msgctxt "measures_record:page_2:pager:tags:first"
+msgid "« first"
+msgstr ""
+
+#: views:measures_record:page_2:pager:tags:previous
+msgctxt "measures_record:page_2:pager:tags:previous"
+msgid "‹ previous"
+msgstr ""
+
+#: views:measures_record:page_2:pager:tags:next
+msgctxt "measures_record:page_2:pager:tags:next"
+msgid "next ›"
+msgstr ""
+
+#: views:measures_record:page_2:pager:tags:last
+msgctxt "measures_record:page_2:pager:tags:last"
+msgid "last »"
+msgstr ""
+
+#: views:measures_record:page_2:field:field_data_rd_f_treat_date_time:rd_f_treat_date_time:label
+msgctxt "measures_record:page_2:field:field_data_rd_f_treat_date_time:rd_f_treat_date_time:label"
+msgid "Treatment Date and Time"
+msgstr ""
+
+#: views:measures_record:page_2:field:field_data_rd_f_treat_related_pract:rd_f_treat_related_pract:label
+msgctxt "measures_record:page_2:field:field_data_rd_f_treat_related_pract:rd_f_treat_related_pract:label"
+msgid "Related Practitioner"
+msgstr ""
+
+#: views:measures_record:page_2:field:field_data_rd_f_access_treat_centre:rd_f_access_treat_centre:label
+msgctxt "measures_record:page_2:field:field_data_rd_f_access_treat_centre:rd_f_access_treat_centre:label"
+msgid "Centre"
+msgstr ""
+
+#: views:measures_record:page_2:field:views:nothing_1:alter:text
+msgctxt "measures_record:page_2:field:views:nothing_1:alter:text"
+msgid ""
+"<b>[rd_f_treat_date_time]</b><br>\n"
+"[rd_f_treat_related_pract]<br>\n"
+"[rd_f_access_treat_centre]"
+msgstr ""
+
+#: views:measures_record:page_2:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label
+msgctxt "measures_record:page_2:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label"
+msgid "Initial Comments"
+msgstr ""
+
+#: views:measures_record:page_2:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label
+msgctxt "measures_record:page_2:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label"
+msgid "Measures"
+msgstr ""
+
+#: views:measures_record:page_2:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label
+msgctxt "measures_record:page_2:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label"
+msgid "Final Comments"
+msgstr ""
+
+#: views:measures_record:page_2:field:views:nothing:alter:text
+msgctxt "measures_record:page_2:field:views:nothing:alter:text"
+msgid ""
+"<div "
+"class=\"view-treat-ini-comments-text\">[rd_f_treat_ini_comments]</div>\n"
+"<div class=\"view-treat-measures-text\">[rd_f_treat_measures]</div>\n"
+"<div "
+"class=\"view-treat-fin-comments-text\">[rd_f_treat_fin_comments]</div>"
+msgstr ""
+
+#: views:measures_record:page_2:field:views_entity_node:edit_node:label
+msgctxt "measures_record:page_2:field:views_entity_node:edit_node:label"
+msgid "Edit link"
+msgstr ""
+
+#: views:measures_record:page_2:field:views_entity_node:delete_node:label
+msgctxt "measures_record:page_2:field:views_entity_node:delete_node:label"
+msgid "Delete link"
+msgstr ""
+
+#: views:measures_record:page_2:field:views:nothing_2:alter:text
+msgctxt "measures_record:page_2:field:views:nothing_2:alter:text"
+msgid "[edit_node]&nbsp;&nbsp;[delete_node]"
+msgstr ""
+
+#: views:measures_record:page_3:use_more_text
+msgctxt "measures_record:page_3:use_more_text"
+msgid "more"
+msgstr ""
+
+#: views:measures_record:page_3:exposed_form:submit_button
+msgctxt "measures_record:page_3:exposed_form:submit_button"
+msgid "Apply"
+msgstr ""
+
+#: views:measures_record:page_3:exposed_form:reset_button_label
+msgctxt "measures_record:page_3:exposed_form:reset_button_label"
+msgid "Reset"
+msgstr ""
+
+#: views:measures_record:page_3:exposed_form:exposed_sorts_label
+msgctxt "measures_record:page_3:exposed_form:exposed_sorts_label"
+msgid "Sort by"
+msgstr ""
+
+#: views:measures_record:page_3:exposed_form:sort_asc_label
+msgctxt "measures_record:page_3:exposed_form:sort_asc_label"
+msgid "Asc"
+msgstr ""
+
+#: views:measures_record:page_3:exposed_form:sort_desc_label
+msgctxt "measures_record:page_3:exposed_form:sort_desc_label"
+msgid "Desc"
+msgstr ""
+
+#: views:measures_record:page_3:pager:expose:items_per_page_label
+msgctxt "measures_record:page_3:pager:expose:items_per_page_label"
+msgid "Items per page"
+msgstr ""
+
+#: views:measures_record:page_3:pager:expose:items_per_page_options_all_label
+msgctxt "measures_record:page_3:pager:expose:items_per_page_options_all_label"
+msgid "- All -"
+msgstr ""
+
+#: views:measures_record:page_3:pager:expose:offset_label
+msgctxt "measures_record:page_3:pager:expose:offset_label"
+msgid "Offset"
+msgstr ""
+
+#: views:measures_record:page_3:pager:tags:first
+msgctxt "measures_record:page_3:pager:tags:first"
+msgid "« first"
+msgstr ""
+
+#: views:measures_record:page_3:pager:tags:previous
+msgctxt "measures_record:page_3:pager:tags:previous"
+msgid "‹ previous"
+msgstr ""
+
+#: views:measures_record:page_3:pager:tags:next
+msgctxt "measures_record:page_3:pager:tags:next"
+msgid "next ›"
+msgstr ""
+
+#: views:measures_record:page_3:pager:tags:last
+msgctxt "measures_record:page_3:pager:tags:last"
+msgid "last »"
+msgstr ""
+
+#: views:measures_record:page_3:field:field_data_rd_f_treat_date_time:rd_f_treat_date_time:label
+msgctxt "measures_record:page_3:field:field_data_rd_f_treat_date_time:rd_f_treat_date_time:label"
+msgid "Treatment Date and Time"
+msgstr ""
+
+#: views:measures_record:page_3:field:field_data_rd_f_treat_related_pract:rd_f_treat_related_pract:label
+msgctxt "measures_record:page_3:field:field_data_rd_f_treat_related_pract:rd_f_treat_related_pract:label"
+msgid "Related Practitioner"
+msgstr ""
+
+#: views:measures_record:page_3:field:field_data_rd_f_access_treat_centre:rd_f_access_treat_centre:label
+msgctxt "measures_record:page_3:field:field_data_rd_f_access_treat_centre:rd_f_access_treat_centre:label"
+msgid "Centre"
+msgstr ""
+
+#: views:measures_record:page_3:field:views:nothing_1:alter:text
+msgctxt "measures_record:page_3:field:views:nothing_1:alter:text"
+msgid ""
+"<b>[rd_f_treat_date_time]</b> - \n"
+"[rd_f_treat_related_pract] - \n"
+"[rd_f_access_treat_centre]"
+msgstr ""
+
+#: views:measures_record:page_3:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label
+msgctxt "measures_record:page_3:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label"
+msgid "Initial Comments"
+msgstr ""
+
+#: views:measures_record:page_3:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label
+msgctxt "measures_record:page_3:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label"
+msgid "Measures"
+msgstr ""
+
+#: views:measures_record:page_3:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label
+msgctxt "measures_record:page_3:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label"
+msgid "Final Comments"
+msgstr ""
+
+#: views:measures_record:page_3:field:views:nothing:alter:text
+msgctxt "measures_record:page_3:field:views:nothing:alter:text"
+msgid ""
+"[rd_f_treat_ini_comments] - \n"
+"[rd_f_treat_measures] - \n"
+"[rd_f_treat_fin_comments] - "
 msgstr ""
 
 #: views:glossary:default:field:node:title:label
@@ -2894,7 +3198,7 @@ msgstr "Num"
 
 #: views:patients_secretary:default:field:node:title:label
 msgctxt "patients_secretary:default:field:node:title:label"
-msgid "Title"
+msgid "Name"
 msgstr "Nombre"
 
 #: views:patients_secretary:default:field:views:php:label
@@ -2990,12 +3294,12 @@ msgstr "Editar"
 #: views:patients_secretary:default:filter:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number_value:expose:label
 msgctxt "patients_secretary:default:filter:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number_value:expose:label"
 msgid "Number"
-msgstr "Number"
+msgstr "Número"
 
 #: views:patients_secretary:default:filter:node:title:expose:label
 msgctxt "patients_secretary:default:filter:node:title:expose:label"
 msgid "Name"
-msgstr "Name"
+msgstr "Nombre"
 
 #: views:patients_secretary:default:field:views:nothing:label
 msgctxt "patients_secretary:default:field:views:nothing:label"
@@ -3121,6 +3425,11 @@ msgstr "next ›"
 msgctxt "patients_secretary:page:pager:tags:last"
 msgid "last »"
 msgstr "last »"
+
+#: views:patients_secretary:default:filter:field_data_rd_f_patient_incidences:rd_f_patient_incidences_value:expose:label
+msgctxt "patients_secretary:default:filter:field_data_rd_f_patient_incidences:rd_f_patient_incidences_value:expose:label"
+msgid "Incidences"
+msgstr "Incidencias"
 
 #: views:patients_secretary:default:sort:node:title:expose:label
 msgctxt "patients_secretary:default:sort:node:title:expose:label"
@@ -3354,7 +3663,7 @@ msgstr "Interés"
 
 #: views:patients_secretary:page_1:field:node:title:label
 msgctxt "patients_secretary:page_1:field:node:title:label"
-msgid "Title"
+msgid "Name"
 msgstr "Nombre"
 
 #: views:patients_secretary:page_1:field:field_data_rd_f_patient_interest:rd_f_patient_interest:label
@@ -3371,4 +3680,104 @@ msgstr "Nombre"
 msgctxt "patients_secretary:page_1:filter:field_data_rd_f_patient_interest:rd_f_patient_interest_value:expose:label"
 msgid "Interest"
 msgstr "Interés"
+
+#: views:patients_secretary:page:field:field_data_rd_f_patient_dob:rd_f_patient_dob:label
+msgctxt "patients_secretary:page:field:field_data_rd_f_patient_dob:rd_f_patient_dob:label"
+msgid "DOB"
+msgstr "Nació el"
+
+#: views:patients_secretary:page:field:node:title:label
+msgctxt "patients_secretary:page:field:node:title:label"
+msgid "Name"
+msgstr "Nombre"
+
+#: views:patients_secretary:page:field:field_data_rd_f_patient_interest:rd_f_patient_interest:label
+msgctxt "patients_secretary:page:field:field_data_rd_f_patient_interest:rd_f_patient_interest:label"
+msgid "Interest"
+msgstr "Interés"
+
+#: views:patients_secretary:page:field:field_data_rd_f_treat_date_time:rd_f_treat_date_time:label
+msgctxt "patients_secretary:page:field:field_data_rd_f_treat_date_time:rd_f_treat_date_time:label"
+msgid "Date Last Treatment"
+msgstr "Última visita"
+
+#: views:patients_secretary:page:field:field_data_rd_f_treat_date_time:rd_f_treat_date_time_1:label
+msgctxt "patients_secretary:page:field:field_data_rd_f_treat_date_time:rd_f_treat_date_time_1:label"
+msgid "Treatments"
+msgstr "Tratamientos"
+
+#: views:patients_secretary:page:field:views:nothing_2:label
+msgctxt "patients_secretary:page:field:views:nothing_2:label"
+msgid "Operations"
+msgstr "Operaciones"
+
+#: views:patients_secretary:page:sort:node:title:expose:label
+msgctxt "patients_secretary:page:sort:node:title:expose:label"
+msgid "Name"
+msgstr "Nombre"
+
+#: views:patients_secretary:default:field:node:title:label
+msgctxt "patients_secretary:default:field:node:title:label"
+msgid "Title"
+msgstr "Nombre"
+
+#: views:patients_secretary:page_1:field:node:title:label
+msgctxt "patients_secretary:page_1:field:node:title:label"
+msgid "Title"
+msgstr "Nombre"
+
+#: views:measures_record:page_2:field:views:nothing_1:label
+msgctxt "measures_record:page_2:field:views:nothing_1:label"
+msgid "Sessions"
+msgstr "Sesiones"
+
+#: views:measures_record:page_2:field:views:nothing:label
+msgctxt "measures_record:page_2:field:views:nothing:label"
+msgid "Measures & Comments"
+msgstr "Medidas y comentarios"
+
+#: views:measures_record:page_2:field:views_entity_node:edit_node:text
+msgctxt "measures_record:page_2:field:views_entity_node:edit_node:text"
+msgid "Edit"
+msgstr "Editar"
+
+#: views:measures_record:page_2:field:views_entity_node:delete_node:text
+msgctxt "measures_record:page_2:field:views_entity_node:delete_node:text"
+msgid "Delete"
+msgstr "Eliminar"
+
+#: views:measures_record:page_2:field:views:nothing_2:label
+msgctxt "measures_record:page_2:field:views:nothing_2:label"
+msgid "Operations"
+msgstr "Operaciones"
+
+#: views:measures_record:page_3:display_title
+msgctxt "measures_record:page_3:display_title"
+msgid "Empty Treatments"
+msgstr "Sesiones Vacías"
+
+#: views:measures_record:page_3:field:node:title:label
+msgctxt "measures_record:page_3:field:node:title:label"
+msgid "Name"
+msgstr "Nombre"
+
+#: views:measures_record:page_3:field:views:nothing_1:label
+msgctxt "measures_record:page_3:field:views:nothing_1:label"
+msgid "Sessions"
+msgstr "Sesiones"
+
+#: views:measures_record:page_3:field:views:nothing:label
+msgctxt "measures_record:page_3:field:views:nothing:label"
+msgid "Measures & Comments"
+msgstr "Medidas y comentarios"
+
+#: views:measures_record:page_3:field:views_entity_node:delete_node:label
+msgctxt "measures_record:page_3:field:views_entity_node:delete_node:label"
+msgid "Operations"
+msgstr "Operaciones"
+
+#: views:measures_record:page_3:field:views_entity_node:delete_node:text
+msgctxt "measures_record:page_3:field:views_entity_node:delete_node:text"
+msgid "Delete"
+msgstr "Eliminar"
 
