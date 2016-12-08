@@ -151,7 +151,6 @@ $handler->display->display_options['defaults']['fields'] = FALSE;
 $handler->display->display_options['fields']['rd_f_treat_date_time']['id'] = 'rd_f_treat_date_time';
 $handler->display->display_options['fields']['rd_f_treat_date_time']['table'] = 'field_data_rd_f_treat_date_time';
 $handler->display->display_options['fields']['rd_f_treat_date_time']['field'] = 'rd_f_treat_date_time';
-$handler->display->display_options['fields']['rd_f_treat_date_time']['exclude'] = TRUE;
 $handler->display->display_options['fields']['rd_f_treat_date_time']['settings'] = array(
   'format_type' => 'short',
   'fromto' => 'both',
@@ -163,7 +162,6 @@ $handler->display->display_options['fields']['rd_f_treat_date_time']['settings']
 $handler->display->display_options['fields']['rd_f_treat_related_pract']['id'] = 'rd_f_treat_related_pract';
 $handler->display->display_options['fields']['rd_f_treat_related_pract']['table'] = 'field_data_rd_f_treat_related_pract';
 $handler->display->display_options['fields']['rd_f_treat_related_pract']['field'] = 'rd_f_treat_related_pract';
-$handler->display->display_options['fields']['rd_f_treat_related_pract']['exclude'] = TRUE;
 $handler->display->display_options['fields']['rd_f_treat_related_pract']['settings'] = array(
   'link' => 0,
 );
@@ -171,15 +169,15 @@ $handler->display->display_options['fields']['rd_f_treat_related_pract']['settin
 $handler->display->display_options['fields']['rd_f_access_treat_centre']['id'] = 'rd_f_access_treat_centre';
 $handler->display->display_options['fields']['rd_f_access_treat_centre']['table'] = 'field_data_rd_f_access_treat_centre';
 $handler->display->display_options['fields']['rd_f_access_treat_centre']['field'] = 'rd_f_access_treat_centre';
-$handler->display->display_options['fields']['rd_f_access_treat_centre']['exclude'] = TRUE;
 $handler->display->display_options['fields']['rd_f_access_treat_centre']['type'] = 'taxonomy_term_reference_plain';
 /* Field: Global: Custom text */
 $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
 $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
 $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
 $handler->display->display_options['fields']['nothing_1']['label'] = 'Sessions';
-$handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<b>[rd_f_treat_date_time]</b><br>
-[rd_f_treat_related_pract]<br>
+$handler->display->display_options['fields']['nothing_1']['exclude'] = TRUE;
+$handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<b>[rd_f_treat_date_time]</b> -
+[rd_f_treat_related_pract] -
 [rd_f_access_treat_centre]';
 /* Field: Content: Initial Comments */
 $handler->display->display_options['fields']['rd_f_treat_ini_comments']['id'] = 'rd_f_treat_ini_comments';
