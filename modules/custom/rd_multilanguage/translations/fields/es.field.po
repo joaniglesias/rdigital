@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2016-12-06 13:17+0100\n"
-"PO-Revision-Date: 2016-12-06 13:17+0100\n"
+"POT-Creation-Date: 2016-12-08 08:35+0100\n"
+"PO-Revision-Date: 2016-12-08 08:35+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -58,11 +58,6 @@ msgctxt "rd_f_forms_question_1:#field:label"
 msgid "Question 1"
 msgstr ""
 
-#: field:rd_f_patient_name:#field:label
-msgctxt "rd_f_patient_name:#field:label"
-msgid "Name"
-msgstr ""
-
 #: field:rd_f_patient_genre:#field:label
 msgctxt "rd_f_patient_genre:#field:label"
 msgid "Genre"
@@ -93,11 +88,6 @@ msgctxt "rd_f_patient_recommended:#field:label"
 msgid "Recommended by"
 msgstr ""
 
-#: field:rd_f_patient_notes:#field:label
-msgctxt "rd_f_patient_notes:#field:label"
-msgid "Notes"
-msgstr ""
-
 #: field:rd_f_patient_appo_type:#field:label
 msgctxt "rd_f_patient_appo_type:#field:label"
 msgid "Appointment Type"
@@ -111,16 +101,6 @@ msgstr ""
 #: field:rd_f_patient_a_therapies:#field:label
 msgctxt "rd_f_patient_a_therapies:#field:label"
 msgid "Alternative Therapies"
-msgstr ""
-
-#: field:rd_f_patient_name:rd_ct_patient:label
-msgctxt "rd_f_patient_name:rd_ct_patient:label"
-msgid "Name"
-msgstr ""
-
-#: field:rd_f_patient_notes:rd_ct_patient:label
-msgctxt "rd_f_patient_notes:rd_ct_patient:label"
-msgid "Notes"
 msgstr ""
 
 #: field:rd_f_treat_related_patient:#field:label
@@ -178,31 +158,6 @@ msgctxt "rd_f_treat_fin_comments:rd_ct_treatment:label"
 msgid "Final Comments"
 msgstr ""
 
-#: field:rd_f_access_key:#field:label
-msgctxt "rd_f_access_key:#field:label"
-msgid "Access Key"
-msgstr ""
-
-#: field:rd_f_access_key:rd_ct_patient:label
-msgctxt "rd_f_access_key:rd_ct_patient:label"
-msgid "Access Key"
-msgstr ""
-
-#: field:rd_f_access_key:user:label
-msgctxt "rd_f_access_key:user:label"
-msgid "Access Key"
-msgstr ""
-
-#: field:rd_f_patient_incidences:#field:label
-msgctxt "rd_f_patient_incidences:#field:label"
-msgid "Incidences"
-msgstr ""
-
-#: field:rd_f_patient_incidences:rd_ct_patient:label
-msgctxt "rd_f_patient_incidences:rd_ct_patient:label"
-msgid "Incidences"
-msgstr ""
-
 #: field:rd_f_keyb_button_cover_name:#field:label
 msgctxt "rd_f_keyb_button_cover_name:#field:label"
 msgid "Button Cover's Name"
@@ -243,10 +198,15 @@ msgctxt "rd_f_forms_question_1:formulario_tabaco_test:label"
 msgid "Question 1"
 msgstr "Pregunta 1"
 
+#: field:rd_f_patient_name:#field:label
+msgctxt "rd_f_patient_name:#field:label"
+msgid "Name"
+msgstr "Nombre"
+
 #: field:rd_f_patient_first_surname:#field:label
 msgctxt "rd_f_patient_first_surname:#field:label"
 msgid "First Surename"
-msgstr "Primer Cognom"
+msgstr "Primer Apellido"
 
 #: field:rd_f_patient_second_surname:#field:label
 msgctxt "rd_f_patient_second_surname:#field:label"
@@ -257,6 +217,11 @@ msgstr "Segundo Apellido"
 msgctxt "rd_f_patient_excel_number:#field:label"
 msgid "Patient Number (Excel)"
 msgstr "Número del Paciente (Excel)"
+
+#: field:rd_f_patient_notes:#field:label
+msgctxt "rd_f_patient_notes:#field:label"
+msgid "Notes"
+msgstr "Notas"
 
 #: field:rd_f_patient_tried_before:#field:label
 msgctxt "rd_f_patient_tried_before:#field:label"
@@ -273,10 +238,15 @@ msgctxt "rd_f_patient_o_symptoms:#field:label"
 msgid "Other Symptoms"
 msgstr "Síntomas"
 
+#: field:rd_f_patient_name:rd_ct_patient:label
+msgctxt "rd_f_patient_name:rd_ct_patient:label"
+msgid "Name"
+msgstr "Nombre"
+
 #: field:rd_f_patient_first_surname:rd_ct_patient:label
 msgctxt "rd_f_patient_first_surname:rd_ct_patient:label"
 msgid "First Surename"
-msgstr "Primer Cognom"
+msgstr "Primer Apellido"
 
 #: field:rd_f_patient_second_surname:rd_ct_patient:label
 msgctxt "rd_f_patient_second_surname:rd_ct_patient:label"
@@ -317,6 +287,11 @@ msgstr "Profesión"
 msgctxt "rd_f_patient_recommended:rd_ct_patient:label"
 msgid "Recommended by"
 msgstr "Viene por"
+
+#: field:rd_f_patient_notes:rd_ct_patient:label
+msgctxt "rd_f_patient_notes:rd_ct_patient:label"
+msgid "Notes"
+msgstr "Notas"
 
 #: field:rd_f_patient_appo_type:rd_ct_patient:label
 msgctxt "rd_f_patient_appo_type:rd_ct_patient:label"
@@ -368,15 +343,30 @@ msgctxt "rd_f_access_treat_centre:#field:label"
 msgid "Centre"
 msgstr "Centro"
 
+#: field:rd_f_access_key:#field:label
+msgctxt "rd_f_access_key:#field:label"
+msgid "Access Key"
+msgstr "Claves de Acceso"
+
 #: field:rd_f_access_patient_centre:rd_ct_patient:label
 msgctxt "rd_f_access_patient_centre:rd_ct_patient:label"
 msgid "Centre"
 msgstr "Centro"
 
+#: field:rd_f_access_key:rd_ct_patient:label
+msgctxt "rd_f_access_key:rd_ct_patient:label"
+msgid "Access Key"
+msgstr "Claves de Acceso"
+
 #: field:rd_f_access_user_centre:user:label
 msgctxt "rd_f_access_user_centre:user:label"
 msgid "Centre"
 msgstr "Centro"
+
+#: field:rd_f_access_key:user:label
+msgctxt "rd_f_access_key:user:label"
+msgid "Access Key"
+msgstr "Claves de Acceso"
 
 #: field:rd_f_access_treat_centre:rd_ct_treatment:label
 msgctxt "rd_f_access_treat_centre:rd_ct_treatment:label"
@@ -452,6 +442,16 @@ msgstr "Tipo de boton"
 msgctxt "rd_f_keyb_button_vocabulary:rd_ct_keyboard_button:label"
 msgid "Button Related Vocabulary"
 msgstr "Vocabulario relacionado con el botob"
+
+#: field:rd_f_patient_incidences:#field:label
+msgctxt "rd_f_patient_incidences:#field:label"
+msgid "Incidences"
+msgstr "Incidencias"
+
+#: field:rd_f_patient_incidences:rd_ct_patient:label
+msgctxt "rd_f_patient_incidences:rd_ct_patient:label"
+msgid "Incidences"
+msgstr "Incidencias"
 
 #: field:rd_f_forms_question_1:formulario_tabaco_test:label
 msgctxt "rd_f_forms_question_1:formulario_tabaco_test:label"
