@@ -8,7 +8,21 @@ $page->task = 'page';
 $page->admin_title = 'Patient';
 $page->admin_description = '';
 $page->path = 'patient/%patient_nid';
-$page->access = array();
+$page->access = array(
+  'plugins' => array(
+    0 => array(
+      'name' => 'role',
+      'settings' => array(
+        'rids' => array(
+          0 => 2,
+        ),
+      ),
+      'context' => 'logged-in-user',
+      'not' => FALSE,
+    ),
+  ),
+  'logic' => 'and',
+);
 $page->menu = array();
 $page->arguments = array(
   'patient_nid' => array(
