@@ -137,6 +137,7 @@ function _get_roles_and_permissions_access() {
       'edit any rd_ct_treatment content',
       'edit own rd_ct_treatment content',
       'use editablefields',
+      'access user profiles',
       ),
     );
 
