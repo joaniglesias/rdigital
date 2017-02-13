@@ -130,6 +130,7 @@ function _get_roles_and_permissions_access() {
       'edit any rd_ct_treatment content',
       'delete any rd_ct_treatment content',
       'use editablefields',
+      'bypass node access',
       ),
     'Practicioner' => array(
       'create rd_ct_treatment content',
