@@ -7850,11 +7850,13 @@ html.CSS1Compat p { margin: 0px; }
 .view-measures-record .view-treat-ini-comments-text, .view-measures-record .view-treat-measures-text, .view-measures-record .view-treat-fin-comments-text { padding-bottom: 15px; }
 /* line 11, ../scss_components/rdigital_elements/_views.scss */
 .view-measures-record .view-treat-ini-comments-text p, .view-measures-record .view-treat-measures-text p, .view-measures-record .view-treat-fin-comments-text p { margin: 0px; }
+/* line 15, ../scss_components/rdigital_elements/_views.scss */
+.view-measures-record .view-header { float: left; padding-right: 80px; padding-top: 34px; }
 
-/* line 19, ../scss_components/rdigital_elements/_views.scss */
+/* line 24, ../scss_components/rdigital_elements/_views.scss */
 .view-measures-record.view-display-id-page_1 .view-header { font-size: 20px; padding-left: 8px; font-weight: bold; }
 
-/* line 30, ../scss_components/rdigital_elements/_views.scss */
-.view-patients-secretary .table td { padding: 2px; padding-left: 8px; }
 /* line 35, ../scss_components/rdigital_elements/_views.scss */
+.view-patients-secretary .table td { padding: 2px; padding-left: 8px; }
+/* line 40, ../scss_components/rdigital_elements/_views.scss */
 .view-patients-secretary #edit-rd-f-patient-incidences-value-wrapper { display: block !important; }

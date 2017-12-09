@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2016-12-08 12:22+0100\n"
-"PO-Revision-Date: 2016-12-08 12:22+0100\n"
+"POT-Creation-Date: 2017-12-09 09:08+0100\n"
+"PO-Revision-Date: 2017-12-09 09:08+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -2482,19 +2482,9 @@ msgid ""
 "[rd_f_access_treat_centre]"
 msgstr ""
 
-#: views:measures_record:page_1:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label
-msgctxt "measures_record:page_1:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label"
-msgid "Initial Comments"
-msgstr ""
-
 #: views:measures_record:page_1:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label
 msgctxt "measures_record:page_1:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label"
 msgid "Measures"
-msgstr ""
-
-#: views:measures_record:page_1:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label
-msgctxt "measures_record:page_1:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label"
-msgid "Final Comments"
 msgstr ""
 
 #: views:measures_record:page_1:field:views:nothing:label
@@ -2775,19 +2765,9 @@ msgid ""
 "[rd_f_access_treat_centre]"
 msgstr ""
 
-#: views:measures_record:page_2:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label
-msgctxt "measures_record:page_2:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label"
-msgid "Initial Comments"
-msgstr ""
-
 #: views:measures_record:page_2:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label
 msgctxt "measures_record:page_2:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label"
 msgid "Measures"
-msgstr ""
-
-#: views:measures_record:page_2:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label
-msgctxt "measures_record:page_2:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label"
-msgid "Final Comments"
 msgstr ""
 
 #: views:measures_record:page_2:field:views:nothing:alter:text
@@ -2903,11 +2883,6 @@ msgid ""
 "[rd_f_access_treat_centre]"
 msgstr ""
 
-#: views:measures_record:page_3:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label
-msgctxt "measures_record:page_3:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label"
-msgid "Initial Comments"
-msgstr ""
-
 #: views:measures_record:page_3:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label
 msgctxt "measures_record:page_3:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label"
 msgid "Measures"
@@ -2921,9 +2896,94 @@ msgstr ""
 #: views:measures_record:page_3:field:views:nothing:alter:text
 msgctxt "measures_record:page_3:field:views:nothing:alter:text"
 msgid ""
-"[rd_f_treat_ini_comments] - \n"
-"[rd_f_treat_measures] - \n"
-"[rd_f_treat_fin_comments] - "
+"[rd_f_treat_ini_comments]\n"
+"[rd_f_treat_measures]\n"
+"[rd_f_treat_fin_comments]"
+msgstr ""
+
+#: views:measures_record:page_3:field:node:nid:label
+msgctxt "measures_record:page_3:field:node:nid:label"
+msgid "Nid"
+msgstr ""
+
+#: views:measures_record:page_3:field:views:nothing_2:alter:alt
+msgctxt "measures_record:page_3:field:views:nothing_2:alter:alt"
+msgid "See Patient"
+msgstr ""
+
+#: views:measures_record:page_3:field:views:nothing_3:alter:text
+msgctxt "measures_record:page_3:field:views:nothing_3:alter:text"
+msgid "[nothing_2]&nbsp;&nbsp;[delete_node]"
+msgstr ""
+
+#: views:measures_record:page_3:relationship:field_data_rd_f_treat_related_patient:rd_f_treat_related_patient_target_id:label
+msgctxt "measures_record:page_3:relationship:field_data_rd_f_treat_related_patient:rd_f_treat_related_patient_target_id:label"
+msgid "Content entity referenced from rd_f_treat_related_patient"
+msgstr ""
+
+#: views:measures_record:page_3:filter:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments_value:expose:label
+msgctxt "measures_record:page_3:filter:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments_value:expose:label"
+msgid "Final Comments (rd_f_treat_fin_comments)"
+msgstr ""
+
+#: views:measures_record:page_3:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:alter:text
+msgctxt "measures_record:page_3:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:alter:text"
+msgid "C"
+msgstr ""
+
+#: views:measures_record:page_3:field:field_data_rd_f_treat_measures:rd_f_treat_measures:alter:text
+msgctxt "measures_record:page_3:field:field_data_rd_f_treat_measures:rd_f_treat_measures:alter:text"
+msgid "M"
+msgstr ""
+
+#: views:measures_record:page_3:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:alter:text
+msgctxt "measures_record:page_3:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:alter:text"
+msgid "C"
+msgstr ""
+
+#: views:measures_record:page_3:header:views:area_text_custom:label
+msgctxt "measures_record:page_3:header:views:area_text_custom:label"
+msgid "hola"
+msgstr ""
+
+#: views:measures_record:page_3:header:views:area_text_custom:content
+msgctxt "measures_record:page_3:header:views:area_text_custom:content"
+msgid "Hola"
+msgstr ""
+
+#: views:measures_record:page_3:header:views:area_text_custom_1:content
+msgctxt "measures_record:page_3:header:views:area_text_custom_1:content"
+msgid "[nothing_4] [nothing_5] [nothing_6]"
+msgstr ""
+
+#: views:measures_record:page_3:filter:views:combine:expose:label
+msgctxt "measures_record:page_3:filter:views:combine:expose:label"
+msgid "Combine fields filter"
+msgstr ""
+
+#: views:measures_record:page_3:filter:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments_value_1:group_info:label
+msgctxt "measures_record:page_3:filter:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments_value_1:group_info:label"
+msgid "Initial Comments"
+msgstr ""
+
+#: views:measures_record:page_3:filter:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments_value_1:expose:label
+msgctxt "measures_record:page_3:filter:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments_value_1:expose:label"
+msgid "Final Comments (rd_f_treat_fin_comments)"
+msgstr ""
+
+#: views:measures_record:page_3:filter:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments_value_1:group_info:label
+msgctxt "measures_record:page_3:filter:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments_value_1:group_info:label"
+msgid "Final Comments"
+msgstr ""
+
+#: views:measures_record:page_3:field:views:nothing_5:label
+msgctxt "measures_record:page_3:field:views:nothing_5:label"
+msgid "Only Measures"
+msgstr ""
+
+#: views:measures_record:page_3:field:views:nothing_6:label
+msgctxt "measures_record:page_3:field:views:nothing_6:label"
+msgid "All"
 msgstr ""
 
 #: views:glossary:default:field:node:title:label
@@ -3641,6 +3701,16 @@ msgctxt "measures_record:page_1:field:views:nothing_1:label"
 msgid "Sessions"
 msgstr "Sesiones"
 
+#: views:measures_record:page_1:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label
+msgctxt "measures_record:page_1:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label"
+msgid "Initial Comments"
+msgstr "Comentarios Iniciales"
+
+#: views:measures_record:page_1:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label
+msgctxt "measures_record:page_1:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label"
+msgid "Final Comments"
+msgstr "Comentarios Finales"
+
 #: views:patients_secretary:default:field:views:nothing_1:label
 msgctxt "patients_secretary:default:field:views:nothing_1:label"
 msgid "Sessions"
@@ -3731,6 +3801,16 @@ msgctxt "measures_record:page_2:field:views:nothing_1:label"
 msgid "Sessions"
 msgstr "Sesiones"
 
+#: views:measures_record:page_2:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label
+msgctxt "measures_record:page_2:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label"
+msgid "Initial Comments"
+msgstr "Comentarios Iniciales"
+
+#: views:measures_record:page_2:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label
+msgctxt "measures_record:page_2:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label"
+msgid "Final Comments"
+msgstr "Comentarios Finales"
+
 #: views:measures_record:page_2:field:views:nothing:label
 msgctxt "measures_record:page_2:field:views:nothing:label"
 msgid "Measures & Comments"
@@ -3766,6 +3846,11 @@ msgctxt "measures_record:page_3:field:views:nothing_1:label"
 msgid "Sessions"
 msgstr "Sesiones"
 
+#: views:measures_record:page_3:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label
+msgctxt "measures_record:page_3:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label"
+msgid "Initial Comments"
+msgstr "Comentarios Iniciales"
+
 #: views:measures_record:page_3:field:views:nothing:label
 msgctxt "measures_record:page_3:field:views:nothing:label"
 msgid "Measures & Comments"
@@ -3773,11 +3858,366 @@ msgstr "Medidas y comentarios"
 
 #: views:measures_record:page_3:field:views_entity_node:delete_node:label
 msgctxt "measures_record:page_3:field:views_entity_node:delete_node:label"
-msgid "Operations"
+msgid "Delete"
 msgstr "Operaciones"
 
 #: views:measures_record:page_3:field:views_entity_node:delete_node:text
 msgctxt "measures_record:page_3:field:views_entity_node:delete_node:text"
 msgid "Delete"
 msgstr "Eliminar"
+
+#: views:glossary:default:field:node:title:label
+msgctxt "glossary:default:field:node:title:label"
+msgid "Title"
+msgstr "Nombre"
+
+#: views:measures_record:default:field:views:nothing_1:label
+msgctxt "measures_record:default:field:views:nothing_1:label"
+msgid "Sessions"
+msgstr "Sesiones"
+
+#: views:measures_record:default:field:views:nothing:label
+msgctxt "measures_record:default:field:views:nothing:label"
+msgid "Measures & Comments"
+msgstr "Medidas y comentarios"
+
+#: views:buttons:default:field:node:title:label
+msgctxt "buttons:default:field:node:title:label"
+msgid "Title"
+msgstr "Nombre"
+
+#: views:measures_record:default:use_more_text
+msgctxt "measures_record:default:use_more_text"
+msgid "more"
+msgstr "más"
+
+#: views:measures_record:default:exposed_form:submit_button
+msgctxt "measures_record:default:exposed_form:submit_button"
+msgid "Apply"
+msgstr "Aplicar"
+
+#: views:measures_record:default:exposed_form:reset_button_label
+msgctxt "measures_record:default:exposed_form:reset_button_label"
+msgid "Reset"
+msgstr "Reiniciar"
+
+#: views:measures_record:default:exposed_form:exposed_sorts_label
+msgctxt "measures_record:default:exposed_form:exposed_sorts_label"
+msgid "Sort by"
+msgstr "Ordenar por"
+
+#: views:measures_record:default:pager:expose:items_per_page_label
+msgctxt "measures_record:default:pager:expose:items_per_page_label"
+msgid "Items per page"
+msgstr "Elementos por página"
+
+#: views:measures_record:default:pager:expose:items_per_page_options_all_label
+msgctxt "measures_record:default:pager:expose:items_per_page_options_all_label"
+msgid "- All -"
+msgstr "- Todos -"
+
+#: views:measures_record:default:pager:expose:offset_label
+msgctxt "measures_record:default:pager:expose:offset_label"
+msgid "Offset"
+msgstr "Desplazamiento"
+
+#: views:measures_record:default:pager:tags:first
+msgctxt "measures_record:default:pager:tags:first"
+msgid "« first"
+msgstr "« primera"
+
+#: views:measures_record:default:pager:tags:previous
+msgctxt "measures_record:default:pager:tags:previous"
+msgid "‹ previous"
+msgstr "‹ anterior"
+
+#: views:measures_record:default:pager:tags:next
+msgctxt "measures_record:default:pager:tags:next"
+msgid "next ›"
+msgstr "siguiente ›"
+
+#: views:measures_record:default:pager:tags:last
+msgctxt "measures_record:default:pager:tags:last"
+msgid "last »"
+msgstr "última »"
+
+#: views:measures_record:default:field:field_data_rd_f_access_treat_centre:rd_f_access_treat_centre:label
+msgctxt "measures_record:default:field:field_data_rd_f_access_treat_centre:rd_f_access_treat_centre:label"
+msgid "Centre"
+msgstr "Centro"
+
+#: views:measures_record:default:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label
+msgctxt "measures_record:default:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label"
+msgid "Initial Comments"
+msgstr "Comentarios Iniciales"
+
+#: views:measures_record:default:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label
+msgctxt "measures_record:default:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label"
+msgid "Measures"
+msgstr "Medidas"
+
+#: views:measures_record:default:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label
+msgctxt "measures_record:default:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label"
+msgid "Final Comments"
+msgstr "Comentarios Finales"
+
+#: views:measures_record:default:argument:field_data_rd_f_treat_related_patient:rd_f_treat_related_patient_target_id:exception:title
+msgctxt "measures_record:default:argument:field_data_rd_f_treat_related_patient:rd_f_treat_related_patient_target_id:exception:title"
+msgid "All"
+msgstr "Todo(s)"
+
+#: views:measures_record:page:use_more_text
+msgctxt "measures_record:page:use_more_text"
+msgid "more"
+msgstr "más"
+
+#: views:measures_record:page:exposed_form:submit_button
+msgctxt "measures_record:page:exposed_form:submit_button"
+msgid "Apply"
+msgstr "Aplicar"
+
+#: views:measures_record:page:exposed_form:reset_button_label
+msgctxt "measures_record:page:exposed_form:reset_button_label"
+msgid "Reset"
+msgstr "Reiniciar"
+
+#: views:measures_record:page:exposed_form:exposed_sorts_label
+msgctxt "measures_record:page:exposed_form:exposed_sorts_label"
+msgid "Sort by"
+msgstr "Ordenar por"
+
+#: views:measures_record:page:pager:expose:items_per_page_label
+msgctxt "measures_record:page:pager:expose:items_per_page_label"
+msgid "Items per page"
+msgstr "Elementos por página"
+
+#: views:measures_record:page:pager:expose:items_per_page_options_all_label
+msgctxt "measures_record:page:pager:expose:items_per_page_options_all_label"
+msgid "- All -"
+msgstr "- Todos -"
+
+#: views:measures_record:page:pager:expose:offset_label
+msgctxt "measures_record:page:pager:expose:offset_label"
+msgid "Offset"
+msgstr "Desplazamiento"
+
+#: views:measures_record:page:pager:tags:first
+msgctxt "measures_record:page:pager:tags:first"
+msgid "« first"
+msgstr "« primera"
+
+#: views:measures_record:page:pager:tags:previous
+msgctxt "measures_record:page:pager:tags:previous"
+msgid "‹ previous"
+msgstr "‹ anterior"
+
+#: views:measures_record:page:pager:tags:next
+msgctxt "measures_record:page:pager:tags:next"
+msgid "next ›"
+msgstr "siguiente ›"
+
+#: views:measures_record:page:pager:tags:last
+msgctxt "measures_record:page:pager:tags:last"
+msgid "last »"
+msgstr "última »"
+
+#: views:patients_secretary:default:title
+msgctxt "patients_secretary:default:title"
+msgid "Patients"
+msgstr "Patients Secretary"
+
+#: views:patients_secretary:default:field:node:title:label
+msgctxt "patients_secretary:default:field:node:title:label"
+msgid "Name"
+msgstr "Nombre"
+
+#: views:patients_secretary:default:field:views_entity_node:delete_node:label
+msgctxt "patients_secretary:default:field:views_entity_node:delete_node:label"
+msgid "Delete"
+msgstr "Eliminar"
+
+#: views:patients_secretary:default:field:views_entity_node:edit_node:label
+msgctxt "patients_secretary:default:field:views_entity_node:edit_node:label"
+msgid "Edit"
+msgstr "Editar"
+
+#: views:patients_secretary:page:use_more_text
+msgctxt "patients_secretary:page:use_more_text"
+msgid "more"
+msgstr "more"
+
+#: views:patients_secretary:default:field:field_data_rd_f_patient_dob:rd_f_patient_dob:label
+msgctxt "patients_secretary:default:field:field_data_rd_f_patient_dob:rd_f_patient_dob:label"
+msgid "DOB"
+msgstr "Nació"
+
+#: views:patients_secretary:default:field:views_entity_node:edit_node:text
+msgctxt "patients_secretary:default:field:views_entity_node:edit_node:text"
+msgid "Edit"
+msgstr "Editar"
+
+#: views:patients_secretary:default:filter:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number_value:expose:label
+msgctxt "patients_secretary:default:filter:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number_value:expose:label"
+msgid "Number"
+msgstr "Número"
+
+#: views:patients_secretary:default:filter:node:title:expose:label
+msgctxt "patients_secretary:default:filter:node:title:expose:label"
+msgid "Name"
+msgstr "Nombre"
+
+#: views:patients_secretary:default:filter:field_data_rd_f_patient_incidences:rd_f_patient_incidences_value:expose:label
+msgctxt "patients_secretary:default:filter:field_data_rd_f_patient_incidences:rd_f_patient_incidences_value:expose:label"
+msgid "Incidences"
+msgstr "Incidencias"
+
+#: views:patients_secretary:default:sort:node:title:expose:label
+msgctxt "patients_secretary:default:sort:node:title:expose:label"
+msgid "Title"
+msgstr "Nombre"
+
+#: views:measures_record:page_1:title
+msgctxt "measures_record:page_1:title"
+msgid "Sessions - [title]"
+msgstr "Sesiones - [title]"
+
+#: views:measures_record:page_1:field:views:nothing_1:label
+msgctxt "measures_record:page_1:field:views:nothing_1:label"
+msgid "Sessions"
+msgstr "Sesiones"
+
+#: views:patients_secretary:default:field:views:nothing_1:label
+msgctxt "patients_secretary:default:field:views:nothing_1:label"
+msgid "Sessions"
+msgstr "Sesiones"
+
+#: views:patients_secretary:default:field:views:nothing_1:alter:text
+msgctxt "patients_secretary:default:field:views:nothing_1:alter:text"
+msgid "Sessions"
+msgstr "Sesiones"
+
+#: views:patients_secretary:default:field:views:nothing_2:label
+msgctxt "patients_secretary:default:field:views:nothing_2:label"
+msgid "Operations"
+msgstr "Operaciones"
+
+#: views:patients_secretary:page_1:field:node:title:label
+msgctxt "patients_secretary:page_1:field:node:title:label"
+msgid "Name"
+msgstr "Nombre"
+
+#: views:patients_secretary:page_1:field:field_data_rd_f_patient_interest:rd_f_patient_interest:label
+msgctxt "patients_secretary:page_1:field:field_data_rd_f_patient_interest:rd_f_patient_interest:label"
+msgid "Interest"
+msgstr "Interés"
+
+#: views:patients_secretary:page_1:sort:node:title:expose:label
+msgctxt "patients_secretary:page_1:sort:node:title:expose:label"
+msgid "Title"
+msgstr "Nombre"
+
+#: views:patients_secretary:page:field:field_data_rd_f_patient_dob:rd_f_patient_dob:label
+msgctxt "patients_secretary:page:field:field_data_rd_f_patient_dob:rd_f_patient_dob:label"
+msgid "DOB"
+msgstr "Nació el"
+
+#: views:patients_secretary:page:field:node:title:label
+msgctxt "patients_secretary:page:field:node:title:label"
+msgid "Name"
+msgstr "Nombre"
+
+#: views:patients_secretary:page:field:views:nothing_2:label
+msgctxt "patients_secretary:page:field:views:nothing_2:label"
+msgid "Operations"
+msgstr "Operaciones"
+
+#: views:patients_secretary:page:sort:node:title:expose:label
+msgctxt "patients_secretary:page:sort:node:title:expose:label"
+msgid "Name"
+msgstr "Nombre"
+
+#: views:measures_record:page_2:field:views:nothing_1:label
+msgctxt "measures_record:page_2:field:views:nothing_1:label"
+msgid "Sessions"
+msgstr "Sesiones"
+
+#: views:measures_record:page_2:field:views:nothing:label
+msgctxt "measures_record:page_2:field:views:nothing:label"
+msgid "Measures & Comments"
+msgstr "Medidas y comentarios"
+
+#: views:measures_record:page_3:field:views:nothing_1:label
+msgctxt "measures_record:page_3:field:views:nothing_1:label"
+msgid "Sessions"
+msgstr "Sesiones"
+
+#: views:measures_record:page_3:field:views:nothing:label
+msgctxt "measures_record:page_3:field:views:nothing:label"
+msgid "Measures & Comments"
+msgstr "Medidas y comentarios"
+
+#: views:measures_record:page_3:field:views:nothing_2:label
+msgctxt "measures_record:page_3:field:views:nothing_2:label"
+msgid "See Patient"
+msgstr "Ver Paciente"
+
+#: views:measures_record:page_3:field:views:nothing_2:alter:text
+msgctxt "measures_record:page_3:field:views:nothing_2:alter:text"
+msgid "See Patient"
+msgstr "Ver Paciente"
+
+#: views:measures_record:page_3:field:views:nothing_3:label
+msgctxt "measures_record:page_3:field:views:nothing_3:label"
+msgid "Operations"
+msgstr "Operaciones"
+
+#: views:measures_record:page_3:filter:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments_value:expose:label
+msgctxt "measures_record:page_3:filter:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments_value:expose:label"
+msgid "Initial Comments (rd_f_treat_ini_comments)"
+msgstr "Comentarios Iniciales"
+
+#: views:measures_record:page_3:filter:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments_value:group_info:label
+msgctxt "measures_record:page_3:filter:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments_value:group_info:label"
+msgid "Final Comments"
+msgstr "Comentarios Finales"
+
+#: views:measures_record:page_3:filter:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments_value:group_info:label
+msgctxt "measures_record:page_3:filter:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments_value:group_info:label"
+msgid "Initial Comments"
+msgstr "Comentarios Iniciales"
+
+#: views:measures_record:page_3:field:views:nothing_4:label
+msgctxt "measures_record:page_3:field:views:nothing_4:label"
+msgid "Only Comments"
+msgstr "Sólo comentarios"
+
+#: views:measures_record:page_3:field:views:nothing_4:alter:text
+msgctxt "measures_record:page_3:field:views:nothing_4:alter:text"
+msgid "Only Comments"
+msgstr "Sólo comentarios"
+
+#: views:measures_record:page_3:filter:views:combine:group_info:label
+msgctxt "measures_record:page_3:filter:views:combine:group_info:label"
+msgid "Comments"
+msgstr "Comentarios"
+
+#: views:measures_record:page_3:filter:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments_value_1:expose:label
+msgctxt "measures_record:page_3:filter:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments_value_1:expose:label"
+msgid "Initial Comments (rd_f_treat_ini_comments)"
+msgstr "Comentarios Iniciales"
+
+#: views:measures_record:page_3:field:views:nothing_5:alter:text
+msgctxt "measures_record:page_3:field:views:nothing_5:alter:text"
+msgid "Only Measures"
+msgstr "Sólo Medidas"
+
+#: views:measures_record:page_3:field:views:nothing_6:alter:text
+msgctxt "measures_record:page_3:field:views:nothing_6:alter:text"
+msgid "All"
+msgstr "Todo"
+
+#: views:measures_record:page_3:field:views_entity_node:delete_node:label
+msgctxt "measures_record:page_3:field:views_entity_node:delete_node:label"
+msgid "Operations"
+msgstr "Operaciones"
 
