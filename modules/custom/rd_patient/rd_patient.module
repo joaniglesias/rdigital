@@ -1,6 +1,32 @@
 <?php
 
 // *******************************************************************************************
+//     PERMISSIONS
+// *******************************************************************************************
+
+/**
+ * Implements hook_permission().
+ */
+function rd_patient_permission() {
+  return array(
+    t('view patient panel patient details region') => array(
+      'title' => t('Patient Panel: View Patient Details region'),
+      'description' => t('Allow to view Patient Details region within patient panel layout'),
+    ),
+
+    t('view patient panel forms region') => array(
+      'title' => t('Patient Panel: View Forms region'),
+      'description' => t('Allow to view Forms region within patient panel layout'),
+    ),
+
+    t('view patient panel actions region') => array(
+      'title' => t('Patient Panel: View Actions region'),
+      'description' => t('Allow to view Actions region within patient panel layout'),
+    ),
+  );
+}
+
+// *******************************************************************************************
 //     VIEWS
 // *******************************************************************************************
 

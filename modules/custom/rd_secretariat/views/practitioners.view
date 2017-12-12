@@ -83,6 +83,11 @@ print_r($user->timezone);
 ?>';
 $handler->display->display_options['fields']['php']['use_php_click_sortable'] = '0';
 $handler->display->display_options['fields']['php']['php_click_sortable'] = '';
+/* Field: User: Roles */
+$handler->display->display_options['fields']['rid']['id'] = 'rid';
+$handler->display->display_options['fields']['rid']['table'] = 'users_roles';
+$handler->display->display_options['fields']['rid']['field'] = 'rid';
+$handler->display->display_options['fields']['rid']['type'] = 'ul';
 /* Field: Global: Custom text */
 $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
 $handler->display->display_options['fields']['nothing']['table'] = 'views';
@@ -90,8 +95,9 @@ $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
 $handler->display->display_options['fields']['nothing']['label'] = 'Operations';
 $handler->display->display_options['fields']['nothing']['alter']['text'] = 'Edit User';
 $handler->display->display_options['fields']['nothing']['alter']['make_link'] = TRUE;
-$handler->display->display_options['fields']['nothing']['alter']['path'] = 'user/[uid]/edit';
+$handler->display->display_options['fields']['nothing']['alter']['path'] = 'user/[uid]/edit?destination=secretariat/practitioners';
 $handler->display->display_options['fields']['nothing']['alter']['alt'] = 'Edit User';
+$handler->display->display_options['fields']['nothing']['alter']['link_class'] = 'btn btn-info';
 /* Sort criterion: User: Name */
 $handler->display->display_options['sorts']['name']['id'] = 'name';
 $handler->display->display_options['sorts']['name']['table'] = 'users';
@@ -102,7 +108,14 @@ $handler->display->display_options['filters']['rid']['table'] = 'users_roles';
 $handler->display->display_options['filters']['rid']['field'] = 'rid';
 $handler->display->display_options['filters']['rid']['value'] = array(
   5 => '5',
+  6 => '6',
 );
+/* Filter criterion: User: The user ID */
+$handler->display->display_options['filters']['uid_raw']['id'] = 'uid_raw';
+$handler->display->display_options['filters']['uid_raw']['table'] = 'users';
+$handler->display->display_options['filters']['uid_raw']['field'] = 'uid_raw';
+$handler->display->display_options['filters']['uid_raw']['operator'] = '!=';
+$handler->display->display_options['filters']['uid_raw']['value']['value'] = '1';
 
 /* Display: Page */
 $handler = $view->new_display('page', 'Page', 'page');
@@ -114,27 +127,3 @@ $handler->display->display_options['menu']['weight'] = '2';
 $handler->display->display_options['menu']['name'] = 'main-menu';
 $handler->display->display_options['menu']['context'] = 0;
 $handler->display->display_options['menu']['context_only_inline'] = 0;
-$translatables['practitioners'] = array(
-  t('Master'),
-  t('Practitioners'),
-  t('more'),
-  t('Apply'),
-  t('Reset'),
-  t('Sort by'),
-  t('Asc'),
-  t('Desc'),
-  t('Items per page'),
-  t('- All -'),
-  t('Offset'),
-  t('« first'),
-  t('‹ previous'),
-  t('next ›'),
-  t('last »'),
-  t('Name'),
-  t('Centre'),
-  t('Access Key'),
-  t('Uid'),
-  t('Operations'),
-  t('Edit User'),
-  t('Page'),
-);

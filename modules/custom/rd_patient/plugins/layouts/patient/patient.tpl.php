@@ -22,7 +22,8 @@
   <div class="panel-group" role="tablist" aria-multiselectable="true">
 
     <!-- Patient Details Region -->
-    <?php $reg_machine_name='patient-details'; ?>
+    <?php $reg_machine_name='patient-details';
+    if (user_access('view patient panel patient details region')) { ?>
     <div class="panel panel-rd-blue">
 
       <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
@@ -60,9 +61,11 @@
         </div>
       </div>
     </div>
+    <? } ?>
 
     <!-- Form Region -->
-    <?php $reg_machine_name='rdforms'; ?>
+    <?php $reg_machine_name='rdforms';
+    if (user_access('view patient panel forms region')) { ?>
     <div class="panel panel-rd-blue">
       <div class="panel-heading clearfix" role="tab" id="heading-<?php print $reg_machine_name; ?>">
         <div class="pull-right">
@@ -84,6 +87,7 @@
         </div>
       </div>
     </div>
+    <? } ?>
 
     <!-- Measures Record Region -->
     <?php $reg_machine_name='measures_record'; ?>
@@ -107,7 +111,8 @@
   <?php //dpm(get_defined_vars()); ?>
 
   <!-- Patient Actions Region -->
-  <?php $reg_machine_name='treatment_actions'; ?>
+  <?php $reg_machine_name='treatment_actions';
+    if (user_access('view patient panel actions region')) { ?>
   <div class="panel panel-default">
     <div class="panel-heading clearfix no-bg panel-padding" role="tab" id="heading-<?php print $reg_machine_name; ?>">
       <div class="pull-right">
@@ -121,6 +126,7 @@
       </h4>
     </div>
   </div>
+  <? } ?>
 
 
 

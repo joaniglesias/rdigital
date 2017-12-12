@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2017-12-09 09:05+0100\n"
-"PO-Revision-Date: 2017-12-09 09:05+0100\n"
+"POT-Creation-Date: 2017-12-12 08:19+0100\n"
+"PO-Revision-Date: 2017-12-12 08:19+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -7374,54 +7374,6 @@ msgstr ""
 
 #: /rdigital/public_html/es/node/95/edit
 msgid "Fecha y Hora del Tratamiento"
-msgstr ""
-
-#: /rdigital/public_html/es/secretariat/patients/empty_treatments
-msgid "Contenido entidad referenciada de rd_f_treat_related_patient"
-msgstr ""
-
-#: /rdigital/public_html/es/secretariat/patients/empty_treatments
-msgid "Log In"
-msgstr ""
-
-#: /rdigital/public_html/es/node/105/edit?destination=patient/54
-msgid "America/Fort_Nelson"
-msgstr ""
-
-#: /rdigital/public_html/es/node/105/edit?destination=patient/54
-msgid "Asia/Atyrau"
-msgstr ""
-
-#: /rdigital/public_html/es/node/105/edit?destination=patient/54
-msgid "Asia/Barnaul"
-msgstr ""
-
-#: /rdigital/public_html/es/node/105/edit?destination=patient/54
-msgid "Asia/Famagusta"
-msgstr ""
-
-#: /rdigital/public_html/es/node/105/edit?destination=patient/54
-msgid "Asia/Tomsk"
-msgstr ""
-
-#: /rdigital/public_html/es/node/105/edit?destination=patient/54
-msgid "Asia/Yangon"
-msgstr ""
-
-#: /rdigital/public_html/es/node/105/edit?destination=patient/54
-msgid "Europe/Astrakhan"
-msgstr ""
-
-#: /rdigital/public_html/es/node/105/edit?destination=patient/54
-msgid "Europe/Kirov"
-msgstr ""
-
-#: /rdigital/public_html/es/node/105/edit?destination=patient/54
-msgid "Europe/Saratov"
-msgstr ""
-
-#: /rdigital/public_html/es/node/105/edit?destination=patient/54
-msgid "Europe/Ulyanovsk"
 msgstr ""
 
 msgid "Rd Admin"
@@ -50496,19 +50448,7 @@ msgstr "No se han encontrado resultados"
 msgid "Empty Treatments"
 msgstr "Sesiones Vacías"
 
-#: /rdigital/public_html/es/secretariat/patients/empty_treatments
-msgid "NOT NULL"
-msgstr "NO NULO"
-
-#: /rdigital/public_html/es/secretariat/patients/empty_treatments
-msgid "NULL"
-msgstr "NULO"
-
-#: /es/secretariat/patients/manage
-msgid "Date Last Treatment"
-msgstr "Última visita"
-
-#: /es/secretariat/patients/manage
-msgid "Treatments"
-msgstr "Tratamientos"
+#: /rdigital/public_html/es/secretariat/access_keys/link
+msgid "Practitioners & Consultants"
+msgstr "Practicantes y Consultantes"
 

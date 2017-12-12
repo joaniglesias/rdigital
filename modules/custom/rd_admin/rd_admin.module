@@ -258,24 +258,27 @@ function _create_update_roles_and_permissions($ct_name){
 
 /**
  * Find user by role name
- * @param  [string] $role_name [description]
+ * @param  [array] $role_array [description]
  * @return [array] Array with this key/value: user_id => user_name
  */
-function _find_users_by_role($role_name){
+function _find_users_by_role($role_array){
   $roles = user_roles();
-  $role_id = array_search($role_name, $roles);
-
-  $query = new EntityFieldQuery();
-  $query->entityCondition('entity_type', 'user')
-    ->addTag('DANGEROUS_ACCESS_CHECK_OPT_OUT');
-  $result = $query->execute();
   $users = array();
-  foreach($result['user'] as $one_user) {
-    $user_record = user_load( $one_user->uid );
-    if( !empty($user_record->roles[$role_id]) ) {
-      $users[$one_user->uid] = $user_record->name;
+  foreach ($role_array as $key => $role_name) {
+      $role_id = array_search($role_name, $roles);
+
+      $query = new EntityFieldQuery();
+      $query->entityCondition('entity_type', 'user')
+        ->addTag('DANGEROUS_ACCESS_CHECK_OPT_OUT');
+      $result = $query->execute();
+
+      foreach($result['user'] as $one_user) {
+        $user_record = user_load( $one_user->uid );
+        if( !empty($user_record->roles[$role_id]) ) {
+          $users[$one_user->uid] = $user_record->name;
+        }
+      }
     }
-  }
 
   return $users;
 }

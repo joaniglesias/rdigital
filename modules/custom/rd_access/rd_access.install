@@ -120,6 +120,7 @@ function _get_roles_and_permissions_access() {
       'access user profiles',
       'administer own user centre',
       'administer users',
+      'administer permissions',
       'allow edit abt field content in node',
       'allow view abt field content in node',
       'create rd_ct_patient content',
@@ -131,6 +132,9 @@ function _get_roles_and_permissions_access() {
       'delete any rd_ct_treatment content',
       'use editablefields',
       'bypass node access',
+      'view patient panel patient details region',
+      'view patient panel forms region',
+      'view patient panel actions region',
       ),
     'Practicioner' => array(
       'create rd_ct_treatment content',
@@ -139,6 +143,12 @@ function _get_roles_and_permissions_access() {
       'edit own rd_ct_treatment content',
       'use editablefields',
       'access user profiles',
+      'view patient panel patient details region',
+      'view patient panel forms region',
+      'view patient panel actions region',
+      ),
+    'Consultant' => array(
+      // just view published content
       ),
     );
 
@@ -413,6 +423,14 @@ function _get_instances_access() {
  * Update permissions
  */
 function rd_access_update_7001() {
+  // update permissions
+  _create_update_roles_and_permissions('access');
+}
+
+/**
+ * Update permissions
+ */
+function rd_access_update_7002() {
   // update permissions
   _create_update_roles_and_permissions('access');
 }
