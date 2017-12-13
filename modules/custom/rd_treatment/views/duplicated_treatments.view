@@ -61,7 +61,7 @@ $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
 $handler->display->display_options['fields']['nothing']['label'] = 'Operations';
 $handler->display->display_options['fields']['nothing']['alter']['text'] = 'See Patient';
 $handler->display->display_options['fields']['nothing']['alter']['make_link'] = TRUE;
-$handler->display->display_options['fields']['nothing']['alter']['path'] = '/patient/[nid]';
+$handler->display->display_options['fields']['nothing']['alter']['path'] = 'patient/[nid]';
 $handler->display->display_options['fields']['nothing']['alter']['link_class'] = 'btn btn-info btn-xs';
 $handler->display->display_options['fields']['nothing']['alter']['target'] = '_blank';
 /* Sort criterion: Content: Post date */
