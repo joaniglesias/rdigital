@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2017-12-13 06:09+0100\n"
-"PO-Revision-Date: 2017-12-13 06:09+0100\n"
+"POT-Creation-Date: 2017-12-13 07:06+0100\n"
+"PO-Revision-Date: 2017-12-13 07:06+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -7390,6 +7390,56 @@ msgstr ""
 
 #: /rdigital/public_html/es/secretariat/patients/duplicated_treatments
 msgid "No duplicated treatments found"
+msgstr ""
+
+#: /rdigital/public_html/es/secretariat/patients/empty_treatments
+msgid ""
+"<b>[rd_f_treat_date_time]</b> -\n"
+"[rd_f_treat_related_pract] -\n"
+"[rd_f_access_treat_centre]"
+msgstr ""
+
+#: /rdigital/public_html/es/secretariat/patients/empty_treatments
+msgid "C"
+msgstr ""
+
+#: /rdigital/public_html/es/secretariat/patients/empty_treatments
+msgid "M"
+msgstr ""
+
+#: /rdigital/public_html/es/secretariat/patients/empty_treatments
+msgid ""
+"[rd_f_treat_ini_comments]\n"
+"[rd_f_treat_measures]\n"
+"[rd_f_treat_fin_comments]"
+msgstr ""
+
+#: /rdigital/public_html/es/secretariat/patients/empty_treatments
+msgid "[nothing_2]&nbsp;&nbsp;[delete_node]"
+msgstr ""
+
+#: /rdigital/public_html/es/secretariat/patients/empty_treatments
+msgid "Only Comments"
+msgstr ""
+
+#: /rdigital/public_html/es/secretariat/patients/empty_treatments
+msgid "Only Measures"
+msgstr ""
+
+#: /rdigital/public_html/es/secretariat/patients/empty_treatments
+msgid "Final Comments (rd_f_treat_fin_comments)"
+msgstr ""
+
+#: /rdigital/public_html/es/secretariat/patients/empty_treatments
+msgid "Initial Comments (rd_f_treat_ini_comments)"
+msgstr ""
+
+#: /rdigital/public_html/es/secretariat/patients/empty_treatments
+msgid "Contenido entidad referenciada de rd_f_treat_related_patient"
+msgstr ""
+
+#: /rdigital/public_html/es/secretariat/patients/empty_treatments
+msgid "[nothing_4] [nothing_5] [nothing_6]"
 msgstr ""
 
 msgid "Rd Admin"
@@ -50479,4 +50529,12 @@ msgstr "Año y mes del Tratamiento"
 #: /rdigital/public_html/es/secretariat/patients/duplicated_treatments
 msgid "Duplicated Treatments"
 msgstr "Sesiones Duplicadas"
+
+#: /rdigital/public_html/es/secretariat/patients/empty_treatments
+msgid "NOT NULL"
+msgstr "NO NULO"
+
+#: /rdigital/public_html/es/secretariat/patients/empty_treatments
+msgid "NULL"
+msgstr "NULO"
 

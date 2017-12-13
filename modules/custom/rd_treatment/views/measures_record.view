@@ -1,6 +1,7 @@
 <?php
 
 $view = new view();
+$view = new view();
 $view->name = 'measures_record';
 $view->description = '';
 $view->tag = 'default';
@@ -12,7 +13,7 @@ $view->disabled = FALSE; /* Edit this to true to make a default view disabled in
 
 /* Display: Master */
 $handler = $view->new_display('default', 'Master', 'default');
-$handler->display->display_options['title'] = 'Measures\' record';
+$handler->display->display_options['title'] = 'Patients';
 $handler->display->display_options['use_more_always'] = FALSE;
 $handler->display->display_options['access']['type'] = 'perm';
 $handler->display->display_options['cache']['type'] = 'none';
@@ -313,7 +314,7 @@ $handler->display->display_options['fields']['title']['exclude'] = TRUE;
 $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
 $handler->display->display_options['path'] = 'sessions/%';
 
-/* Display: Empty Treatments */
+/* Display: Empty Treatments Secretary */
 $handler = $view->new_display('page', 'Empty Treatments Secretary', 'page_3');
 $handler->display->display_options['defaults']['access'] = FALSE;
 $handler->display->display_options['access']['type'] = 'perm';
@@ -461,9 +462,9 @@ $handler->display->display_options['fields']['nothing_4']['alter']['link_class']
 $handler->display->display_options['fields']['nothing_5']['id'] = 'nothing_5';
 $handler->display->display_options['fields']['nothing_5']['table'] = 'views';
 $handler->display->display_options['fields']['nothing_5']['field'] = 'nothing';
-$handler->display->display_options['fields']['nothing_5']['label'] = 'Only Measures';
+$handler->display->display_options['fields']['nothing_5']['label'] = 'No Measures No Comments';
 $handler->display->display_options['fields']['nothing_5']['exclude'] = TRUE;
-$handler->display->display_options['fields']['nothing_5']['alter']['text'] = 'Only Measures';
+$handler->display->display_options['fields']['nothing_5']['alter']['text'] = 'No Measures No Comments';
 $handler->display->display_options['fields']['nothing_5']['alter']['make_link'] = TRUE;
 $handler->display->display_options['fields']['nothing_5']['alter']['path'] = 'secretariat/patients/empty_treatments?combine=All&rd_f_treat_fin_comments_value=1&rd_f_treat_ini_comments_value=1';
 $handler->display->display_options['fields']['nothing_5']['alter']['link_class'] = 'btn btn-success';
@@ -471,9 +472,9 @@ $handler->display->display_options['fields']['nothing_5']['alter']['link_class']
 $handler->display->display_options['fields']['nothing_6']['id'] = 'nothing_6';
 $handler->display->display_options['fields']['nothing_6']['table'] = 'views';
 $handler->display->display_options['fields']['nothing_6']['field'] = 'nothing';
-$handler->display->display_options['fields']['nothing_6']['label'] = 'All';
+$handler->display->display_options['fields']['nothing_6']['label'] = 'No Measures';
 $handler->display->display_options['fields']['nothing_6']['exclude'] = TRUE;
-$handler->display->display_options['fields']['nothing_6']['alter']['text'] = 'All';
+$handler->display->display_options['fields']['nothing_6']['alter']['text'] = 'No Measures';
 $handler->display->display_options['fields']['nothing_6']['alter']['make_link'] = TRUE;
 $handler->display->display_options['fields']['nothing_6']['alter']['path'] = 'secretariat/patients/empty_treatments?combine=All&rd_f_treat_fin_comments_value=All&rd_f_treat_ini_comments_value=All';
 $handler->display->display_options['fields']['nothing_6']['alter']['link_class'] = 'btn btn-success';

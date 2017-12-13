@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2017-12-13 06:10+0100\n"
-"PO-Revision-Date: 2017-12-13 06:10+0100\n"
+"POT-Creation-Date: 2017-12-13 07:06+0100\n"
+"PO-Revision-Date: 2017-12-13 07:06+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -1705,7 +1705,7 @@ msgstr ""
 
 #: views:measures_record:default:title
 msgctxt "measures_record:default:title"
-msgid "Measures' record"
+msgid "Patients"
 msgstr ""
 
 #: views:measures_record:default:exposed_form:sort_asc_label
@@ -2617,16 +2617,6 @@ msgctxt "patients_secretary:page:field:field_data_rd_f_patient_interest:rd_f_pat
 msgid "x"
 msgstr ""
 
-#: views:patients_secretary:page:field:views_entity_node:edit_node:label
-msgctxt "patients_secretary:page:field:views_entity_node:edit_node:label"
-msgid "Edit"
-msgstr ""
-
-#: views:patients_secretary:page:field:views_entity_node:edit_node:text
-msgctxt "patients_secretary:page:field:views_entity_node:edit_node:text"
-msgid "Edit"
-msgstr ""
-
 #: views:patients_secretary:page:field:views_entity_node:delete_node:label
 msgctxt "patients_secretary:page:field:views_entity_node:delete_node:label"
 msgid "Delete"
@@ -2639,11 +2629,6 @@ msgstr ""
 
 #: views:patients_secretary:page:field:views:nothing_1:label
 msgctxt "patients_secretary:page:field:views:nothing_1:label"
-msgid "Sessions"
-msgstr ""
-
-#: views:patients_secretary:page:field:views:nothing_1:alter:text
-msgctxt "patients_secretary:page:field:views:nothing_1:alter:text"
 msgid "Sessions"
 msgstr ""
 
@@ -2775,11 +2760,6 @@ msgid ""
 "class=\"view-treat-fin-comments-text\">[rd_f_treat_fin_comments]</div>"
 msgstr ""
 
-#: views:measures_record:page_2:field:views_entity_node:edit_node:label
-msgctxt "measures_record:page_2:field:views_entity_node:edit_node:label"
-msgid "Edit link"
-msgstr ""
-
 #: views:measures_record:page_2:field:views_entity_node:delete_node:label
 msgctxt "measures_record:page_2:field:views_entity_node:delete_node:label"
 msgid "Delete link"
@@ -2886,11 +2866,6 @@ msgstr ""
 #: views:measures_record:page_3:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label
 msgctxt "measures_record:page_3:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label"
 msgid "Measures"
-msgstr ""
-
-#: views:measures_record:page_3:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label
-msgctxt "measures_record:page_3:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label"
-msgid "Final Comments"
 msgstr ""
 
 #: views:measures_record:page_3:field:views:nothing:alter:text
@@ -3066,11 +3041,6 @@ msgctxt "duplicated_treatments:default:exposed_form:sort_desc_label"
 msgid "Desc"
 msgstr ""
 
-#: views:duplicated_treatments:default:empty:views:area:content
-msgctxt "duplicated_treatments:default:empty:views:area:content"
-msgid "No duplicated treatments found"
-msgstr ""
-
 #: views:duplicated_treatments:default:relationship:node:reverse_rd_f_treat_related_patient_node:label
 msgctxt "duplicated_treatments:default:relationship:node:reverse_rd_f_treat_related_patient_node:label"
 msgid "Related Treatment"
@@ -3146,19 +3116,9 @@ msgctxt "measures_record:page_3:field:views:nothing_2:label"
 msgid "See Patient"
 msgstr ""
 
-#: views:measures_record:page_3:field:views:nothing_2:alter:text
-msgctxt "measures_record:page_3:field:views:nothing_2:alter:text"
-msgid "See Patient"
-msgstr ""
-
 #: views:measures_record:page_3:field:views:nothing_2:alter:alt
 msgctxt "measures_record:page_3:field:views:nothing_2:alter:alt"
 msgid "See Patient"
-msgstr ""
-
-#: views:measures_record:page_3:field:views:nothing_3:label
-msgctxt "measures_record:page_3:field:views:nothing_3:label"
-msgid "Operations"
 msgstr ""
 
 #: views:measures_record:page_3:field:views:nothing_3:alter:text
@@ -3171,29 +3131,14 @@ msgctxt "measures_record:page_3:field:views:nothing_4:label"
 msgid "Only Comments"
 msgstr ""
 
-#: views:measures_record:page_3:field:views:nothing_4:alter:text
-msgctxt "measures_record:page_3:field:views:nothing_4:alter:text"
-msgid "Only Comments"
-msgstr ""
-
 #: views:measures_record:page_3:field:views:nothing_5:label
 msgctxt "measures_record:page_3:field:views:nothing_5:label"
-msgid "Only Measures"
-msgstr ""
-
-#: views:measures_record:page_3:field:views:nothing_5:alter:text
-msgctxt "measures_record:page_3:field:views:nothing_5:alter:text"
-msgid "Only Measures"
+msgid "No Measures No Comments"
 msgstr ""
 
 #: views:measures_record:page_3:field:views:nothing_6:label
 msgctxt "measures_record:page_3:field:views:nothing_6:label"
-msgid "All"
-msgstr ""
-
-#: views:measures_record:page_3:field:views:nothing_6:alter:text
-msgctxt "measures_record:page_3:field:views:nothing_6:alter:text"
-msgid "All"
+msgid "No Measures"
 msgstr ""
 
 #: views:measures_record:page_3:filter:views:combine:expose:label
@@ -3201,19 +3146,9 @@ msgctxt "measures_record:page_3:filter:views:combine:expose:label"
 msgid "Combine fields filter"
 msgstr ""
 
-#: views:measures_record:page_3:filter:views:combine:group_info:label
-msgctxt "measures_record:page_3:filter:views:combine:group_info:label"
-msgid "Comments"
-msgstr ""
-
 #: views:measures_record:page_3:filter:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments_value:expose:label
 msgctxt "measures_record:page_3:filter:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments_value:expose:label"
 msgid "Final Comments (rd_f_treat_fin_comments)"
-msgstr ""
-
-#: views:measures_record:page_3:filter:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments_value:group_info:label
-msgctxt "measures_record:page_3:filter:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments_value:group_info:label"
-msgid "Final Comments"
 msgstr ""
 
 #: views:measures_record:page_3:filter:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments_value:expose:label
@@ -3221,9 +3156,19 @@ msgctxt "measures_record:page_3:filter:field_data_rd_f_treat_ini_comments:rd_f_t
 msgid "Initial Comments (rd_f_treat_ini_comments)"
 msgstr ""
 
-#: views:measures_record:page_3:filter:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments_value:group_info:label
-msgctxt "measures_record:page_3:filter:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments_value:group_info:label"
-msgid "Initial Comments"
+#: views:duplicated_treatments:default:display_title
+msgctxt "duplicated_treatments:default:display_title"
+msgid "Master"
+msgstr ""
+
+#: views:duplicated_treatments:page:display_title
+msgctxt "duplicated_treatments:page:display_title"
+msgid "Page"
+msgstr ""
+
+#: views:duplicated_treatments:default:empty:views:area:content
+msgctxt "duplicated_treatments:default:empty:views:area:content"
+msgid "No duplicated treatments found"
 msgstr ""
 
 #: views:glossary:default:field:node:title:label
@@ -3454,7 +3399,7 @@ msgstr "Ver Paciente"
 #: views:patients_secretary:default:title
 msgctxt "patients_secretary:default:title"
 msgid "Patients"
-msgstr "Patients Secretary"
+msgstr "Pacientes"
 
 #: views:patients_secretary:default:use_more_text
 msgctxt "patients_secretary:default:use_more_text"
@@ -4031,6 +3976,21 @@ msgctxt "patients_secretary:page:field:field_data_rd_f_treat_date_time:rd_f_trea
 msgid "Treatments"
 msgstr "Tratamientos"
 
+#: views:patients_secretary:page:field:views_entity_node:edit_node:label
+msgctxt "patients_secretary:page:field:views_entity_node:edit_node:label"
+msgid "Edit"
+msgstr "Editar"
+
+#: views:patients_secretary:page:field:views_entity_node:edit_node:text
+msgctxt "patients_secretary:page:field:views_entity_node:edit_node:text"
+msgid "Edit"
+msgstr "Editar"
+
+#: views:patients_secretary:page:field:views:nothing_1:alter:text
+msgctxt "patients_secretary:page:field:views:nothing_1:alter:text"
+msgid "Sessions"
+msgstr "Sesiones"
+
 #: views:patients_secretary:page:field:views:nothing_2:label
 msgctxt "patients_secretary:page:field:views:nothing_2:label"
 msgid "Operations"
@@ -4061,6 +4021,11 @@ msgctxt "measures_record:page_2:field:views:nothing:label"
 msgid "Measures & Comments"
 msgstr "Medidas y comentarios"
 
+#: views:measures_record:page_2:field:views_entity_node:edit_node:label
+msgctxt "measures_record:page_2:field:views_entity_node:edit_node:label"
+msgid "Edit link"
+msgstr "Editar"
+
 #: views:measures_record:page_2:field:views_entity_node:edit_node:text
 msgctxt "measures_record:page_2:field:views_entity_node:edit_node:text"
 msgid "Edit"
@@ -4078,7 +4043,7 @@ msgstr "Operaciones"
 
 #: views:measures_record:page_3:display_title
 msgctxt "measures_record:page_3:display_title"
-msgid "Empty Treatments"
+msgid "Empty Treatments Secretary"
 msgstr "Sesiones Vacías"
 
 #: views:measures_record:page_3:field:node:title:label
@@ -4090,6 +4055,11 @@ msgstr "Nombre"
 msgctxt "measures_record:page_3:field:views:nothing_1:label"
 msgid "Sessions"
 msgstr "Sesiones"
+
+#: views:measures_record:page_3:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label
+msgctxt "measures_record:page_3:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label"
+msgid "Final Comments"
+msgstr "Comentarios Finales"
 
 #: views:measures_record:page_3:field:views:nothing:label
 msgctxt "measures_record:page_3:field:views:nothing:label"
@@ -4403,7 +4373,7 @@ msgstr "Operaciones"
 
 #: views:duplicated_treatments:default:title
 msgctxt "duplicated_treatments:default:title"
-msgid "Duplicated Treatments"
+msgid "Patients"
 msgstr "Sesiones Duplicadas"
 
 #: views:duplicated_treatments:default:field:node:title:label
@@ -4430,6 +4400,46 @@ msgstr "Ver Paciente"
 msgctxt "duplicated_treatments:default:filter:field_data_rd_f_treat_date_time:rd_f_treat_date_time_value:expose:label"
 msgid "Treatment Year and Month"
 msgstr "Año y Mes del Tratamiento"
+
+#: views:measures_record:page_3:field:views:nothing_2:alter:text
+msgctxt "measures_record:page_3:field:views:nothing_2:alter:text"
+msgid "See Patient"
+msgstr "Ver Paciente"
+
+#: views:measures_record:page_3:field:views:nothing_3:label
+msgctxt "measures_record:page_3:field:views:nothing_3:label"
+msgid "Operations"
+msgstr "Operaciones"
+
+#: views:measures_record:page_3:field:views:nothing_4:alter:text
+msgctxt "measures_record:page_3:field:views:nothing_4:alter:text"
+msgid "Only Comments"
+msgstr "Sólo Comentarios"
+
+#: views:measures_record:page_3:field:views:nothing_5:alter:text
+msgctxt "measures_record:page_3:field:views:nothing_5:alter:text"
+msgid "No Measures No Comments"
+msgstr "Ni Medidas Ni Comentarios"
+
+#: views:measures_record:page_3:field:views:nothing_6:alter:text
+msgctxt "measures_record:page_3:field:views:nothing_6:alter:text"
+msgid "No Measures"
+msgstr "Sin Medidas"
+
+#: views:measures_record:page_3:filter:views:combine:group_info:label
+msgctxt "measures_record:page_3:filter:views:combine:group_info:label"
+msgid "Comments"
+msgstr "Comentarios"
+
+#: views:measures_record:page_3:filter:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments_value:group_info:label
+msgctxt "measures_record:page_3:filter:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments_value:group_info:label"
+msgid "Final Comments"
+msgstr "Comentarios Finales"
+
+#: views:measures_record:page_3:filter:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments_value:group_info:label
+msgctxt "measures_record:page_3:filter:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments_value:group_info:label"
+msgid "Initial Comments"
+msgstr "Comentarios Iniciales"
 
 #: views:glossary:default:field:node:title:label
 msgctxt "glossary:default:field:node:title:label"
@@ -4670,4 +4680,14 @@ msgstr "Medidas y comentarios"
 msgctxt "measures_record:page_3:field:views_entity_node:delete_node:label"
 msgid "Operations"
 msgstr "Operaciones"
+
+#: views:measures_record:page_3:display_title
+msgctxt "measures_record:page_3:display_title"
+msgid "Empty Treatments"
+msgstr "Sesiones Vacías"
+
+#: views:duplicated_treatments:default:title
+msgctxt "duplicated_treatments:default:title"
+msgid "Duplicated Treatments"
+msgstr "Sesiones Duplicadas"
 
