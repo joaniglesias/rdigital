@@ -270,8 +270,8 @@ $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
 $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
 $handler->display->display_options['fields']['nothing_1']['label'] = 'Sessions';
 $handler->display->display_options['fields']['nothing_1']['exclude'] = TRUE;
-$handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<b>[rd_f_treat_date_time]</b> - 
-[rd_f_treat_related_pract] - 
+$handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<b>[rd_f_treat_date_time]</b> -
+[rd_f_treat_related_pract] -
 [rd_f_access_treat_centre]';
 /* Field: Content: Initial Comments */
 $handler->display->display_options['fields']['rd_f_treat_ini_comments']['id'] = 'rd_f_treat_ini_comments';
@@ -314,7 +314,7 @@ $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
 $handler->display->display_options['path'] = 'sessions/%';
 
 /* Display: Empty Treatments */
-$handler = $view->new_display('page', 'Empty Treatments', 'page_3');
+$handler = $view->new_display('page', 'Empty Treatments Secretary', 'page_3');
 $handler->display->display_options['defaults']['access'] = FALSE;
 $handler->display->display_options['access']['type'] = 'perm';
 $handler->display->display_options['access']['perm'] = 'access secretariat actions';
@@ -375,8 +375,8 @@ $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
 $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
 $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
 $handler->display->display_options['fields']['nothing_1']['label'] = 'Sessions';
-$handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<b>[rd_f_treat_date_time]</b> - 
-[rd_f_treat_related_pract] - 
+$handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<b>[rd_f_treat_date_time]</b> -
+[rd_f_treat_related_pract] -
 [rd_f_access_treat_centre]';
 /* Field: Content: Initial Comments */
 $handler->display->display_options['fields']['rd_f_treat_ini_comments']['id'] = 'rd_f_treat_ini_comments';

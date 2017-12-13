@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2017-12-12 08:19+0100\n"
-"PO-Revision-Date: 2017-12-12 08:19+0100\n"
+"POT-Creation-Date: 2017-12-13 06:09+0100\n"
+"PO-Revision-Date: 2017-12-13 06:09+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -7374,6 +7374,22 @@ msgstr ""
 
 #: /rdigital/public_html/es/node/95/edit
 msgid "Fecha y Hora del Tratamiento"
+msgstr ""
+
+#: /rdigital/public_html/es/secretariat/patients
+msgid "Duplicate Treatments"
+msgstr ""
+
+#: /rdigital/public_html/es/secretariat/patients/duplicated_treatments
+msgid ", "
+msgstr ""
+
+#: /rdigital/public_html/es/secretariat/patients/duplicated_treatments
+msgid "Related Treatment"
+msgstr ""
+
+#: /rdigital/public_html/es/secretariat/patients/duplicated_treatments
+msgid "No duplicated treatments found"
 msgstr ""
 
 msgid "Rd Admin"
@@ -50451,4 +50467,16 @@ msgstr "Sesiones Vacías"
 #: /rdigital/public_html/es/secretariat/access_keys/link
 msgid "Practitioners & Consultants"
 msgstr "Practicantes y Consultantes"
+
+#: /rdigital/public_html/es/secretariat/patients/duplicated_treatments
+msgid "Number of Treatments"
+msgstr "Tratamientos"
+
+#: /rdigital/public_html/es/secretariat/patients/duplicated_treatments
+msgid "Treatment Year and Month"
+msgstr "Año y mes del Tratamiento"
+
+#: /rdigital/public_html/es/secretariat/patients/duplicated_treatments
+msgid "Duplicated Treatments"
+msgstr "Sesiones Duplicadas"
 

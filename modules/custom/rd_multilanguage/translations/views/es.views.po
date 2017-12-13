@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2017-12-12 08:18+0100\n"
-"PO-Revision-Date: 2017-12-12 08:18+0100\n"
+"POT-Creation-Date: 2017-12-13 06:10+0100\n"
+"PO-Revision-Date: 2017-12-13 06:10+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -15,27 +15,27 @@ msgstr ""
 
 #: views:archive:default:title
 msgctxt "archive:default:title"
-msgid "Archivo mensual"
+msgid "Monthly archive"
 msgstr ""
 
 #: views:archive:default:use_more_text
 msgctxt "archive:default:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:archive:default:exposed_form:submit_button
 msgctxt "archive:default:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:archive:default:exposed_form:reset_button_label
 msgctxt "archive:default:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:archive:default:exposed_form:exposed_sorts_label
 msgctxt "archive:default:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:archive:default:exposed_form:sort_asc_label
@@ -50,42 +50,42 @@ msgstr ""
 
 #: views:archive:default:pager:expose:items_per_page_label
 msgctxt "archive:default:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:archive:default:pager:expose:items_per_page_options_all_label
 msgctxt "archive:default:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:archive:default:pager:expose:offset_label
 msgctxt "archive:default:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:archive:default:pager:tags:first
 msgctxt "archive:default:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:archive:default:pager:tags:previous
 msgctxt "archive:default:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:archive:default:pager:tags:next
 msgctxt "archive:default:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:archive:default:pager:tags:last
 msgctxt "archive:default:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:archive:default:argument:node:created_year_month:exception:title
 msgctxt "archive:default:argument:node:created_year_month:exception:title"
-msgid "Todo(s)"
+msgid "All"
 msgstr ""
 
 #: views:archive:default:argument:node:created_year_month:title
@@ -95,22 +95,22 @@ msgstr ""
 
 #: views:archive:page:use_more_text
 msgctxt "archive:page:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:archive:page:exposed_form:submit_button
 msgctxt "archive:page:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:archive:page:exposed_form:reset_button_label
 msgctxt "archive:page:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:archive:page:exposed_form:exposed_sorts_label
 msgctxt "archive:page:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:archive:page:exposed_form:sort_asc_label
@@ -125,57 +125,57 @@ msgstr ""
 
 #: views:archive:page:pager:expose:items_per_page_label
 msgctxt "archive:page:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:archive:page:pager:expose:items_per_page_options_all_label
 msgctxt "archive:page:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:archive:page:pager:expose:offset_label
 msgctxt "archive:page:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:archive:page:pager:tags:first
 msgctxt "archive:page:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:archive:page:pager:tags:previous
 msgctxt "archive:page:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:archive:page:pager:tags:next
 msgctxt "archive:page:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:archive:page:pager:tags:last
 msgctxt "archive:page:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:archive:block:use_more_text
 msgctxt "archive:block:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:archive:block:exposed_form:submit_button
 msgctxt "archive:block:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:archive:block:exposed_form:reset_button_label
 msgctxt "archive:block:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:archive:block:exposed_form:exposed_sorts_label
 msgctxt "archive:block:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:archive:block:exposed_form:sort_asc_label
@@ -190,42 +190,42 @@ msgstr ""
 
 #: views:archive:block:pager:expose:items_per_page_label
 msgctxt "archive:block:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:archive:block:pager:expose:items_per_page_options_all_label
 msgctxt "archive:block:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:archive:block:pager:expose:offset_label
 msgctxt "archive:block:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:archive:block:pager:tags:first
 msgctxt "archive:block:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:archive:block:pager:tags:previous
 msgctxt "archive:block:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:archive:block:pager:tags:next
 msgctxt "archive:block:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:archive:block:pager:tags:last
 msgctxt "archive:block:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:archive:block:argument:node:created_year_month:exception:title
 msgctxt "archive:block:argument:node:created_year_month:exception:title"
-msgid "Todo(s)"
+msgid "All"
 msgstr ""
 
 #: views:archive:block:argument:node:created_year_month:title
@@ -235,22 +235,22 @@ msgstr ""
 
 #: views:frontpage:default:use_more_text
 msgctxt "frontpage:default:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:frontpage:default:exposed_form:submit_button
 msgctxt "frontpage:default:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:frontpage:default:exposed_form:reset_button_label
 msgctxt "frontpage:default:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:frontpage:default:exposed_form:exposed_sorts_label
 msgctxt "frontpage:default:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:frontpage:default:exposed_form:sort_asc_label
@@ -265,57 +265,57 @@ msgstr ""
 
 #: views:frontpage:default:pager:expose:items_per_page_label
 msgctxt "frontpage:default:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:frontpage:default:pager:expose:items_per_page_options_all_label
 msgctxt "frontpage:default:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:frontpage:default:pager:expose:offset_label
 msgctxt "frontpage:default:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:frontpage:default:pager:tags:first
 msgctxt "frontpage:default:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:frontpage:default:pager:tags:previous
 msgctxt "frontpage:default:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:frontpage:default:pager:tags:next
 msgctxt "frontpage:default:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:frontpage:default:pager:tags:last
 msgctxt "frontpage:default:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:frontpage:page:use_more_text
 msgctxt "frontpage:page:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:frontpage:page:exposed_form:submit_button
 msgctxt "frontpage:page:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:frontpage:page:exposed_form:reset_button_label
 msgctxt "frontpage:page:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:frontpage:page:exposed_form:exposed_sorts_label
 msgctxt "frontpage:page:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:frontpage:page:exposed_form:sort_asc_label
@@ -330,62 +330,62 @@ msgstr ""
 
 #: views:frontpage:page:pager:expose:items_per_page_label
 msgctxt "frontpage:page:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:frontpage:page:pager:expose:items_per_page_options_all_label
 msgctxt "frontpage:page:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:frontpage:page:pager:expose:offset_label
 msgctxt "frontpage:page:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:frontpage:page:pager:tags:first
 msgctxt "frontpage:page:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:frontpage:page:pager:tags:previous
 msgctxt "frontpage:page:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:frontpage:page:pager:tags:next
 msgctxt "frontpage:page:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:frontpage:page:pager:tags:last
 msgctxt "frontpage:page:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:frontpage:feed:title
 msgctxt "frontpage:feed:title"
-msgid "Canal de noticias de la página principal"
+msgid "Front page feed"
 msgstr ""
 
 #: views:frontpage:feed:use_more_text
 msgctxt "frontpage:feed:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:frontpage:feed:exposed_form:submit_button
 msgctxt "frontpage:feed:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:frontpage:feed:exposed_form:reset_button_label
 msgctxt "frontpage:feed:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:frontpage:feed:exposed_form:exposed_sorts_label
 msgctxt "frontpage:feed:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:frontpage:feed:exposed_form:sort_asc_label
@@ -400,22 +400,22 @@ msgstr ""
 
 #: views:glossary:default:use_more_text
 msgctxt "glossary:default:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:glossary:default:exposed_form:submit_button
 msgctxt "glossary:default:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:glossary:default:exposed_form:reset_button_label
 msgctxt "glossary:default:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:glossary:default:exposed_form:exposed_sorts_label
 msgctxt "glossary:default:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:glossary:default:exposed_form:sort_asc_label
@@ -430,72 +430,72 @@ msgstr ""
 
 #: views:glossary:default:pager:expose:items_per_page_label
 msgctxt "glossary:default:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:glossary:default:pager:expose:items_per_page_options_all_label
 msgctxt "glossary:default:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:glossary:default:pager:expose:offset_label
 msgctxt "glossary:default:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:glossary:default:pager:tags:first
 msgctxt "glossary:default:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:glossary:default:pager:tags:previous
 msgctxt "glossary:default:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:glossary:default:pager:tags:next
 msgctxt "glossary:default:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:glossary:default:pager:tags:last
 msgctxt "glossary:default:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:glossary:default:field:users:name:label
 msgctxt "glossary:default:field:users:name:label"
-msgid "Autor"
+msgid "Author"
 msgstr ""
 
 #: views:glossary:default:field:node:changed:label
 msgctxt "glossary:default:field:node:changed:label"
-msgid "Última actualización"
+msgid "Last update"
 msgstr ""
 
 #: views:glossary:default:argument:node:title:exception:title
 msgctxt "glossary:default:argument:node:title:exception:title"
-msgid "Todo(s)"
+msgid "All"
 msgstr ""
 
 #: views:glossary:page:use_more_text
 msgctxt "glossary:page:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:glossary:page:exposed_form:submit_button
 msgctxt "glossary:page:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:glossary:page:exposed_form:reset_button_label
 msgctxt "glossary:page:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:glossary:page:exposed_form:exposed_sorts_label
 msgctxt "glossary:page:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:glossary:page:exposed_form:sort_asc_label
@@ -510,57 +510,57 @@ msgstr ""
 
 #: views:glossary:page:pager:expose:items_per_page_label
 msgctxt "glossary:page:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:glossary:page:pager:expose:items_per_page_options_all_label
 msgctxt "glossary:page:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:glossary:page:pager:expose:offset_label
 msgctxt "glossary:page:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:glossary:page:pager:tags:first
 msgctxt "glossary:page:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:glossary:page:pager:tags:previous
 msgctxt "glossary:page:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:glossary:page:pager:tags:next
 msgctxt "glossary:page:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:glossary:page:pager:tags:last
 msgctxt "glossary:page:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:glossary:attachment:use_more_text
 msgctxt "glossary:attachment:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:glossary:attachment:exposed_form:submit_button
 msgctxt "glossary:attachment:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:glossary:attachment:exposed_form:reset_button_label
 msgctxt "glossary:attachment:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:glossary:attachment:exposed_form:exposed_sorts_label
 msgctxt "glossary:attachment:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:glossary:attachment:exposed_form:sort_asc_label
@@ -575,27 +575,27 @@ msgstr ""
 
 #: views:glossary:attachment:argument:node:title:exception:title
 msgctxt "glossary:attachment:argument:node:title:exception:title"
-msgid "Todo(s)"
+msgid "All"
 msgstr ""
 
 #: views:taxonomy_term:default:use_more_text
 msgctxt "taxonomy_term:default:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:taxonomy_term:default:exposed_form:submit_button
 msgctxt "taxonomy_term:default:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:taxonomy_term:default:exposed_form:reset_button_label
 msgctxt "taxonomy_term:default:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:taxonomy_term:default:exposed_form:exposed_sorts_label
 msgctxt "taxonomy_term:default:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:taxonomy_term:default:exposed_form:sort_asc_label
@@ -610,42 +610,42 @@ msgstr ""
 
 #: views:taxonomy_term:default:pager:expose:items_per_page_label
 msgctxt "taxonomy_term:default:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:taxonomy_term:default:pager:expose:items_per_page_options_all_label
 msgctxt "taxonomy_term:default:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:taxonomy_term:default:pager:expose:offset_label
 msgctxt "taxonomy_term:default:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:taxonomy_term:default:pager:tags:first
 msgctxt "taxonomy_term:default:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:taxonomy_term:default:pager:tags:previous
 msgctxt "taxonomy_term:default:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:taxonomy_term:default:pager:tags:next
 msgctxt "taxonomy_term:default:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:taxonomy_term:default:pager:tags:last
 msgctxt "taxonomy_term:default:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:taxonomy_term:default:argument:node:term_node_tid_depth:exception:title
 msgctxt "taxonomy_term:default:argument:node:term_node_tid_depth:exception:title"
-msgid "Todo(s)"
+msgid "All"
 msgstr ""
 
 #: views:taxonomy_term:default:argument:node:term_node_tid_depth:title
@@ -655,27 +655,27 @@ msgstr ""
 
 #: views:taxonomy_term:default:argument:node:term_node_tid_depth_modifier:exception:title
 msgctxt "taxonomy_term:default:argument:node:term_node_tid_depth_modifier:exception:title"
-msgid "Todo(s)"
+msgid "All"
 msgstr ""
 
 #: views:taxonomy_term:page:use_more_text
 msgctxt "taxonomy_term:page:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:taxonomy_term:page:exposed_form:submit_button
 msgctxt "taxonomy_term:page:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:taxonomy_term:page:exposed_form:reset_button_label
 msgctxt "taxonomy_term:page:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:taxonomy_term:page:exposed_form:exposed_sorts_label
 msgctxt "taxonomy_term:page:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:taxonomy_term:page:exposed_form:sort_asc_label
@@ -690,57 +690,57 @@ msgstr ""
 
 #: views:taxonomy_term:page:pager:expose:items_per_page_label
 msgctxt "taxonomy_term:page:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:taxonomy_term:page:pager:expose:items_per_page_options_all_label
 msgctxt "taxonomy_term:page:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:taxonomy_term:page:pager:expose:offset_label
 msgctxt "taxonomy_term:page:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:taxonomy_term:page:pager:tags:first
 msgctxt "taxonomy_term:page:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:taxonomy_term:page:pager:tags:previous
 msgctxt "taxonomy_term:page:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:taxonomy_term:page:pager:tags:next
 msgctxt "taxonomy_term:page:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:taxonomy_term:page:pager:tags:last
 msgctxt "taxonomy_term:page:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:taxonomy_term:feed:use_more_text
 msgctxt "taxonomy_term:feed:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:taxonomy_term:feed:exposed_form:submit_button
 msgctxt "taxonomy_term:feed:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:taxonomy_term:feed:exposed_form:reset_button_label
 msgctxt "taxonomy_term:feed:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:taxonomy_term:feed:exposed_form:exposed_sorts_label
 msgctxt "taxonomy_term:feed:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:taxonomy_term:feed:exposed_form:sort_asc_label
@@ -755,57 +755,57 @@ msgstr ""
 
 #: views:taxonomy_term:feed:pager:expose:items_per_page_label
 msgctxt "taxonomy_term:feed:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:taxonomy_term:feed:pager:expose:items_per_page_options_all_label
 msgctxt "taxonomy_term:feed:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:taxonomy_term:feed:pager:expose:offset_label
 msgctxt "taxonomy_term:feed:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:taxonomy_term:feed:pager:tags:first
 msgctxt "taxonomy_term:feed:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:taxonomy_term:feed:pager:tags:previous
 msgctxt "taxonomy_term:feed:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:taxonomy_term:feed:pager:tags:next
 msgctxt "taxonomy_term:feed:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:taxonomy_term:feed:pager:tags:last
 msgctxt "taxonomy_term:feed:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:backlinks:default:use_more_text
 msgctxt "backlinks:default:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:backlinks:default:exposed_form:submit_button
 msgctxt "backlinks:default:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:backlinks:default:exposed_form:reset_button_label
 msgctxt "backlinks:default:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:backlinks:default:exposed_form:exposed_sorts_label
 msgctxt "backlinks:default:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:backlinks:default:exposed_form:sort_asc_label
@@ -820,72 +820,72 @@ msgstr ""
 
 #: views:backlinks:default:pager:expose:items_per_page_label
 msgctxt "backlinks:default:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:backlinks:default:pager:expose:items_per_page_options_all_label
 msgctxt "backlinks:default:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:backlinks:default:pager:expose:offset_label
 msgctxt "backlinks:default:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:backlinks:default:pager:tags:first
 msgctxt "backlinks:default:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:backlinks:default:pager:tags:previous
 msgctxt "backlinks:default:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:backlinks:default:pager:tags:next
 msgctxt "backlinks:default:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:backlinks:default:pager:tags:last
 msgctxt "backlinks:default:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:backlinks:default:empty:views:area:content
 msgctxt "backlinks:default:empty:views:area:content"
-msgid "No se encontraron backlinks"
+msgid "No backlinks found."
 msgstr ""
 
 #: views:backlinks:default:argument:search_node_links_to:nid:exception:title
 msgctxt "backlinks:default:argument:search_node_links_to:nid:exception:title"
-msgid "Todo(s)"
+msgid "All"
 msgstr ""
 
 #: views:backlinks:default:argument:search_node_links_to:nid:title
 msgctxt "backlinks:default:argument:search_node_links_to:nid:title"
-msgid "Páginas que enlazan con %1"
+msgid "Pages that link to %1"
 msgstr ""
 
 #: views:backlinks:page:use_more_text
 msgctxt "backlinks:page:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:backlinks:page:exposed_form:submit_button
 msgctxt "backlinks:page:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:backlinks:page:exposed_form:reset_button_label
 msgctxt "backlinks:page:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:backlinks:page:exposed_form:exposed_sorts_label
 msgctxt "backlinks:page:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:backlinks:page:exposed_form:sort_asc_label
@@ -900,57 +900,57 @@ msgstr ""
 
 #: views:backlinks:page:pager:expose:items_per_page_label
 msgctxt "backlinks:page:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:backlinks:page:pager:expose:items_per_page_options_all_label
 msgctxt "backlinks:page:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:backlinks:page:pager:expose:offset_label
 msgctxt "backlinks:page:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:backlinks:page:pager:tags:first
 msgctxt "backlinks:page:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:backlinks:page:pager:tags:previous
 msgctxt "backlinks:page:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:backlinks:page:pager:tags:next
 msgctxt "backlinks:page:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:backlinks:page:pager:tags:last
 msgctxt "backlinks:page:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:backlinks:block:use_more_text
 msgctxt "backlinks:block:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:backlinks:block:exposed_form:submit_button
 msgctxt "backlinks:block:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:backlinks:block:exposed_form:reset_button_label
 msgctxt "backlinks:block:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:backlinks:block:exposed_form:exposed_sorts_label
 msgctxt "backlinks:block:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:backlinks:block:exposed_form:sort_asc_label
@@ -965,47 +965,47 @@ msgstr ""
 
 #: views:backlinks:block:pager:expose:items_per_page_label
 msgctxt "backlinks:block:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:backlinks:block:pager:expose:items_per_page_options_all_label
 msgctxt "backlinks:block:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:backlinks:block:pager:expose:offset_label
 msgctxt "backlinks:block:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:backlinks:block:pager:tags:first
 msgctxt "backlinks:block:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:backlinks:block:pager:tags:previous
 msgctxt "backlinks:block:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:backlinks:block:pager:tags:next
 msgctxt "backlinks:block:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:backlinks:block:pager:tags:last
 msgctxt "backlinks:block:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:backlinks:block:argument:search_node_links_to:nid:exception:title
 msgctxt "backlinks:block:argument:search_node_links_to:nid:exception:title"
-msgid "Todo(s)"
+msgid "All"
 msgstr ""
 
 #: views:backlinks:block:argument:search_node_links_to:nid:title
 msgctxt "backlinks:block:argument:search_node_links_to:nid:title"
-msgid "Lo que enlaza aquí"
+msgid "What links here"
 msgstr ""
 
 #: views:buttons:default:title
@@ -1015,22 +1015,22 @@ msgstr ""
 
 #: views:buttons:default:use_more_text
 msgctxt "buttons:default:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:buttons:default:exposed_form:submit_button
 msgctxt "buttons:default:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:buttons:default:exposed_form:reset_button_label
 msgctxt "buttons:default:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:buttons:default:exposed_form:exposed_sorts_label
 msgctxt "buttons:default:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:buttons:default:exposed_form:sort_asc_label
@@ -1045,37 +1045,37 @@ msgstr ""
 
 #: views:buttons:default:pager:expose:items_per_page_label
 msgctxt "buttons:default:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:buttons:default:pager:expose:items_per_page_options_all_label
 msgctxt "buttons:default:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:buttons:default:pager:expose:offset_label
 msgctxt "buttons:default:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:buttons:default:pager:tags:first
 msgctxt "buttons:default:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:buttons:default:pager:tags:previous
 msgctxt "buttons:default:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:buttons:default:pager:tags:next
 msgctxt "buttons:default:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:buttons:default:pager:tags:last
 msgctxt "buttons:default:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:buttons:default:field:field_data_rd_f_keyb_button_text:rd_f_keyb_button_text_1:label
@@ -1105,22 +1105,22 @@ msgstr ""
 
 #: views:buttons:page:use_more_text
 msgctxt "buttons:page:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:buttons:page:exposed_form:submit_button
 msgctxt "buttons:page:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:buttons:page:exposed_form:reset_button_label
 msgctxt "buttons:page:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:buttons:page:exposed_form:exposed_sorts_label
 msgctxt "buttons:page:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:buttons:page:exposed_form:sort_asc_label
@@ -1135,62 +1135,62 @@ msgstr ""
 
 #: views:buttons:page:pager:expose:items_per_page_label
 msgctxt "buttons:page:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:buttons:page:pager:expose:items_per_page_options_all_label
 msgctxt "buttons:page:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:buttons:page:pager:expose:offset_label
 msgctxt "buttons:page:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:buttons:page:pager:tags:first
 msgctxt "buttons:page:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:buttons:page:pager:tags:previous
 msgctxt "buttons:page:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:buttons:page:pager:tags:next
 msgctxt "buttons:page:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:buttons:page:pager:tags:last
 msgctxt "buttons:page:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:entityforms:default:title
 msgctxt "entityforms:default:title"
-msgid "Lista"
+msgid "List"
 msgstr ""
 
 #: views:entityforms:default:use_more_text
 msgctxt "entityforms:default:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:entityforms:default:exposed_form:submit_button
 msgctxt "entityforms:default:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:entityforms:default:exposed_form:reset_button_label
 msgctxt "entityforms:default:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:entityforms:default:exposed_form:exposed_sorts_label
 msgctxt "entityforms:default:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:entityforms:default:exposed_form:sort_asc_label
@@ -1205,37 +1205,37 @@ msgstr ""
 
 #: views:entityforms:default:pager:expose:items_per_page_label
 msgctxt "entityforms:default:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:entityforms:default:pager:expose:items_per_page_options_all_label
 msgctxt "entityforms:default:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:entityforms:default:pager:expose:offset_label
 msgctxt "entityforms:default:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:entityforms:default:pager:tags:first
 msgctxt "entityforms:default:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:entityforms:default:pager:tags:previous
 msgctxt "entityforms:default:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:entityforms:default:pager:tags:next
 msgctxt "entityforms:default:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:entityforms:default:pager:tags:last
 msgctxt "entityforms:default:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:entityforms:default:empty:views:area:label
@@ -1260,17 +1260,17 @@ msgstr ""
 
 #: views:entityforms:default:field:entityform:link_entityform:label
 msgctxt "entityforms:default:field:entityform:link_entityform:label"
-msgid "Ver"
+msgid "View"
 msgstr ""
 
 #: views:entityforms:default:field:entityform:edit_entityform:label
 msgctxt "entityforms:default:field:entityform:edit_entityform:label"
-msgid "Editar"
+msgid "Edit"
 msgstr ""
 
 #: views:entityforms:default:field:entityform:delete_entityform:label
 msgctxt "entityforms:default:field:entityform:delete_entityform:label"
-msgid "Eliminar"
+msgid "Delete"
 msgstr ""
 
 #: views:entityforms:default:field:entityform_type:label_1:label
@@ -1285,12 +1285,12 @@ msgstr ""
 
 #: views:entityforms:default:field:entityform:changed:label
 msgctxt "entityforms:default:field:entityform:changed:label"
-msgid "Fecha cambiada"
+msgid "Date changed"
 msgstr ""
 
 #: views:entityforms:default:argument:entityform:type:exception:title
 msgctxt "entityforms:default:argument:entityform:type:exception:title"
-msgid "Todo(s)"
+msgid "All"
 msgstr ""
 
 #: views:entityforms:default:argument:entityform:type:title
@@ -1305,22 +1305,22 @@ msgstr ""
 
 #: views:entityforms:entityforms_admin_page:use_more_text
 msgctxt "entityforms:entityforms_admin_page:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:entityforms:entityforms_admin_page:exposed_form:submit_button
 msgctxt "entityforms:entityforms_admin_page:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:entityforms:entityforms_admin_page:exposed_form:reset_button_label
 msgctxt "entityforms:entityforms_admin_page:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:entityforms:entityforms_admin_page:exposed_form:exposed_sorts_label
 msgctxt "entityforms:entityforms_admin_page:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:entityforms:entityforms_admin_page:exposed_form:sort_asc_label
@@ -1335,57 +1335,57 @@ msgstr ""
 
 #: views:entityforms:entityforms_admin_page:pager:expose:items_per_page_label
 msgctxt "entityforms:entityforms_admin_page:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:entityforms:entityforms_admin_page:pager:expose:items_per_page_options_all_label
 msgctxt "entityforms:entityforms_admin_page:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:entityforms:entityforms_admin_page:pager:expose:offset_label
 msgctxt "entityforms:entityforms_admin_page:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:entityforms:entityforms_admin_page:pager:tags:first
 msgctxt "entityforms:entityforms_admin_page:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:entityforms:entityforms_admin_page:pager:tags:previous
 msgctxt "entityforms:entityforms_admin_page:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:entityforms:entityforms_admin_page:pager:tags:next
 msgctxt "entityforms:entityforms_admin_page:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:entityforms:entityforms_admin_page:pager:tags:last
 msgctxt "entityforms:entityforms_admin_page:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:entityforms:autofields_table:use_more_text
 msgctxt "entityforms:autofields_table:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:entityforms:autofields_table:exposed_form:submit_button
 msgctxt "entityforms:autofields_table:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:entityforms:autofields_table:exposed_form:reset_button_label
 msgctxt "entityforms:autofields_table:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:entityforms:autofields_table:exposed_form:exposed_sorts_label
 msgctxt "entityforms:autofields_table:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:entityforms:autofields_table:exposed_form:sort_asc_label
@@ -1400,37 +1400,37 @@ msgstr ""
 
 #: views:entityforms:autofields_table:pager:expose:items_per_page_label
 msgctxt "entityforms:autofields_table:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:entityforms:autofields_table:pager:expose:items_per_page_options_all_label
 msgctxt "entityforms:autofields_table:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:entityforms:autofields_table:pager:expose:offset_label
 msgctxt "entityforms:autofields_table:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:entityforms:autofields_table:pager:tags:first
 msgctxt "entityforms:autofields_table:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:entityforms:autofields_table:pager:tags:previous
 msgctxt "entityforms:autofields_table:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:entityforms:autofields_table:pager:tags:next
 msgctxt "entityforms:autofields_table:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:entityforms:autofields_table:pager:tags:last
 msgctxt "entityforms:autofields_table:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:entityforms:autofields_table:field:users:name:label
@@ -1440,7 +1440,7 @@ msgstr ""
 
 #: views:entityforms:autofields_table:field:entityform:link_entityform:label
 msgctxt "entityforms:autofields_table:field:entityform:link_entityform:label"
-msgid "Ver"
+msgid "View"
 msgstr ""
 
 #: views:entityforms:autofields_table:field:entityform_type:label_1:label
@@ -1455,7 +1455,7 @@ msgstr ""
 
 #: views:entityforms:autofields_table:field:entityform:changed:label
 msgctxt "entityforms:autofields_table:field:entityform:changed:label"
-msgid "Fecha cambiada"
+msgid "Date changed"
 msgstr ""
 
 #: views:entityform_type_list:default:title
@@ -1465,22 +1465,22 @@ msgstr ""
 
 #: views:entityform_type_list:default:use_more_text
 msgctxt "entityform_type_list:default:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:entityform_type_list:default:exposed_form:submit_button
 msgctxt "entityform_type_list:default:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:entityform_type_list:default:exposed_form:reset_button_label
 msgctxt "entityform_type_list:default:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:entityform_type_list:default:exposed_form:exposed_sorts_label
 msgctxt "entityform_type_list:default:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:entityform_type_list:default:exposed_form:sort_asc_label
@@ -1495,37 +1495,37 @@ msgstr ""
 
 #: views:entityform_type_list:default:pager:expose:items_per_page_label
 msgctxt "entityform_type_list:default:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:entityform_type_list:default:pager:expose:items_per_page_options_all_label
 msgctxt "entityform_type_list:default:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:entityform_type_list:default:pager:expose:offset_label
 msgctxt "entityform_type_list:default:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:entityform_type_list:default:pager:tags:first
 msgctxt "entityform_type_list:default:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:entityform_type_list:default:pager:tags:previous
 msgctxt "entityform_type_list:default:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:entityform_type_list:default:pager:tags:next
 msgctxt "entityform_type_list:default:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:entityform_type_list:default:pager:tags:last
 msgctxt "entityform_type_list:default:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:entityform_type_list:default:header:views:area:content
@@ -1540,22 +1540,22 @@ msgstr ""
 
 #: views:entityform_type_list:page:use_more_text
 msgctxt "entityform_type_list:page:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:entityform_type_list:page:exposed_form:submit_button
 msgctxt "entityform_type_list:page:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:entityform_type_list:page:exposed_form:reset_button_label
 msgctxt "entityform_type_list:page:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:entityform_type_list:page:exposed_form:exposed_sorts_label
 msgctxt "entityform_type_list:page:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:entityform_type_list:page:exposed_form:sort_asc_label
@@ -1570,62 +1570,62 @@ msgstr ""
 
 #: views:entityform_type_list:page:pager:expose:items_per_page_label
 msgctxt "entityform_type_list:page:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:entityform_type_list:page:pager:expose:items_per_page_options_all_label
 msgctxt "entityform_type_list:page:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:entityform_type_list:page:pager:expose:offset_label
 msgctxt "entityform_type_list:page:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:entityform_type_list:page:pager:tags:first
 msgctxt "entityform_type_list:page:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:entityform_type_list:page:pager:tags:previous
 msgctxt "entityform_type_list:page:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:entityform_type_list:page:pager:tags:next
 msgctxt "entityform_type_list:page:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:entityform_type_list:page:pager:tags:last
 msgctxt "entityform_type_list:page:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:forms:default:title
 msgctxt "forms:default:title"
-msgid "Formularios"
+msgid "Forms"
 msgstr ""
 
 #: views:forms:default:use_more_text
 msgctxt "forms:default:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:forms:default:exposed_form:submit_button
 msgctxt "forms:default:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:forms:default:exposed_form:reset_button_label
 msgctxt "forms:default:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:forms:default:exposed_form:exposed_sorts_label
 msgctxt "forms:default:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:forms:default:exposed_form:sort_asc_label
@@ -1660,37 +1660,37 @@ msgstr ""
 
 #: views:forms:default:field:entityform:link_entityform:label
 msgctxt "forms:default:field:entityform:link_entityform:label"
-msgid "Enlace"
+msgid "Link"
 msgstr ""
 
 #: views:forms:default:field:entityform_type:label:label
 msgctxt "forms:default:field:entityform_type:label:label"
-msgid "Etiqueta"
+msgid "Label"
 msgstr ""
 
 #: views:forms:default:argument:field_data_rd_f_forms_related_patient:rd_f_forms_related_patient_target_id:exception:title
 msgctxt "forms:default:argument:field_data_rd_f_forms_related_patient:rd_f_forms_related_patient_target_id:exception:title"
-msgid "Todo(s)"
+msgid "All"
 msgstr ""
 
 #: views:forms:page:use_more_text
 msgctxt "forms:page:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:forms:page:exposed_form:submit_button
 msgctxt "forms:page:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:forms:page:exposed_form:reset_button_label
 msgctxt "forms:page:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:forms:page:exposed_form:exposed_sorts_label
 msgctxt "forms:page:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:forms:page:exposed_form:sort_asc_label
@@ -1903,22 +1903,22 @@ msgstr ""
 
 #: views:search_patients:default:use_more_text
 msgctxt "search_patients:default:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:search_patients:default:exposed_form:submit_button
 msgctxt "search_patients:default:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:search_patients:default:exposed_form:reset_button_label
 msgctxt "search_patients:default:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:search_patients:default:exposed_form:exposed_sorts_label
 msgctxt "search_patients:default:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:search_patients:default:exposed_form:sort_asc_label
@@ -1933,47 +1933,47 @@ msgstr ""
 
 #: views:search_patients:default:pager:expose:items_per_page_label
 msgctxt "search_patients:default:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:search_patients:default:pager:expose:items_per_page_options_all_label
 msgctxt "search_patients:default:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:search_patients:default:pager:expose:offset_label
 msgctxt "search_patients:default:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:search_patients:default:pager:tags:first
 msgctxt "search_patients:default:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:search_patients:default:pager:tags:previous
 msgctxt "search_patients:default:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:search_patients:default:pager:tags:next
 msgctxt "search_patients:default:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:search_patients:default:pager:tags:last
 msgctxt "search_patients:default:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:search_patients:default:field:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number:label
 msgctxt "search_patients:default:field:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number:label"
-msgid "Número"
+msgid "Number"
 msgstr ""
 
 #: views:search_patients:default:field:node:title:label
 msgctxt "search_patients:default:field:node:title:label"
-msgid "Nombre"
+msgid "Name"
 msgstr ""
 
 #: views:search_patients:default:field:node:nid:label
@@ -1983,37 +1983,37 @@ msgstr ""
 
 #: views:search_patients:default:field:views:nothing:label
 msgctxt "search_patients:default:field:views:nothing:label"
-msgid "Operaciones"
+msgid "Operations"
 msgstr ""
 
 #: views:search_patients:default:filter:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number_value:expose:label
 msgctxt "search_patients:default:filter:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number_value:expose:label"
-msgid "Número"
+msgid "Number"
 msgstr ""
 
 #: views:search_patients:default:filter:node:title:expose:label
 msgctxt "search_patients:default:filter:node:title:expose:label"
-msgid "Nombre"
+msgid "Name"
 msgstr ""
 
 #: views:search_patients:page:use_more_text
 msgctxt "search_patients:page:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:search_patients:page:exposed_form:submit_button
 msgctxt "search_patients:page:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:search_patients:page:exposed_form:reset_button_label
 msgctxt "search_patients:page:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:search_patients:page:exposed_form:exposed_sorts_label
 msgctxt "search_patients:page:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:search_patients:page:exposed_form:sort_asc_label
@@ -2028,62 +2028,62 @@ msgstr ""
 
 #: views:search_patients:page:pager:expose:items_per_page_label
 msgctxt "search_patients:page:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:search_patients:page:pager:expose:items_per_page_options_all_label
 msgctxt "search_patients:page:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:search_patients:page:pager:expose:offset_label
 msgctxt "search_patients:page:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:search_patients:page:pager:tags:first
 msgctxt "search_patients:page:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:search_patients:page:pager:tags:previous
 msgctxt "search_patients:page:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:search_patients:page:pager:tags:next
 msgctxt "search_patients:page:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:search_patients:page:pager:tags:last
 msgctxt "search_patients:page:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:user_entityforms:default:title
 msgctxt "user_entityforms:default:title"
-msgid "Lista"
+msgid "List"
 msgstr ""
 
 #: views:user_entityforms:default:use_more_text
 msgctxt "user_entityforms:default:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:user_entityforms:default:exposed_form:submit_button
 msgctxt "user_entityforms:default:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:user_entityforms:default:exposed_form:reset_button_label
 msgctxt "user_entityforms:default:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:user_entityforms:default:exposed_form:exposed_sorts_label
 msgctxt "user_entityforms:default:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:user_entityforms:default:exposed_form:sort_asc_label
@@ -2098,37 +2098,37 @@ msgstr ""
 
 #: views:user_entityforms:default:pager:expose:items_per_page_label
 msgctxt "user_entityforms:default:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:user_entityforms:default:pager:expose:items_per_page_options_all_label
 msgctxt "user_entityforms:default:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:user_entityforms:default:pager:expose:offset_label
 msgctxt "user_entityforms:default:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:user_entityforms:default:pager:tags:first
 msgctxt "user_entityforms:default:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:user_entityforms:default:pager:tags:previous
 msgctxt "user_entityforms:default:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:user_entityforms:default:pager:tags:next
 msgctxt "user_entityforms:default:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:user_entityforms:default:pager:tags:last
 msgctxt "user_entityforms:default:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:user_entityforms:default:empty:views:area:label
@@ -2153,17 +2153,17 @@ msgstr ""
 
 #: views:user_entityforms:default:field:entityform:link_entityform:label
 msgctxt "user_entityforms:default:field:entityform:link_entityform:label"
-msgid "Ver"
+msgid "View"
 msgstr ""
 
 #: views:user_entityforms:default:field:entityform:edit_entityform:label
 msgctxt "user_entityforms:default:field:entityform:edit_entityform:label"
-msgid "Editar"
+msgid "Edit"
 msgstr ""
 
 #: views:user_entityforms:default:field:entityform:delete_entityform:label
 msgctxt "user_entityforms:default:field:entityform:delete_entityform:label"
-msgid "Eliminar"
+msgid "Delete"
 msgstr ""
 
 #: views:user_entityforms:default:field:entityform:created:label
@@ -2173,12 +2173,12 @@ msgstr ""
 
 #: views:user_entityforms:default:field:entityform:changed:label
 msgctxt "user_entityforms:default:field:entityform:changed:label"
-msgid "Fecha cambiada"
+msgid "Date changed"
 msgstr ""
 
 #: views:user_entityforms:default:argument:entityform:type:exception:title
 msgctxt "user_entityforms:default:argument:entityform:type:exception:title"
-msgid "Todo(s)"
+msgid "All"
 msgstr ""
 
 #: views:user_entityforms:default:argument:entityform:type:title
@@ -2198,22 +2198,22 @@ msgstr ""
 
 #: views:user_entityforms:entityforms_admin_page:use_more_text
 msgctxt "user_entityforms:entityforms_admin_page:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:user_entityforms:entityforms_admin_page:exposed_form:submit_button
 msgctxt "user_entityforms:entityforms_admin_page:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:user_entityforms:entityforms_admin_page:exposed_form:reset_button_label
 msgctxt "user_entityforms:entityforms_admin_page:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:user_entityforms:entityforms_admin_page:exposed_form:exposed_sorts_label
 msgctxt "user_entityforms:entityforms_admin_page:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:user_entityforms:entityforms_admin_page:exposed_form:sort_asc_label
@@ -2228,37 +2228,37 @@ msgstr ""
 
 #: views:user_entityforms:entityforms_admin_page:pager:expose:items_per_page_label
 msgctxt "user_entityforms:entityforms_admin_page:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:user_entityforms:entityforms_admin_page:pager:expose:items_per_page_options_all_label
 msgctxt "user_entityforms:entityforms_admin_page:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:user_entityforms:entityforms_admin_page:pager:expose:offset_label
 msgctxt "user_entityforms:entityforms_admin_page:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:user_entityforms:entityforms_admin_page:pager:tags:first
 msgctxt "user_entityforms:entityforms_admin_page:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:user_entityforms:entityforms_admin_page:pager:tags:previous
 msgctxt "user_entityforms:entityforms_admin_page:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:user_entityforms:entityforms_admin_page:pager:tags:next
 msgctxt "user_entityforms:entityforms_admin_page:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:user_entityforms:entityforms_admin_page:pager:tags:last
 msgctxt "user_entityforms:entityforms_admin_page:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:patients_secretary:default:display_title
@@ -2328,7 +2328,7 @@ msgstr ""
 
 #: views:patients_secretary:default:field:field_data_rd_f_patient_incidences:rd_f_patient_incidences:label
 msgctxt "patients_secretary:default:field:field_data_rd_f_patient_incidences:rd_f_patient_incidences:label"
-msgid "Incidencias"
+msgid "Incidences"
 msgstr ""
 
 #: views:measures_record:default:field:views:nothing_2:alter:text
@@ -2371,22 +2371,22 @@ msgstr ""
 
 #: views:measures_record:page_1:use_more_text
 msgctxt "measures_record:page_1:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:measures_record:page_1:exposed_form:submit_button
 msgctxt "measures_record:page_1:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:measures_record:page_1:exposed_form:reset_button_label
 msgctxt "measures_record:page_1:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:measures_record:page_1:exposed_form:exposed_sorts_label
 msgctxt "measures_record:page_1:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:measures_record:page_1:exposed_form:sort_asc_label
@@ -2401,42 +2401,42 @@ msgstr ""
 
 #: views:measures_record:page_1:pager:expose:items_per_page_label
 msgctxt "measures_record:page_1:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:measures_record:page_1:pager:expose:items_per_page_options_all_label
 msgctxt "measures_record:page_1:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:measures_record:page_1:pager:expose:offset_label
 msgctxt "measures_record:page_1:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:measures_record:page_1:pager:tags:first
 msgctxt "measures_record:page_1:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:measures_record:page_1:pager:tags:previous
 msgctxt "measures_record:page_1:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:measures_record:page_1:pager:tags:next
 msgctxt "measures_record:page_1:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:measures_record:page_1:pager:tags:last
 msgctxt "measures_record:page_1:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:measures_record:page_1:field:field_data_rd_f_treat_date_time:rd_f_treat_date_time:label
 msgctxt "measures_record:page_1:field:field_data_rd_f_treat_date_time:rd_f_treat_date_time:label"
-msgid "Fecha y Hora del Tratameinto"
+msgid "Treatment Date and Time"
 msgstr ""
 
 #: views:measures_record:page_1:field:field_data_rd_f_treat_related_pract:rd_f_treat_related_pract:label
@@ -2446,35 +2446,35 @@ msgstr ""
 
 #: views:measures_record:page_1:field:field_data_rd_f_access_treat_centre:rd_f_access_treat_centre:label
 msgctxt "measures_record:page_1:field:field_data_rd_f_access_treat_centre:rd_f_access_treat_centre:label"
-msgid "Centro"
+msgid "Centre"
 msgstr ""
 
 #: views:measures_record:page_1:field:views:nothing_1:alter:text
 msgctxt "measures_record:page_1:field:views:nothing_1:alter:text"
 msgid ""
-"<b>[rd_f_treat_date_time]</b> - \n"
-"[rd_f_treat_related_pract] - \n"
+"<b>[rd_f_treat_date_time]</b> -\n"
+"[rd_f_treat_related_pract] -\n"
 "[rd_f_access_treat_centre]"
 msgstr ""
 
 #: views:measures_record:page_1:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label
 msgctxt "measures_record:page_1:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label"
-msgid "Comentarios Iniciales"
+msgid "Initial Comments"
 msgstr ""
 
 #: views:measures_record:page_1:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label
 msgctxt "measures_record:page_1:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label"
-msgid "Medidas"
+msgid "Measures"
 msgstr ""
 
 #: views:measures_record:page_1:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label
 msgctxt "measures_record:page_1:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label"
-msgid "Comentarios Finales"
+msgid "Final Comments"
 msgstr ""
 
 #: views:measures_record:page_1:field:views:nothing:label
 msgctxt "measures_record:page_1:field:views:nothing:label"
-msgid "Medidas y comentarios"
+msgid "Measures & Comments"
 msgstr ""
 
 #: views:measures_record:page_1:field:views:nothing:alter:text
@@ -2524,22 +2524,22 @@ msgstr ""
 
 #: views:patients_secretary:page_1:use_more_text
 msgctxt "patients_secretary:page_1:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:patients_secretary:page_1:exposed_form:submit_button
 msgctxt "patients_secretary:page_1:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:patients_secretary:page_1:exposed_form:reset_button_label
 msgctxt "patients_secretary:page_1:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:patients_secretary:page_1:exposed_form:exposed_sorts_label
 msgctxt "patients_secretary:page_1:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:patients_secretary:page_1:exposed_form:sort_asc_label
@@ -2554,37 +2554,37 @@ msgstr ""
 
 #: views:patients_secretary:page_1:pager:expose:items_per_page_label
 msgctxt "patients_secretary:page_1:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:patients_secretary:page_1:pager:expose:items_per_page_options_all_label
 msgctxt "patients_secretary:page_1:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:patients_secretary:page_1:pager:expose:offset_label
 msgctxt "patients_secretary:page_1:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:patients_secretary:page_1:pager:tags:first
 msgctxt "patients_secretary:page_1:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:patients_secretary:page_1:pager:tags:previous
 msgctxt "patients_secretary:page_1:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:patients_secretary:page_1:pager:tags:next
 msgctxt "patients_secretary:page_1:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:patients_secretary:page_1:pager:tags:last
 msgctxt "patients_secretary:page_1:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:patients_secretary:page_1:field:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number:label
@@ -2609,7 +2609,7 @@ msgstr ""
 
 #: views:patients_secretary:page:field:field_data_rd_f_patient_incidences:rd_f_patient_incidences:label
 msgctxt "patients_secretary:page:field:field_data_rd_f_patient_incidences:rd_f_patient_incidences:label"
-msgid "Incidencias"
+msgid "Incidences"
 msgstr ""
 
 #: views:patients_secretary:page:field:field_data_rd_f_patient_interest:rd_f_patient_interest:alter:text
@@ -2619,17 +2619,17 @@ msgstr ""
 
 #: views:patients_secretary:page:field:views_entity_node:edit_node:label
 msgctxt "patients_secretary:page:field:views_entity_node:edit_node:label"
-msgid "Editar"
+msgid "Edit"
 msgstr ""
 
 #: views:patients_secretary:page:field:views_entity_node:edit_node:text
 msgctxt "patients_secretary:page:field:views_entity_node:edit_node:text"
-msgid "Editar"
+msgid "Edit"
 msgstr ""
 
 #: views:patients_secretary:page:field:views_entity_node:delete_node:label
 msgctxt "patients_secretary:page:field:views_entity_node:delete_node:label"
-msgid "Eliminar"
+msgid "Delete"
 msgstr ""
 
 #: views:patients_secretary:page:field:node:nid:label
@@ -2639,12 +2639,12 @@ msgstr ""
 
 #: views:patients_secretary:page:field:views:nothing_1:label
 msgctxt "patients_secretary:page:field:views:nothing_1:label"
-msgid "Sesiones"
+msgid "Sessions"
 msgstr ""
 
 #: views:patients_secretary:page:field:views:nothing_1:alter:text
 msgctxt "patients_secretary:page:field:views:nothing_1:alter:text"
-msgid "Sesiones"
+msgid "Sessions"
 msgstr ""
 
 #: views:patients_secretary:page:field:views:nothing_2:alter:text
@@ -2664,22 +2664,22 @@ msgstr ""
 
 #: views:measures_record:page_2:use_more_text
 msgctxt "measures_record:page_2:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:measures_record:page_2:exposed_form:submit_button
 msgctxt "measures_record:page_2:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:measures_record:page_2:exposed_form:reset_button_label
 msgctxt "measures_record:page_2:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:measures_record:page_2:exposed_form:exposed_sorts_label
 msgctxt "measures_record:page_2:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:measures_record:page_2:exposed_form:sort_asc_label
@@ -2694,37 +2694,37 @@ msgstr ""
 
 #: views:measures_record:page_2:pager:expose:items_per_page_label
 msgctxt "measures_record:page_2:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr ""
 
 #: views:measures_record:page_2:pager:expose:items_per_page_options_all_label
 msgctxt "measures_record:page_2:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr ""
 
 #: views:measures_record:page_2:pager:expose:offset_label
 msgctxt "measures_record:page_2:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr ""
 
 #: views:measures_record:page_2:pager:tags:first
 msgctxt "measures_record:page_2:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr ""
 
 #: views:measures_record:page_2:pager:tags:previous
 msgctxt "measures_record:page_2:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr ""
 
 #: views:measures_record:page_2:pager:tags:next
 msgctxt "measures_record:page_2:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr ""
 
 #: views:measures_record:page_2:pager:tags:last
 msgctxt "measures_record:page_2:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr ""
 
 #: views:measures_record:page_2:field:field_data_rd_f_treat_date_time:rd_f_treat_date_time:label
@@ -2739,7 +2739,7 @@ msgstr ""
 
 #: views:measures_record:page_2:field:field_data_rd_f_access_treat_centre:rd_f_access_treat_centre:label
 msgctxt "measures_record:page_2:field:field_data_rd_f_access_treat_centre:rd_f_access_treat_centre:label"
-msgid "Centro"
+msgid "Centre"
 msgstr ""
 
 #: views:measures_record:page_2:field:views:nothing_1:alter:text
@@ -2752,17 +2752,17 @@ msgstr ""
 
 #: views:measures_record:page_2:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label
 msgctxt "measures_record:page_2:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label"
-msgid "Comentarios Iniciales"
+msgid "Initial Comments"
 msgstr ""
 
 #: views:measures_record:page_2:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label
 msgctxt "measures_record:page_2:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label"
-msgid "Medidas"
+msgid "Measures"
 msgstr ""
 
 #: views:measures_record:page_2:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label
 msgctxt "measures_record:page_2:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label"
-msgid "Comentarios Finales"
+msgid "Final Comments"
 msgstr ""
 
 #: views:measures_record:page_2:field:views:nothing:alter:text
@@ -2792,22 +2792,22 @@ msgstr ""
 
 #: views:measures_record:page_3:use_more_text
 msgctxt "measures_record:page_3:use_more_text"
-msgid "más"
+msgid "more"
 msgstr ""
 
 #: views:measures_record:page_3:exposed_form:submit_button
 msgctxt "measures_record:page_3:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr ""
 
 #: views:measures_record:page_3:exposed_form:reset_button_label
 msgctxt "measures_record:page_3:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr ""
 
 #: views:measures_record:page_3:exposed_form:exposed_sorts_label
 msgctxt "measures_record:page_3:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr ""
 
 #: views:measures_record:page_3:exposed_form:sort_asc_label
@@ -2867,48 +2867,43 @@ msgstr ""
 
 #: views:measures_record:page_3:field:field_data_rd_f_access_treat_centre:rd_f_access_treat_centre:label
 msgctxt "measures_record:page_3:field:field_data_rd_f_access_treat_centre:rd_f_access_treat_centre:label"
-msgid "Centro"
+msgid "Centre"
 msgstr ""
 
 #: views:measures_record:page_3:field:views:nothing_1:alter:text
 msgctxt "measures_record:page_3:field:views:nothing_1:alter:text"
 msgid ""
-"<b>[rd_f_treat_date_time]</b> - \n"
-"[rd_f_treat_related_pract] - \n"
+"<b>[rd_f_treat_date_time]</b> -\n"
+"[rd_f_treat_related_pract] -\n"
 "[rd_f_access_treat_centre]"
 msgstr ""
 
 #: views:measures_record:page_3:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label
 msgctxt "measures_record:page_3:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label"
-msgid "Comentarios Iniciales"
+msgid "Initial Comments"
 msgstr ""
 
 #: views:measures_record:page_3:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label
 msgctxt "measures_record:page_3:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label"
-msgid "Medidas"
+msgid "Measures"
 msgstr ""
 
 #: views:measures_record:page_3:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label
 msgctxt "measures_record:page_3:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label"
-msgid "Comentarios Finales"
+msgid "Final Comments"
 msgstr ""
 
 #: views:measures_record:page_3:field:views:nothing:alter:text
 msgctxt "measures_record:page_3:field:views:nothing:alter:text"
 msgid ""
-"[rd_f_treat_ini_comments] - \n"
-"[rd_f_treat_measures] - \n"
-"[rd_f_treat_fin_comments] - "
+"[rd_f_treat_ini_comments]\n"
+"[rd_f_treat_measures]\n"
+"[rd_f_treat_fin_comments]"
 msgstr ""
 
 #: views:test_duplicates:default:display_title
 msgctxt "test_duplicates:default:display_title"
 msgid "Master"
-msgstr ""
-
-#: views:test_duplicates:default:title
-msgctxt "test_duplicates:default:title"
-msgid "duplicate_treatments"
 msgstr ""
 
 #: views:test_duplicates:default:use_more_text
@@ -3041,9 +3036,199 @@ msgctxt "practitioners:default:field:views:php_1:alter:text"
 msgid "Consultant"
 msgstr ""
 
+#: views:duplicated_treatments:default:use_more_text
+msgctxt "duplicated_treatments:default:use_more_text"
+msgid "more"
+msgstr ""
+
+#: views:duplicated_treatments:default:exposed_form:submit_button
+msgctxt "duplicated_treatments:default:exposed_form:submit_button"
+msgid "Apply"
+msgstr ""
+
+#: views:duplicated_treatments:default:exposed_form:reset_button_label
+msgctxt "duplicated_treatments:default:exposed_form:reset_button_label"
+msgid "Reset"
+msgstr ""
+
+#: views:duplicated_treatments:default:exposed_form:exposed_sorts_label
+msgctxt "duplicated_treatments:default:exposed_form:exposed_sorts_label"
+msgid "Sort by"
+msgstr ""
+
+#: views:duplicated_treatments:default:exposed_form:sort_asc_label
+msgctxt "duplicated_treatments:default:exposed_form:sort_asc_label"
+msgid "Asc"
+msgstr ""
+
+#: views:duplicated_treatments:default:exposed_form:sort_desc_label
+msgctxt "duplicated_treatments:default:exposed_form:sort_desc_label"
+msgid "Desc"
+msgstr ""
+
+#: views:duplicated_treatments:default:empty:views:area:content
+msgctxt "duplicated_treatments:default:empty:views:area:content"
+msgid "No duplicated treatments found"
+msgstr ""
+
+#: views:duplicated_treatments:default:relationship:node:reverse_rd_f_treat_related_patient_node:label
+msgctxt "duplicated_treatments:default:relationship:node:reverse_rd_f_treat_related_patient_node:label"
+msgid "Related Treatment"
+msgstr ""
+
+#: views:duplicated_treatments:default:field:node:nid:label
+msgctxt "duplicated_treatments:default:field:node:nid:label"
+msgid "Nid"
+msgstr ""
+
+#: views:duplicated_treatments:page:use_more_text
+msgctxt "duplicated_treatments:page:use_more_text"
+msgid "more"
+msgstr ""
+
+#: views:duplicated_treatments:page:exposed_form:submit_button
+msgctxt "duplicated_treatments:page:exposed_form:submit_button"
+msgid "Apply"
+msgstr ""
+
+#: views:duplicated_treatments:page:exposed_form:reset_button_label
+msgctxt "duplicated_treatments:page:exposed_form:reset_button_label"
+msgid "Reset"
+msgstr ""
+
+#: views:duplicated_treatments:page:exposed_form:exposed_sorts_label
+msgctxt "duplicated_treatments:page:exposed_form:exposed_sorts_label"
+msgid "Sort by"
+msgstr ""
+
+#: views:duplicated_treatments:page:exposed_form:sort_asc_label
+msgctxt "duplicated_treatments:page:exposed_form:sort_asc_label"
+msgid "Asc"
+msgstr ""
+
+#: views:duplicated_treatments:page:exposed_form:sort_desc_label
+msgctxt "duplicated_treatments:page:exposed_form:sort_desc_label"
+msgid "Desc"
+msgstr ""
+
+#: views:measures_record:page_3:header:views:area_text_custom_1:content
+msgctxt "measures_record:page_3:header:views:area_text_custom_1:content"
+msgid "[nothing_4] [nothing_5] [nothing_6]"
+msgstr ""
+
+#: views:measures_record:page_3:relationship:field_data_rd_f_treat_related_patient:rd_f_treat_related_patient_target_id:label
+msgctxt "measures_record:page_3:relationship:field_data_rd_f_treat_related_patient:rd_f_treat_related_patient_target_id:label"
+msgid "Content entity referenced from rd_f_treat_related_patient"
+msgstr ""
+
+#: views:measures_record:page_3:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:alter:text
+msgctxt "measures_record:page_3:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:alter:text"
+msgid "C"
+msgstr ""
+
+#: views:measures_record:page_3:field:field_data_rd_f_treat_measures:rd_f_treat_measures:alter:text
+msgctxt "measures_record:page_3:field:field_data_rd_f_treat_measures:rd_f_treat_measures:alter:text"
+msgid "M"
+msgstr ""
+
+#: views:measures_record:page_3:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:alter:text
+msgctxt "measures_record:page_3:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:alter:text"
+msgid "C"
+msgstr ""
+
+#: views:measures_record:page_3:field:node:nid:label
+msgctxt "measures_record:page_3:field:node:nid:label"
+msgid "Nid"
+msgstr ""
+
+#: views:measures_record:page_3:field:views:nothing_2:label
+msgctxt "measures_record:page_3:field:views:nothing_2:label"
+msgid "See Patient"
+msgstr ""
+
+#: views:measures_record:page_3:field:views:nothing_2:alter:text
+msgctxt "measures_record:page_3:field:views:nothing_2:alter:text"
+msgid "See Patient"
+msgstr ""
+
+#: views:measures_record:page_3:field:views:nothing_2:alter:alt
+msgctxt "measures_record:page_3:field:views:nothing_2:alter:alt"
+msgid "See Patient"
+msgstr ""
+
+#: views:measures_record:page_3:field:views:nothing_3:label
+msgctxt "measures_record:page_3:field:views:nothing_3:label"
+msgid "Operations"
+msgstr ""
+
+#: views:measures_record:page_3:field:views:nothing_3:alter:text
+msgctxt "measures_record:page_3:field:views:nothing_3:alter:text"
+msgid "[nothing_2]&nbsp;&nbsp;[delete_node]"
+msgstr ""
+
+#: views:measures_record:page_3:field:views:nothing_4:label
+msgctxt "measures_record:page_3:field:views:nothing_4:label"
+msgid "Only Comments"
+msgstr ""
+
+#: views:measures_record:page_3:field:views:nothing_4:alter:text
+msgctxt "measures_record:page_3:field:views:nothing_4:alter:text"
+msgid "Only Comments"
+msgstr ""
+
+#: views:measures_record:page_3:field:views:nothing_5:label
+msgctxt "measures_record:page_3:field:views:nothing_5:label"
+msgid "Only Measures"
+msgstr ""
+
+#: views:measures_record:page_3:field:views:nothing_5:alter:text
+msgctxt "measures_record:page_3:field:views:nothing_5:alter:text"
+msgid "Only Measures"
+msgstr ""
+
+#: views:measures_record:page_3:field:views:nothing_6:label
+msgctxt "measures_record:page_3:field:views:nothing_6:label"
+msgid "All"
+msgstr ""
+
+#: views:measures_record:page_3:field:views:nothing_6:alter:text
+msgctxt "measures_record:page_3:field:views:nothing_6:alter:text"
+msgid "All"
+msgstr ""
+
+#: views:measures_record:page_3:filter:views:combine:expose:label
+msgctxt "measures_record:page_3:filter:views:combine:expose:label"
+msgid "Combine fields filter"
+msgstr ""
+
+#: views:measures_record:page_3:filter:views:combine:group_info:label
+msgctxt "measures_record:page_3:filter:views:combine:group_info:label"
+msgid "Comments"
+msgstr ""
+
+#: views:measures_record:page_3:filter:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments_value:expose:label
+msgctxt "measures_record:page_3:filter:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments_value:expose:label"
+msgid "Final Comments (rd_f_treat_fin_comments)"
+msgstr ""
+
+#: views:measures_record:page_3:filter:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments_value:group_info:label
+msgctxt "measures_record:page_3:filter:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments_value:group_info:label"
+msgid "Final Comments"
+msgstr ""
+
+#: views:measures_record:page_3:filter:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments_value:expose:label
+msgctxt "measures_record:page_3:filter:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments_value:expose:label"
+msgid "Initial Comments (rd_f_treat_ini_comments)"
+msgstr ""
+
+#: views:measures_record:page_3:filter:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments_value:group_info:label
+msgctxt "measures_record:page_3:filter:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments_value:group_info:label"
+msgid "Initial Comments"
+msgstr ""
+
 #: views:glossary:default:field:node:title:label
 msgctxt "glossary:default:field:node:title:label"
-msgid "Título"
+msgid "Title"
 msgstr "Nombre"
 
 #: views:measures_record:default:field:field_data_rd_f_treat_date_time:rd_f_treat_date_time:label
@@ -3053,27 +3238,27 @@ msgstr "Fecha y Hora del Tratameinto"
 
 #: views:measures_record:default:field:views:nothing_1:label
 msgctxt "measures_record:default:field:views:nothing_1:label"
-msgid "Sesiones"
+msgid "Sessions"
 msgstr "Sesiones"
 
 #: views:measures_record:default:field:views:nothing:label
 msgctxt "measures_record:default:field:views:nothing:label"
-msgid "Medidas y comentarios"
+msgid "Measures & Comments"
 msgstr "Medidas y comentarios"
 
 #: views:search_patients:default:title
 msgctxt "search_patients:default:title"
-msgid "Buscar Pacientes"
+msgid "Search Patients"
 msgstr "Buscar Pacientes"
 
 #: views:search_patients:default:field:views:nothing:alter:text
 msgctxt "search_patients:default:field:views:nothing:alter:text"
-msgid "Ver Paciente"
+msgid "See Patient"
 msgstr "Ver Paciente"
 
 #: views:search_patients:default:field:views:nothing:alter:alt
 msgctxt "search_patients:default:field:views:nothing:alter:alt"
-msgid "Ver Paciente"
+msgid "See Patient"
 msgstr "Ver Paciente"
 
 #: views:forms:default:empty:views:area_text_custom:content
@@ -3088,142 +3273,142 @@ msgstr "No se han encontrado Medidas"
 
 #: views:buttons:default:field:node:title:label
 msgctxt "buttons:default:field:node:title:label"
-msgid "Título"
+msgid "Title"
 msgstr "Nombre"
 
 #: views:measures_record:default:use_more_text
 msgctxt "measures_record:default:use_more_text"
-msgid "más"
+msgid "more"
 msgstr "más"
 
 #: views:measures_record:default:exposed_form:submit_button
 msgctxt "measures_record:default:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr "Aplicar"
 
 #: views:measures_record:default:exposed_form:reset_button_label
 msgctxt "measures_record:default:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr "Reiniciar"
 
 #: views:measures_record:default:exposed_form:exposed_sorts_label
 msgctxt "measures_record:default:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr "Ordenar por"
 
 #: views:measures_record:default:pager:expose:items_per_page_label
 msgctxt "measures_record:default:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr "Elementos por página"
 
 #: views:measures_record:default:pager:expose:items_per_page_options_all_label
 msgctxt "measures_record:default:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr "- Todos -"
 
 #: views:measures_record:default:pager:expose:offset_label
 msgctxt "measures_record:default:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr "Desplazamiento"
 
 #: views:measures_record:default:pager:tags:first
 msgctxt "measures_record:default:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr "« primera"
 
 #: views:measures_record:default:pager:tags:previous
 msgctxt "measures_record:default:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr "‹ anterior"
 
 #: views:measures_record:default:pager:tags:next
 msgctxt "measures_record:default:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr "siguiente ›"
 
 #: views:measures_record:default:pager:tags:last
 msgctxt "measures_record:default:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr "última »"
 
 #: views:measures_record:default:field:field_data_rd_f_access_treat_centre:rd_f_access_treat_centre:label
 msgctxt "measures_record:default:field:field_data_rd_f_access_treat_centre:rd_f_access_treat_centre:label"
-msgid "Centro"
+msgid "Centre"
 msgstr "Centro"
 
 #: views:measures_record:default:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label
 msgctxt "measures_record:default:field:field_data_rd_f_treat_ini_comments:rd_f_treat_ini_comments:label"
-msgid "Comentarios Iniciales"
+msgid "Initial Comments"
 msgstr "Comentarios Iniciales"
 
 #: views:measures_record:default:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label
 msgctxt "measures_record:default:field:field_data_rd_f_treat_measures:rd_f_treat_measures:label"
-msgid "Medidas"
+msgid "Measures"
 msgstr "Medidas"
 
 #: views:measures_record:default:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label
 msgctxt "measures_record:default:field:field_data_rd_f_treat_fin_comments:rd_f_treat_fin_comments:label"
-msgid "Comentarios Finales"
+msgid "Final Comments"
 msgstr "Comentarios Finales"
 
 #: views:measures_record:default:argument:field_data_rd_f_treat_related_patient:rd_f_treat_related_patient_target_id:exception:title
 msgctxt "measures_record:default:argument:field_data_rd_f_treat_related_patient:rd_f_treat_related_patient_target_id:exception:title"
-msgid "Todo(s)"
+msgid "All"
 msgstr "Todo(s)"
 
 #: views:measures_record:page:use_more_text
 msgctxt "measures_record:page:use_more_text"
-msgid "más"
+msgid "more"
 msgstr "más"
 
 #: views:measures_record:page:exposed_form:submit_button
 msgctxt "measures_record:page:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr "Aplicar"
 
 #: views:measures_record:page:exposed_form:reset_button_label
 msgctxt "measures_record:page:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr "Reiniciar"
 
 #: views:measures_record:page:exposed_form:exposed_sorts_label
 msgctxt "measures_record:page:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr "Ordenar por"
 
 #: views:measures_record:page:pager:expose:items_per_page_label
 msgctxt "measures_record:page:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr "Elementos por página"
 
 #: views:measures_record:page:pager:expose:items_per_page_options_all_label
 msgctxt "measures_record:page:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr "- Todos -"
 
 #: views:measures_record:page:pager:expose:offset_label
 msgctxt "measures_record:page:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr "Desplazamiento"
 
 #: views:measures_record:page:pager:tags:first
 msgctxt "measures_record:page:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr "« primera"
 
 #: views:measures_record:page:pager:tags:previous
 msgctxt "measures_record:page:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr "‹ anterior"
 
 #: views:measures_record:page:pager:tags:next
 msgctxt "measures_record:page:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr "siguiente ›"
 
 #: views:measures_record:page:pager:tags:last
 msgctxt "measures_record:page:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr "última »"
 
 #: views:practitioners:default:title
@@ -3268,22 +3453,22 @@ msgstr "Ver Paciente"
 
 #: views:patients_secretary:default:title
 msgctxt "patients_secretary:default:title"
-msgid "Patients Secretary"
+msgid "Patients"
 msgstr "Patients Secretary"
 
 #: views:patients_secretary:default:use_more_text
 msgctxt "patients_secretary:default:use_more_text"
-msgid "más"
+msgid "more"
 msgstr "more"
 
 #: views:patients_secretary:default:exposed_form:submit_button
 msgctxt "patients_secretary:default:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr "Apply"
 
 #: views:patients_secretary:default:exposed_form:reset_button_label
 msgctxt "patients_secretary:default:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr "Reset"
 
 #: views:patients_secretary:default:exposed_form:sort_asc_label
@@ -3298,37 +3483,37 @@ msgstr "Desc"
 
 #: views:patients_secretary:default:pager:expose:items_per_page_label
 msgctxt "patients_secretary:default:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr "Items per page"
 
 #: views:patients_secretary:default:pager:expose:items_per_page_options_all_label
 msgctxt "patients_secretary:default:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr "- All -"
 
 #: views:patients_secretary:default:pager:expose:offset_label
 msgctxt "patients_secretary:default:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr "Offset"
 
 #: views:patients_secretary:default:pager:tags:first
 msgctxt "patients_secretary:default:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr "« first"
 
 #: views:patients_secretary:default:pager:tags:previous
 msgctxt "patients_secretary:default:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr "‹ previous"
 
 #: views:patients_secretary:default:pager:tags:next
 msgctxt "patients_secretary:default:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr "next ›"
 
 #: views:patients_secretary:default:pager:tags:last
 msgctxt "patients_secretary:default:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr "last »"
 
 #: views:patients_secretary:default:field:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number:label
@@ -3338,7 +3523,7 @@ msgstr "Num"
 
 #: views:patients_secretary:default:field:node:title:label
 msgctxt "patients_secretary:default:field:node:title:label"
-msgid "Nombre"
+msgid "Name"
 msgstr "Nombre"
 
 #: views:patients_secretary:default:field:views:php:label
@@ -3348,27 +3533,27 @@ msgstr "Ojo"
 
 #: views:patients_secretary:default:field:views_entity_node:delete_node:label
 msgctxt "patients_secretary:default:field:views_entity_node:delete_node:label"
-msgid "Eliminar"
+msgid "Delete"
 msgstr "Eliminar"
 
 #: views:patients_secretary:default:field:views_entity_node:edit_node:label
 msgctxt "patients_secretary:default:field:views_entity_node:edit_node:label"
-msgid "Editar"
+msgid "Edit"
 msgstr "Editar"
 
 #: views:patients_secretary:page:use_more_text
 msgctxt "patients_secretary:page:use_more_text"
-msgid "más"
+msgid "more"
 msgstr "more"
 
 #: views:patients_secretary:page:exposed_form:submit_button
 msgctxt "patients_secretary:page:exposed_form:submit_button"
-msgid "Aplicar"
+msgid "Apply"
 msgstr "Apply"
 
 #: views:patients_secretary:page:exposed_form:reset_button_label
 msgctxt "patients_secretary:page:exposed_form:reset_button_label"
-msgid "Reiniciar"
+msgid "Reset"
 msgstr "Reset"
 
 #: views:patients_secretary:page:exposed_form:sort_asc_label
@@ -3383,37 +3568,37 @@ msgstr "Desc"
 
 #: views:patients_secretary:page:pager:expose:items_per_page_label
 msgctxt "patients_secretary:page:pager:expose:items_per_page_label"
-msgid "Elementos por página"
+msgid "Items per page"
 msgstr "Items per page"
 
 #: views:patients_secretary:page:pager:expose:items_per_page_options_all_label
 msgctxt "patients_secretary:page:pager:expose:items_per_page_options_all_label"
-msgid "- Todos -"
+msgid "- All -"
 msgstr "- All -"
 
 #: views:patients_secretary:page:pager:expose:offset_label
 msgctxt "patients_secretary:page:pager:expose:offset_label"
-msgid "Desplazamiento"
+msgid "Offset"
 msgstr "Offset"
 
 #: views:patients_secretary:page:pager:tags:first
 msgctxt "patients_secretary:page:pager:tags:first"
-msgid "« primera"
+msgid "« first"
 msgstr "« first"
 
 #: views:patients_secretary:page:pager:tags:previous
 msgctxt "patients_secretary:page:pager:tags:previous"
-msgid "‹ anterior"
+msgid "‹ previous"
 msgstr "‹ previous"
 
 #: views:patients_secretary:page:pager:tags:next
 msgctxt "patients_secretary:page:pager:tags:next"
-msgid "siguiente ›"
+msgid "next ›"
 msgstr "next ›"
 
 #: views:patients_secretary:page:pager:tags:last
 msgctxt "patients_secretary:page:pager:tags:last"
-msgid "última »"
+msgid "last »"
 msgstr "last »"
 
 #: views:patients_secretary:default:field:field_data_rd_f_patient_appo_type:rd_f_patient_appo_type:label
@@ -3423,23 +3608,23 @@ msgstr "T"
 
 #: views:patients_secretary:default:field:field_data_rd_f_patient_dob:rd_f_patient_dob:label
 msgctxt "patients_secretary:default:field:field_data_rd_f_patient_dob:rd_f_patient_dob:label"
-msgid "Nació"
+msgid "DOB"
 msgstr "Nació"
 
 #: views:patients_secretary:default:field:views_entity_node:edit_node:text
 msgctxt "patients_secretary:default:field:views_entity_node:edit_node:text"
-msgid "Editar"
+msgid "Edit"
 msgstr "Editar"
 
 #: views:patients_secretary:default:filter:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number_value:expose:label
 msgctxt "patients_secretary:default:filter:field_data_rd_f_patient_excel_number:rd_f_patient_excel_number_value:expose:label"
-msgid "Número"
-msgstr "Number"
+msgid "Number"
+msgstr "Número"
 
 #: views:patients_secretary:default:filter:node:title:expose:label
 msgctxt "patients_secretary:default:filter:node:title:expose:label"
-msgid "Nombre"
-msgstr "Name"
+msgid "Name"
+msgstr "Nombre"
 
 #: views:patients_secretary:default:field:views:nothing:label
 msgctxt "patients_secretary:default:field:views:nothing:label"
@@ -3568,12 +3753,12 @@ msgstr "last »"
 
 #: views:patients_secretary:default:filter:field_data_rd_f_patient_incidences:rd_f_patient_incidences_value:expose:label
 msgctxt "patients_secretary:default:filter:field_data_rd_f_patient_incidences:rd_f_patient_incidences_value:expose:label"
-msgid "Incidencias"
+msgid "Incidences"
 msgstr "Incidencias"
 
 #: views:patients_secretary:default:sort:node:title:expose:label
 msgctxt "patients_secretary:default:sort:node:title:expose:label"
-msgid "Nombre"
+msgid "Title"
 msgstr "Nombre"
 
 #: views:measures_record:default:use_more_text
@@ -3743,12 +3928,12 @@ msgstr "more"
 
 #: views:patients_secretary:default:exposed_form:exposed_sorts_label
 msgctxt "patients_secretary:default:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr "Sort by"
 
 #: views:patients_secretary:page:exposed_form:exposed_sorts_label
 msgctxt "patients_secretary:page:exposed_form:exposed_sorts_label"
-msgid "Ordenar por"
+msgid "Sort by"
 msgstr "Sort by"
 
 #: views:patients_secretary:default:exposed_form:exposed_sorts_label
@@ -3768,7 +3953,7 @@ msgstr "Sesiones Secretaría"
 
 #: views:measures_record:page_1:title
 msgctxt "measures_record:page_1:title"
-msgid "Sesiones - [title]"
+msgid "Sessions - [title]"
 msgstr "Sesiones - [title]"
 
 #: views:measures_record:page_1:header:views:area:label
@@ -3778,22 +3963,22 @@ msgstr "Nombre"
 
 #: views:measures_record:page_1:field:views:nothing_1:label
 msgctxt "measures_record:page_1:field:views:nothing_1:label"
-msgid "Sesiones"
+msgid "Sessions"
 msgstr "Sesiones"
 
 #: views:patients_secretary:default:field:views:nothing_1:label
 msgctxt "patients_secretary:default:field:views:nothing_1:label"
-msgid "Sesiones"
+msgid "Sessions"
 msgstr "Sesiones"
 
 #: views:patients_secretary:default:field:views:nothing_1:alter:text
 msgctxt "patients_secretary:default:field:views:nothing_1:alter:text"
-msgid "Sesiones"
+msgid "Sessions"
 msgstr "Sesiones"
 
 #: views:patients_secretary:default:field:views:nothing_2:label
 msgctxt "patients_secretary:default:field:views:nothing_2:label"
-msgid "Operaciones"
+msgid "Operations"
 msgstr "Operaciones"
 
 #: views:patients_secretary:page_1:display_title
@@ -3803,17 +3988,17 @@ msgstr "Interés"
 
 #: views:patients_secretary:page_1:field:node:title:label
 msgctxt "patients_secretary:page_1:field:node:title:label"
-msgid "Nombre"
+msgid "Name"
 msgstr "Nombre"
 
 #: views:patients_secretary:page_1:field:field_data_rd_f_patient_interest:rd_f_patient_interest:label
 msgctxt "patients_secretary:page_1:field:field_data_rd_f_patient_interest:rd_f_patient_interest:label"
-msgid "Interés"
+msgid "Interest"
 msgstr "Interés"
 
 #: views:patients_secretary:page_1:sort:node:title:expose:label
 msgctxt "patients_secretary:page_1:sort:node:title:expose:label"
-msgid "Nombre"
+msgid "Title"
 msgstr "Nombre"
 
 #: views:patients_secretary:page_1:filter:field_data_rd_f_patient_interest:rd_f_patient_interest_value:expose:label
@@ -3823,12 +4008,12 @@ msgstr "Interés"
 
 #: views:patients_secretary:page:field:field_data_rd_f_patient_dob:rd_f_patient_dob:label
 msgctxt "patients_secretary:page:field:field_data_rd_f_patient_dob:rd_f_patient_dob:label"
-msgid "Nació"
+msgid "DOB"
 msgstr "Nació el"
 
 #: views:patients_secretary:page:field:node:title:label
 msgctxt "patients_secretary:page:field:node:title:label"
-msgid "Nombre"
+msgid "Name"
 msgstr "Nombre"
 
 #: views:patients_secretary:page:field:field_data_rd_f_patient_interest:rd_f_patient_interest:label
@@ -3848,12 +4033,12 @@ msgstr "Tratamientos"
 
 #: views:patients_secretary:page:field:views:nothing_2:label
 msgctxt "patients_secretary:page:field:views:nothing_2:label"
-msgid "Operaciones"
+msgid "Operations"
 msgstr "Operaciones"
 
 #: views:patients_secretary:page:sort:node:title:expose:label
 msgctxt "patients_secretary:page:sort:node:title:expose:label"
-msgid "Nombre"
+msgid "Name"
 msgstr "Nombre"
 
 #: views:patients_secretary:default:field:node:title:label
@@ -3868,12 +4053,12 @@ msgstr "Nombre"
 
 #: views:measures_record:page_2:field:views:nothing_1:label
 msgctxt "measures_record:page_2:field:views:nothing_1:label"
-msgid "Sesiones"
+msgid "Sessions"
 msgstr "Sesiones"
 
 #: views:measures_record:page_2:field:views:nothing:label
 msgctxt "measures_record:page_2:field:views:nothing:label"
-msgid "Medidas y comentarios"
+msgid "Measures & Comments"
 msgstr "Medidas y comentarios"
 
 #: views:measures_record:page_2:field:views_entity_node:edit_node:text
@@ -3903,17 +4088,17 @@ msgstr "Nombre"
 
 #: views:measures_record:page_3:field:views:nothing_1:label
 msgctxt "measures_record:page_3:field:views:nothing_1:label"
-msgid "Sesiones"
+msgid "Sessions"
 msgstr "Sesiones"
 
 #: views:measures_record:page_3:field:views:nothing:label
 msgctxt "measures_record:page_3:field:views:nothing:label"
-msgid "Medidas y comentarios"
+msgid "Measures & Comments"
 msgstr "Medidas y comentarios"
 
 #: views:measures_record:page_3:field:views_entity_node:delete_node:label
 msgctxt "measures_record:page_3:field:views_entity_node:delete_node:label"
-msgid "Operations"
+msgid "Delete"
 msgstr "Operaciones"
 
 #: views:measures_record:page_3:field:views_entity_node:delete_node:text
@@ -4213,6 +4398,276 @@ msgstr "Medidas y comentarios"
 
 #: views:test_duplicates:default:field:views:nothing:label
 msgctxt "test_duplicates:default:field:views:nothing:label"
+msgid "Operations"
+msgstr "Operaciones"
+
+#: views:duplicated_treatments:default:title
+msgctxt "duplicated_treatments:default:title"
+msgid "Duplicated Treatments"
+msgstr "Sesiones Duplicadas"
+
+#: views:duplicated_treatments:default:field:node:title:label
+msgctxt "duplicated_treatments:default:field:node:title:label"
+msgid "Name"
+msgstr "Nombre"
+
+#: views:duplicated_treatments:default:field:field_data_rd_f_treat_date_time:rd_f_treat_date_time_1:label
+msgctxt "duplicated_treatments:default:field:field_data_rd_f_treat_date_time:rd_f_treat_date_time_1:label"
+msgid "Number of Treatments"
+msgstr "Tratamientos"
+
+#: views:duplicated_treatments:default:field:views:nothing:label
+msgctxt "duplicated_treatments:default:field:views:nothing:label"
+msgid "Operations"
+msgstr "Operaciones"
+
+#: views:duplicated_treatments:default:field:views:nothing:alter:text
+msgctxt "duplicated_treatments:default:field:views:nothing:alter:text"
+msgid "See Patient"
+msgstr "Ver Paciente"
+
+#: views:duplicated_treatments:default:filter:field_data_rd_f_treat_date_time:rd_f_treat_date_time_value:expose:label
+msgctxt "duplicated_treatments:default:filter:field_data_rd_f_treat_date_time:rd_f_treat_date_time_value:expose:label"
+msgid "Treatment Year and Month"
+msgstr "Año y Mes del Tratamiento"
+
+#: views:glossary:default:field:node:title:label
+msgctxt "glossary:default:field:node:title:label"
+msgid "Título"
+msgstr "Nombre"
+
+#: views:measures_record:default:field:views:nothing_1:label
+msgctxt "measures_record:default:field:views:nothing_1:label"
+msgid "Sesiones"
+msgstr "Sesiones"
+
+#: views:measures_record:default:field:views:nothing:label
+msgctxt "measures_record:default:field:views:nothing:label"
+msgid "Medidas y comentarios"
+msgstr "Medidas y comentarios"
+
+#: views:buttons:default:field:node:title:label
+msgctxt "buttons:default:field:node:title:label"
+msgid "Título"
+msgstr "Nombre"
+
+#: views:measures_record:default:exposed_form:exposed_sorts_label
+msgctxt "measures_record:default:exposed_form:exposed_sorts_label"
+msgid "Ordenar por"
+msgstr "Ordenar por"
+
+#: views:measures_record:page:exposed_form:exposed_sorts_label
+msgctxt "measures_record:page:exposed_form:exposed_sorts_label"
+msgid "Ordenar por"
+msgstr "Ordenar por"
+
+#: views:patients_secretary:default:title
+msgctxt "patients_secretary:default:title"
+msgid "Patients Secretary"
+msgstr "Patients Secretary"
+
+#: views:patients_secretary:default:use_more_text
+msgctxt "patients_secretary:default:use_more_text"
+msgid "más"
+msgstr "more"
+
+#: views:patients_secretary:default:exposed_form:submit_button
+msgctxt "patients_secretary:default:exposed_form:submit_button"
+msgid "Aplicar"
+msgstr "Apply"
+
+#: views:patients_secretary:default:exposed_form:reset_button_label
+msgctxt "patients_secretary:default:exposed_form:reset_button_label"
+msgid "Reiniciar"
+msgstr "Reset"
+
+#: views:patients_secretary:default:pager:expose:items_per_page_label
+msgctxt "patients_secretary:default:pager:expose:items_per_page_label"
+msgid "Elementos por página"
+msgstr "Items per page"
+
+#: views:patients_secretary:default:pager:expose:items_per_page_options_all_label
+msgctxt "patients_secretary:default:pager:expose:items_per_page_options_all_label"
+msgid "- Todos -"
+msgstr "- All -"
+
+#: views:patients_secretary:default:pager:expose:offset_label
+msgctxt "patients_secretary:default:pager:expose:offset_label"
+msgid "Desplazamiento"
+msgstr "Offset"
+
+#: views:patients_secretary:default:pager:tags:first
+msgctxt "patients_secretary:default:pager:tags:first"
+msgid "« primera"
+msgstr "« first"
+
+#: views:patients_secretary:default:pager:tags:previous
+msgctxt "patients_secretary:default:pager:tags:previous"
+msgid "‹ anterior"
+msgstr "‹ previous"
+
+#: views:patients_secretary:default:pager:tags:next
+msgctxt "patients_secretary:default:pager:tags:next"
+msgid "siguiente ›"
+msgstr "next ›"
+
+#: views:patients_secretary:default:pager:tags:last
+msgctxt "patients_secretary:default:pager:tags:last"
+msgid "última »"
+msgstr "last »"
+
+#: views:patients_secretary:default:field:node:title:label
+msgctxt "patients_secretary:default:field:node:title:label"
+msgid "Nombre"
+msgstr "Nombre"
+
+#: views:patients_secretary:page:exposed_form:submit_button
+msgctxt "patients_secretary:page:exposed_form:submit_button"
+msgid "Aplicar"
+msgstr "Apply"
+
+#: views:patients_secretary:page:exposed_form:reset_button_label
+msgctxt "patients_secretary:page:exposed_form:reset_button_label"
+msgid "Reiniciar"
+msgstr "Reset"
+
+#: views:patients_secretary:page:pager:expose:items_per_page_label
+msgctxt "patients_secretary:page:pager:expose:items_per_page_label"
+msgid "Elementos por página"
+msgstr "Items per page"
+
+#: views:patients_secretary:page:pager:expose:items_per_page_options_all_label
+msgctxt "patients_secretary:page:pager:expose:items_per_page_options_all_label"
+msgid "- Todos -"
+msgstr "- All -"
+
+#: views:patients_secretary:page:pager:expose:offset_label
+msgctxt "patients_secretary:page:pager:expose:offset_label"
+msgid "Desplazamiento"
+msgstr "Offset"
+
+#: views:patients_secretary:page:pager:tags:first
+msgctxt "patients_secretary:page:pager:tags:first"
+msgid "« primera"
+msgstr "« first"
+
+#: views:patients_secretary:page:pager:tags:previous
+msgctxt "patients_secretary:page:pager:tags:previous"
+msgid "‹ anterior"
+msgstr "‹ previous"
+
+#: views:patients_secretary:page:pager:tags:next
+msgctxt "patients_secretary:page:pager:tags:next"
+msgid "siguiente ›"
+msgstr "next ›"
+
+#: views:patients_secretary:page:pager:tags:last
+msgctxt "patients_secretary:page:pager:tags:last"
+msgid "última »"
+msgstr "last »"
+
+#: views:patients_secretary:default:filter:field_data_rd_f_patient_incidences:rd_f_patient_incidences_value:expose:label
+msgctxt "patients_secretary:default:filter:field_data_rd_f_patient_incidences:rd_f_patient_incidences_value:expose:label"
+msgid "Incidencias"
+msgstr "Incidencias"
+
+#: views:patients_secretary:default:sort:node:title:expose:label
+msgctxt "patients_secretary:default:sort:node:title:expose:label"
+msgid "Nombre"
+msgstr "Nombre"
+
+#: views:patients_secretary:default:exposed_form:exposed_sorts_label
+msgctxt "patients_secretary:default:exposed_form:exposed_sorts_label"
+msgid "Ordenar por"
+msgstr "Sort by"
+
+#: views:patients_secretary:page:exposed_form:exposed_sorts_label
+msgctxt "patients_secretary:page:exposed_form:exposed_sorts_label"
+msgid "Ordenar por"
+msgstr "Sort by"
+
+#: views:measures_record:page_1:title
+msgctxt "measures_record:page_1:title"
+msgid "Sesiones - [title]"
+msgstr "Sesiones - [title]"
+
+#: views:measures_record:page_1:field:views:nothing_1:label
+msgctxt "measures_record:page_1:field:views:nothing_1:label"
+msgid "Sesiones"
+msgstr "Sesiones"
+
+#: views:patients_secretary:default:field:views:nothing_1:label
+msgctxt "patients_secretary:default:field:views:nothing_1:label"
+msgid "Sesiones"
+msgstr "Sesiones"
+
+#: views:patients_secretary:default:field:views:nothing_1:alter:text
+msgctxt "patients_secretary:default:field:views:nothing_1:alter:text"
+msgid "Sesiones"
+msgstr "Sesiones"
+
+#: views:patients_secretary:default:field:views:nothing_2:label
+msgctxt "patients_secretary:default:field:views:nothing_2:label"
+msgid "Operaciones"
+msgstr "Operaciones"
+
+#: views:patients_secretary:page_1:field:node:title:label
+msgctxt "patients_secretary:page_1:field:node:title:label"
+msgid "Nombre"
+msgstr "Nombre"
+
+#: views:patients_secretary:page_1:field:field_data_rd_f_patient_interest:rd_f_patient_interest:label
+msgctxt "patients_secretary:page_1:field:field_data_rd_f_patient_interest:rd_f_patient_interest:label"
+msgid "Interés"
+msgstr "Interés"
+
+#: views:patients_secretary:page_1:sort:node:title:expose:label
+msgctxt "patients_secretary:page_1:sort:node:title:expose:label"
+msgid "Nombre"
+msgstr "Nombre"
+
+#: views:patients_secretary:page:field:field_data_rd_f_patient_dob:rd_f_patient_dob:label
+msgctxt "patients_secretary:page:field:field_data_rd_f_patient_dob:rd_f_patient_dob:label"
+msgid "Nació"
+msgstr "Nació el"
+
+#: views:patients_secretary:page:field:node:title:label
+msgctxt "patients_secretary:page:field:node:title:label"
+msgid "Nombre"
+msgstr "Nombre"
+
+#: views:patients_secretary:page:field:views:nothing_2:label
+msgctxt "patients_secretary:page:field:views:nothing_2:label"
+msgid "Operaciones"
+msgstr "Operaciones"
+
+#: views:patients_secretary:page:sort:node:title:expose:label
+msgctxt "patients_secretary:page:sort:node:title:expose:label"
+msgid "Nombre"
+msgstr "Nombre"
+
+#: views:measures_record:page_2:field:views:nothing_1:label
+msgctxt "measures_record:page_2:field:views:nothing_1:label"
+msgid "Sesiones"
+msgstr "Sesiones"
+
+#: views:measures_record:page_2:field:views:nothing:label
+msgctxt "measures_record:page_2:field:views:nothing:label"
+msgid "Medidas y comentarios"
+msgstr "Medidas y comentarios"
+
+#: views:measures_record:page_3:field:views:nothing_1:label
+msgctxt "measures_record:page_3:field:views:nothing_1:label"
+msgid "Sesiones"
+msgstr "Sesiones"
+
+#: views:measures_record:page_3:field:views:nothing:label
+msgctxt "measures_record:page_3:field:views:nothing:label"
+msgid "Medidas y comentarios"
+msgstr "Medidas y comentarios"
+
+#: views:measures_record:page_3:field:views_entity_node:delete_node:label
+msgctxt "measures_record:page_3:field:views_entity_node:delete_node:label"
 msgid "Operations"
 msgstr "Operaciones"
 
